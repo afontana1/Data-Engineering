@@ -68,6 +68,7 @@
 53. [Microservice API Patterns](https://microservice-api-patterns.org/)
 54. [python-ddd](https://github.com/pgorecki/python-ddd)
 55. [Awesome ETL](https://github.com/pawl/awesome-etl)
+56. [Patterns for API Design](https://microservice-api-patterns.org/)
 
 </details>
 
