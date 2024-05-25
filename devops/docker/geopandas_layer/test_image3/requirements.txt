@@ -1,4 +1,0 @@
-rasterio[s3]
-geopandas[s3]
-rasterstats[s3]
-pandas

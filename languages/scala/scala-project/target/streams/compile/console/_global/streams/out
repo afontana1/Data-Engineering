@@ -1,8 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mWaiting for threads to exit or System.exit to be called.[0m
-[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\ajfon\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.0.0\scala3-sbt-bridge-3.0.0.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0mWaiting for thread run-main-0 to terminate.[0m
-[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\ajfon\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.0.0\scala3-sbt-bridge-3.0.0.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Thread run-main-0 exited.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0m[0mdebug[0m] [0m[0mSandboxed run complete..[0m
-[0m[[0m[0mdebug[0m] [0m[0mExited with code 0[0m

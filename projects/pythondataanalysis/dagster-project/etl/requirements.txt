@@ -1,5 +1,0 @@
-pandas
-sqlalchemy
-pyodbc
-pyarrow
-psycopg2
