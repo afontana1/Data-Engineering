@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Axios REST API Manipulation</title>
+</head>
+
+<body>
+    <h1>RESTful API Manipulation through Axios</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Nested Get Methods</td>
+                <td>Simultaneous Requests</td>
+                <td>Add New Post</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button id="getbtn">Users with Posts</button></td>
+                <td><button id='allspread' onclick="getPostandcomments()">Posts&amp;comments</button></td>
+                <td> <button id="newpost" onclick="displayForm()">Add Post</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

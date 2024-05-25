@@ -1,0 +1,44 @@
+{% extends "projects/base.html" %}
+
+{% block content %}
+<div class="col-md-8 offset-md-2">
+  <div>
+    {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">Logout</a>
+        <a href="{% url 'password_change' %}">Change password</a>
+    {% else %}
+        <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+  </div>
+  <h1>Blog Index</h1>
+  <hr>
+  <form action="/blog/" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      {{ form.title }}
+    </div>
+    <div class="form-group">
+        {{ form.body }}
+    </div>
+    <div class="form-group">
+        {{ form.categories }}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  {% for post in posts %}
+    <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
+    <small>
+        <a href="{% url 'blog_author' post.author %}">{{post.author}}</a> |&nbsp;
+        {{ post.created_on.date }} |&nbsp;
+        Categories:&nbsp;
+        {% for category in post.categories.all %}
+        <a href="{% url 'blog_category' category.name %}">
+            {{ category.name }}
+        </a>&nbsp;
+        {% endfor %}
+    </small>
+    <p>{{ post.body | slice:":400" }}...</p>
+    <a href="{% url 'blog_delete' post.pk %}">Delete</a>
+  {% endfor %}
+</div>
+{% endblock %}

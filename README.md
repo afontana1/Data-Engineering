@@ -69,6 +69,7 @@
 54. [python-ddd](https://github.com/pgorecki/python-ddd)
 55. [Awesome ETL](https://github.com/pawl/awesome-etl)
 56. [Patterns for API Design](https://microservice-api-patterns.org/)
+57. [gaphor](https://github.com/gaphor/gaphor)
 
 </details>
 
@@ -86,6 +87,8 @@
 10. [Scuba](https://github.com/JonathonReinhart/scuba)
 11. [dagu](https://github.com/dagu-dev/dagu)
 12. [tawazi](https://github.com/mindee/tawazi)
+13. [gitlab-ci](https://github.com/dokku/gitlab-ci)
+14. [pulumi](https://github.com/pulumi/pulumi)
 
 </details>
 
@@ -293,6 +296,7 @@
 
 - [amazon-redshift-utils](https://github.com/awslabs/amazon-redshift-utils)
 - [amazon-redshift-developer-guides](https://github.com/awsdocs/amazon-redshift-developer-guide)
+- [awesome-time-series-database](https://github.com/xephonhq/awesome-time-series-database)
 
 1. [SQL Alchemy](https://github.com/sqlalchemy/sqlalchemy)
 2. [Pyodbc](https://github.com/mkleehammer/pyodbc)
