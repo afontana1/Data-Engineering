@@ -8,6 +8,11 @@
 - [open-llms](https://github.com/eugeneyan/open-llms)
 - [openai cookbook](https://cookbook.openai.com/)
 - [SalesGPT](https://github.com/filip-michalsky/SalesGPT)
+- [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
+- [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents)
+- [gpt-researcher](https://github.com/assafelovic/gpt-researcher)
+- [MetaGPT](https://github.com/geekan/MetaGPT)
+- [AgentGPT](https://github.com/reworkd/AgentGPT)
 
 ## Practical Guides
 

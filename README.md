@@ -682,6 +682,7 @@
 74. [dataclass-type-validator](https://github.com/levii/dataclass-type-validator)
 75. [Jinja](https://github.com/pallets/jinja)
 76. [liaison](https://github.com/Julian-Nash/liaison)
+77. [DataCleaner](https://github.com/datacleaner/DataCleaner)
 
 </details>
 
@@ -799,8 +800,6 @@
 6. [Data Ops](https://www.dataopsmanifesto.org/)
 7. [Metadata](https://en.wikipedia.org/wiki/Category:Metadata)
 8. [Data Management](https://en.wikipedia.org/wiki/Category:Data_management)
-9. [SQL](https://en.wikipedia.org/wiki/Category:SQL)
-10. [Data_modeling_languages](https://en.wikipedia.org/wiki/Category:Data_modeling_languages)
 
 </details>
 
@@ -814,13 +813,9 @@
 * [data bricks](https://databricks.com/discover/data-lakes/introduction)
 * [data lineage tools](http://www.databaseanswers.org/data_lineage_tools.htm)
 * [Sparql](https://jena.apache.org/tutorials/sparql.html)
-* [Snowflake](https://medium.com/snowflake)S
 * [knowledge-graph](https://developers.google.com/knowledge-graph)
-* [dagster](https://github.com/dagster-io/dagster)
 * [griffin](https://github.com/apache/griffin)
-* [DataCleaner](https://github.com/datacleaner/DataCleaner)
 * [GridCal](https://github.com/SanPen/GridCal)
-* [airbyte](https://github.com/airbytehq/airbyte)
 * [Awesome Data Catalogues](https://github.com/opendatadiscovery/awesome-data-catalogs)
 
 </details>
