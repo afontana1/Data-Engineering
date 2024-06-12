@@ -379,6 +379,8 @@
 32. [StreamLit](https://github.com/streamlit/streamlit)
 33. [Pybossa](https://github.com/Scifabric/pybossa)
 34. [starlette](https://github.com/encode/starlette)
+35. [awesome-fastapi](https://github.com/mjhea0/awesome-fastapi)
+36. [awesome-fastapi-projects](https://github.com/Kludex/awesome-fastapi-projects)
 
 </details>
 

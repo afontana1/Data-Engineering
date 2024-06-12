@@ -13,6 +13,12 @@
 - [gpt-researcher](https://github.com/assafelovic/gpt-researcher)
 - [MetaGPT](https://github.com/geekan/MetaGPT)
 - [AgentGPT](https://github.com/reworkd/AgentGPT)
+- [awesome-agents](https://github.com/kyrolabs/awesome-agents)
+- [awesome-ai-sdks](https://github.com/e2b-dev/awesome-ai-sdks)
+- [awesome-ai-agents](https://github.com/slavakurilyak/awesome-ai-agents)
+- [awesome-autonomous-gpt](https://github.com/ScarletPan/awesome-autonomous-gpt)
+- [AgentBench](https://github.com/THUDM/AgentBench)
+- [ToolBench](https://github.com/OpenBMB/ToolBench)
 
 ## Practical Guides
 
