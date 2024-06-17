@@ -1,0 +1,4 @@
+[config]
+  queue_url = "sqs.fake.aws.com"
+  max_concurrent_received_postcodes = 10
+  sqs_wait_time_seconds = 5
