@@ -1,0 +1,7 @@
+trash
+__pycache__
+docs
+.DS_Store
+.ipynb_checkpoints
+.env 
+*.log
