@@ -294,6 +294,8 @@
 
 <details><summary><h2>Databases and Parsing</h2></summary>
 
+- [dbeaver](https://github.com/dbeaver/dbeaver)
+- [awesome-db-tools](https://github.com/mgramin/awesome-db-tools)
 - [amazon-redshift-utils](https://github.com/awslabs/amazon-redshift-utils)
 - [amazon-redshift-developer-guides](https://github.com/awsdocs/amazon-redshift-developer-guide)
 - [awesome-time-series-database](https://github.com/xephonhq/awesome-time-series-database)
