@@ -1,0 +1,6 @@
+langchain==0.0.208 
+deeplake 
+openai 
+tiktoken
+faiss-cpu
+# faiss-gpu # If Using GPU
