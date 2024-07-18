@@ -13,6 +13,12 @@
 - [Slack Engineering Blog](https://slack.engineering/)
 - [Stripe Engineering Blog](https://stripe.com/blog/engineering)
 
+#### Tutorials
+
+- [Building a Poor Mans Datalake from Scratch with DuckDB](https://dagster.io/blog/duckdb-data-lake)
+- [Revisiting the Poor Man’s Data Lake with MotherDuck](https://dagster.io/blog/poor-mans-datalake-motherduck)
+- [Database Transactions](https://bbengfort.github.io/2017/12/psycopg2-transactions/)
+
 1. [Design Patterns in the Real World](https://holub.com/patterns/)
 2. [Design Patterns](https://sourcemaking.com/)
 3. [Refactoring Guru](https://refactoring.guru/)
