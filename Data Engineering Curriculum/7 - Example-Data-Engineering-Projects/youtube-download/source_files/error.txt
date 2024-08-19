@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="initial-scale=1"><title>https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-</title></head>
+<body style="font-family: arial, sans-serif; background-color: #fff; color: #000; padding:20px; font-size:18px; overscroll-behavior:contain;" onload="e=document.getElementById('captcha');if(e){e.focus();} if(solveSimpleChallenge) {solveSimpleChallenge(,);}">
+<div style="max-width:400px;">
+<hr noshade size="1" style="color:#ccc; background-color:#ccc;"><br>
+<form id="captcha-form" action="index" method="post">
+To continue, please type the characters below:<br><br>
+<img src="/sorry/image?id=17310441536316541234&amp;q=EhAmAGxSbfAEoKgHiKo873EsGJ2c76oGIjDU1ui2PXtyglUe6xMUKzqN1Z5jXUyreLXtNCnwYW306s_eEJg4lycZ23yDIZ8bO-QyAmNyWgFD&amp;hl=en&amp;continue=https://translate.google.com/m%3Ftl%3Den%26sl%3Dauto%26q%3DCeci%2520est%2520une%2520r%25C3%25A9ponse%2520%25C3%25A0%2520Saizai%2520-%2520j%2527esp%25C3%25A8re%2520que%2520je%2520le%2520prononce%2520correctement%2520-" border="1" alt="Please enable images"><br><br>
+<input type="text" name="captcha" value="" id="captcha" size="12" style="font-size:16px; padding:3px 0 3px 5px; margin-left:0px;"><br><br><br>
+<input type="submit" name="btn-submit" value="Submit" style="font-size:18px; padding:4px 0;">
+
+<input type='hidden' name='q' value='EhAmAGxSbfAEoKgHiKo873EsGJ2c76oGIjDU1ui2PXtyglUe6xMUKzqN1Z5jXUyreLXtNCnwYW306s_eEJg4lycZ23yDIZ8bO-QyAmNyWgFD'><input type="hidden" name="continue" value="https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-">
+</form>
+<hr noshade size="1" style="color:#ccc; background-color:#ccc;">
+
+<div style="font-size:13px;">
+<b>About this page</b><br><br>
+
+Our systems have detected unusual traffic from your computer network.  This page checks to see if it&#39;s really you sending the requests, and not a robot.  <a href="#" onclick="document.getElementById('infoDiv').style.display='block';">Why did this happen?</a><br><br>
+
+<div id="infoDiv" style="display:none; background-color:#eee; padding:10px; margin:0 0 15px 0; line-height:1.4em;">
+This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the <a href="//www.google.com/policies/terms/">Terms of Service</a>. The block will expire shortly after those requests stop.  In the meantime, solving the above CAPTCHA will let you continue to use our services.<br><br>This traffic may have been sent by malicious software, a browser plug-in, or a script that sends automated requests.  If you share your network connection, ask your administrator for help &mdash; a different computer using the same IP address may be responsible.  <a href="//support.google.com/websearch/answer/86640">Learn more</a><br><br>Sometimes you may be asked to solve the CAPTCHA if you are using advanced terms that robots are known to use, or sending requests very quickly.
+</div>
+
+IP address: 2600:6c52:6df0:4a0:a807:88aa:3cef:712c<br>Time: 2023-11-20T21:22:37Z<br>URL: https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-<br>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="initial-scale=1"><title>https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=%0A%20%20%20%20%20%20%20%20Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-%20qui%20me%20demande%20ce%20que%20je%20croyais%20quand%20j%27%C3%A9tais%20th%C3%A9iste%20et%20ce%20que%20je%20crois%20maintenant.%20%0A%20%20%20%20%20%20%20%20Je%20pourrais%20r%C3%A9pondre%20%C3%A0%20ces%20questions%20en%20quelques%20secondes%20-%20ou%20quelques%20heures%20Je%20vais%20me%20contenter%20d%27un%20compromis%20et%20essayer%20de%20traiter%20un%20%C3%A9ventail%20d%27id%C3%A9es%20en%20trois%20vid%C3%A9os%20%0A%20%20%20%20%20%20%20%20Cela%20ne%20sera%20pas%20exhaustif%20mais%20j%27esp%C3%A8re%20que%20cela%20donnera%20un%20aper%C3%A7u%20convenable%20d%27o%C3%B9%20je%20viens.%20%0A%20%20%20%20</title></head>
+<body style="font-family: arial, sans-serif; background-color: #fff; color: #000; padding:20px; font-size:18px; overscroll-behavior:contain;" onload="e=document.getElementById('captcha');if(e){e.focus();} if(solveSimpleChallenge) {solveSimpleChallenge(,);}">
+<div style="max-width:400px;">
+<hr noshade size="1" style="color:#ccc; background-color:#ccc;"><br>
+<form id="captcha-form" action="index" method="post">
+To continue, please type the characters below:<br><br>
+<img src="/sorry/image?id=1002127907154141755&amp;q=EhAmAGxSbfAEoKgHiKo873EsGPGc76oGIjDpLkfHUE3XhMys6oJxdQN0tmmht_TaWt4rjBBcGOIq1_wtKZBndKnYkbK7Kt0w0aYyAmNyWgFD&amp;hl=en&amp;continue=https://translate.google.com/m%3Ftl%3Den%26sl%3Dauto%26q%3D%250A%2520%2520%2520%2520%2520%2520%2520%2520Ceci%2520est%2520une%2520r%25C3%25A9ponse%2520%25C3%25A0%2520Saizai%2520-%2520j%2527esp%25C3%25A8re%2520que%2520je%2520le%2520prononce%2520correctement%2520-%2520qui%2520me%2520demande%2520ce%2520que%2520je%2520croyais%2520quand%2520j%2527%25C3%25A9tais%2520th%25C3%25A9iste%2520et%2520ce%2520que%2520je%2520crois%2520maintenant.%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520Je%2520pourrais%2520r%25C3%25A9pondre%2520%25C3%25A0%2520ces%2520questions%2520en%2520quelques%2520secondes%2520-%2520ou%2520quelques%2520heures%2520Je%2520vais%2520me%2520contenter%2520d%2527un%2520compromis%2520et%2520essayer%2520de%2520traiter%2520un%2520%25C3%25A9ventail%2520d%2527id%25C3%25A9es%2520en%2520trois%2520vid%25C3%25A9os%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520Cela%2520ne%2520sera%2520pas%2520exhaustif%2520mais%2520j%2527esp%25C3%25A8re%2520que%2520cela%2520donnera%2520un%2520aper%25C3%25A7u%2520convenable%2520d%2527o%25C3%25B9%2520je%2520viens.%2520%250A%2520%2520%2520%2520" border="1" alt="Please enable images"><br><br>
+<input type="text" name="captcha" value="" id="captcha" size="12" style="font-size:16px; padding:3px 0 3px 5px; margin-left:0px;"><br><br><br>
+<input type="submit" name="btn-submit" value="Submit" style="font-size:18px; padding:4px 0;">
+
+<input type='hidden' name='q' value='EhAmAGxSbfAEoKgHiKo873EsGPGc76oGIjDpLkfHUE3XhMys6oJxdQN0tmmht_TaWt4rjBBcGOIq1_wtKZBndKnYkbK7Kt0w0aYyAmNyWgFD'><input type="hidden" name="continue" value="https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=%0A%20%20%20%20%20%20%20%20Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-%20qui%20me%20demande%20ce%20que%20je%20croyais%20quand%20j%27%C3%A9tais%20th%C3%A9iste%20et%20ce%20que%20je%20crois%20maintenant.%20%0A%20%20%20%20%20%20%20%20Je%20pourrais%20r%C3%A9pondre%20%C3%A0%20ces%20questions%20en%20quelques%20secondes%20-%20ou%20quelques%20heures%20Je%20vais%20me%20contenter%20d%27un%20compromis%20et%20essayer%20de%20traiter%20un%20%C3%A9ventail%20d%27id%C3%A9es%20en%20trois%20vid%C3%A9os%20%0A%20%20%20%20%20%20%20%20Cela%20ne%20sera%20pas%20exhaustif%20mais%20j%27esp%C3%A8re%20que%20cela%20donnera%20un%20aper%C3%A7u%20convenable%20d%27o%C3%B9%20je%20viens.%20%0A%20%20%20%20">
+</form>
+<hr noshade size="1" style="color:#ccc; background-color:#ccc;">
+
+<div style="font-size:13px;">
+<b>About this page</b><br><br>
+
+Our systems have detected unusual traffic from your computer network.  This page checks to see if it&#39;s really you sending the requests, and not a robot.  <a href="#" onclick="document.getElementById('infoDiv').style.display='block';">Why did this happen?</a><br><br>
+
+<div id="infoDiv" style="display:none; background-color:#eee; padding:10px; margin:0 0 15px 0; line-height:1.4em;">
+This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the <a href="//www.google.com/policies/terms/">Terms of Service</a>. The block will expire shortly after those requests stop.  In the meantime, solving the above CAPTCHA will let you continue to use our services.<br><br>This traffic may have been sent by malicious software, a browser plug-in, or a script that sends automated requests.  If you share your network connection, ask your administrator for help &mdash; a different computer using the same IP address may be responsible.  <a href="//support.google.com/websearch/answer/86640">Learn more</a><br><br>Sometimes you may be asked to solve the CAPTCHA if you are using advanced terms that robots are known to use, or sending requests very quickly.
+</div>
+
+IP address: 2600:6c52:6df0:4a0:a807:88aa:3cef:712c<br>Time: 2023-11-20T21:24:01Z<br>URL: https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=%0A%20%20%20%20%20%20%20%20Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-%20qui%20me%20demande%20ce%20que%20je%20croyais%20quand%20j%27%C3%A9tais%20th%C3%A9iste%20et%20ce%20que%20je%20crois%20maintenant.%20%0A%20%20%20%20%20%20%20%20Je%20pourrais%20r%C3%A9pondre%20%C3%A0%20ces%20questions%20en%20quelques%20secondes%20-%20ou%20quelques%20heures%20Je%20vais%20me%20contenter%20d%27un%20compromis%20et%20essayer%20de%20traiter%20un%20%C3%A9ventail%20d%27id%C3%A9es%20en%20trois%20vid%C3%A9os%20%0A%20%20%20%20%20%20%20%20Cela%20ne%20sera%20pas%20exhaustif%20mais%20j%27esp%C3%A8re%20que%20cela%20donnera%20un%20aper%C3%A7u%20convenable%20d%27o%C3%B9%20je%20viens.%20%0A%20%20%20%20<br>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="initial-scale=1"><title>https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=%0A%20%20%20%20%20%20%20%20Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-%20qui%20me%20demande%20ce%20que%20je%20croyais%20quand%20j%27%C3%A9tais%20th%C3%A9iste%20et%20ce%20que%20je%20crois%20maintenant.%20%0A%20%20%20%20%20%20%20%20Je%20pourrais%20r%C3%A9pondre%20%C3%A0%20ces%20questions%20en%20quelques%20secondes%20-%20ou%20quelques%20heures%20Je%20vais%20me%20contenter%20d%27un%20compromis%20et%20essayer%20de%20traiter%20un%20%C3%A9ventail%20d%27id%C3%A9es%20en%20trois%20vid%C3%A9os%20%0A%20%20%20%20%20%20%20%20Cela%20ne%20sera%20pas%20exhaustif%20mais%20j%27esp%C3%A8re%20que%20cela%20donnera%20un%20aper%C3%A7u%20convenable%20d%27o%C3%B9%20je%20viens.%20%0A%20%20%20%20</title></head>
+<body style="font-family: arial, sans-serif; background-color: #fff; color: #000; padding:20px; font-size:18px; overscroll-behavior:contain;" onload="e=document.getElementById('captcha');if(e){e.focus();} if(solveSimpleChallenge) {solveSimpleChallenge(,);}">
+<div style="max-width:400px;">
+<hr noshade size="1" style="color:#ccc; background-color:#ccc;"><br>
+<form id="captcha-form" action="index" method="post">
+To continue, please type the characters below:<br><br>
+<img src="/sorry/image?id=11311658498183997680&amp;q=EhAmAGxSbfAEoKgHiKo873EsGK6q76oGIjC9jJU0u_yWv5zGU9pRxFacdwZ1sS6cAeCdkXS2WYXjd608XWfTA2L-gtyoJChYmO4yAmNyWgFD&amp;hl=en&amp;continue=https://translate.google.com/m%3Ftl%3Den%26sl%3Dauto%26q%3D%250A%2520%2520%2520%2520%2520%2520%2520%2520Ceci%2520est%2520une%2520r%25C3%25A9ponse%2520%25C3%25A0%2520Saizai%2520-%2520j%2527esp%25C3%25A8re%2520que%2520je%2520le%2520prononce%2520correctement%2520-%2520qui%2520me%2520demande%2520ce%2520que%2520je%2520croyais%2520quand%2520j%2527%25C3%25A9tais%2520th%25C3%25A9iste%2520et%2520ce%2520que%2520je%2520crois%2520maintenant.%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520Je%2520pourrais%2520r%25C3%25A9pondre%2520%25C3%25A0%2520ces%2520questions%2520en%2520quelques%2520secondes%2520-%2520ou%2520quelques%2520heures%2520Je%2520vais%2520me%2520contenter%2520d%2527un%2520compromis%2520et%2520essayer%2520de%2520traiter%2520un%2520%25C3%25A9ventail%2520d%2527id%25C3%25A9es%2520en%2520trois%2520vid%25C3%25A9os%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520Cela%2520ne%2520sera%2520pas%2520exhaustif%2520mais%2520j%2527esp%25C3%25A8re%2520que%2520cela%2520donnera%2520un%2520aper%25C3%25A7u%2520convenable%2520d%2527o%25C3%25B9%2520je%2520viens.%2520%250A%2520%2520%2520%2520" border="1" alt="Please enable images"><br><br>
+<input type="text" name="captcha" value="" id="captcha" size="12" style="font-size:16px; padding:3px 0 3px 5px; margin-left:0px;"><br><br><br>
+<input type="submit" name="btn-submit" value="Submit" style="font-size:18px; padding:4px 0;">
+
+<input type='hidden' name='q' value='EhAmAGxSbfAEoKgHiKo873EsGK6q76oGIjC9jJU0u_yWv5zGU9pRxFacdwZ1sS6cAeCdkXS2WYXjd608XWfTA2L-gtyoJChYmO4yAmNyWgFD'><input type="hidden" name="continue" value="https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=%0A%20%20%20%20%20%20%20%20Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-%20qui%20me%20demande%20ce%20que%20je%20croyais%20quand%20j%27%C3%A9tais%20th%C3%A9iste%20et%20ce%20que%20je%20crois%20maintenant.%20%0A%20%20%20%20%20%20%20%20Je%20pourrais%20r%C3%A9pondre%20%C3%A0%20ces%20questions%20en%20quelques%20secondes%20-%20ou%20quelques%20heures%20Je%20vais%20me%20contenter%20d%27un%20compromis%20et%20essayer%20de%20traiter%20un%20%C3%A9ventail%20d%27id%C3%A9es%20en%20trois%20vid%C3%A9os%20%0A%20%20%20%20%20%20%20%20Cela%20ne%20sera%20pas%20exhaustif%20mais%20j%27esp%C3%A8re%20que%20cela%20donnera%20un%20aper%C3%A7u%20convenable%20d%27o%C3%B9%20je%20viens.%20%0A%20%20%20%20">
+</form>
+<hr noshade size="1" style="color:#ccc; background-color:#ccc;">
+
+<div style="font-size:13px;">
+<b>About this page</b><br><br>
+
+Our systems have detected unusual traffic from your computer network.  This page checks to see if it&#39;s really you sending the requests, and not a robot.  <a href="#" onclick="document.getElementById('infoDiv').style.display='block';">Why did this happen?</a><br><br>
+
+<div id="infoDiv" style="display:none; background-color:#eee; padding:10px; margin:0 0 15px 0; line-height:1.4em;">
+This page appears when Google automatically detects requests coming from your computer network which appear to be in violation of the <a href="//www.google.com/policies/terms/">Terms of Service</a>. The block will expire shortly after those requests stop.  In the meantime, solving the above CAPTCHA will let you continue to use our services.<br><br>This traffic may have been sent by malicious software, a browser plug-in, or a script that sends automated requests.  If you share your network connection, ask your administrator for help &mdash; a different computer using the same IP address may be responsible.  <a href="//support.google.com/websearch/answer/86640">Learn more</a><br><br>Sometimes you may be asked to solve the CAPTCHA if you are using advanced terms that robots are known to use, or sending requests very quickly.
+</div>
+
+IP address: 2600:6c52:6df0:4a0:a807:88aa:3cef:712c<br>Time: 2023-11-20T21:52:46Z<br>URL: https://translate.google.com/m?tl=en&amp;sl=auto&amp;q=%0A%20%20%20%20%20%20%20%20Ceci%20est%20une%20r%C3%A9ponse%20%C3%A0%20Saizai%20-%20j%27esp%C3%A8re%20que%20je%20le%20prononce%20correctement%20-%20qui%20me%20demande%20ce%20que%20je%20croyais%20quand%20j%27%C3%A9tais%20th%C3%A9iste%20et%20ce%20que%20je%20crois%20maintenant.%20%0A%20%20%20%20%20%20%20%20Je%20pourrais%20r%C3%A9pondre%20%C3%A0%20ces%20questions%20en%20quelques%20secondes%20-%20ou%20quelques%20heures%20Je%20vais%20me%20contenter%20d%27un%20compromis%20et%20essayer%20de%20traiter%20un%20%C3%A9ventail%20d%27id%C3%A9es%20en%20trois%20vid%C3%A9os%20%0A%20%20%20%20%20%20%20%20Cela%20ne%20sera%20pas%20exhaustif%20mais%20j%27esp%C3%A8re%20que%20cela%20donnera%20un%20aper%C3%A7u%20convenable%20d%27o%C3%B9%20je%20viens.%20%0A%20%20%20%20<br>
+</div>
+</div>
+</body>
+</html>

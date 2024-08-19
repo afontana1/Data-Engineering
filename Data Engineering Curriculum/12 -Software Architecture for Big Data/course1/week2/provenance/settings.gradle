@@ -1,0 +1,10 @@
+rootProject.name = "provenance"
+
+include "applications:provenance-server"
+
+include "components:articles"
+include "components:endpoints"
+
+include "components:rest-support"
+include "components:rss-support"
+include "components:workflow-support"

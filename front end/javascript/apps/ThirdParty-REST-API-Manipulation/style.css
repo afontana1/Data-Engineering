@@ -1,0 +1,29 @@
+tr td {
+    width: 220px;
+    text-align: center;
+}
+
+table {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    left: 400px;
+}
+
+tr td button {
+    background-color: #007D7D;
+    color: white;
+    font-size: large;
+    /* color: "#007D7D"; */
+    border: none;
+    border-radius: 10%;
+    width: 150px;
+    height: 40px;
+}
+
+h1 {
+    color: #004D4D;
+    text-align: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}

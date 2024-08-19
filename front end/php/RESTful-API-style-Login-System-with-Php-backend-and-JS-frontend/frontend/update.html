@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: slategrey;
+    }
+    
+    .container {
+        width: 50vw;
+        margin: auto;
+        margin-top: 12vh;
+    }
+    
+    .form-group {
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+    }
+    
+    button {
+        font-size: large;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>Update Details</h1>
+        <form onsubmit="return false;">
+            <div class="form-group">
+                <label for="">First Name</label>
+                <input type="text" name="fName">
+            </div>
+            <div class="form-group">
+                <label for="">Last Name</label>
+                <input type="text" name="lName">
+            </div>
+            <div class="form-group">
+                <label for="">User Name</label>
+                <input type="text" name="userName">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" name="pwd">
+            </div>
+            <div class="form-group">
+                <label for="">Repeat Password</label>
+                <input type="password" name="rPwd">
+            </div>
+            <div class="form-group">
+                <!-- <label for=""></label> -->
+                <input type="hidden" id="crud_req" name="crud_req" value="register">
+            </div>
+            <input type="hidden" name="submit" value="submit">
+            <div class="form-group">
+
+                <input type="submit" name="submit" value="Update">
+            </div>
+        </form>
+    </div>
+    <script src="update.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "zillow_scrape",
+  "version": "1.0.0",
+  "description": "this is used to parse zillow data",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "webscrape"
+  ],
+  "author": "anthony fontana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^21.5.2",
+    "puppeteer-chromium-resolver": "^21.0.0"
+  }
+}

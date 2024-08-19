@@ -1,0 +1,18 @@
+{
+  "hosted-zone:account=535707483867:domainName=bonestack.com:privateZone=false:region=us-east-1": {
+    "Id": "/hostedzone/Z02820432QVH9SZTMFEBW",
+    "Name": "bonestack.com."
+  },
+  "hosted-zone:account=535707483867:domainName=bonestack.com:region=us-east-1": {
+    "Id": "/hostedzone/Z02820432QVH9SZTMFEBW",
+    "Name": "bonestack.com."
+  },
+  "hosted-zone:account=535707483867:domainName=saas-starter-stack.com:privateZone=false:region=us-east-1": {
+    "Id": "/hostedzone/Z01937583LXI06AP77DHO",
+    "Name": "saas-starter-stack.com."
+  },
+  "hosted-zone:account=535707483867:domainName=saas-starter-stack.com:region=us-east-1": {
+    "Id": "/hostedzone/Z01937583LXI06AP77DHO",
+    "Name": "saas-starter-stack.com."
+  }
+}

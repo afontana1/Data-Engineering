@@ -1,0 +1,53 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Whatsapp Analyzer</title>
+{#    <link rel="stylesheet" href="static/main.css" />#}
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/main.css') }}">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <a href="#" class="logo"><center>Whatsapp Analyzer</center></a>
+      <div class="menu-content">
+        <ul class="menu-items">
+          <div class="menu-title"><u>Sections</u></div>
+          <li class="item">
+            <a href="/general_statistics/{{ value }}">General Statistics</a>
+          </li>
+          <li class="item">
+            <a href="/user_level_analysis/{{ value }}">User Level Analysis</a>
+          </li>
+          <li class="item">
+            <a href="/text_analysis/{{ value }}">Text Analysis</a>
+          </li>
+            <li class="item">
+            <a href="/geographics/{{ value }}">Geographic Analysis</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+    <div id="plotly-graph-1"></div>
+    <div id="plotly-graph-2"></div>
+
+    </main>
+    <script>
+        // Get the graph JSON data from the Flask template
+        var graphJSON = {{ graph_a|safe }};
+
+        // Create the plot using graphJSON
+        Plotly.react('plotly-graph-1', graphJSON, {});
+
+                var graphJSON = {{ graph_b|safe }};
+
+        // Create the plot using graphJSON
+        Plotly.react('plotly-graph-2', graphJSON, {});
+    </script>
+  </body>
+</html>

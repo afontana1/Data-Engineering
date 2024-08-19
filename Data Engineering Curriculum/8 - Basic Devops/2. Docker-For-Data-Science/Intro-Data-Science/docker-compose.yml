@@ -1,0 +1,28 @@
+version: "3"
+services:
+        jupyter:
+                image: jupyter/scipy-notebook:17aba6048f44
+                container_name: "Jupyter_notebook"
+                user: root
+                ports:
+                        - 8888:8888
+                        - 8050:8050
+                environment:
+                        - GRANT_SUDO=yes
+                        - JUPYTER_ENABLE_LAB: "yes"
+                volumes:
+                        - ./Notebooks/:/home/jovyan/
+
+        postgres:
+                image: postgres
+                container_name: "my_postgres"
+                ports:
+                        - 5432:5432
+                environment:
+                        - SHARED_PASSWORD=password
+                        - POSTGRES_PASSWORD=secret
+                volumes:
+                        - pg_data:/var/lib/postgresql/data
+
+volumes:
+        pg_data:    

@@ -1,0 +1,75 @@
+html
+{
+    height:100%;
+    width:100%;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://www.addictivetips.com/app/uploads/2020/04/Yosemite.png");
+    background-size:cover;
+    margin:0;
+    overflow: hidden;
+}
+
+.heading
+{
+    font-size:1.25em;
+    color:#fff;
+}
+
+.description
+{
+    font-size:0.85em;
+    color:#999A9E;
+}
+
+.container
+{
+    background: #32323b;
+    border-radius: 10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:250px;
+    padding:40px 60px;
+    box-shadow: 1px 1px 20px #171717;
+}
+
+.input-group
+{
+    width:100%;
+    margin:20px 0;
+}
+
+input
+{
+    text-indent: 15px;
+    width:100%;
+    border:1px solid #444;
+    border-radius: 5px;
+    background: #1d1e22;
+    color:#fff;
+    padding:10px 0;
+}
+
+.submit-button
+{
+    border:none;
+    width:100%;
+    border-radius: 5px;
+    padding:12px 0;
+    font-size:14px;
+    background: #5168F4;
+    text-align: center;
+    transition: background 500ms ease;
+    color:#fff;
+}
+
+.submit-button:hover
+{
+    cursor: pointer;
+    background:#f4b651;
+}

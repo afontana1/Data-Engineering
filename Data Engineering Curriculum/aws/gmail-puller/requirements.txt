@@ -1,0 +1,10 @@
+google-api-core==1.19.1
+google-api-python-client==1.9.1
+google-auth==1.16.1
+google-auth-httplib2==0.0.3
+google-auth-oauthlib==0.4.1
+googleapis-common-protos==1.52.0
+pymongo==3.10.1
+pandas==1.4.2
+fsspec==2022.3.0
+s3fs<=0.4 # Latest version of s3fs is not compatible with boto3 version comes with lambda based docker image

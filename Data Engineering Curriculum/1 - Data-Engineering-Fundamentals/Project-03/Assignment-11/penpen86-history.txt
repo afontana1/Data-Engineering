@@ -1,0 +1,1000 @@
+  117  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq -c | sort -gr
+  118  man uniq
+  119  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq -c | sort -gr | head 10
+  120  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq -c | sort -gr | head -10
+  121  man bq
+  122  bq --help
+  123  gcloud init
+  124  bq query --use_legacy_sql=false 'SELECT count(*) FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  125  docker ps
+  126  vi .bashrc 
+  127  cat .git/config 
+  128  ls -al
+  129  ls
+  130  cd assignment-01-penpen86/
+  131  ls -al
+  132  git branch -a
+  133  w
+  134  git checkout penpen86-PR1
+  135  git checkout master
+  136  cd
+  137  git status
+  138  ls -al
+  139  ls .git
+  140  cat .git/config 
+  141  mv .git /tmp/
+  142  cd /tmp/
+  143  mv .git not.git
+  144  cd
+  145  clear
+  146  docker images
+  147  docker pull midsw205/base
+  148  clear
+  149  docker ps
+  150  docker run -it --rm -v ~/w205:/w205 midsw205/base bash
+  151  lsb_release -a
+  152  clear
+  153  docker run -it --rm -v ~/w205:/w205 midsw205/base bash
+  154  docker ps -a
+  155  docker run -it --rm -v ~/w205:/w205 midsw205/base bash
+  156  docker ps -a
+  157  clear
+  158  cd w205
+  159  dc ..
+  160  cd ..
+  161  git clone https://github.com/mids-w205-martin-mims/assignment-03-penpen86
+  162  git config --global user.email "penpen86@gmail.com"
+  163  git config --global credential.helper .Q1w2e3r4t5
+  164  git clone https://github.com/mids-w205-martin-mims/assignment-04-penpen86
+  165  clear
+  166  cd assignment-03-penpen86/
+  167  vi README.md
+  168  gcloud init
+  169  bq query --use_legacy_sql=true'
+  170  select count(*) from `bigquery-public-data.san_francisco.bikeshare_status`'
+  171  bq query --use_legacy_sql=false'
+  172  select count(*) from `bigquery-public-data.san_francisco.bikeshare_status`'
+  173  bq query --use_legacy_sql=false 'SELECT count(*) FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  174  vi README.md
+  175  git statys
+  176  git status
+  177  git checkout -- README.md
+  178  git branch penpen-PR01
+  179  git checkout penpen-PR01 
+  180  vi README.md
+  181  bq query --use_legacy_sql=false 'SELECT min(time), max(time) FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  182  bq query --use_legacy_sql=false 'SELECT x.Earliest_Date, y.Latest_Date FROM (SELECT min(start_date) Earliest_Date  FROM `bigquery-public-data.san_francisco.bikeshare_trips`) as x, (SELECT max(end_date) Latest_Date FROM `bigquery-public-data.san_francisco.bikeshare_trips`) as y'
+  183  vi README.md
+  184  bq query --use_legacy_sql=false 'SELECT count(distinct bike_number) Number_Bikes FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  185  vi README.md
+  186  clear
+  187  cd assignment-03-penpen86/
+  188  bq query --use_legacy_sql=false 'SELECT x.Morning, y.Afternoon FROM (SELECT COUNT(*) Morning FROM `bigquery-public-data.san_francisco.bikeshare_trips` WHERE EXTRACT(HOUR FROM end_date) BETWEEN '06' and '12') as x, (SELECT COUNT(*) Afternoon FROM `bigquery-public-data.san_francisco.bikeshare_trips` WHERE EXTRACT(HOUR FROM end_date) BETWEEN '16' and '22') as y'
+  189  vi README.md 
+  190  cd assignment-03-penpen86/
+  191  vi README.md
+  192  git commit -m'Third advance of Query Project - questions ask and answered' README.md
+  193  git push origin penpen-PR01 
+  194  git checkout master
+  195  git fecth --prune
+  196  git fetch --prune
+  197  cd ..
+  198  git clone https://github.com/mids-w205-martin-mims/assignment-02-penpen86
+  199  clear
+  200  docker ps
+  201  docker rm -f'
+  202  '
+  203  docker rm -f
+  204  docker ps -all
+  205  docker run redis
+  206  clear
+  207  docker run -d redis
+  208  docker rm
+  209  docker ps
+  210  docker ps -a
+  211  cd ~/course-content/
+  212  git pull --a
+  213  [Bclear
+  214  clear
+  215  git pull --all
+  216  clear
+  217  ipython
+  218  clear
+  219  cd ~/assignment-04-penpen86/
+  220  rm result_%d%y.csv
+  221  rm y.csv
+  222  clear
+  223  cd assignment-04-penpen86/
+  224  mkdir data
+  225  ls
+  226  cd data
+  227  cd .
+  228  cd ..
+  229  git checkout -b penpen-PR01
+  230  ls
+  231  git log -a
+  232  git status
+  233  vi README.md 
+  234  git status
+  235  git commit -a -m'Created a Jupyter Notebook report, recomendations are inside, with its visaulization'
+  236  git status
+  237  git add .
+  238  git status
+  239  git commit -a -m'Created a Jupyter Notebook report, recomendations are inside, with its visaulization'
+  240  git push origin penpen-PR01 
+  241  git checkout master
+  242  ls
+  243  git branch -d penpen-PR01 
+  244  git checkout penpen-PR01 
+  245  git status
+  246  cd ..
+  247  cd assignment-03-penpen86/
+  248  git checkout penpen-PR01 
+  249  git status
+  250  cd .
+  251  cd ..
+  252  cd assignment-02-penpen86/
+  253  git branch -a
+  254  cd ..
+  255  cd assignment-03-penpen86/
+  256  git branch -a
+  257  git checkout master
+  258  cd ..
+  259  cd assignment-04-penpen86/
+  260  git checkout master
+  261  git branch -a
+  262  cd ..
+  263  clear
+  264  cd course-content/
+  265  git fetch
+  266  cd ..
+  267  git clone https://github.com/mids-w205-martin-mims/assignment-05-penpen86.git
+  268  cd assignment-05-penpen86/
+  269  ls
+  270  cd ..
+  271  ls
+  272  cd w205/
+  273  ls
+  274  cd ..
+  275  cd assignment-05-penpen86/
+  276  clear
+  277  cp ../course-content/05-Storing-Data-II/example-1-docker-compose.yml 
+  278  man cp
+  279  git -b checkout penpen-PR01
+  280  git checkout -b penpen-PR01
+  281  git init
+  282  cp ../course-content/05-Storing-Data-II/example-1-docker-compose.yml docker-compose.yml
+  283  ls
+  284  git add -a
+  285  git add -all
+  286  git add --all
+  287  clear
+  288  vi docker-compose.yml 
+  289  docker-compose up -d
+  290  vi docker-compose.yml 
+  291  docker-compose up -d
+  292  vi docker-compose.yml 
+  293  docker-compose up -d
+  294  docker-compose ps
+  295  docker-compose logs
+  296  docker-compose ps -q
+  297  docker-compose logs redis
+  298  docker-compose exec mids bash
+  299  docker-compose exec mids jupyter notebook --no-browser -port 8080 --ip 0.0.0.0 --allow-root
+  300  docker-compose exec mids jupyter notebook --no-browser --port 8080 --ip 0.0.0.0 --allow-root
+  301  vi docker-compose.yml 
+  302  docker-compose down
+  303  docker-compose ps
+  304  docker-compose ps --all
+  305  docker-compose ps --d
+  306  docker-compose ps -d
+  307  docker ps -a
+  308  docker kill sad_torvalds 
+  309  docker ps
+  310  docker-compose ps
+  311  docker-compose ps -a
+  312  docker ps -a
+  313  docker-compose ps
+  314  docker-compose up -d
+  315  docker-compose logs mids
+  316  vi docker-compose.yml 
+  317  docker-compose down 
+  318  docker-compose up -d
+  319  docker-compose logs mids
+  320  docker-compose down
+  321  cd ~/w205
+  322  curl -L -o trips.csv https://goo.gl/QvHLKe
+  323  cd ..
+  324  cd assignment-05-penpen86/
+  325  vi docker-compose.yml 
+  326  docker-compose up -d
+  327  docker-compose logs mids
+  328  docker-compose down 
+  329  history > penpen86-history.txt
+  330  ls
+  331  git add penpen86-history.txt 
+  332  git status
+  333  git add penpen86-annotations.md 
+  334  git status
+  335  rm htmartin-history.txt 
+  336  git status
+  337  vi penpen86-history.txt 
+  338  git add Extra\ -\ Notebook.ipynb 
+  339  docker run -d --name redis redis
+  340  docker kill redis
+  341  docker ps -a
+  342  docker run -d --name redis -p 6379:6379 redis
+  343  docker-compose ps
+  344  docker ps -a
+  345  docker ps
+  346  docker run -d --name redis -p 6379:6379 redis
+  347  docker rm redis
+  348  docker run -d --name redis -p 6379:6379 redis
+  349  docker ps
+  350  cp ../w205/trips.csv trips.csv
+  351  git add trips.csv 
+  352  docker kill redis
+  353  docker ps
+  354  ls
+  355  git status
+  356  git add Data/
+  357  git status
+  358  vi README.md 
+  359  git status
+  360  git commit -m'Updated all files needed for spin a cluster' all
+  361  git commit -a -m'Updated all files needed for spin a cluster'
+  362  git status
+  363  git push origin penpen-PR01 
+  364  cd ..
+  365  cd assignment-03-penpen86/
+  366  git branches
+  367  git branch
+  368  git branch -d penpen-PR01 
+  369  git fetch
+  370  git branch
+  371  git branch -d penpen-PR01 
+  372  git checkout penpen-PR01 
+  373  git status
+  374  git checkout master
+  375  git branch -d penpen-PR01 
+  376  git branch -D penpen-PR01 
+  377  git branch
+  378  cd ..
+  379  cd assignment-04
+  380  cd assignment-04-penpen86/
+  381  git fetch
+  382  git branches
+  383  git branch
+  384  git checkout penpen-PR01 
+  385  git status
+  386  git checkout master
+  387  git branch -d penpen-PR01 
+  388  git branch -D penpen-PR01 
+  389  clear
+  390  ls
+  391  git clone https://github.com/mids-w205-martin-mims/assignment-06-penpen86.git 
+  392  ls
+  393  cd assignment-06-penpen86/
+  394  git -b checkout penpen-PR01
+  395  git checkout -b penpen-PR01
+  396  git init
+  397  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  398  ls
+  399  cd ..
+  400  cd course-content/
+  401  git pull --all
+  402  cd ..
+  403  clear
+  404  cp course-content/06-Transforming-Data/docker-compose.yml assignment-06-penpen86/docker-compose.yml
+  405  cd assignment-06-penpen86/
+  406  ls
+  407  git status
+  408  mkdir data
+  409  ls
+  410  cp assessment-attempts-20180128-121051-nested.json data/assessment-attempts-20180128-121051-nested.json
+  411  ls
+  412  cd data/
+  413  ls
+  414  cd ..
+  415  rm assessment-attempts-20180128-121051-nested.json 
+  416  ls
+  417  git add data
+  418  git status
+  419  git add docker-compose.yml 
+  420  git status
+  421  clear
+  422  vi docker-compose.yml 
+  423  docker-compose up -d
+  424  docker-compose logs -f kafka
+  425  docker-compose exec kafka kafka-topics --create --topic feduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  426  docker-compose exec kafka kafka-topics --create --topic eduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  427  docker-compose exec kafka kafka-topics --describe --topic eduAssestments --zookeeper zookeeper:32181
+  428  clear
+  429  ls
+  430  cd data
+  431  ls
+  432  cd ..
+  433  ls
+  434  docker-compose exec mids bash -c "cat data/assessment-attempts-20180128-121051-nested.json"
+  435  docker-compose exec mids bash -c "cat /data/assessment-attempts-20180128-121051-nested.json"
+  436  docker-compose exec mids bash -c "cat /assigment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  437  docker-compose exec mids bash -c "cat ~/assigment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  438  docker-compose exec mids bash -c "cat ~/assignment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  439  docker-compose exec mids bash -c "cat /assignment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  440  cat data/assessment-attempts-20180128-121051-nested.json
+  441  clear
+  442  cat data/assessment-attempts-20180128-121051-nested.json | jq
+  443  clear
+  444  docker-compose exec mids bash -c "cat assignment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  445  docker-compose exec mids bash -c
+  446  docker-compose exec mids bash
+  447  cd w205
+  448  cd ~/w205/
+  449  ls
+  450  cd ~/assignment-06-penpen86/
+  451  ls
+  452  vi docker-compose.yml 
+  453  git status 
+  454  docker-compose down
+  455  docker ps
+  456  docker-compose up -d
+  457  docker-compose exec kafka kafka-topics --create --topic eduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  458  docker-compose exec mids bash -c "cat /data/assessment-attempts-20180128-121051-nested.json"
+  459  docker-compose exec mids bash
+  460  docker-compose down
+  461  vi docker-compose.yml 
+  462  docker-compose up -d
+  463  docker-compose exec mids bash -c "cat /data/assessment-attempts-20180128-121051-nested.json"
+  464  docker-compose exec mids bash
+  465  docker-compose down
+  466  clear
+  467  vi docker-compose.yml 
+  468  docker-compose up -d
+  469  docker-compose exec mids bash -c "cat assessment-attempts-20180128-121051-nested.json"
+  470  docker-compose exec mids bash
+  471  cd ~/w205/
+  472  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  473  cd ~/assignment-06-penpen86/
+  474  ls
+  475  docker-compose down
+  476  docker ps
+  477  vi docker-compose.yml 
+  478  docker-compose up -d
+  479  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json"
+  480  clear
+  481  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.'"
+  482  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+  483  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | wc -l"
+  484  cd ~/w205
+  485  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+  486  cd ~/assignment-06-penpen86/
+  487  ls
+  488  git status 
+  489  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c | wc -l"
+  490  docker-compose down
+  491  docker-compose up -d
+  492  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.[]' -c | wc -l"
+  493  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | wc -l"
+  494  docker-compose exec kafka kafka-topics --create --topic eduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  495  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssestments && echo 'Produced 3280 messages.'"
+  496  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssestments -o beginning -e"
+  497  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssestments -o beginning -e | wc -l"
+  498  ls
+  499  vi README.md 
+  500  docker-compose down
+  501  history > penpen86-history.txt
+  502  rm htmartin-history.txt 
+  503  ls
+  504  git status
+  505  git add penpen86-history.txt 
+  506  git status
+  507  ls
+  508  git status
+  509  git add penpen86-annotations.md 
+  510  git status
+  511  git commit -a -m'Updated all files needed to produce and consume the Assessment Data'
+  512  git status
+  513  git push origin penpen-PR01 
+  514  clear
+  515  clear
+  516  git clone https://github.com/mids-w205-martin-mims/assignment-07-penpen86.git 
+  517  ls
+  518  cd assignment-07-penpen86/
+  519  git checkout -b penpen-PR01
+  520  git init
+  521  cp course-content/07-Sourcing-Data/docker-compose.yml assignment-07-penpen86/docker-compose.yml
+  522  cd ..
+  523  cd course-content/
+  524  git pull --all
+  525  cd 07-Sourcing-Data/
+  526  ls
+  527  cd ..
+  528  cd assignment-07-penpen86/
+  529  cp ~/course-content/07-Sourcing-Data/docker-compose.yml docker-compose.yml
+  530  ls
+  531  mkdir Data
+  532  cp ~/assignment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json Data/assessment-attempts-20180128-121051-nested.json
+  533  ls
+  534  clear
+  535  cd Data/
+  536  ls
+  537  cd ..
+  538  git add -a
+  539  git add -A
+  540  git status
+  541  ls
+  542  vi docker-compose.yml 
+  543  ls
+  544  docker-compose up -d
+  545  docker-compose exec kafka kafka-topics --create --topic feduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  546  clear
+  547  docker-compose exec kafka kafka-topics --describe --topic eduAssessments --zookeeper zookeeper:32181
+  548  docker ps
+  549  docker-compose exec kafka kafka-topics --create --topic feduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  550  docker-compose exec kafka kafka-topics --create --topic eduAssessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  551  docker-compose exec kafka kafka-topics --describe --topic eduAssessments --zookeeper zookeeper:32181
+  552  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssessments && echo 'Produced 3280 messages.'"
+  553  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssessments -o beginning -e | wc -l"
+  554  docker-compose exec spark pyspark
+  555  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  556  vi docker-compose.yml 
+  557  docker-compose down 
+  558  docker-compose up -d
+  559  docker-compose exec kafka kafka-topics --create --topic eduAssessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  560  docker-compose exec kafka kafka-topics --describe --topic eduAssessments --zookeeper zookeeper:32181
+  561  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssessments && echo 'Produced 3280 messages.'"
+  562  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssessments -o beginning -e | wc -l"
+  563  docker-compose exec mids jupyter notebook --no-browser --port 8080 --ip 0.0.0.0 --allow-root
+  564  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8080 --ip 0.0.0.0 --allow-root' pyspark
+  565  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  566  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 157.230.138.220 --allow-root' pyspark
+  567  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  568  docker-compose down 
+  569  docker-compose up -d
+  570  docker-compose down 
+  571  docker-compose up -d
+  572  docker-compose exec kafka kafka-topics --create --topic eduAssessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  573  docker-compose exec kafka kafka-topics --describe --topic eduAssessments --zookeeper zookeeper:32181
+  574  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssessments && echo 'Produced 3280 messages.'"
+  575  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssessments -o beginning -e | wc -l"
+  576  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  577  docker-compose exec spark ebash
+  578  docker-compose exec spark
+  579  docker-compose exec spark cp PySpark - Unrolling Assessments.ipynb ~/w205/PySpark - Unrolling Assessments.ipynb
+  580  docker-compose exec spark cp PPySpark - Unrolling Assessments.ipynb' ~/w205/'PySpark - Unrolling Assessments.ipynb'
+  581  docker-compose exec spark ls
+  582  docker-compose exec spark cd ~/w205
+  583  docker-compose exec spark cd ~
+  584  docker-compose exec spark cd ..
+  585  docker ps
+  586  man 
+  587  man f
+  588  docker ps
+  589  cd assignment-07-penpen86/
+  590  docker assignment07penpen86-spark-1:/'PySpark - Unrolling Assessments'.ipynb ~/assignemt-07-penpen86
+  591  docker cp assignment07penpen86-spark-1:/'PySpark - Unrolling Assessments'.ipynb ~/assignemt-07-penpen86
+  592  docker cp assignment07penpen86-spark-1:/w205/'PySpark - Unrolling Assessments'.ipynb ~/assignemt-07-penpen86
+  593  docker-compose exec spark ls 
+  594  docker-compose exec spark pwd
+  595  docker cp assignment07penpen86-spark-1:/spark-2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignemt-07-penpen86
+  596  docker ps
+  597  docker cp assignment07penpen86-spark-1:/'PySpark - Unrolling A_sessments'.ipynb ~/assignemt-07-penpen86
+  598  docker cp assignment07penpen86-spark-1:/'PySpark - Unrol_ing A_sessments'.ipynb ~/assignemt-07-penpen86
+  599  clear
+  600  docker ps
+  601  docker cp assignment07penpen86_spark_1:/'PySpark - Unrolling Assessment'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  602  docker cp assignment07penpen86_spark_1:~/'PySpark - Unrolling Assessment'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  603  docker cp assignment07penpen86_spark_1:/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  604  docker-compose exec spark ls
+  605  cd assignment-07-penpen86/
+  606  docker-compose exec spark ls
+  607  docker cp assignment07penpen86_spark_1:/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  608  docker cp 2cafa6f48f5f:'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  609  docker cp 2cafa6f48f5f:'Py/Spark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  610  docker cp 2cafa6f48f5f/:'y/Spark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  611  docker cp 2cafa6f48f5f:/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  612  docker cp 2cafa6f48f5f:/spark-2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  613  ls
+  614  clear
+  615  history > penpen86-history.text
+  616  rm penpen86-history.text 
+  617  git add -A
+  618  ls
+  619  git status
+  620  docker-compose down
+  621  docker-compose up -d
+  622  docker-compose exec kafka kafka-topics --create --topic eduAssessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  623  docker-compose exec kafka kafka-topics --describe --topic eduAssessments --zookeeper zookeeper:32181
+  624  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssessments && echo 'Produced 3280 messages.'"
+  625  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssessments -o beginning -e | wc -l"
+  626  docker-compose exec spark ls 
+  627  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  628  ls
+  629  clear
+  630  rm PySpark.ipynb 
+  631  docker cp 2cafa6f48f5f:/spark-2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  632  docker ps
+  633  docker cp 2cafa6f48f5f:/spark-2.2.0-bin-hadooark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  634  clear
+  635  docker cp 137aec3d0601:/spark2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  636  docker-compose exec spark ls 
+  637  docker cp 137aec3d0601:/spark-2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  638  git status
+  639  git add -A
+  640  git status
+  641  rm .ipynb_checkpoints/
+  642  rm -R .ipynb_checkpoints/
+  643  git status
+  644  "new" > penpen86-annotations.md
+  645  "new" >> penpen86-annotations.md
+  646  echo "" >> penpen86-annotations.md
+  647  git add penpen86-annotations.md 
+  648  git status
+  649  vi README.md 
+  650  vi penpen86-annotations.md 
+  651  history > penpen86-history.txt
+  652  git add penpen86-history.txt 
+  653  git status
+  654  docker-compose down 
+  655  git status
+  656  rm -R .ipynb_checkpoints/
+  657  git status
+  658  ls
+  659  git commit -a -m'Added the annotations, the history logs, and a PySpark notebook with preliminary results'
+  660  git push origin penpen-PR01 
+  661  clear
+  662  cd course-content/
+  663  git fetch
+  664  cd ..
+  665  ls
+  666  git clone https://github.com/mids-w205-martin-mims/assignment-08-penpen86.git
+  667  cd assignment-08-penpen86/
+  668  clear
+  669  Get-PSSessionConfiguration
+  670  ls
+  671  cd w205/
+  672  ls
+  673  ls -a
+  674  .config/
+  675  cd .config
+  676  ls
+  677  ls -a
+  678  cd .local
+  679  cd ..
+  680  cd .local
+  681  cd .local/
+  682  cd ~/.profile
+  683  ~/.bash_profile
+  684  cd ~/.bash_profile
+  685  nano ~/.bashrc
+  686  clear
+  687  clear
+  688  man nano
+  689  cd ~/.bashrc
+  690  ~/.bashrc
+  691  vi ~/.bashrc
+  692  clear
+  693  vi ~/.bashrc
+  694  cp ~/.bashrc ~config.txt
+  695  cd assignment-08-penpen86/
+  696  git checkout -b penpen-PR01
+  697  mkdir data
+  698  cp assessment-attempts-20180128-121051-nested.json data/assessment-attempts-20180128-121051-nested.json
+  699  cp ~/w205/assessment-attempts-20180128-121051-nested.json data/assessment-attempts-20180128-121051-nested.json
+  700  git add -a
+  701  git add -A
+  702  ls
+  703  git status
+  704  cp course-content/08-Querying-Data/docker-compose.yml assignment-08-penpen86/docker-compose.yml
+  705  cd ..
+  706  cd course-content/
+  707  git fetch
+  708  h
+  709  git fetch
+  710  ls
+  711  cd 08-Querying-Data/
+  712  ls
+  713  cd ~/assignment-08-penpen86/
+  714  cp course-content/08-Querying-Data/docker-compose.yml assignment-08-penpen86/docker-compose.yml
+  715  cp ~/course-content/08-Querying-Data/docker-compose.yml assignment-08-penpen86/docker-compose.yml
+  716  cp ~/course-content/08-Querying-Data/docker-compose.yml docker-compose.yml
+  717  ls
+  718  git status
+  719  git add -A
+  720  ls
+  721  git status
+  722  clear
+  723  vi docker-compose.yml 
+  724  docker ps
+  725  docker-compose up -d
+  726  vi docker-compose.yml 
+  727  docker-compose up -d
+  728  docker-compose exec kafka kafka-topics --create --topic eduAssessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  729  docker-compose exec kafka kafka-topics --describe --topic eduAssessments --zookeeper zookeeper:32181
+  730  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssessments && echo 'Produced 3280 messages.'"
+  731  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssessments -o beginning -e | wc -l"
+  732  docker-compose exec spark ls
+  733  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  734  clear
+  735  cd assignment-08-penpen86/
+  736  ls
+  737  git status
+  738  vi docker-compose.yml
+  739  docker ps
+  740  docker-compose down
+  741  docker-compose up -d
+  742  docker-compose exec kafka kafka-topics --create --topic eduAssessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  743  docker-compose exec kafka kafka-topics --describe --topic eduAssessments --zookeeper zookeeper:32181
+  744  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssessments -o beginning -e | wc -l"
+  745  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssessments && echo 'Produced 3280 messages.'"
+  746  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssessments -o beginning -e | wc -l"
+  747  docker-compose exec spark env PYSPARK_DRIVER_PYTHONjupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  748  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  749  docker ps
+  750  docker cp 06d37d0af7aa:/spark-2.2.0-bin-hadoop2.6/PySpark.ipynb ~/assignment-08-penpen86/PySpark.ipynb
+  751  docker-compose exec cloudera hadoop fs -ls /tmp/
+  752  docker-compose exec cloudera hadoop fs -ls /tmp/course_ID1
+  753  docker-compose down
+  754  git add -A
+  755  git status
+  756  ls
+  757  echo "" >> penpen86-annotations.md
+  758  git add -A
+  759  git status
+  760  history > penpen86-history.txt
+  761  git status
+  762  git add -A
+  763  git status
+  764  git commit -a -m'Added the annotations, the history logs, and a PySpark notebook with the steps for Storing in HDFS'
+  765  git push origin penpen-PR01
+  766  cd ..
+  767  exit
+  768  cd assignment-09-penpen86/
+  769  docker-compose exec mid
+  770  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?=white
+  771  clear
+  772  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?white
+  773  docker-compose exec mids curl http://localhost:5000/purchase_a_swordget_coins
+  774  docker-compose exec mids curl http://localhost:5000/purchase_a_s000/get_coins
+  775  docker-compose exec mids curl http://localhost:5000/get_coins
+  776  docker-compose exec mids curl http://localhost:5000/
+  777  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?=white
+  778  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?white
+  779  docker-compose exec mids curl http://localhost:5000/purchase_a_sword=?white
+  780  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?white
+  781  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?=white
+  782  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?color=white
+  783  docker-compose exec mids curl http://localhost:5000/purchase_a_sword/?color=white
+  784  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?color=white
+  785  docker-compose exec mids curl http://localhost:5000/get_coins?number=100
+  786  docker-compose exec mids curl http://localhost:5000/get_coins?=100
+  787  docker-compose exec mids curl http://localhost:5000/get_coins?number=100
+  788  clear
+  789  docker-compose exec mids curl http://localhost:5000/
+  790  cd ..
+  791  cd w205/
+  792  ls
+  793  rm game_api.py
+  794  rm basic_game_api.py
+  795  rm game_api.pyc 
+  796  rm basic_game_api.pyc 
+  797  cd ..
+  798  cd assignment-09
+  799  cd assignment-09-penpen86/
+  800  docker-compose exec mids curl http://localhost:5000/get_coins?number=100
+  801  docker-compose exec mids curl http://localhost:5000/
+  802  docker-compose exec mids curl http://localhost:5000/join_a_guild
+  803  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?color=white
+  804  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?color=grey
+  805  docker-compose exec mids curl http://localhost:5000/purchase_a_sword?color=black
+  806  docker-compose exec mids curl http://localhost:5000/get_coins?number=300
+  807  CLEAR
+  808  clear
+  809  ls
+  810  git clone https://github.com/mids-w205-martin-mims/assignment-09-penpen86.git
+  811  ls
+  812  cd assignment-09-penpen86/
+  813  cd ..
+  814  cd course-content/
+  815  git fetch
+  816  cd ..
+  817  cd assignment-09-penpen86/
+  818  cp course-content/09-Ingesting-Data/docker-compose.yml docker-compose.yml
+  819  clear
+  820  cp ~/course-content/09-Ingesting-Data/docker-compose.yml docker-compose.yml
+  821  ls
+  822  git add -A
+  823  git status
+  824  cp ~/course-content/09-Ingesting-Data/basic_game_api.py basic_game_api.py
+  825  ls
+  826  git add -A
+  827  git status
+  828  vi basic_game_api.py 
+  829  ls
+  830  git status
+  831  git add -A
+  832  clear
+  833  git status -A
+  834  git status
+  835  cp ~/course-content/09-Ingesting-Data/basic_game_api.py basic_game_api.py
+  836  git add -A
+  837  git status
+  838  docker-compose up -d
+  839  clear
+  840  docker-compose exec mids env FLASK_APP/basic_game_api.py flask run
+  841  cp basic_game_api.py ~/w205/flask-with-kafka/basic_game_api.py
+  842  cp basic_game_api.py ~/w205/basic_game_api.py
+  843  docker-compose exec mids env FLASK_APP=/w205/basic_game_api.py flask run
+  844  cp basic_game_api.py ~/w205/game_api.py
+  845  docker-compose exec mids env FLASK_APP=/w205/game_api.py flask run
+  846  cleat
+  847  claera
+  848  clear
+  849  git status
+  850  cp basic_game_api.py ~/w205/game_api.py
+  851  docker-compose down
+  852  docker-compose up -d
+  853  docker-compose exec kafka kafka-topics --create --topic userItems --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  854  docker-compose exec mids env FLASK_APP=/w205/game_api.py flask run
+  855  cp game_api.py ~/w205/game_api.py
+  856  cp basic_game_api.py ~/w205/basic_game_api.py
+  857  docker-compose exec mids env FLASK_APP=/w205/game_api.py flask run
+  858  clear
+  859  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t userItems -o beginning -e"
+  860  docker-compose down
+  861  history > penpen86-history.txt
+  862  git add -A
+  863  git status
+  864  clear
+  865  git add -A
+  866  git commit -a -m'Updated README file, added source code for web application'
+  867  git status
+  868  git checkout -b penpen-PR01
+  869  git push origin penpen-PR01
+  870  git status
+  871  ls
+  872  clear
+  873  git clone https://github.com/mids-w205-martin-mims/assignment-10-penpen86.git
+  874  ls
+  875  cd course-content/
+  876  git fecth
+  877  git fetch
+  878  ls
+  879  git fetc
+  880  git config credential.helper
+  881  git rm credetials
+  882  git config credential.helper store
+  883  git fetch
+  884  clear
+  885  ls
+  886  ls -a
+  887  cd ..
+  888  ls -a
+  889  vi .git-credentials
+  890  rm .git-credentials
+  891  ls -a
+  892  cd course-content/
+  893  git fetc
+  894  git fetch
+  895  cd ..
+  896  ls -a
+  897  rm .git-credentials
+  898  ls -a
+  899  rm .git-credentials.swp
+  900  ls -a
+  901  cd course-content/
+  902  git fetch
+  903  cd ..
+  904  vi .gitconfig 
+  905  cd course-content/
+  906  git config credential.helper store
+  907  git fetch
+  908  cd ..
+  909  cd assignment-10-penpen86/
+  910  ls
+  911  git checkout -b penpen-PR01
+  912  ls
+  913  cp course-content/10-Transforming-Streaming-Data/docker-compose.yml docker-compose.yml
+  914  cp ../course-content/10-Transforming-Streaming-Data/docker-compose.yml docker-compose.yml
+  915  ls
+  916  git add -A
+  917  vi docker-compose.yml 
+  918  cp ../course-content/10-Transforming-Streaming-Data/game_api_with_extended_json_events.py game_api.py
+  919  git add -A
+  920  git status
+  921  vi game_api.py 
+  922  clear
+  923  cd assignment-10
+  924  cd assignment-10-penpen86/
+  925  docker-compose exec mids curl http://localhost:5000/
+  926  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+  927  curl -H "Content-Type:application/json" - POST http://localhost:8080/purchase_a_sword -d '{"price":"1000", "color":"White", "hit-point":"100"}'
+  928  curl -H "Content-Type:application/json" -X POST http://localhost:8080/purchase_a_sword -d '{"price":"1000", "color":"White", "hit-point":"100"}'
+  929  curl -H "Content-Type:application/json" -X POST http://localhost:5000/purchase_a_sword -d '{"price":"1000", "color":"White", "hit-point":"100"}'
+  930  curl -H "Content-Type:application/json" -X POST http://localhost:5000/purchase_a_sword -d '{"price":"5000", "color":"Black", "hit-point":"200"}'
+  931  curl -H "Content-Type:application/json" - POST http://localhost:8080/get_coins -d '{"coins":"10000"}'
+  932  curl -H "Content-Type:application/json" -X POST http://localhost:8080/get_coins -d '{"coins":"10000"}'
+  933  curl -H "Content-Type:application/json" -X POST http://localhost:5000/get_coins -d '{"coins":"10000"}'
+  934  curl -H "Content-Type:application/json" -X POST http://localhost:5000/join_a_guild -d '{"level":"30", "color":"White"}'
+  935  docker-compose exec mids curl http://localhost:5000/
+  936  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+  937  cd assignment-10-penpen86/
+  938  ls
+  939  git status
+  940  docker ps
+  941  docker-compose up -d
+  942  docker-compose exec kafka kafka-topics --create --topic userItems --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  943  docker-compose exec mids   env FLASK_APP=/w205/flask-with-kafka-and-spark/game_api_with_json_events.py   flask run --host 0.0.0.0
+  944  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+  945  cs
+  946  cd
+  947  w205
+  948  cd w205
+  949  ls
+  950  vi game_api.py
+  951  vi game_api.pyc
+  952  rm game_api.py
+  953  rm game_api.pyc 
+  954  ls
+  955  cd ../assignment-10-penpen86/
+  956  cp game_api.py ../w205/game_api.py
+  957  docker-compose down
+  958  docker-compose up -d
+  959  docker-compose exec kafka kafka-topics --create --topic userItems --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  960  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+  961  cd w205
+  962  cd ../w205
+  963  rm game_api.py
+  964  rm game_api.pyc 
+  965  cd ../assignment-10-penpen86/
+  966  cp game_api.py ../w205/game_api.py
+  967  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+  968  cd ../w205
+  969  rm game_api.py
+  970  rm game_api.pyc 
+  971  cd ../assignment-10-penpen86/
+  972  cp game_api.py ../w205/game_api.py
+  973  docker-compose down
+  974  docker-compose up
+  975  docker-compose up -d
+  976  docker-compose exec kafka kafka-topics --create --topic userItems --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  977  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+  978  cd ../w205
+  979  rm game_api.py 
+  980  cd ../assignment-10-penpen86/
+  981  cp game_api.py ../w205/game_api.py
+  982  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+  983  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+  984  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  985  docker cp 06d37d0af7aa:/spark-2.2.0-bin-hadoop2.6/PySpark._Jobipynb ~/assignment-010-penpen86/PySpark_Job.ipynb
+  986  docker ps
+  987  docker cp aefe501879fc:/spark-2.2.0-bin-hadoop2.6/PySpark._Jobipynb ~/assignment-010-penpen86/PySpark_Job.ipynb
+  988  docker cp aefe501879fc:/spark-2.2.0-bin-hadoop2.6/PySpark_Job.ipynb ~/assignment-010-penpen86/PySpark_Job.ipynb
+  989  docker cp aefe501879fc:/spark-2.2.0-bin-hadoop2.6/PySpark_Job.ipynb ~/assignment-10-penpen86/PySpark_Job.ipynb
+  990  ls
+  991  git add -A
+  992  docker-compose down 
+  993  history > penpen86-history.txt
+  994  git add -A
+  995  git status
+  996  rm -r .ipynb_checkpoints/
+  997  ls
+  998  git commit -a -m'Game Source code, PySpark notebook with preliminary results, Future Work'
+  999  git config --global user.email "penpen86@gmail.com"
+ 1000  git commit -a -m'Game Source code, PySpark notebook with preliminary results, Future Work'
+ 1001  git push origin penpen-PR01 
+ 1002  clear
+ 1003  cd course-content/
+ 1004  git fetch 
+ 1005  cd ..
+ 1006  git clone https://github.com/mids-w205-martin-mims/assignment-11-penpen86.git
+ 1007  cd assignment-11-penpen86/
+ 1008  git checkout -b penpen-PR01
+ 1009  cp ~/course-content/11-Storing-Data-III/docker-compose.yml docker-compose.yml
+ 1010  ls
+ 1011  cp ~/course-content/11-Storing-Data-III/game_api.py game_api.py
+ 1012  cp ~/course-content/11-Storing-Data-III/extract_events.py extract_events.py
+ 1013  cp ~/course-content/11-Storing-Data-III/transform_events.py transform_events.py
+ 1014  git add -A
+ 1015  ls
+ 1016  git status
+ 1017  vi game_api.py 
+ 1018  rm game_api.py 
+ 1019  cp ~/assignment-10-penpen86/game_api.py game_api.py
+ 1020  git add -A
+ 1021  claer
+ 1022  clear
+ 1023  vi game_api.py 
+ 1024  clear
+ 1025  cd assignment-11
+ 1026  cd assignment-11-penpen86/
+ 1027  ls
+ 1028  git status
+ 1029  docker-compose up
+ 1030  docker-compose up -d
+ 1031  cd ..
+ 1032  cd w205/
+ 1033  ls
+ 1034  rm game_api.py
+ 1035  rm game_api.pyc 
+ 1036  ls
+ 1037  cp ..
+ 1038  cd ..
+ 1039  cd assignment-11-penpen86/
+ 1040  cp game_api.py ../w205/game_api.py
+ 1041  cp userItems_write.py ../w205/userItems_write.py
+ 1042  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+ 1043  cd ..
+ 1044  cd w205/
+ 1045  ls
+ 1046  rm game_api.py
+ 1047  rm game_api.pyc 
+ 1048  cd ..
+ 1049  cd assignment-11-penpen86/
+ 1050  cp game_api.py ../w205/game_api.py
+ 1051  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+ 1052  cd ..
+ 1053  cd w205/
+ 1054  rm game_api.py
+ 1055  rm game_api.pyc 
+ 1056  cd ..
+ 1057  cd assignment-11-penpen86/
+ 1058  cp game_api.py ../w205/game_api.py
+ 1059  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+ 1060  cd ..
+ 1061  cd w205/
+ 1062  rm game_api.py
+ 1063  rm game_api.pyc 
+ 1064  cd ..
+ 1065  cd assignment-11-penpen86/
+ 1066  cp game_api.py ../w205/game_api.py
+ 1067  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+ 1068  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1069  clear
+ 1070  docker-compose exec kafka kafka-topics --create --topic userItems --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1071  docker ps
+ 1072  docker-compose exec kafka kafka-topics --create --topic userItems --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1073  docker exec kafka /opt/kafka_2.11-0.10.1.0/bin/kafka-topics.sh --list --zookeeper localhost:2181
+ 1074  docker exec kafka --list --zookeeper localhost:2181
+ 1075  docker-compose exec mids kafkacat -C -b kafka:29092 -t userItems -o beginning -e
+ 1076  clear
+ 1077  docker-compose exec spark spark-submit /w205/userItems_write.py
+ 1078  clear
+ 1079  docker-compose down
+ 1080  cd ..
+ 1081  cd w205/
+ 1082  rm game_api.py
+ 1083  rm game_api.pyc 
+ 1084  cd ..
+ 1085  cd assignment-11-penpen86/
+ 1086  cp game_api.py ../w205/game_api.py
+ 1087  docker-compose up -d
+ 1088  docker-compose exec kafka kafka-topics --create --topic userItems --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1089  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+ 1090  clear
+ 1091  cd ..
+ 1092  cd w205/
+ 1093  rm game_api.py
+ 1094  rm game_api.pyc 
+ 1095  cd ../
+ 1096  cd assignment-11-penpen86/
+ 1097  cp game_api.py ../w205/game_api.py
+ 1098  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+ 1099  cd ../
+ 1100  cd w205/
+ 1101  rm game_api.py
+ 1102  rm game_api.pyc 
+ 1103  cd ,,
+ 1104  cd ..
+ 1105  cd assignment-11-penpen86/
+ 1106  cp game_api.py ../w205/game_api.py
+ 1107  clear
+ 1108  docker-compose exec mids   env FLASK_APP=/w205/game_api.py   flask run --host 0.0.0.0
+ 1109  clear
+ 1110  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1111  docker-compose exec mids kafkacat -C -b kafka:29092 -t userItems -o beginning -e
+ 1112  clear
+ 1113  docker-compose exec spark spark-submit /w205/userItems_write.py
+ 1114  clear
+ 1115  docker-compose down
+ 1116  history > penpen86-history.txt

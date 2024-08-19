@@ -1,0 +1,20 @@
+{
+    "name": "elasticsearch-sink",
+    "config": {
+        "connector.class":"io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+        "connection.url":"http://elasticsearch:9200",
+        "type.name":"_doc",
+        "topics":"news.rss_news.rss_news",
+        "key.ignore":false,
+        "schema.ignore":true,
+        "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "key.converter.schemas.enable":false,
+        "value.converter":"org.apache.kafka.connect.json.JsonConverter",
+        "value.converter.schemas.enable": false,
+        "transforms":"InsertKey,ExtractKey",
+        "transforms.InsertKey.type":"org.apache.kafka.connect.transforms.ValueToKey",
+        "transforms.InsertKey.fields":"id",
+        "transforms.ExtractKey.type":"org.apache.kafka.connect.transforms.ExtractField$Key",
+        "transforms.ExtractKey.field":"id"
+    }
+}

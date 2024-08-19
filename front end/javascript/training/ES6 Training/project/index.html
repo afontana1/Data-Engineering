@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.31/system.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>The Super Awesome Weather App</h1>
+</header>
+<div class="main">
+    <div id="search">
+        <label for="city">City Name</label>
+        <input type="text" id="city">
+        <button type="button">Show Weather!</button>
+    </div>
+    <div id="load">Loading...</div>
+    <div id="weather">
+        <h1 id="weatherCity">City Name</h1>
+
+        <div id="weatherDescription">Weather Description</div>
+        <div id="weatherTemperature">Temperature</div>
+
+    </div>
+</div>
+<script>
+    System.import('app.js');
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: "mysql+pymysql://root:password@mysql-db:3306/windpro"
+      EC2_TRACKING_SERVER_HOST: "${EC2_TRACKING_SERVER_HOST}"
+      PG_HOST: "${PG_HOST}"
+      PG_PORT: "${PG_PORT}"
+      PG_DATABASE: "${PG_DATABASE}"
+      PG_USER: "${PG_USER}"
+      PG_PASSWORD: "${PG_PASSWORD}"
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET}"
+    mem_limit: 350m
+    network_mode: "host"

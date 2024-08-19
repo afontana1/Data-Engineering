@@ -1,0 +1,1001 @@
+start_station_name,end_station_name,start_date,end_date,duration_sec,bike_number,subscriber_type,trip
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-11-14 16:06:00.000000 UTC,2013-11-14 16:07:00.000000 UTC,80,82,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 19:14:00.000000 UTC,2014-05-24 20:20:00.000000 UTC,3961,149,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-24 14:57:00.000000 UTC,2016-01-24 15:53:00.000000 UTC,3359,712,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-12-20 20:38:00.000000 UTC,2013-12-20 20:46:00.000000 UTC,482,696,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-08-19 13:29:00.000000 UTC,2016-08-19 13:39:00.000000 UTC,631,102,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-09-14 07:13:00.000000 UTC,2013-09-14 07:23:00.000000 UTC,616,88,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-05 14:04:00.000000 UTC,2014-01-05 15:12:00.000000 UTC,4100,202,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-24 14:59:00.000000 UTC,2016-01-24 15:53:00.000000 UTC,3247,116,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-24 15:03:00.000000 UTC,2016-01-24 15:55:00.000000 UTC,3128,99,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-11-03 17:03:00.000000 UTC,2013-11-03 18:05:00.000000 UTC,3743,45,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-05-07 14:35:00.000000 UTC,2016-05-07 14:46:00.000000 UTC,651,71,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-17 18:26:00.000000 UTC,2014-05-18 10:52:00.000000 UTC,59166,25,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-07-25 13:40:00.000000 UTC,2016-07-25 14:17:00.000000 UTC,2174,152,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-09-03 12:04:00.000000 UTC,2013-09-03 13:02:00.000000 UTC,3471,654,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-16 10:17:00.000000 UTC,2014-01-16 11:18:00.000000 UTC,3670,487,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-12-13 05:23:00.000000 UTC,2013-12-13 05:35:00.000000 UTC,707,649,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-04-12 13:56:00.000000 UTC,2014-04-12 14:24:00.000000 UTC,1690,98,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-06-17 20:08:00.000000 UTC,2016-06-17 21:32:00.000000 UTC,5018,153,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-08 15:44:00.000000 UTC,2015-04-08 16:44:00.000000 UTC,3581,126,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-05-23 14:46:00.000000 UTC,2015-05-23 15:34:00.000000 UTC,2876,143,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-20 11:45:00.000000 UTC,2013-10-20 13:06:00.000000 UTC,4829,45,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 19:14:00.000000 UTC,2014-05-24 20:21:00.000000 UTC,3995,299,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-06-11 08:19:00.000000 UTC,2016-06-11 08:45:00.000000 UTC,1540,124,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-10-05 09:56:00.000000 UTC,2014-10-05 11:15:00.000000 UTC,4791,186,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-02-21 16:15:00.000000 UTC,2016-02-21 16:28:00.000000 UTC,787,60,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-03 10:09:00.000000 UTC,2014-01-03 16:14:00.000000 UTC,21939,208,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-02-23 13:32:00.000000 UTC,2014-02-23 21:54:00.000000 UTC,30128,37,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-04 12:49:00.000000 UTC,2015-04-04 21:59:00.000000 UTC,32980,126,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-08-16 13:12:00.000000 UTC,2016-08-16 16:56:00.000000 UTC,13443,102,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-20 12:01:00.000000 UTC,2013-10-20 13:42:00.000000 UTC,6106,646,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-04-06 15:03:00.000000 UTC,2014-04-06 16:19:00.000000 UTC,4578,168,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-02-23 13:31:00.000000 UTC,2014-02-23 21:55:00.000000 UTC,30187,193,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-07-04 20:31:00.000000 UTC,2015-07-05 19:39:00.000000 UTC,83305,174,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-06-04 09:22:00.000000 UTC,2015-06-05 17:28:00.000000 UTC,115572,190,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-04-16 16:27:00.000000 UTC,2016-04-16 17:45:00.000000 UTC,4687,183,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-08-30 15:34:00.000000 UTC,2015-08-30 17:14:00.000000 UTC,6028,213,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-02-04 12:29:00.000000 UTC,2014-02-04 12:59:00.000000 UTC,1793,208,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-25 13:20:00.000000 UTC,2016-01-25 15:04:00.000000 UTC,6233,99,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-02-28 10:30:00.000000 UTC,2016-02-28 10:57:00.000000 UTC,1646,28,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-24 14:58:00.000000 UTC,2016-01-24 15:54:00.000000 UTC,3361,643,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 12:36:00.000000 UTC,2014-05-24 12:50:00.000000 UTC,792,199,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 12:36:00.000000 UTC,2014-05-24 12:46:00.000000 UTC,586,702,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-02-27 14:38:00.000000 UTC,2016-02-27 14:59:00.000000 UTC,1244,150,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-20 12:04:00.000000 UTC,2013-10-20 13:06:00.000000 UTC,3711,64,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-08 15:44:00.000000 UTC,2015-04-08 16:44:00.000000 UTC,3594,218,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-10-25 14:39:00.000000 UTC,2014-10-25 17:04:00.000000 UTC,8707,131,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-17 18:21:00.000000 UTC,2014-05-18 10:51:00.000000 UTC,59428,164,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-09-16 10:28:00.000000 UTC,2015-09-16 10:58:00.000000 UTC,1790,667,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-09-14 15:03:00.000000 UTC,2014-09-15 11:15:00.000000 UTC,72687,194,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-09-15 16:53:00.000000 UTC,2014-09-16 07:55:00.000000 UTC,54120,127,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-09 07:27:00.000000 UTC,2015-04-09 08:22:00.000000 UTC,3302,180,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-06-11 19:54:00.000000 UTC,2016-06-11 20:18:00.000000 UTC,1463,124,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-09 15:02:00.000000 UTC,2014-01-09 15:15:00.000000 UTC,733,52,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 16:21:00.000000 UTC,2014-05-24 18:18:00.000000 UTC,7027,149,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-12 15:15:00.000000 UTC,2013-10-12 15:46:00.000000 UTC,1861,649,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-05 14:04:00.000000 UTC,2014-01-05 15:13:00.000000 UTC,4142,109,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-08-19 13:29:00.000000 UTC,2016-08-19 13:38:00.000000 UTC,582,213,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-10 11:20:00.000000 UTC,2014-05-10 12:32:00.000000 UTC,4336,693,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-10 09:32:00.000000 UTC,2015-04-10 12:37:00.000000 UTC,11107,81,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 10:14:00.000000 UTC,2014-05-25 00:03:00.000000 UTC,49757,32,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-16 10:17:00.000000 UTC,2014-01-16 11:18:00.000000 UTC,3712,78,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-04 12:48:00.000000 UTC,2015-04-04 22:00:00.000000 UTC,33084,31,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-05-14 08:12:00.000000 UTC,2015-05-14 09:10:00.000000 UTC,3499,213,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-03-06 20:49:00.000000 UTC,2015-03-06 21:18:00.000000 UTC,1752,153,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-07 15:01:00.000000 UTC,2015-04-07 16:02:00.000000 UTC,3662,695,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-08-30 15:34:00.000000 UTC,2015-08-30 17:14:00.000000 UTC,6022,117,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-12 15:15:00.000000 UTC,2013-10-12 15:46:00.000000 UTC,1856,52,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-09-20 13:22:00.000000 UTC,2013-09-20 14:00:00.000000 UTC,2283,23,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-02-15 10:19:00.000000 UTC,2014-02-15 10:39:00.000000 UTC,1226,127,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 12:54:00.000000 UTC,2014-05-24 16:54:00.000000 UTC,14387,150,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-04-19 15:26:00.000000 UTC,2014-04-19 16:38:00.000000 UTC,4337,185,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-09-05 18:42:00.000000 UTC,2013-09-05 18:50:00.000000 UTC,513,641,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-09-02 15:21:00.000000 UTC,2013-09-02 16:21:00.000000 UTC,3633,37,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-06-25 11:35:00.000000 UTC,2015-06-25 12:42:00.000000 UTC,4030,95,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-05 14:04:00.000000 UTC,2014-01-05 15:13:00.000000 UTC,4121,60,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-03-19 08:44:00.000000 UTC,2014-03-19 09:40:00.000000 UTC,3340,145,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-06-01 15:00:00.000000 UTC,2014-06-01 19:00:00.000000 UTC,14401,93,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-05-03 14:09:00.000000 UTC,2015-05-03 15:35:00.000000 UTC,5174,39,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-17 14:28:00.000000 UTC,2013-10-17 16:05:00.000000 UTC,5862,187,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-17 14:21:00.000000 UTC,2013-10-17 16:06:00.000000 UTC,6257,650,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-15 01:35:00.000000 UTC,2014-05-15 02:02:00.000000 UTC,1603,299,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-09-16 13:49:00.000000 UTC,2015-09-16 13:51:00.000000 UTC,136,225,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-04-06 15:03:00.000000 UTC,2014-04-06 16:19:00.000000 UTC,4591,23,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-05-29 12:49:00.000000 UTC,2016-05-29 14:35:00.000000 UTC,6313,243,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-09-10 19:21:00.000000 UTC,2013-09-10 19:24:00.000000 UTC,191,645,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-17 12:45:00.000000 UTC,2013-10-17 16:45:00.000000 UTC,14390,674,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-05 11:39:00.000000 UTC,2013-10-05 12:46:00.000000 UTC,4043,664,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-08-19 13:25:00.000000 UTC,2016-08-19 13:28:00.000000 UTC,185,213,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-02-28 10:29:00.000000 UTC,2016-02-28 10:57:00.000000 UTC,1649,188,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 16:21:00.000000 UTC,2014-05-24 18:18:00.000000 UTC,7026,688,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-08-21 15:38:00.000000 UTC,2015-08-22 00:20:00.000000 UTC,31298,38,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-07-23 20:21:00.000000 UTC,2015-07-23 20:25:00.000000 UTC,203,247,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 12:47:00.000000 UTC,2014-05-24 16:53:00.000000 UTC,14742,702,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-03-12 17:23:00.000000 UTC,2014-03-12 20:27:00.000000 UTC,11026,104,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-09-04 12:18:00.000000 UTC,2014-09-04 12:33:00.000000 UTC,881,28,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-16 10:26:00.000000 UTC,2013-10-16 13:46:00.000000 UTC,11977,175,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-08 15:40:00.000000 UTC,2015-04-08 16:44:00.000000 UTC,3833,307,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-03 10:12:00.000000 UTC,2014-01-03 16:14:00.000000 UTC,21747,663,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-05-29 12:49:00.000000 UTC,2016-05-29 14:34:00.000000 UTC,6324,174,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-09-21 18:39:00.000000 UTC,2014-09-21 20:43:00.000000 UTC,7462,658,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-12-13 06:23:00.000000 UTC,2013-12-13 06:35:00.000000 UTC,710,297,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-24 14:59:00.000000 UTC,2016-01-24 15:54:00.000000 UTC,3316,130,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-11-24 12:02:00.000000 UTC,2013-11-24 13:44:00.000000 UTC,6116,640,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-06-04 19:32:00.000000 UTC,2016-06-04 22:22:00.000000 UTC,10184,658,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-09-10 19:25:00.000000 UTC,2013-09-10 19:26:00.000000 UTC,81,645,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-07-29 21:23:00.000000 UTC,2015-07-29 21:43:00.000000 UTC,1242,668,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-06-30 19:30:00.000000 UTC,2015-06-30 21:06:00.000000 UTC,5723,700,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-07-27 23:34:00.000000 UTC,2016-07-27 23:36:00.000000 UTC,109,12,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-09-21 18:38:00.000000 UTC,2014-09-21 20:43:00.000000 UTC,7485,162,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-23 17:30:00.000000 UTC,2015-04-23 19:36:00.000000 UTC,7557,123,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-24 12:54:00.000000 UTC,2014-05-24 16:54:00.000000 UTC,14417,299,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-16 11:24:00.000000 UTC,2014-01-16 11:26:00.000000 UTC,116,175,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-05 11:39:00.000000 UTC,2013-10-05 12:46:00.000000 UTC,4055,174,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-14 16:12:00.000000 UTC,2014-01-14 16:14:00.000000 UTC,110,108,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-06-17 20:09:00.000000 UTC,2016-06-17 21:32:00.000000 UTC,4987,642,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-05 14:04:00.000000 UTC,2014-01-05 15:13:00.000000 UTC,4144,145,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-05-02 16:54:00.000000 UTC,2016-05-02 18:02:00.000000 UTC,4053,661,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-05 11:36:00.000000 UTC,2013-10-05 11:38:00.000000 UTC,128,174,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-04-19 15:17:00.000000 UTC,2014-04-19 16:38:00.000000 UTC,4878,101,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-07-25 13:32:00.000000 UTC,2016-07-25 13:39:00.000000 UTC,431,64,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-03-26 19:16:00.000000 UTC,2014-03-26 19:18:00.000000 UTC,150,184,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-09-02 15:21:00.000000 UTC,2013-09-02 16:21:00.000000 UTC,3619,70,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-05-18 08:16:00.000000 UTC,2016-05-18 16:40:00.000000 UTC,30238,104,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-02-12 01:33:00.000000 UTC,2016-02-12 02:31:00.000000 UTC,3462,11,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-04-06 15:06:00.000000 UTC,2014-04-06 16:19:00.000000 UTC,4397,70,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-06-25 11:36:00.000000 UTC,2015-06-25 12:43:00.000000 UTC,4018,117,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-10 11:20:00.000000 UTC,2014-05-10 12:32:00.000000 UTC,4338,713,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-06-16 17:31:00.000000 UTC,2014-06-16 21:36:00.000000 UTC,14723,685,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-09-16 09:59:00.000000 UTC,2015-09-16 10:25:00.000000 UTC,1596,648,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-10-05 13:34:00.000000 UTC,2014-10-05 13:46:00.000000 UTC,684,186,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-01-05 14:04:00.000000 UTC,2014-01-05 15:13:00.000000 UTC,4106,211,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-09-21 09:05:00.000000 UTC,2014-09-21 14:56:00.000000 UTC,21058,241,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-24 15:02:00.000000 UTC,2016-01-24 15:54:00.000000 UTC,3095,692,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-24 14:41:00.000000 UTC,2016-01-24 14:49:00.000000 UTC,445,116,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-05-17 18:24:00.000000 UTC,2014-05-18 10:51:00.000000 UTC,59242,15,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-05-29 20:14:00.000000 UTC,2016-05-29 20:33:00.000000 UTC,1163,164,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-02-27 14:38:00.000000 UTC,2016-02-27 14:59:00.000000 UTC,1229,144,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-09-16 18:29:00.000000 UTC,2015-09-16 18:49:00.000000 UTC,1211,78,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-10 09:31:00.000000 UTC,2015-04-10 12:36:00.000000 UTC,11113,690,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-02-21 16:14:00.000000 UTC,2016-02-21 16:28:00.000000 UTC,823,295,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-01-24 14:51:00.000000 UTC,2016-01-24 14:54:00.000000 UTC,213,712,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2013-10-20 11:46:00.000000 UTC,2013-10-20 13:06:00.000000 UTC,4812,641,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-02-29 15:55:00.000000 UTC,2016-03-01 07:59:00.000000 UTC,57845,207,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-04-07 15:16:00.000000 UTC,2015-04-07 16:02:00.000000 UTC,2755,715,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-04-06 15:06:00.000000 UTC,2014-04-06 16:19:00.000000 UTC,4364,143,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-02-27 14:18:00.000000 UTC,2014-02-28 13:34:00.000000 UTC,83780,691,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2016-05-01 10:25:00.000000 UTC,2016-05-01 11:59:00.000000 UTC,5681,225,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-08-31 04:42:00.000000 UTC,2014-08-31 05:28:00.000000 UTC,2740,696,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2015-06-03 13:47:00.000000 UTC,2015-06-03 14:35:00.000000 UTC,2858,99,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Diridon Caltrain Station,2014-02-08 18:00:00.000000 UTC,2014-02-09 09:35:00.000000 UTC,56150,104,Customer,2_2
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-09-01 13:12:00.000000 UTC,2013-09-01 13:25:00.000000 UTC,797,643,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-10-23 20:18:00.000000 UTC,2014-10-23 20:28:00.000000 UTC,585,75,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-06-11 18:08:00.000000 UTC,2014-06-11 18:16:00.000000 UTC,504,25,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-07-20 18:24:00.000000 UTC,2015-07-20 18:33:00.000000 UTC,537,712,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-02-24 15:43:00.000000 UTC,2016-02-24 15:50:00.000000 UTC,412,655,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-02-14 15:46:00.000000 UTC,2016-02-14 16:00:00.000000 UTC,863,248,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-10-03 15:57:00.000000 UTC,2015-10-03 16:07:00.000000 UTC,640,150,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-07-21 18:23:00.000000 UTC,2015-07-21 18:29:00.000000 UTC,383,54,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-24 18:13:00.000000 UTC,2016-03-24 18:21:00.000000 UTC,427,683,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-04-02 09:08:00.000000 UTC,2015-04-02 09:21:00.000000 UTC,787,643,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-10-18 07:35:00.000000 UTC,2013-10-18 07:40:00.000000 UTC,327,40,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-06-29 11:15:00.000000 UTC,2015-06-29 11:49:00.000000 UTC,2054,155,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-02-27 10:13:00.000000 UTC,2016-02-27 10:23:00.000000 UTC,576,667,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-04-05 08:44:00.000000 UTC,2016-04-05 09:00:00.000000 UTC,984,232,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-09-15 17:02:00.000000 UTC,2013-09-15 20:10:00.000000 UTC,11276,47,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-28 23:15:00.000000 UTC,2016-03-28 23:24:00.000000 UTC,573,683,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-01 21:57:00.000000 UTC,2014-09-01 22:10:00.000000 UTC,770,101,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-18 08:10:00.000000 UTC,2016-05-18 08:17:00.000000 UTC,397,654,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-06-27 15:58:00.000000 UTC,2016-06-27 16:05:00.000000 UTC,431,671,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-01-05 15:16:00.000000 UTC,2014-01-05 15:26:00.000000 UTC,566,109,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-05-06 12:29:00.000000 UTC,2015-05-06 12:35:00.000000 UTC,357,83,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-01-05 15:17:00.000000 UTC,2014-01-05 15:26:00.000000 UTC,522,202,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-18 08:16:00.000000 UTC,2016-05-18 08:24:00.000000 UTC,490,25,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-10-23 20:18:00.000000 UTC,2014-10-23 20:28:00.000000 UTC,587,87,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-06-12 08:43:00.000000 UTC,2014-06-12 08:54:00.000000 UTC,659,185,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-16 09:22:00.000000 UTC,2014-09-16 09:40:00.000000 UTC,1073,645,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-12-18 15:47:00.000000 UTC,2015-12-18 15:53:00.000000 UTC,395,658,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-17 08:11:00.000000 UTC,2016-05-17 08:24:00.000000 UTC,742,90,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-07-04 12:09:00.000000 UTC,2016-07-04 12:20:00.000000 UTC,700,681,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-27 21:55:00.000000 UTC,2016-05-27 22:06:00.000000 UTC,665,152,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-01 21:58:00.000000 UTC,2014-09-01 22:10:00.000000 UTC,732,256,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-05-29 11:08:00.000000 UTC,2014-05-29 11:21:00.000000 UTC,809,23,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-30 07:46:00.000000 UTC,2016-03-30 07:52:00.000000 UTC,356,55,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-12-11 07:50:00.000000 UTC,2013-12-11 08:03:00.000000 UTC,790,660,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-04-07 18:29:00.000000 UTC,2016-04-07 18:39:00.000000 UTC,601,683,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-12-31 12:44:00.000000 UTC,2014-12-31 13:08:00.000000 UTC,1470,692,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-10-16 23:20:00.000000 UTC,2015-10-16 23:28:00.000000 UTC,460,232,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-25 10:24:00.000000 UTC,2016-03-25 10:29:00.000000 UTC,338,706,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-07-04 12:08:00.000000 UTC,2016-07-04 12:20:00.000000 UTC,739,98,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-05-22 15:43:00.000000 UTC,2014-05-22 15:51:00.000000 UTC,494,93,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-10-17 07:36:00.000000 UTC,2013-10-17 07:46:00.000000 UTC,598,40,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-18 10:38:00.000000 UTC,2016-05-18 10:44:00.000000 UTC,367,17,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-05-13 11:50:00.000000 UTC,2014-05-13 11:57:00.000000 UTC,411,711,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-18 08:16:00.000000 UTC,2016-05-18 08:24:00.000000 UTC,476,205,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-09-14 15:37:00.000000 UTC,2013-09-14 15:47:00.000000 UTC,610,88,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-01-05 15:17:00.000000 UTC,2014-01-05 15:26:00.000000 UTC,585,60,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-18 08:17:00.000000 UTC,2016-05-18 08:24:00.000000 UTC,443,81,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-17 08:12:00.000000 UTC,2016-05-17 08:24:00.000000 UTC,727,232,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-10-03 20:15:00.000000 UTC,2015-10-03 20:27:00.000000 UTC,707,297,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-01 21:58:00.000000 UTC,2014-09-01 22:11:00.000000 UTC,776,150,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-07-29 15:58:00.000000 UTC,2015-07-29 16:22:00.000000 UTC,1405,65,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-10-11 21:46:00.000000 UTC,2014-10-11 21:58:00.000000 UTC,723,152,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-10-11 21:46:00.000000 UTC,2014-10-11 21:58:00.000000 UTC,713,39,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-22 17:07:00.000000 UTC,2016-03-22 17:35:00.000000 UTC,1679,297,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-12-29 13:50:00.000000 UTC,2014-12-29 14:08:00.000000 UTC,1101,142,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-18 09:21:00.000000 UTC,2014-09-18 09:30:00.000000 UTC,566,31,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-09-01 13:12:00.000000 UTC,2013-09-01 13:25:00.000000 UTC,814,37,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-04-13 13:10:00.000000 UTC,2014-04-13 13:24:00.000000 UTC,838,132,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-27 21:54:00.000000 UTC,2016-05-27 22:06:00.000000 UTC,697,658,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-01-12 19:24:00.000000 UTC,2016-01-12 19:36:00.000000 UTC,696,156,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-06-14 15:17:00.000000 UTC,2015-06-14 15:33:00.000000 UTC,931,174,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-30 01:37:00.000000 UTC,2016-03-30 01:45:00.000000 UTC,484,133,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-01-28 10:13:00.000000 UTC,2014-01-28 10:23:00.000000 UTC,623,49,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-01-05 15:17:00.000000 UTC,2014-01-05 15:26:00.000000 UTC,551,211,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-07-16 18:25:00.000000 UTC,2015-07-16 18:33:00.000000 UTC,512,667,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-07-28 19:39:00.000000 UTC,2015-07-28 19:52:00.000000 UTC,736,47,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-02-25 16:47:00.000000 UTC,2016-02-25 16:58:00.000000 UTC,628,305,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-02-05 00:11:00.000000 UTC,2014-02-05 00:19:00.000000 UTC,455,108,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-06-08 14:44:00.000000 UTC,2016-06-08 14:55:00.000000 UTC,690,294,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-07-30 22:34:00.000000 UTC,2016-07-31 10:47:00.000000 UTC,43952,710,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-04-26 10:12:00.000000 UTC,2016-04-26 10:34:00.000000 UTC,1333,71,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-06-20 12:13:00.000000 UTC,2015-06-20 12:19:00.000000 UTC,408,32,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-20 13:13:00.000000 UTC,2016-03-20 13:29:00.000000 UTC,948,692,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-04-18 08:01:00.000000 UTC,2014-04-18 08:10:00.000000 UTC,498,671,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-02-05 17:34:00.000000 UTC,2014-02-05 17:41:00.000000 UTC,416,710,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-06-27 15:57:00.000000 UTC,2016-06-27 16:05:00.000000 UTC,475,644,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-10-15 17:16:00.000000 UTC,2014-10-15 17:21:00.000000 UTC,320,656,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-02-15 14:13:00.000000 UTC,2014-02-15 14:25:00.000000 UTC,717,127,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-04-05 20:08:00.000000 UTC,2015-04-05 20:15:00.000000 UTC,441,208,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-28 09:33:00.000000 UTC,2016-05-28 09:44:00.000000 UTC,657,207,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-01-05 15:17:00.000000 UTC,2014-01-05 15:26:00.000000 UTC,542,142,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-23 09:03:00.000000 UTC,2016-03-23 09:10:00.000000 UTC,403,662,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-20 13:13:00.000000 UTC,2016-03-20 13:29:00.000000 UTC,988,81,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-01 22:00:00.000000 UTC,2014-09-01 22:11:00.000000 UTC,631,89,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-06-27 15:57:00.000000 UTC,2016-06-27 16:07:00.000000 UTC,585,182,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-02-20 08:44:00.000000 UTC,2014-02-20 08:59:00.000000 UTC,876,107,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-04-13 13:13:00.000000 UTC,2014-04-13 13:24:00.000000 UTC,670,669,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-11-24 18:11:00.000000 UTC,2015-11-24 18:19:00.000000 UTC,514,150,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-01-10 11:59:00.000000 UTC,2015-01-10 12:23:00.000000 UTC,1460,257,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-04-04 20:13:00.000000 UTC,2015-04-04 20:22:00.000000 UTC,555,241,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-10-03 20:17:00.000000 UTC,2015-10-03 20:27:00.000000 UTC,595,305,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-28 09:33:00.000000 UTC,2016-05-28 09:45:00.000000 UTC,686,701,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-07-23 18:41:00.000000 UTC,2015-07-23 18:49:00.000000 UTC,502,54,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-07-30 22:40:00.000000 UTC,2016-07-31 10:47:00.000000 UTC,43605,682,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-10-11 21:49:00.000000 UTC,2014-10-11 21:58:00.000000 UTC,531,257,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-06-08 14:47:00.000000 UTC,2016-06-08 14:55:00.000000 UTC,476,145,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-26 11:55:00.000000 UTC,2014-09-26 12:04:00.000000 UTC,535,116,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-02-04 16:46:00.000000 UTC,2014-02-04 16:56:00.000000 UTC,603,205,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-10-16 07:39:00.000000 UTC,2013-10-16 07:48:00.000000 UTC,567,152,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-05-31 13:02:00.000000 UTC,2014-05-31 13:18:00.000000 UTC,951,101,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-17 08:13:00.000000 UTC,2016-05-17 08:24:00.000000 UTC,648,308,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-01-23 13:16:00.000000 UTC,2016-01-23 13:32:00.000000 UTC,927,297,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-04-11 07:50:00.000000 UTC,2014-04-11 07:57:00.000000 UTC,426,98,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-10-28 23:14:00.000000 UTC,2013-10-28 23:22:00.000000 UTC,480,232,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-19 08:06:00.000000 UTC,2016-05-19 08:12:00.000000 UTC,403,649,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-05-31 13:06:00.000000 UTC,2014-05-31 13:19:00.000000 UTC,775,294,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-06-29 11:24:00.000000 UTC,2015-06-29 11:49:00.000000 UTC,1481,174,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-30 08:18:00.000000 UTC,2016-03-30 08:31:00.000000 UTC,789,207,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-04-09 15:50:00.000000 UTC,2014-04-09 16:19:00.000000 UTC,1767,31,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-28 23:15:00.000000 UTC,2016-03-28 23:24:00.000000 UTC,504,232,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-04-14 19:15:00.000000 UTC,2014-04-14 19:23:00.000000 UTC,436,303,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-01-11 20:07:00.000000 UTC,2014-01-11 20:13:00.000000 UTC,401,83,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-03-26 19:20:00.000000 UTC,2014-03-26 19:27:00.000000 UTC,416,127,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-19 13:03:00.000000 UTC,2014-09-19 13:25:00.000000 UTC,1299,194,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-05-17 08:13:00.000000 UTC,2016-05-17 08:24:00.000000 UTC,682,18,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-06-11 22:42:00.000000 UTC,2016-06-11 22:51:00.000000 UTC,554,124,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-24 09:17:00.000000 UTC,2016-03-24 09:24:00.000000 UTC,417,15,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2013-10-05 12:47:00.000000 UTC,2013-10-05 13:00:00.000000 UTC,803,174,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-03-10 18:28:00.000000 UTC,2015-03-10 18:37:00.000000 UTC,543,654,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-05-31 13:00:00.000000 UTC,2014-05-31 13:18:00.000000 UTC,1077,711,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-12-31 12:44:00.000000 UTC,2014-12-31 13:09:00.000000 UTC,1528,682,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-04-13 13:10:00.000000 UTC,2014-04-13 13:24:00.000000 UTC,841,699,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2016-03-29 08:11:00.000000 UTC,2016-03-29 08:23:00.000000 UTC,737,18,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-01 21:57:00.000000 UTC,2014-09-01 22:10:00.000000 UTC,780,696,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2015-05-17 16:18:00.000000 UTC,2015-05-17 16:26:00.000000 UTC,506,666,Customer,2_3
+San Jose Diridon Caltrain Station,San Jose Civic Center,2014-09-02 14:41:00.000000 UTC,2014-09-02 14:56:00.000000 UTC,892,99,Customer,2_3
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2013-10-06 08:00:00.000000 UTC,2013-10-06 08:12:00.000000 UTC,723,674,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-09-17 09:22:00.000000 UTC,2015-09-17 09:33:00.000000 UTC,660,665,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2014-09-02 19:17:00.000000 UTC,2014-09-02 19:22:00.000000 UTC,260,713,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2016-03-27 16:38:00.000000 UTC,2016-03-27 16:53:00.000000 UTC,930,70,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2013-09-07 12:05:00.000000 UTC,2013-09-07 12:15:00.000000 UTC,599,88,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-05-29 09:08:00.000000 UTC,2015-05-29 09:12:00.000000 UTC,242,643,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2016-03-27 16:39:00.000000 UTC,2016-03-27 16:53:00.000000 UTC,850,150,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2014-08-17 09:05:00.000000 UTC,2014-08-17 09:15:00.000000 UTC,641,62,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2014-10-08 13:42:00.000000 UTC,2014-10-08 13:46:00.000000 UTC,205,161,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-08-25 18:39:00.000000 UTC,2015-08-25 18:47:00.000000 UTC,447,95,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2016-08-13 15:03:00.000000 UTC,2016-08-13 15:44:00.000000 UTC,2428,152,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-09-23 00:14:00.000000 UTC,2015-09-23 00:17:00.000000 UTC,219,685,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-06-03 09:07:00.000000 UTC,2015-06-03 09:12:00.000000 UTC,276,638,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2014-01-21 18:19:00.000000 UTC,2014-01-21 18:22:00.000000 UTC,175,133,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2014-01-03 10:00:00.000000 UTC,2014-01-03 10:05:00.000000 UTC,315,11,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-06-18 10:17:00.000000 UTC,2015-06-18 10:25:00.000000 UTC,485,23,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-09-10 13:28:00.000000 UTC,2015-09-10 13:38:00.000000 UTC,612,676,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2013-10-25 16:43:00.000000 UTC,2013-10-25 16:48:00.000000 UTC,256,640,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2013-09-06 09:14:00.000000 UTC,2013-09-06 09:18:00.000000 UTC,248,246,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-09-23 18:32:00.000000 UTC,2015-09-23 18:36:00.000000 UTC,251,22,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2016-08-18 06:21:00.000000 UTC,2016-08-18 09:40:00.000000 UTC,11971,184,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-11-05 09:12:00.000000 UTC,2015-11-05 09:17:00.000000 UTC,310,231,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-09-21 17:42:00.000000 UTC,2015-09-21 17:45:00.000000 UTC,197,299,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-09-18 22:28:00.000000 UTC,2015-09-18 22:32:00.000000 UTC,291,667,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-02-11 10:18:00.000000 UTC,2015-02-11 10:32:00.000000 UTC,835,299,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-06-04 09:06:00.000000 UTC,2015-06-04 09:10:00.000000 UTC,232,83,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2014-06-20 20:13:00.000000 UTC,2014-06-20 20:18:00.000000 UTC,282,65,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2016-04-25 19:42:00.000000 UTC,2016-04-25 19:47:00.000000 UTC,267,208,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2014-05-20 10:26:00.000000 UTC,2014-05-20 10:31:00.000000 UTC,322,182,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2015-05-28 09:24:00.000000 UTC,2015-05-28 09:29:00.000000 UTC,298,136,Customer,2_4
+San Jose Diridon Caltrain Station,Santa Clara at Almaden,2013-10-25 17:13:00.000000 UTC,2013-10-25 17:19:00.000000 UTC,353,237,Customer,2_4
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-11-22 19:42:00.000000 UTC,2015-11-22 19:48:00.000000 UTC,335,129,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-01-14 23:14:00.000000 UTC,2014-01-14 23:18:00.000000 UTC,236,665,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-09-15 22:19:00.000000 UTC,2014-09-15 22:25:00.000000 UTC,397,39,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-04-26 09:24:00.000000 UTC,2016-04-26 09:34:00.000000 UTC,590,181,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-06-11 22:43:00.000000 UTC,2016-06-11 22:48:00.000000 UTC,307,144,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-12-15 13:14:00.000000 UTC,2013-12-15 13:23:00.000000 UTC,540,29,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-09-03 07:57:00.000000 UTC,2015-09-03 08:04:00.000000 UTC,408,654,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-03-05 13:11:00.000000 UTC,2016-03-05 13:19:00.000000 UTC,473,708,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-10-16 07:35:00.000000 UTC,2013-10-16 07:38:00.000000 UTC,202,45,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-12-20 20:44:00.000000 UTC,2013-12-20 22:27:00.000000 UTC,6141,151,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-06-14 08:21:00.000000 UTC,2016-06-14 08:26:00.000000 UTC,309,249,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-10-06 09:41:00.000000 UTC,2013-10-06 10:29:00.000000 UTC,2858,656,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-11-05 08:14:00.000000 UTC,2013-11-05 08:20:00.000000 UTC,399,158,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-11-22 19:40:00.000000 UTC,2015-11-22 19:48:00.000000 UTC,505,667,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-12-20 20:33:00.000000 UTC,2013-12-20 22:27:00.000000 UTC,6853,168,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-09-19 12:37:00.000000 UTC,2015-09-19 12:45:00.000000 UTC,469,248,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-12-09 14:44:00.000000 UTC,2014-12-09 14:48:00.000000 UTC,208,702,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-10-13 09:03:00.000000 UTC,2014-10-13 09:07:00.000000 UTC,232,44,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-02-28 13:50:00.000000 UTC,2014-02-28 14:33:00.000000 UTC,2635,647,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-12-07 13:08:00.000000 UTC,2014-12-07 13:15:00.000000 UTC,424,65,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-06-12 08:38:00.000000 UTC,2015-06-12 08:42:00.000000 UTC,240,205,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-10-18 16:15:00.000000 UTC,2015-10-18 16:21:00.000000 UTC,349,162,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-11-13 08:04:00.000000 UTC,2013-11-13 08:10:00.000000 UTC,359,691,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-06-29 08:07:00.000000 UTC,2016-06-29 08:13:00.000000 UTC,316,153,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-09-26 08:14:00.000000 UTC,2013-09-26 08:18:00.000000 UTC,257,664,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-12-06 19:17:00.000000 UTC,2013-12-06 19:31:00.000000 UTC,821,157,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-11-25 18:58:00.000000 UTC,2013-11-25 19:14:00.000000 UTC,957,712,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-06-28 08:08:00.000000 UTC,2016-06-28 08:15:00.000000 UTC,411,150,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-11-26 11:48:00.000000 UTC,2013-11-26 11:54:00.000000 UTC,372,85,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-03-09 09:21:00.000000 UTC,2016-03-09 09:27:00.000000 UTC,387,27,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-08-12 13:30:00.000000 UTC,2016-08-12 13:36:00.000000 UTC,374,36,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-03-05 13:13:00.000000 UTC,2016-03-05 13:19:00.000000 UTC,324,682,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-08-27 16:51:00.000000 UTC,2014-08-27 17:02:00.000000 UTC,645,247,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-10-06 09:40:00.000000 UTC,2013-10-06 10:29:00.000000 UTC,2904,645,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-07-14 08:44:00.000000 UTC,2016-07-14 08:53:00.000000 UTC,527,683,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-09-27 10:22:00.000000 UTC,2015-09-27 10:28:00.000000 UTC,389,42,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-10-18 12:49:00.000000 UTC,2013-10-18 12:58:00.000000 UTC,534,41,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-12-20 20:31:00.000000 UTC,2013-12-20 22:27:00.000000 UTC,6981,688,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-04-02 14:42:00.000000 UTC,2015-04-02 14:47:00.000000 UTC,319,175,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-12-20 20:49:00.000000 UTC,2013-12-20 22:27:00.000000 UTC,5895,663,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2016-02-18 14:47:00.000000 UTC,2016-02-18 14:54:00.000000 UTC,421,660,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-11-22 19:42:00.000000 UTC,2015-11-22 19:48:00.000000 UTC,318,143,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-12-20 20:49:00.000000 UTC,2013-12-20 22:27:00.000000 UTC,5871,696,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-04-03 10:24:00.000000 UTC,2015-04-03 10:39:00.000000 UTC,942,690,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-10-12 17:57:00.000000 UTC,2014-10-12 18:03:00.000000 UTC,358,60,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-11-26 11:48:00.000000 UTC,2013-11-26 11:54:00.000000 UTC,347,38,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2013-11-01 13:46:00.000000 UTC,2013-11-01 13:53:00.000000 UTC,478,59,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2014-08-27 16:49:00.000000 UTC,2014-08-27 17:03:00.000000 UTC,801,702,Customer,2_5
+San Jose Diridon Caltrain Station,Adobe on Almaden,2015-09-08 07:57:00.000000 UTC,2015-09-08 08:01:00.000000 UTC,246,71,Customer,2_5
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-26 09:04:00.000000 UTC,2013-09-26 09:14:00.000000 UTC,631,231,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-07-18 12:50:00.000000 UTC,2015-07-18 13:00:00.000000 UTC,600,183,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-10 09:13:00.000000 UTC,2013-09-10 09:26:00.000000 UTC,768,44,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-04-22 17:40:00.000000 UTC,2015-04-22 17:46:00.000000 UTC,363,83,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-10 13:12:00.000000 UTC,2013-09-10 13:25:00.000000 UTC,755,674,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-01-09 15:18:00.000000 UTC,2014-01-09 15:36:00.000000 UTC,1097,657,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-13 08:14:00.000000 UTC,2013-09-13 08:21:00.000000 UTC,415,641,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-10-13 07:37:00.000000 UTC,2014-10-13 07:43:00.000000 UTC,312,159,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-03-08 10:08:00.000000 UTC,2014-03-08 10:14:00.000000 UTC,383,647,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-30 21:06:00.000000 UTC,2013-09-30 21:18:00.000000 UTC,669,42,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-08-03 14:37:00.000000 UTC,2016-08-03 14:45:00.000000 UTC,457,701,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-06 08:50:00.000000 UTC,2013-09-06 08:58:00.000000 UTC,433,641,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-06-14 17:18:00.000000 UTC,2014-06-14 17:38:00.000000 UTC,1178,710,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-03-01 16:19:00.000000 UTC,2015-03-01 17:16:00.000000 UTC,3416,64,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-10-21 07:37:00.000000 UTC,2014-10-21 07:43:00.000000 UTC,331,233,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-10-12 14:45:00.000000 UTC,2013-10-12 14:54:00.000000 UTC,520,646,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-30 21:05:00.000000 UTC,2013-09-30 21:18:00.000000 UTC,795,109,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-03-26 12:02:00.000000 UTC,2016-03-26 12:17:00.000000 UTC,892,186,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-04-16 15:25:00.000000 UTC,2016-04-16 15:35:00.000000 UTC,577,76,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-06-27 17:33:00.000000 UTC,2015-06-27 17:43:00.000000 UTC,624,150,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-06-14 17:19:00.000000 UTC,2014-06-14 17:38:00.000000 UTC,1155,227,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-12-30 13:46:00.000000 UTC,2015-12-30 13:59:00.000000 UTC,813,57,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-08-28 20:32:00.000000 UTC,2014-08-28 20:39:00.000000 UTC,376,116,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-10-04 19:18:00.000000 UTC,2014-10-04 19:27:00.000000 UTC,526,715,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-03-26 11:59:00.000000 UTC,2016-03-26 12:17:00.000000 UTC,1101,643,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-07-18 12:56:00.000000 UTC,2015-07-18 13:51:00.000000 UTC,3329,641,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-12-01 16:03:00.000000 UTC,2013-12-01 16:15:00.000000 UTC,722,130,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-04-10 11:55:00.000000 UTC,2014-04-10 12:18:00.000000 UTC,1401,710,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-02-14 17:05:00.000000 UTC,2016-02-14 17:15:00.000000 UTC,596,656,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-01-28 08:34:00.000000 UTC,2015-01-28 08:42:00.000000 UTC,524,256,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-08-30 08:41:00.000000 UTC,2013-08-30 08:49:00.000000 UTC,462,675,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-02-11 08:36:00.000000 UTC,2015-02-11 08:41:00.000000 UTC,266,87,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-09-20 14:59:00.000000 UTC,2014-09-20 15:08:00.000000 UTC,534,258,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-07-18 12:56:00.000000 UTC,2015-07-18 13:51:00.000000 UTC,3306,213,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-12-01 16:04:00.000000 UTC,2013-12-01 16:15:00.000000 UTC,683,143,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-01-09 15:17:00.000000 UTC,2014-01-09 15:36:00.000000 UTC,1114,52,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-08-05 14:38:00.000000 UTC,2016-08-05 14:46:00.000000 UTC,464,683,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-01-06 13:19:00.000000 UTC,2015-01-06 13:29:00.000000 UTC,607,682,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-17 08:19:00.000000 UTC,2013-09-17 08:26:00.000000 UTC,394,53,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-12 08:15:00.000000 UTC,2013-09-12 08:24:00.000000 UTC,558,679,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-05-18 07:54:00.000000 UTC,2015-05-18 07:58:00.000000 UTC,258,698,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-10-14 07:35:00.000000 UTC,2014-10-14 07:40:00.000000 UTC,320,702,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-16 08:21:00.000000 UTC,2013-09-16 08:27:00.000000 UTC,408,31,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-03-12 21:07:00.000000 UTC,2015-03-12 21:25:00.000000 UTC,1052,63,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-02-12 07:38:00.000000 UTC,2015-02-12 07:43:00.000000 UTC,276,682,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-24 08:19:00.000000 UTC,2013-09-24 08:26:00.000000 UTC,409,55,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-07-12 19:20:00.000000 UTC,2016-07-12 19:27:00.000000 UTC,427,701,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-04-16 15:24:00.000000 UTC,2016-04-16 15:35:00.000000 UTC,634,252,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-03-26 12:02:00.000000 UTC,2016-03-26 12:17:00.000000 UTC,916,129,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-04-20 16:49:00.000000 UTC,2015-04-20 16:58:00.000000 UTC,528,43,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-10-01 07:38:00.000000 UTC,2014-10-01 07:44:00.000000 UTC,402,666,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-06-25 12:20:00.000000 UTC,2016-06-25 12:39:00.000000 UTC,1131,694,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-02-17 07:44:00.000000 UTC,2015-02-17 07:48:00.000000 UTC,284,178,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-03-24 16:32:00.000000 UTC,2015-03-24 16:41:00.000000 UTC,529,253,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-05-19 12:53:00.000000 UTC,2014-05-19 13:34:00.000000 UTC,2487,15,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-10-16 07:35:00.000000 UTC,2014-10-16 07:40:00.000000 UTC,298,55,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-02-28 13:12:00.000000 UTC,2015-02-28 13:42:00.000000 UTC,1801,297,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-10-02 07:39:00.000000 UTC,2014-10-02 07:45:00.000000 UTC,365,135,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-04-03 17:45:00.000000 UTC,2014-04-03 17:55:00.000000 UTC,624,690,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-10-15 07:33:00.000000 UTC,2014-10-15 07:38:00.000000 UTC,330,132,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-02-13 07:32:00.000000 UTC,2015-02-13 07:39:00.000000 UTC,369,664,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-03-26 12:00:00.000000 UTC,2016-03-26 12:17:00.000000 UTC,1062,152,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-10 08:13:00.000000 UTC,2013-09-10 08:22:00.000000 UTC,567,76,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-09-04 19:07:00.000000 UTC,2014-09-04 19:16:00.000000 UTC,546,150,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-11 08:44:00.000000 UTC,2013-09-11 08:49:00.000000 UTC,340,30,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-02-07 12:42:00.000000 UTC,2016-02-07 12:57:00.000000 UTC,898,22,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-07-19 18:58:00.000000 UTC,2015-07-19 19:09:00.000000 UTC,611,25,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-06 08:46:00.000000 UTC,2013-09-06 08:58:00.000000 UTC,676,666,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-25 08:38:00.000000 UTC,2013-09-25 08:46:00.000000 UTC,438,666,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-06-20 20:57:00.000000 UTC,2014-06-21 00:14:00.000000 UTC,11850,154,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-04-26 15:18:00.000000 UTC,2016-04-26 16:11:00.000000 UTC,3157,683,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-06-27 17:32:00.000000 UTC,2015-06-27 17:43:00.000000 UTC,633,264,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-02-20 08:40:00.000000 UTC,2015-02-20 08:53:00.000000 UTC,745,159,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-01 11:59:00.000000 UTC,2013-09-01 12:43:00.000000 UTC,2628,245,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2016-05-19 22:18:00.000000 UTC,2016-05-19 22:24:00.000000 UTC,374,71,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2014-04-08 19:06:00.000000 UTC,2014-04-08 19:26:00.000000 UTC,1193,643,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2013-09-18 08:22:00.000000 UTC,2013-09-18 08:29:00.000000 UTC,428,78,Customer,2_6
+San Jose Diridon Caltrain Station,San Pedro Square,2015-05-02 12:42:00.000000 UTC,2015-05-02 12:56:00.000000 UTC,816,242,Customer,2_6
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-09-17 13:10:00.000000 UTC,2013-09-17 13:16:00.000000 UTC,409,198,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-09-25 08:37:00.000000 UTC,2015-09-25 08:49:00.000000 UTC,740,702,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-05-25 17:03:00.000000 UTC,2015-05-25 17:13:00.000000 UTC,577,123,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-08-27 15:40:00.000000 UTC,2016-08-27 16:09:00.000000 UTC,1696,152,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-09-19 22:02:00.000000 UTC,2015-09-19 22:12:00.000000 UTC,625,225,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-03-09 17:10:00.000000 UTC,2016-03-09 17:22:00.000000 UTC,702,706,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-09-06 18:01:00.000000 UTC,2014-09-06 18:12:00.000000 UTC,646,89,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-04-10 18:43:00.000000 UTC,2015-04-10 18:52:00.000000 UTC,534,13,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-03-26 14:03:00.000000 UTC,2016-03-26 14:16:00.000000 UTC,770,681,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-10-04 18:56:00.000000 UTC,2013-10-04 19:08:00.000000 UTC,726,63,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-08-31 17:51:00.000000 UTC,2013-08-31 18:01:00.000000 UTC,617,661,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-02-20 17:44:00.000000 UTC,2015-02-20 17:54:00.000000 UTC,619,715,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-02-16 13:25:00.000000 UTC,2016-02-16 13:52:00.000000 UTC,1645,661,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-03-19 17:08:00.000000 UTC,2015-03-19 17:16:00.000000 UTC,508,36,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-08-31 17:51:00.000000 UTC,2013-08-31 18:01:00.000000 UTC,616,664,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-11-14 10:08:00.000000 UTC,2013-11-14 10:17:00.000000 UTC,526,149,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-08-27 15:39:00.000000 UTC,2016-08-27 16:08:00.000000 UTC,1756,665,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-11-20 10:10:00.000000 UTC,2013-11-20 10:17:00.000000 UTC,472,712,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-03-16 18:31:00.000000 UTC,2016-03-16 20:04:00.000000 UTC,5565,76,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-03-16 18:30:00.000000 UTC,2016-03-16 20:03:00.000000 UTC,5583,136,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-10-02 16:38:00.000000 UTC,2015-10-02 16:50:00.000000 UTC,715,304,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-08-17 12:31:00.000000 UTC,2014-08-17 13:02:00.000000 UTC,1827,294,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-01-03 18:23:00.000000 UTC,2014-01-03 18:53:00.000000 UTC,1843,642,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-04-27 22:14:00.000000 UTC,2015-04-27 22:24:00.000000 UTC,630,72,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-09-19 09:05:00.000000 UTC,2013-09-19 09:19:00.000000 UTC,831,81,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-03-11 00:18:00.000000 UTC,2014-03-11 00:24:00.000000 UTC,404,93,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-08-17 12:41:00.000000 UTC,2014-08-17 13:02:00.000000 UTC,1284,127,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-03-16 18:32:00.000000 UTC,2016-03-16 20:04:00.000000 UTC,5544,711,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-05-17 13:30:00.000000 UTC,2015-05-17 13:52:00.000000 UTC,1326,65,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-10-11 10:16:00.000000 UTC,2013-10-11 10:24:00.000000 UTC,487,77,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-02-17 00:54:00.000000 UTC,2014-02-17 01:07:00.000000 UTC,775,202,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-01-09 18:47:00.000000 UTC,2014-01-09 19:04:00.000000 UTC,1026,654,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-07-11 16:02:00.000000 UTC,2015-07-11 16:09:00.000000 UTC,431,231,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-05-09 20:16:00.000000 UTC,2014-05-09 20:23:00.000000 UTC,429,31,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-08-17 12:31:00.000000 UTC,2014-08-17 12:54:00.000000 UTC,1337,84,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-08-17 12:41:00.000000 UTC,2014-08-17 12:59:00.000000 UTC,1100,710,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2016-06-12 13:14:00.000000 UTC,2016-06-12 13:30:00.000000 UTC,995,152,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2014-05-12 19:56:00.000000 UTC,2014-05-12 20:04:00.000000 UTC,504,127,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2013-12-25 15:56:00.000000 UTC,2013-12-25 16:26:00.000000 UTC,1846,262,Customer,2_7
+San Jose Diridon Caltrain Station,Paseo de San Antonio,2015-05-01 10:38:00.000000 UTC,2015-05-01 10:48:00.000000 UTC,587,17,Customer,2_7
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-02-18 15:49:00.000000 UTC,2015-02-18 16:28:00.000000 UTC,2307,37,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-06-12 16:45:00.000000 UTC,2015-06-12 17:05:00.000000 UTC,1252,245,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-06-12 16:45:00.000000 UTC,2015-06-12 17:05:00.000000 UTC,1202,95,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-10-21 15:24:00.000000 UTC,2013-10-21 15:36:00.000000 UTC,692,646,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-03-05 17:09:00.000000 UTC,2014-03-05 17:31:00.000000 UTC,1331,186,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-10-21 11:48:00.000000 UTC,2015-10-21 12:11:00.000000 UTC,1368,644,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-04-18 16:58:00.000000 UTC,2015-04-18 17:06:00.000000 UTC,486,692,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2016-03-31 08:03:00.000000 UTC,2016-03-31 08:26:00.000000 UTC,1360,55,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-10-29 17:40:00.000000 UTC,2013-10-29 17:51:00.000000 UTC,660,86,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-11-05 19:05:00.000000 UTC,2014-11-05 19:17:00.000000 UTC,711,148,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-02-14 14:02:00.000000 UTC,2015-02-14 14:19:00.000000 UTC,1046,65,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-11-03 17:20:00.000000 UTC,2013-11-03 17:29:00.000000 UTC,560,136,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-10-24 19:14:00.000000 UTC,2013-10-24 19:23:00.000000 UTC,566,126,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-09-19 18:19:00.000000 UTC,2014-09-19 18:29:00.000000 UTC,601,75,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-10-22 18:42:00.000000 UTC,2013-10-22 18:53:00.000000 UTC,646,56,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-05-08 19:33:00.000000 UTC,2015-05-08 19:47:00.000000 UTC,857,674,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-10-11 21:49:00.000000 UTC,2014-10-11 22:05:00.000000 UTC,974,132,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-06-12 11:13:00.000000 UTC,2014-06-12 12:48:00.000000 UTC,5714,65,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-04-17 18:43:00.000000 UTC,2015-04-17 18:54:00.000000 UTC,645,692,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-09-13 14:54:00.000000 UTC,2015-09-13 15:00:00.000000 UTC,399,701,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-06-15 01:42:00.000000 UTC,2014-06-15 01:55:00.000000 UTC,800,131,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-10-21 18:38:00.000000 UTC,2013-10-21 18:48:00.000000 UTC,610,198,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-11-08 17:11:00.000000 UTC,2014-11-08 17:42:00.000000 UTC,1852,308,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-10-10 23:23:00.000000 UTC,2013-10-10 23:31:00.000000 UTC,496,143,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-10-28 18:41:00.000000 UTC,2013-10-28 18:51:00.000000 UTC,606,231,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-09-26 20:17:00.000000 UTC,2013-09-26 20:27:00.000000 UTC,587,703,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-06-15 01:41:00.000000 UTC,2014-06-15 01:55:00.000000 UTC,812,164,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-01-20 14:00:00.000000 UTC,2014-01-20 15:00:00.000000 UTC,3574,209,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-10-21 11:48:00.000000 UTC,2015-10-21 12:11:00.000000 UTC,1354,150,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-02-20 18:23:00.000000 UTC,2015-02-20 18:32:00.000000 UTC,512,647,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-05-01 18:19:00.000000 UTC,2015-05-01 18:28:00.000000 UTC,563,696,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2014-06-12 11:12:00.000000 UTC,2014-06-12 12:48:00.000000 UTC,5750,715,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-06-12 13:54:00.000000 UTC,2015-06-12 14:06:00.000000 UTC,689,227,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-05-22 16:52:00.000000 UTC,2015-05-22 17:03:00.000000 UTC,641,663,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2016-07-15 13:53:00.000000 UTC,2016-07-15 14:17:00.000000 UTC,1422,232,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2015-11-29 16:16:00.000000 UTC,2015-11-29 16:40:00.000000 UTC,1470,701,Customer,2_8
+San Jose Diridon Caltrain Station,San Salvador at 1st,2013-10-30 18:15:00.000000 UTC,2013-10-30 18:23:00.000000 UTC,474,89,Customer,2_8
+San Jose Diridon Caltrain Station,Japantown,2015-10-19 19:20:00.000000 UTC,2015-10-19 19:41:00.000000 UTC,1238,231,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-12-13 01:38:00.000000 UTC,2013-12-13 01:50:00.000000 UTC,699,708,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-10-23 19:23:00.000000 UTC,2015-10-23 19:41:00.000000 UTC,1083,245,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-04-17 17:13:00.000000 UTC,2015-04-17 17:25:00.000000 UTC,700,117,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-09-20 20:11:00.000000 UTC,2014-09-20 20:27:00.000000 UTC,968,647,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-05-07 14:40:00.000000 UTC,2016-05-07 15:19:00.000000 UTC,2372,70,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-10-26 14:04:00.000000 UTC,2013-10-26 14:39:00.000000 UTC,2110,50,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-04-03 18:14:00.000000 UTC,2014-04-03 18:28:00.000000 UTC,831,146,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-09-20 20:08:00.000000 UTC,2014-09-20 20:27:00.000000 UTC,1146,53,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-11-03 20:16:00.000000 UTC,2015-11-03 20:33:00.000000 UTC,990,190,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-03-24 18:38:00.000000 UTC,2014-03-24 18:56:00.000000 UTC,1117,656,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-09-27 15:48:00.000000 UTC,2013-09-27 16:06:00.000000 UTC,1060,99,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-05-07 14:47:00.000000 UTC,2016-05-07 15:19:00.000000 UTC,1912,673,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-01-23 17:18:00.000000 UTC,2015-01-23 17:35:00.000000 UTC,985,228,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-09-11 18:06:00.000000 UTC,2013-09-11 18:20:00.000000 UTC,842,102,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-05-14 00:15:00.000000 UTC,2016-05-14 00:26:00.000000 UTC,689,714,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-04-02 17:12:00.000000 UTC,2014-04-02 17:27:00.000000 UTC,886,67,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-03-28 19:37:00.000000 UTC,2014-03-28 19:52:00.000000 UTC,925,158,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-03-25 19:16:00.000000 UTC,2014-03-25 19:31:00.000000 UTC,880,127,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-05-21 20:09:00.000000 UTC,2016-05-21 20:22:00.000000 UTC,745,667,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-11-07 17:00:00.000000 UTC,2013-11-07 17:40:00.000000 UTC,2416,667,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-08-23 13:56:00.000000 UTC,2015-08-23 14:19:00.000000 UTC,1369,38,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-05-07 20:23:00.000000 UTC,2016-05-07 20:48:00.000000 UTC,1484,708,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-03-31 23:12:00.000000 UTC,2014-03-31 23:23:00.000000 UTC,698,665,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-11-29 23:57:00.000000 UTC,2013-11-30 00:09:00.000000 UTC,665,20,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-02-17 17:33:00.000000 UTC,2016-02-17 17:47:00.000000 UTC,872,124,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-08-22 14:42:00.000000 UTC,2014-08-22 15:07:00.000000 UTC,1496,648,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-04-07 19:46:00.000000 UTC,2016-04-07 20:01:00.000000 UTC,909,232,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-09-30 01:26:00.000000 UTC,2013-09-30 01:48:00.000000 UTC,1362,90,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-01-21 19:21:00.000000 UTC,2015-01-21 19:37:00.000000 UTC,948,110,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-08-27 18:52:00.000000 UTC,2015-08-27 19:08:00.000000 UTC,994,95,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-05-07 20:19:00.000000 UTC,2016-05-07 20:48:00.000000 UTC,1710,70,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-03-27 18:17:00.000000 UTC,2014-03-27 18:31:00.000000 UTC,827,688,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-09-23 02:23:00.000000 UTC,2013-09-23 02:36:00.000000 UTC,764,26,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-02-08 15:05:00.000000 UTC,2014-02-08 15:28:00.000000 UTC,1406,185,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-01-31 15:49:00.000000 UTC,2014-01-31 16:09:00.000000 UTC,1250,50,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-06-07 16:09:00.000000 UTC,2016-06-07 16:31:00.000000 UTC,1309,117,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2016-05-07 20:19:00.000000 UTC,2016-05-07 20:49:00.000000 UTC,1748,294,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2014-04-01 19:14:00.000000 UTC,2014-04-01 19:27:00.000000 UTC,802,45,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-04-16 19:57:00.000000 UTC,2015-04-16 20:24:00.000000 UTC,1628,178,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-07-11 12:07:00.000000 UTC,2015-07-11 12:23:00.000000 UTC,960,680,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2015-10-27 19:20:00.000000 UTC,2015-10-27 19:36:00.000000 UTC,993,162,Customer,2_9
+San Jose Diridon Caltrain Station,Japantown,2013-09-23 18:18:00.000000 UTC,2013-09-23 22:29:00.000000 UTC,15024,303,Customer,2_9
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-12-06 14:47:00.000000 UTC,2013-12-06 15:10:00.000000 UTC,1397,152,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-09-18 16:52:00.000000 UTC,2014-09-18 17:00:00.000000 UTC,467,23,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-07 10:15:00.000000 UTC,2016-05-08 09:17:00.000000 UTC,82896,155,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-07-14 20:07:00.000000 UTC,2016-07-14 20:24:00.000000 UTC,990,663,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-11-03 17:59:00.000000 UTC,2015-11-03 18:08:00.000000 UTC,506,190,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-03-27 09:48:00.000000 UTC,2014-03-27 09:55:00.000000 UTC,405,218,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-09-01 15:47:00.000000 UTC,2013-09-01 15:59:00.000000 UTC,689,680,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-18 16:30:00.000000 UTC,2016-05-18 16:40:00.000000 UTC,604,654,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-11-16 14:38:00.000000 UTC,2013-11-16 14:46:00.000000 UTC,467,183,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-01-10 20:16:00.000000 UTC,2015-01-10 20:43:00.000000 UTC,1570,251,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-10-03 16:52:00.000000 UTC,2015-10-03 17:01:00.000000 UTC,538,150,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-12-31 15:05:00.000000 UTC,2014-12-31 15:16:00.000000 UTC,637,682,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-12-06 14:47:00.000000 UTC,2013-12-06 15:10:00.000000 UTC,1383,216,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-12-03 05:37:00.000000 UTC,2013-12-03 05:42:00.000000 UTC,301,183,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-03-20 17:13:00.000000 UTC,2016-03-20 17:27:00.000000 UTC,879,18,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-09-19 18:56:00.000000 UTC,2013-09-19 19:04:00.000000 UTC,446,667,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-04-09 16:22:00.000000 UTC,2014-04-09 16:34:00.000000 UTC,753,31,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-04-07 19:57:00.000000 UTC,2016-04-07 20:08:00.000000 UTC,644,11,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-02-05 10:59:00.000000 UTC,2014-02-05 11:07:00.000000 UTC,498,209,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-11-15 20:10:00.000000 UTC,2013-11-15 20:19:00.000000 UTC,504,69,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-06-14 17:05:00.000000 UTC,2015-06-14 18:41:00.000000 UTC,5775,174,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-04-11 17:07:00.000000 UTC,2014-04-11 17:17:00.000000 UTC,594,668,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-18 16:08:00.000000 UTC,2013-10-18 16:16:00.000000 UTC,475,709,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-03-29 22:19:00.000000 UTC,2016-03-29 22:26:00.000000 UTC,387,18,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-12-11 12:40:00.000000 UTC,2013-12-11 12:51:00.000000 UTC,681,660,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-06-11 08:02:00.000000 UTC,2016-06-11 08:12:00.000000 UTC,599,124,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-12 18:05:00.000000 UTC,2016-05-12 18:16:00.000000 UTC,620,205,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-07-17 21:13:00.000000 UTC,2015-07-18 15:17:00.000000 UTC,65038,150,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-01-10 22:15:00.000000 UTC,2014-01-10 22:26:00.000000 UTC,652,83,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-06-29 13:42:00.000000 UTC,2015-06-29 14:00:00.000000 UTC,1058,174,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-19 12:00:00.000000 UTC,2016-05-19 12:11:00.000000 UTC,650,225,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-18 23:07:00.000000 UTC,2016-05-18 23:14:00.000000 UTC,406,162,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-08-29 22:07:00.000000 UTC,2013-08-29 22:18:00.000000 UTC,643,664,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-07-14 20:07:00.000000 UTC,2016-07-14 20:23:00.000000 UTC,948,117,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-03-21 11:52:00.000000 UTC,2015-03-21 12:09:00.000000 UTC,998,131,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-07-26 08:38:00.000000 UTC,2014-07-26 09:48:00.000000 UTC,4190,226,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-06-12 17:32:00.000000 UTC,2014-06-12 17:41:00.000000 UTC,503,190,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-11-19 15:49:00.000000 UTC,2013-11-19 15:57:00.000000 UTC,474,140,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-06 09:11:00.000000 UTC,2013-10-06 09:38:00.000000 UTC,1614,174,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-01-12 13:06:00.000000 UTC,2014-01-12 13:16:00.000000 UTC,598,200,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-05-13 18:12:00.000000 UTC,2014-05-13 18:20:00.000000 UTC,513,711,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-04-01 10:23:00.000000 UTC,2015-04-01 10:34:00.000000 UTC,650,690,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-04-25 16:08:00.000000 UTC,2015-04-25 16:32:00.000000 UTC,1413,147,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-02-05 08:22:00.000000 UTC,2014-02-05 08:31:00.000000 UTC,524,135,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-08-09 16:29:00.000000 UTC,2015-08-09 16:37:00.000000 UTC,495,176,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-19 12:01:00.000000 UTC,2016-05-19 12:12:00.000000 UTC,650,232,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-05-03 13:33:00.000000 UTC,2015-05-03 14:03:00.000000 UTC,1837,242,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-11-27 16:34:00.000000 UTC,2013-11-27 16:52:00.000000 UTC,1044,143,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-02-21 23:20:00.000000 UTC,2015-02-22 00:03:00.000000 UTC,2572,105,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-17 17:40:00.000000 UTC,2016-05-17 17:49:00.000000 UTC,531,104,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-10-25 13:57:00.000000 UTC,2014-10-25 14:09:00.000000 UTC,681,127,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-03-22 16:09:00.000000 UTC,2014-03-22 16:16:00.000000 UTC,457,200,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-07-28 17:20:00.000000 UTC,2014-07-28 17:40:00.000000 UTC,1149,164,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-08 17:08:00.000000 UTC,2013-10-08 17:17:00.000000 UTC,592,200,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-03-15 09:43:00.000000 UTC,2014-03-15 09:52:00.000000 UTC,544,680,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-06-29 13:42:00.000000 UTC,2015-06-29 14:00:00.000000 UTC,1071,47,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-11 14:51:00.000000 UTC,2013-10-11 14:59:00.000000 UTC,444,183,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-06 12:02:00.000000 UTC,2013-10-06 12:11:00.000000 UTC,543,706,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-03-25 14:32:00.000000 UTC,2016-03-25 14:51:00.000000 UTC,1130,706,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-01-12 13:06:00.000000 UTC,2014-01-12 13:17:00.000000 UTC,625,117,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-07 17:19:00.000000 UTC,2013-10-07 17:26:00.000000 UTC,427,28,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-13 10:30:00.000000 UTC,2013-10-13 10:36:00.000000 UTC,374,293,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-27 17:13:00.000000 UTC,2016-05-27 18:01:00.000000 UTC,2869,207,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-04-04 07:14:00.000000 UTC,2015-04-04 07:23:00.000000 UTC,537,241,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-28 13:32:00.000000 UTC,2013-10-28 13:49:00.000000 UTC,1028,710,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-07-14 20:12:00.000000 UTC,2016-07-14 20:23:00.000000 UTC,680,642,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-17 17:40:00.000000 UTC,2013-10-17 17:45:00.000000 UTC,335,40,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-03-20 17:12:00.000000 UTC,2016-03-20 17:27:00.000000 UTC,903,81,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-03-25 00:45:00.000000 UTC,2016-03-25 00:51:00.000000 UTC,345,683,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-07-11 22:54:00.000000 UTC,2014-07-12 19:35:00.000000 UTC,74443,175,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-11-15 20:09:00.000000 UTC,2013-11-15 20:19:00.000000 UTC,575,668,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-04-26 16:44:00.000000 UTC,2014-04-26 18:47:00.000000 UTC,7390,685,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-05-08 09:42:00.000000 UTC,2014-05-08 09:52:00.000000 UTC,580,156,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-03-28 13:53:00.000000 UTC,2016-03-28 14:08:00.000000 UTC,903,60,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-17 17:40:00.000000 UTC,2016-05-17 17:49:00.000000 UTC,554,249,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-03-19 18:48:00.000000 UTC,2015-03-19 19:08:00.000000 UTC,1230,10,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-10-25 13:55:00.000000 UTC,2014-10-25 14:09:00.000000 UTC,840,17,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-02-21 20:05:00.000000 UTC,2016-02-21 20:13:00.000000 UTC,482,88,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-02-04 09:28:00.000000 UTC,2014-02-04 09:37:00.000000 UTC,543,129,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-18 16:09:00.000000 UTC,2016-05-18 16:18:00.000000 UTC,521,81,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-18 14:30:00.000000 UTC,2016-05-18 14:39:00.000000 UTC,557,17,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-13 10:27:00.000000 UTC,2013-10-13 10:36:00.000000 UTC,542,69,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-09 19:55:00.000000 UTC,2016-05-09 20:06:00.000000 UTC,618,90,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-07-26 08:38:00.000000 UTC,2014-07-26 19:21:00.000000 UTC,38567,108,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-16 16:01:00.000000 UTC,2013-10-16 16:08:00.000000 UTC,424,152,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-07-14 20:13:00.000000 UTC,2016-07-14 20:23:00.000000 UTC,603,38,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-07-21 07:43:00.000000 UTC,2015-07-21 07:51:00.000000 UTC,451,304,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-10-06 09:14:00.000000 UTC,2013-10-06 09:38:00.000000 UTC,1474,656,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2013-09-01 15:48:00.000000 UTC,2013-09-01 15:59:00.000000 UTC,647,37,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-11-29 18:05:00.000000 UTC,2015-11-29 18:33:00.000000 UTC,1732,295,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-04-26 16:44:00.000000 UTC,2014-04-26 18:47:00.000000 UTC,7424,67,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-03-13 17:14:00.000000 UTC,2015-03-13 17:32:00.000000 UTC,1056,669,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-01-27 07:43:00.000000 UTC,2014-01-27 07:50:00.000000 UTC,438,202,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-01-13 08:58:00.000000 UTC,2016-01-13 09:06:00.000000 UTC,494,89,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-17 17:40:00.000000 UTC,2016-05-17 17:49:00.000000 UTC,577,152,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-03-15 09:43:00.000000 UTC,2014-03-15 09:52:00.000000 UTC,538,180,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-01-27 07:42:00.000000 UTC,2014-01-27 07:50:00.000000 UTC,465,177,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-06-20 12:24:00.000000 UTC,2015-06-20 12:34:00.000000 UTC,562,32,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-03-28 13:55:00.000000 UTC,2016-03-28 14:09:00.000000 UTC,807,232,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-07-23 07:48:00.000000 UTC,2015-07-23 07:54:00.000000 UTC,400,54,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-19 12:00:00.000000 UTC,2016-05-19 12:11:00.000000 UTC,631,28,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-03-30 21:14:00.000000 UTC,2016-03-30 21:22:00.000000 UTC,454,55,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-17 17:39:00.000000 UTC,2016-05-17 17:49:00.000000 UTC,587,43,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-18 16:30:00.000000 UTC,2016-05-18 16:40:00.000000 UTC,568,25,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-19 12:01:00.000000 UTC,2016-05-19 12:11:00.000000 UTC,610,702,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-12-31 15:05:00.000000 UTC,2014-12-31 15:15:00.000000 UTC,592,692,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-05-18 16:30:00.000000 UTC,2016-05-18 16:40:00.000000 UTC,614,155,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2014-07-28 17:16:00.000000 UTC,2014-07-28 17:39:00.000000 UTC,1392,112,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-02-21 23:21:00.000000 UTC,2015-02-22 00:03:00.000000 UTC,2555,706,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-06-20 16:49:00.000000 UTC,2015-06-20 17:01:00.000000 UTC,684,138,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2015-04-25 16:08:00.000000 UTC,2015-04-25 16:32:00.000000 UTC,1425,253,Customer,3_2
+San Jose Civic Center,San Jose Diridon Caltrain Station,2016-04-07 17:53:00.000000 UTC,2016-04-07 18:26:00.000000 UTC,1994,119,Customer,3_2
+San Jose Civic Center,San Jose Civic Center,2014-07-03 11:19:00.000000 UTC,2014-07-03 14:10:00.000000 UTC,10282,209,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-11 10:05:00.000000 UTC,2015-10-11 10:15:00.000000 UTC,627,696,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-16 13:54:00.000000 UTC,2014-07-16 14:33:00.000000 UTC,2364,159,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-10 09:21:00.000000 UTC,2015-04-10 11:22:00.000000 UTC,7256,64,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-09-04 12:09:00.000000 UTC,2015-09-04 13:06:00.000000 UTC,3406,660,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-01-09 11:13:00.000000 UTC,2016-01-09 11:43:00.000000 UTC,1759,168,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-10 09:05:00.000000 UTC,2015-06-10 09:39:00.000000 UTC,2093,692,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-09 15:40:00.000000 UTC,2014-07-09 16:00:00.000000 UTC,1195,685,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-01 15:41:00.000000 UTC,2014-06-01 17:44:00.000000 UTC,7357,644,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-30 12:39:00.000000 UTC,2015-04-30 13:11:00.000000 UTC,1889,119,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-02 07:19:00.000000 UTC,2016-06-02 07:51:00.000000 UTC,1925,124,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-03 11:44:00.000000 UTC,2013-11-03 12:32:00.000000 UTC,2830,700,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-10-07 12:29:00.000000 UTC,2013-10-08 12:38:00.000000 UTC,86890,118,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-22 11:53:00.000000 UTC,2014-06-22 13:25:00.000000 UTC,5562,150,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-19 14:09:00.000000 UTC,2014-04-19 16:57:00.000000 UTC,10098,41,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-03 07:20:00.000000 UTC,2015-03-03 07:49:00.000000 UTC,1747,36,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-18 07:40:00.000000 UTC,2014-09-18 08:31:00.000000 UTC,3060,23,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-14 08:40:00.000000 UTC,2014-09-14 09:13:00.000000 UTC,1995,42,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-29 18:35:00.000000 UTC,2015-10-29 21:32:00.000000 UTC,10609,685,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-16 08:51:00.000000 UTC,2014-11-16 09:45:00.000000 UTC,3255,131,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-26 12:48:00.000000 UTC,2014-10-26 13:31:00.000000 UTC,2588,14,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-22 01:39:00.000000 UTC,2014-09-22 03:17:00.000000 UTC,5886,82,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-03 13:15:00.000000 UTC,2014-04-03 14:50:00.000000 UTC,5705,683,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-01 06:55:00.000000 UTC,2016-06-01 07:22:00.000000 UTC,1638,701,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-29 06:24:00.000000 UTC,2016-06-29 06:48:00.000000 UTC,1450,671,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-09-04 12:09:00.000000 UTC,2015-09-04 13:05:00.000000 UTC,3406,304,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-24 15:15:00.000000 UTC,2015-05-24 15:51:00.000000 UTC,2191,93,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-05 18:05:00.000000 UTC,2015-06-05 18:35:00.000000 UTC,1843,245,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-05 12:28:00.000000 UTC,2014-11-05 15:19:00.000000 UTC,10282,105,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-06 08:38:00.000000 UTC,2014-06-06 08:40:00.000000 UTC,70,15,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-17 22:17:00.000000 UTC,2014-10-17 23:41:00.000000 UTC,5028,710,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-28 18:00:00.000000 UTC,2014-03-28 20:09:00.000000 UTC,7719,701,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-06 13:52:00.000000 UTC,2013-09-06 15:52:00.000000 UTC,7161,109,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-19 17:14:00.000000 UTC,2016-06-19 18:32:00.000000 UTC,4654,691,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-17 16:42:00.000000 UTC,2014-04-17 17:53:00.000000 UTC,4236,168,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-07 10:28:00.000000 UTC,2014-10-07 10:53:00.000000 UTC,1480,307,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-30 10:56:00.000000 UTC,2016-06-30 13:16:00.000000 UTC,8384,691,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-28 11:28:00.000000 UTC,2015-03-28 12:35:00.000000 UTC,4053,40,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-03 16:16:00.000000 UTC,2016-07-03 18:29:00.000000 UTC,7984,84,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-15 10:30:00.000000 UTC,2015-07-15 12:41:00.000000 UTC,7877,104,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-02-23 09:50:00.000000 UTC,2014-02-23 12:37:00.000000 UTC,9971,685,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-16 07:15:00.000000 UTC,2015-05-16 08:45:00.000000 UTC,5399,155,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-02-20 12:17:00.000000 UTC,2016-02-20 15:30:00.000000 UTC,11620,229,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-02 19:09:00.000000 UTC,2013-09-02 19:48:00.000000 UTC,2355,187,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-02-14 10:35:00.000000 UTC,2016-02-14 11:27:00.000000 UTC,3112,128,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-13 22:44:00.000000 UTC,2016-07-13 23:09:00.000000 UTC,1520,116,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-22 14:10:00.000000 UTC,2015-03-22 15:09:00.000000 UTC,3502,76,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-09 08:10:00.000000 UTC,2014-08-09 10:16:00.000000 UTC,7512,122,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-02-26 12:02:00.000000 UTC,2016-02-26 14:11:00.000000 UTC,7682,229,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-16 14:40:00.000000 UTC,2016-07-16 15:38:00.000000 UTC,3518,116,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-02 22:28:00.000000 UTC,2014-09-03 00:54:00.000000 UTC,8761,664,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-02-23 09:51:00.000000 UTC,2014-02-23 12:37:00.000000 UTC,9962,196,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-27 11:25:00.000000 UTC,2014-09-27 12:53:00.000000 UTC,5246,99,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-30 11:17:00.000000 UTC,2016-07-30 12:27:00.000000 UTC,4222,63,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-13 10:34:00.000000 UTC,2016-06-13 11:06:00.000000 UTC,1934,294,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-03 11:27:00.000000 UTC,2014-07-03 13:25:00.000000 UTC,7037,711,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-13 16:28:00.000000 UTC,2014-09-13 16:57:00.000000 UTC,1738,101,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-23 14:42:00.000000 UTC,2014-03-23 17:18:00.000000 UTC,9343,193,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-05-30 09:13:00.000000 UTC,2014-05-30 13:22:00.000000 UTC,14895,688,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-19 20:19:00.000000 UTC,2016-07-19 23:16:00.000000 UTC,10636,162,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-23 15:07:00.000000 UTC,2014-03-23 15:31:00.000000 UTC,1442,57,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-13 07:47:00.000000 UTC,2014-08-13 08:17:00.000000 UTC,1836,691,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-28 08:12:00.000000 UTC,2015-03-28 08:52:00.000000 UTC,2454,696,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-10-12 15:23:00.000000 UTC,2013-10-12 16:52:00.000000 UTC,5370,666,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-12 08:22:00.000000 UTC,2016-06-12 09:06:00.000000 UTC,2640,691,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-22 12:44:00.000000 UTC,2014-07-22 13:12:00.000000 UTC,1706,297,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-19 06:41:00.000000 UTC,2014-10-19 10:35:00.000000 UTC,14017,656,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-29 12:03:00.000000 UTC,2014-08-29 13:50:00.000000 UTC,6421,715,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-17 13:22:00.000000 UTC,2014-08-17 14:00:00.000000 UTC,2254,251,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-27 11:42:00.000000 UTC,2015-06-27 12:17:00.000000 UTC,2084,247,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-17 13:46:00.000000 UTC,2016-07-17 13:47:00.000000 UTC,88,239,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-11 18:35:00.000000 UTC,2016-06-11 19:03:00.000000 UTC,1680,257,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-25 14:27:00.000000 UTC,2014-10-25 14:53:00.000000 UTC,1517,656,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-25 18:17:00.000000 UTC,2014-10-25 19:25:00.000000 UTC,4029,11,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-01-09 11:11:00.000000 UTC,2016-01-09 11:43:00.000000 UTC,1891,150,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-11 08:01:00.000000 UTC,2015-10-11 15:16:00.000000 UTC,26057,144,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-12-10 06:13:00.000000 UTC,2013-12-10 08:57:00.000000 UTC,9836,708,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-09-14 06:42:00.000000 UTC,2015-09-14 07:26:00.000000 UTC,2608,17,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-05-03 19:29:00.000000 UTC,2016-05-03 20:16:00.000000 UTC,2833,155,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-13 16:41:00.000000 UTC,2014-09-13 17:06:00.000000 UTC,1530,28,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-30 14:09:00.000000 UTC,2014-08-30 14:24:00.000000 UTC,872,143,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-01 14:06:00.000000 UTC,2015-10-01 14:18:00.000000 UTC,750,648,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-06 14:56:00.000000 UTC,2015-10-06 15:16:00.000000 UTC,1202,305,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-12-29 14:59:00.000000 UTC,2013-12-29 17:16:00.000000 UTC,8212,648,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-12 13:56:00.000000 UTC,2015-07-12 15:46:00.000000 UTC,6550,178,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-07 10:35:00.000000 UTC,2016-07-07 11:04:00.000000 UTC,1746,663,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-17 15:41:00.000000 UTC,2014-01-17 16:25:00.000000 UTC,2615,39,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-03-28 17:51:00.000000 UTC,2016-03-28 18:17:00.000000 UTC,1552,53,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-13 12:43:00.000000 UTC,2013-09-13 13:25:00.000000 UTC,2524,30,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-25 12:28:00.000000 UTC,2014-10-25 12:50:00.000000 UTC,1349,17,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-13 14:20:00.000000 UTC,2015-05-13 16:34:00.000000 UTC,8086,159,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-16 16:41:00.000000 UTC,2015-07-16 17:34:00.000000 UTC,3132,150,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-23 16:39:00.000000 UTC,2015-05-23 17:28:00.000000 UTC,2944,79,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-09-26 12:33:00.000000 UTC,2015-09-26 12:59:00.000000 UTC,1593,22,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-12 17:43:00.000000 UTC,2014-08-12 18:15:00.000000 UTC,1896,144,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-06 14:34:00.000000 UTC,2015-10-06 14:55:00.000000 UTC,1250,305,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-14 13:36:00.000000 UTC,2013-11-16 11:57:00.000000 UTC,166855,180,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-10 20:42:00.000000 UTC,2015-06-10 21:20:00.000000 UTC,2266,93,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-05-11 17:45:00.000000 UTC,2014-05-11 19:16:00.000000 UTC,5459,93,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-05-28 08:18:00.000000 UTC,2016-05-28 09:20:00.000000 UTC,3725,164,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-02-17 23:15:00.000000 UTC,2014-02-18 00:04:00.000000 UTC,2948,127,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-22 15:44:00.000000 UTC,2014-03-22 18:27:00.000000 UTC,9806,638,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-19 16:10:00.000000 UTC,2014-01-19 16:11:00.000000 UTC,97,643,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-16 18:07:00.000000 UTC,2014-11-16 18:29:00.000000 UTC,1311,65,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-03-28 15:24:00.000000 UTC,2016-03-28 15:48:00.000000 UTC,1414,53,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-27 07:56:00.000000 UTC,2014-06-27 08:22:00.000000 UTC,1539,10,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-01 17:13:00.000000 UTC,2014-07-01 18:04:00.000000 UTC,3049,226,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-21 14:06:00.000000 UTC,2015-03-21 16:24:00.000000 UTC,8298,232,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-15 19:02:00.000000 UTC,2014-11-15 20:09:00.000000 UTC,4013,161,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-24 01:40:00.000000 UTC,2013-11-24 02:32:00.000000 UTC,3115,47,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-28 06:53:00.000000 UTC,2015-02-28 07:25:00.000000 UTC,1895,295,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-22 17:45:00.000000 UTC,2014-06-22 19:26:00.000000 UTC,6063,80,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-05-09 11:29:00.000000 UTC,2014-05-09 13:31:00.000000 UTC,7319,665,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-14 18:06:00.000000 UTC,2014-07-14 18:27:00.000000 UTC,1250,644,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-16 18:09:00.000000 UTC,2014-11-16 18:29:00.000000 UTC,1160,161,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-30 12:57:00.000000 UTC,2015-06-30 13:28:00.000000 UTC,1875,217,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-09 15:39:00.000000 UTC,2016-07-09 16:51:00.000000 UTC,4277,239,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-09-13 18:53:00.000000 UTC,2015-09-13 19:23:00.000000 UTC,1789,17,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-08 03:09:00.000000 UTC,2015-02-15 02:28:00.000000 UTC,602338,9,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-06 10:55:00.000000 UTC,2014-01-06 12:23:00.000000 UTC,5246,232,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-03-15 11:34:00.000000 UTC,2016-03-15 11:39:00.000000 UTC,297,207,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-09 20:51:00.000000 UTC,2015-05-09 20:59:00.000000 UTC,487,146,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-02-20 12:23:00.000000 UTC,2016-02-20 15:31:00.000000 UTC,11297,99,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-14 12:45:00.000000 UTC,2015-06-14 14:57:00.000000 UTC,7927,91,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-26 12:12:00.000000 UTC,2014-04-26 14:35:00.000000 UTC,8540,685,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-27 23:19:00.000000 UTC,2014-04-28 00:24:00.000000 UTC,3884,131,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-05-29 16:21:00.000000 UTC,2016-05-29 17:17:00.000000 UTC,3353,54,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-10 17:55:00.000000 UTC,2016-06-10 19:00:00.000000 UTC,3864,294,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-05-03 16:09:00.000000 UTC,2016-05-03 16:53:00.000000 UTC,2651,155,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-05 11:10:00.000000 UTC,2014-07-05 12:44:00.000000 UTC,5627,156,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-11-08 14:39:00.000000 UTC,2015-11-08 14:58:00.000000 UTC,1123,205,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-23 14:46:00.000000 UTC,2014-03-23 17:18:00.000000 UTC,9128,182,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-11 08:18:00.000000 UTC,2015-10-11 12:33:00.000000 UTC,15264,665,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-01 15:44:00.000000 UTC,2014-06-01 17:44:00.000000 UTC,7216,711,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-10 16:10:00.000000 UTC,2014-10-12 19:32:00.000000 UTC,184890,82,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-12 14:42:00.000000 UTC,2014-04-12 16:10:00.000000 UTC,5313,112,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-17 16:14:00.000000 UTC,2014-04-17 17:53:00.000000 UTC,5966,67,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-13 14:22:00.000000 UTC,2015-05-13 16:34:00.000000 UTC,7936,211,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-22 17:39:00.000000 UTC,2014-06-22 19:21:00.000000 UTC,6122,678,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-27 23:14:00.000000 UTC,2014-04-28 00:25:00.000000 UTC,4214,164,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-05 16:19:00.000000 UTC,2016-06-05 16:55:00.000000 UTC,2146,168,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-19 16:16:00.000000 UTC,2014-01-19 17:08:00.000000 UTC,3157,211,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-20 15:14:00.000000 UTC,2013-09-20 18:14:00.000000 UTC,10758,68,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-20 20:59:00.000000 UTC,2015-02-20 22:50:00.000000 UTC,6716,710,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-20 06:20:00.000000 UTC,2015-05-20 07:03:00.000000 UTC,2553,211,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-01-15 09:49:00.000000 UTC,2015-01-15 10:08:00.000000 UTC,1104,32,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-01 12:21:00.000000 UTC,2015-05-01 15:08:00.000000 UTC,10016,120,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-02 13:21:00.000000 UTC,2014-06-02 13:47:00.000000 UTC,1529,107,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-09 20:48:00.000000 UTC,2014-10-09 21:26:00.000000 UTC,2298,77,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-21 10:55:00.000000 UTC,2015-03-21 12:40:00.000000 UTC,6335,702,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-13 00:49:00.000000 UTC,2015-07-13 00:55:00.000000 UTC,360,155,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-13 05:52:00.000000 UTC,2016-06-13 06:48:00.000000 UTC,3370,53,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-10-12 15:26:00.000000 UTC,2013-10-12 16:52:00.000000 UTC,5164,76,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-11 14:23:00.000000 UTC,2015-06-11 14:43:00.000000 UTC,1182,679,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-04 18:20:00.000000 UTC,2014-07-04 18:50:00.000000 UTC,1785,702,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-08 18:05:00.000000 UTC,2014-09-11 16:50:00.000000 UTC,254700,194,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-09 15:44:00.000000 UTC,2016-07-09 16:51:00.000000 UTC,4039,683,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-10-17 15:41:00.000000 UTC,2013-10-17 16:35:00.000000 UTC,3213,40,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-15 16:05:00.000000 UTC,2016-06-15 16:57:00.000000 UTC,3137,124,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-16 14:36:00.000000 UTC,2015-02-16 17:16:00.000000 UTC,9579,230,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-06 11:01:00.000000 UTC,2014-11-06 15:17:00.000000 UTC,15407,258,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-01-01 15:26:00.000000 UTC,2015-01-01 20:26:00.000000 UTC,17971,105,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-08-15 09:32:00.000000 UTC,2015-08-15 11:02:00.000000 UTC,5385,42,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-05-18 20:28:00.000000 UTC,2016-05-18 20:36:00.000000 UTC,523,232,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-19 14:10:00.000000 UTC,2015-02-19 14:34:00.000000 UTC,1386,218,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-05-11 15:02:00.000000 UTC,2016-05-11 17:34:00.000000 UTC,9094,655,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-01-02 11:18:00.000000 UTC,2016-01-02 12:14:00.000000 UTC,3348,702,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-06 13:19:00.000000 UTC,2015-06-06 15:41:00.000000 UTC,8485,679,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-26 10:49:00.000000 UTC,2014-06-26 11:16:00.000000 UTC,1580,702,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-30 11:18:00.000000 UTC,2016-07-30 12:27:00.000000 UTC,4151,225,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-15 16:46:00.000000 UTC,2016-06-15 17:42:00.000000 UTC,3367,136,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-30 16:33:00.000000 UTC,2013-11-30 17:22:00.000000 UTC,2950,226,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-02 06:28:00.000000 UTC,2014-06-02 08:02:00.000000 UTC,5639,711,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-20 14:21:00.000000 UTC,2014-08-20 16:17:00.000000 UTC,6913,124,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-29 08:43:00.000000 UTC,2015-10-29 10:58:00.000000 UTC,8108,43,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-29 11:32:00.000000 UTC,2014-06-29 11:48:00.000000 UTC,969,226,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-07 10:28:00.000000 UTC,2014-10-07 10:53:00.000000 UTC,1492,221,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-05-18 20:26:00.000000 UTC,2016-05-18 20:36:00.000000 UTC,592,162,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-28 14:26:00.000000 UTC,2014-04-28 17:33:00.000000 UTC,11190,80,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-15 12:19:00.000000 UTC,2015-04-15 13:02:00.000000 UTC,2557,138,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-27 23:18:00.000000 UTC,2014-04-28 00:25:00.000000 UTC,4022,80,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-05 11:20:00.000000 UTC,2014-07-05 12:44:00.000000 UTC,5039,703,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-22 15:44:00.000000 UTC,2014-03-22 18:28:00.000000 UTC,9837,193,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-01-06 12:55:00.000000 UTC,2015-01-06 13:27:00.000000 UTC,1883,710,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-28 14:26:00.000000 UTC,2014-04-28 17:32:00.000000 UTC,11146,146,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-01 17:53:00.000000 UTC,2014-06-01 18:38:00.000000 UTC,2705,711,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-16 12:41:00.000000 UTC,2015-06-16 14:23:00.000000 UTC,6076,90,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-15 18:53:00.000000 UTC,2014-11-15 20:08:00.000000 UTC,4509,65,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-14 09:40:00.000000 UTC,2014-09-14 16:08:00.000000 UTC,23321,645,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-11 18:37:00.000000 UTC,2016-06-11 19:03:00.000000 UTC,1536,53,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-12 12:29:00.000000 UTC,2014-01-12 13:48:00.000000 UTC,4735,229,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-11-09 21:19:00.000000 UTC,2015-11-09 21:48:00.000000 UTC,1761,205,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-28 18:00:00.000000 UTC,2014-03-28 20:09:00.000000 UTC,7730,658,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-25 12:29:00.000000 UTC,2014-10-25 12:50:00.000000 UTC,1275,656,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-13 15:55:00.000000 UTC,2013-11-13 17:06:00.000000 UTC,4297,639,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-11-20 23:29:00.000000 UTC,2015-11-21 00:04:00.000000 UTC,2059,181,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-07 19:16:00.000000 UTC,2015-06-07 19:35:00.000000 UTC,1110,163,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-21 14:57:00.000000 UTC,2014-03-22 14:46:00.000000 UTC,85751,182,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-02 22:27:00.000000 UTC,2014-09-03 00:54:00.000000 UTC,8836,143,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-22 19:50:00.000000 UTC,2014-06-22 20:45:00.000000 UTC,3317,669,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-24 13:04:00.000000 UTC,2014-06-24 13:11:00.000000 UTC,422,53,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-04 14:39:00.000000 UTC,2015-03-04 15:47:00.000000 UTC,4074,36,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-30 12:41:00.000000 UTC,2015-04-30 13:11:00.000000 UTC,1796,208,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-12-02 19:12:00.000000 UTC,2015-12-02 19:50:00.000000 UTC,2255,130,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-05 21:57:00.000000 UTC,2015-02-05 23:01:00.000000 UTC,3814,9,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-19 18:04:00.000000 UTC,2015-05-19 18:10:00.000000 UTC,370,144,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-17 16:43:00.000000 UTC,2014-04-17 17:53:00.000000 UTC,4217,41,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-25 18:35:00.000000 UTC,2014-06-26 10:00:00.000000 UTC,55535,702,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-03 17:53:00.000000 UTC,2016-07-03 18:48:00.000000 UTC,3295,257,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-23 08:48:00.000000 UTC,2014-06-23 09:18:00.000000 UTC,1829,150,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-03-15 11:42:00.000000 UTC,2016-03-15 12:11:00.000000 UTC,1730,50,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-18 14:53:00.000000 UTC,2015-03-18 16:27:00.000000 UTC,5640,131,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-11-21 13:32:00.000000 UTC,2015-11-21 15:34:00.000000 UTC,7355,295,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-12-29 15:03:00.000000 UTC,2013-12-29 17:16:00.000000 UTC,7949,232,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-05-08 05:18:00.000000 UTC,2016-05-08 07:56:00.000000 UTC,9475,655,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-05 13:10:00.000000 UTC,2014-04-05 13:25:00.000000 UTC,906,302,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-04 14:39:00.000000 UTC,2015-03-04 15:47:00.000000 UTC,4047,37,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-17 19:26:00.000000 UTC,2015-04-18 18:16:00.000000 UTC,82182,138,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-03-28 16:58:00.000000 UTC,2016-03-28 17:18:00.000000 UTC,1175,53,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-08 17:22:00.000000 UTC,2013-09-08 17:23:00.000000 UTC,97,658,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-12 12:44:00.000000 UTC,2014-01-12 13:48:00.000000 UTC,3858,42,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-01 13:41:00.000000 UTC,2014-11-01 13:59:00.000000 UTC,1102,247,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-17 13:18:00.000000 UTC,2014-08-17 13:58:00.000000 UTC,2369,227,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-22 09:46:00.000000 UTC,2015-05-22 13:01:00.000000 UTC,11700,242,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-16 14:25:00.000000 UTC,2015-05-16 16:45:00.000000 UTC,8392,192,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-08-20 00:14:00.000000 UTC,2016-08-20 01:07:00.000000 UTC,3164,243,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-15 07:11:00.000000 UTC,2016-06-15 07:27:00.000000 UTC,944,249,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-05 21:57:00.000000 UTC,2015-02-05 23:01:00.000000 UTC,3797,132,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-08-28 09:49:00.000000 UTC,2015-08-28 11:28:00.000000 UTC,5933,18,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-18 17:28:00.000000 UTC,2015-03-18 18:03:00.000000 UTC,2094,131,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-13 15:03:00.000000 UTC,2015-07-13 17:00:00.000000 UTC,7024,99,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-10-29 18:35:00.000000 UTC,2015-10-29 21:32:00.000000 UTC,10615,132,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-24 15:13:00.000000 UTC,2015-05-24 15:51:00.000000 UTC,2319,88,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-29 17:39:00.000000 UTC,2014-01-29 18:14:00.000000 UTC,2100,691,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-24 08:06:00.000000 UTC,2016-06-24 09:13:00.000000 UTC,4023,40,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-08-30 15:38:00.000000 UTC,2013-08-30 18:00:00.000000 UTC,8522,674,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-01-16 13:18:00.000000 UTC,2015-01-16 13:53:00.000000 UTC,2120,32,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-11-20 13:29:00.000000 UTC,2015-11-20 13:46:00.000000 UTC,1037,54,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-19 16:12:00.000000 UTC,2014-01-19 17:08:00.000000 UTC,3408,92,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-29 17:34:00.000000 UTC,2015-04-29 18:36:00.000000 UTC,3713,227,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-02-23 10:55:00.000000 UTC,2016-02-23 11:50:00.000000 UTC,3317,156,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-10-23 12:31:00.000000 UTC,2013-10-23 18:52:00.000000 UTC,22885,183,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-08 16:29:00.000000 UTC,2015-03-08 17:27:00.000000 UTC,3508,258,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-29 15:51:00.000000 UTC,2014-08-29 16:17:00.000000 UTC,1544,143,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-27 11:29:00.000000 UTC,2014-09-27 12:53:00.000000 UTC,5055,148,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-21 14:54:00.000000 UTC,2014-03-22 14:46:00.000000 UTC,85917,200,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-28 18:50:00.000000 UTC,2014-06-28 19:15:00.000000 UTC,1516,10,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-11 17:00:00.000000 UTC,2014-09-14 16:27:00.000000 UTC,257233,23,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-10 12:05:00.000000 UTC,2014-07-10 15:56:00.000000 UTC,13888,162,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-15 11:04:00.000000 UTC,2015-07-15 12:41:00.000000 UTC,5845,157,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-22 01:45:00.000000 UTC,2014-09-22 03:17:00.000000 UTC,5545,148,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-10 06:01:00.000000 UTC,2015-04-10 07:09:00.000000 UTC,4077,227,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-04-26 12:13:00.000000 UTC,2014-04-26 14:35:00.000000 UTC,8510,41,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-10 15:44:00.000000 UTC,2014-06-10 16:18:00.000000 UTC,2037,190,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-05 21:52:00.000000 UTC,2015-02-05 23:02:00.000000 UTC,4184,241,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-12 12:38:00.000000 UTC,2014-01-12 13:48:00.000000 UTC,4211,211,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-17 20:14:00.000000 UTC,2016-06-18 11:41:00.000000 UTC,55649,691,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-18 13:10:00.000000 UTC,2014-08-18 14:48:00.000000 UTC,5873,150,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-10-20 15:43:00.000000 UTC,2013-10-20 16:37:00.000000 UTC,3271,297,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-04 13:50:00.000000 UTC,2014-07-04 15:09:00.000000 UTC,4723,156,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-13 12:56:00.000000 UTC,2014-06-13 12:59:00.000000 UTC,181,151,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-03-01 11:54:00.000000 UTC,2015-03-01 13:53:00.000000 UTC,7095,700,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-11-09 21:22:00.000000 UTC,2015-11-09 21:48:00.000000 UTC,1571,174,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-25 18:06:00.000000 UTC,2014-10-25 19:24:00.000000 UTC,4685,135,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-06 13:51:00.000000 UTC,2013-09-06 15:51:00.000000 UTC,7239,99,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-08-20 00:14:00.000000 UTC,2016-08-20 01:07:00.000000 UTC,3225,710,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-02 07:44:00.000000 UTC,2014-06-02 08:01:00.000000 UTC,1031,107,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-27 12:20:00.000000 UTC,2015-06-27 12:43:00.000000 UTC,1380,55,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-06-22 17:36:00.000000 UTC,2014-06-22 19:26:00.000000 UTC,6590,664,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-23 17:51:00.000000 UTC,2014-01-23 18:58:00.000000 UTC,4008,104,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-05 11:22:00.000000 UTC,2014-07-05 12:44:00.000000 UTC,4921,702,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-05-18 06:53:00.000000 UTC,2014-05-18 09:08:00.000000 UTC,8075,129,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-20 20:56:00.000000 UTC,2015-02-20 22:50:00.000000 UTC,6841,25,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-20 14:17:00.000000 UTC,2014-08-20 16:17:00.000000 UTC,7204,101,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-10-06 15:50:00.000000 UTC,2013-10-06 16:18:00.000000 UTC,1664,181,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-03 11:44:00.000000 UTC,2013-11-03 12:31:00.000000 UTC,2844,59,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-14 08:40:00.000000 UTC,2014-09-14 09:13:00.000000 UTC,2003,28,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-01-27 16:47:00.000000 UTC,2016-01-27 17:34:00.000000 UTC,2814,125,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-01-15 09:49:00.000000 UTC,2015-01-15 10:08:00.000000 UTC,1127,36,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-23 17:55:00.000000 UTC,2014-01-23 18:57:00.000000 UTC,3740,200,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-22 01:36:00.000000 UTC,2014-09-22 03:16:00.000000 UTC,6018,116,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-04-16 12:49:00.000000 UTC,2016-04-16 17:55:00.000000 UTC,18357,144,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-13 07:47:00.000000 UTC,2014-08-13 08:18:00.000000 UTC,1842,150,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-20 14:17:00.000000 UTC,2014-08-20 16:16:00.000000 UTC,7164,28,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-29 17:31:00.000000 UTC,2015-04-29 18:37:00.000000 UTC,3967,119,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-07-07 13:13:00.000000 UTC,2016-07-07 13:32:00.000000 UTC,1104,168,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-29 16:22:00.000000 UTC,2015-07-29 16:24:00.000000 UTC,104,65,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-14 08:42:00.000000 UTC,2014-09-14 09:13:00.000000 UTC,1823,645,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-16 12:32:00.000000 UTC,2014-03-16 14:43:00.000000 UTC,7859,200,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-10 20:42:00.000000 UTC,2015-06-10 21:20:00.000000 UTC,2276,91,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-07 11:42:00.000000 UTC,2013-11-07 15:39:00.000000 UTC,14196,59,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-03-16 12:33:00.000000 UTC,2014-03-16 14:43:00.000000 UTC,7777,59,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-12 15:03:00.000000 UTC,2015-07-12 15:35:00.000000 UTC,1958,660,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-14 15:42:00.000000 UTC,2014-11-14 15:54:00.000000 UTC,722,65,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-03-10 08:57:00.000000 UTC,2016-03-10 11:04:00.000000 UTC,7608,207,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-02-14 02:05:00.000000 UTC,2014-02-14 19:28:00.000000 UTC,62571,685,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-03 06:16:00.000000 UTC,2015-07-03 06:42:00.000000 UTC,1577,30,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-17 22:17:00.000000 UTC,2014-10-17 23:41:00.000000 UTC,5029,656,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-09-28 13:35:00.000000 UTC,2014-09-28 15:33:00.000000 UTC,7066,99,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-12-29 15:04:00.000000 UTC,2013-12-29 17:16:00.000000 UTC,7925,119,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-08-20 14:09:00.000000 UTC,2014-08-20 16:16:00.000000 UTC,7623,691,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-30 10:54:00.000000 UTC,2016-06-30 13:16:00.000000 UTC,8495,667,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-08 12:55:00.000000 UTC,2014-11-08 14:15:00.000000 UTC,4820,17,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-06 13:49:00.000000 UTC,2013-09-06 15:52:00.000000 UTC,7385,81,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-14 17:33:00.000000 UTC,2014-07-14 18:03:00.000000 UTC,1781,644,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-14 09:12:00.000000 UTC,2016-06-14 12:50:00.000000 UTC,13048,107,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-13 12:43:00.000000 UTC,2013-09-13 13:25:00.000000 UTC,2520,26,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-12-02 18:49:00.000000 UTC,2014-12-02 18:58:00.000000 UTC,542,644,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-06-30 12:56:00.000000 UTC,2015-06-30 13:28:00.000000 UTC,1924,155,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-08 12:56:00.000000 UTC,2013-11-08 13:12:00.000000 UTC,911,59,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-12-07 13:34:00.000000 UTC,2014-12-07 13:56:00.000000 UTC,1365,691,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-01-19 16:07:00.000000 UTC,2014-01-19 17:08:00.000000 UTC,3693,262,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-25 18:12:00.000000 UTC,2014-10-25 19:24:00.000000 UTC,4361,87,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-12 13:57:00.000000 UTC,2015-07-12 15:45:00.000000 UTC,6526,155,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-06-19 17:16:00.000000 UTC,2016-06-19 18:32:00.000000 UTC,4591,644,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-16 14:28:00.000000 UTC,2015-02-16 17:15:00.000000 UTC,10035,261,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-10 12:18:00.000000 UTC,2014-07-10 15:57:00.000000 UTC,13147,12,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-05-19 11:57:00.000000 UTC,2015-05-19 12:34:00.000000 UTC,2179,239,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-05-16 14:10:00.000000 UTC,2014-05-16 14:53:00.000000 UTC,2601,658,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-11-22 09:45:00.000000 UTC,2015-11-22 09:48:00.000000 UTC,158,308,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-13 10:48:00.000000 UTC,2015-02-13 16:05:00.000000 UTC,19000,680,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-08 09:33:00.000000 UTC,2015-07-08 11:12:00.000000 UTC,5920,247,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-01-16 16:23:00.000000 UTC,2015-01-16 17:10:00.000000 UTC,2823,710,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-11-03 14:40:00.000000 UTC,2015-11-03 15:24:00.000000 UTC,2633,130,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-07-04 18:22:00.000000 UTC,2014-07-04 18:49:00.000000 UTC,1671,21,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-10-26 17:05:00.000000 UTC,2014-10-26 17:46:00.000000 UTC,2422,14,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-12-28 16:10:00.000000 UTC,2013-12-28 19:00:00.000000 UTC,10242,200,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-09-08 17:17:00.000000 UTC,2013-09-08 17:20:00.000000 UTC,203,654,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-02-28 11:16:00.000000 UTC,2015-02-28 11:53:00.000000 UTC,2171,304,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2016-02-20 12:21:00.000000 UTC,2016-02-20 15:31:00.000000 UTC,11435,11,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-07-12 13:46:00.000000 UTC,2015-07-12 13:50:00.000000 UTC,248,660,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2013-11-14 13:32:00.000000 UTC,2013-11-14 13:34:00.000000 UTC,80,293,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2014-11-09 08:55:00.000000 UTC,2014-11-09 09:39:00.000000 UTC,2619,679,Customer,3_3
+San Jose Civic Center,San Jose Civic Center,2015-04-10 06:09:00.000000 UTC,2015-04-10 07:09:00.000000 UTC,3638,120,Customer,3_3

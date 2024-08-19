@@ -1,0 +1,54 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description:
+Parameters:
+  CidrBlock:
+    Type: String
+    Description: "Cidr Block for Application VPC"
+    Default: "10.0.0.0/16"
+
+Resources:
+  # Network Level
+  ApplicationVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: !Ref CidrBlock
+      EnableDnsHostnames: Yes
+      EnableDnsSupport: Yes
+      InstanceTenancy: "default"
+  PostCodeAPISubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      AssignIpv6AddressOnCreation: No
+      CidrBlock: "10.0.0.0/24"
+      MapPublicIpOnLaunch: No
+      VpcId:
+        Ref: ApplicationVPC
+  CrimeServiceSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      AssignIpv6AddressOnCreation: No
+      CidrBlock: "10.0.1.0/24"
+      MapPublicIpOnLaunch: No
+      VpcId:
+        Ref: ApplicationVPC
+
+  # Frontend API
+  PostcodeAPI:
+    Type: AWS::ElasticBeanstalk::Application
+    Properties:
+      ApplicationName: "Postcode API"
+      Description: "API for Crime Lookup service"
+      ResourceLifecycleConfig:
+        ApplicationResourceLifecycleConfig
+
+  PostcodeSQS:
+    Type: AWS::SQS::Queue
+
+  CrimeServiceELB:
+    Type: AWS::ElasticLoadBalancing::LoadBalancer
+    Properties:
+      Listeners:
+        InstancePort:
+
+
+

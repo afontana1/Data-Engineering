@@ -1,0 +1,88 @@
+/* Styles go here */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+header {
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: dodgerblue;
+    margin: 0;
+}
+
+.main {
+    text-align: center;
+    padding-top: 80px;
+}
+
+#search {
+    font-size: 18px;
+}
+
+#search label {
+    font-weight: bold;
+}
+
+#search input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+#search button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+#search button:hover {
+    background-color: deepskyblue;
+}
+
+#weather {
+    padding: 30px;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 100px auto auto;
+    background-color: deepskyblue;
+    box-shadow: 2px 2px 3px #ccc;
+    color: white;
+    box-sizing: border-box;
+    display: none;
+    font-weight: bold;
+}
+
+#weather h1 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#weatherDescription {
+    float: left;
+}
+
+#weatherTemperature {
+    float: right;
+}
+
+#load {
+    padding: 30px;
+    width: 500px;
+    margin: 100px auto auto;
+    display: none;
+}

@@ -1,0 +1,60 @@
+buildscript {
+    ext.kotlin_version = "1.7.20"
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+subprojects {
+    if (["applications", "components"].contains(name)) return
+
+    group "io.collective"
+
+    apply plugin: "kotlin"
+
+    defaultTasks "clean", "build"
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+        implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+        implementation "com.fasterxml.jackson.core:jackson-core:2.8.4"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.8.4"
+        implementation "com.fasterxml.jackson.core:jackson-annotations:2.8.4"
+        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.8.4"
+        implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.4"
+        implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.8.4"
+
+        implementation "org.slf4j:slf4j-api:1.7.10"
+        implementation "org.slf4j:slf4j-simple:1.7.10"
+
+        testImplementation "junit:junit:4.11"
+        testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+
+        testImplementation "org.mockito:mockito-core:3.3.0"
+        testImplementation "com.nhaarman:mockito-kotlin:1.6.0"
+    }
+
+    sourceSets {
+        main.kotlin.srcDir "src/main/kotlin"
+        test.kotlin.srcDir "src/test/kotlin"
+
+        test.resources.srcDir "src/test/resources"
+    }
+
+    test.testLogging.showStandardStreams = true
+    test.testLogging.exceptionFormat = "full"
+
+    task stage(dependsOn: ["assemble", "clean"]) {
+        group "Heroku"
+        description "Run by Heroku to when deploying (https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku)"
+    }
+    assemble { mustRunAfter "clean" }
+}

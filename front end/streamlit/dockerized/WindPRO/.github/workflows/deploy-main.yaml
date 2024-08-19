@@ -1,0 +1,33 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to EC2
+        env:
+          PRIVATE_KEY_BASE64: ${{ secrets.EC2_SSH_PRIVATE_KEY_BASE64 }}
+          HOST: ${{ secrets.EC2_HOST }}
+          USER: ${{ secrets.EC2_USER }}
+        run: |
+          echo "$PRIVATE_KEY_BASE64" | base64 -d > private_key.pem
+          chmod 600 private_key.pem
+          ssh -o StrictHostKeyChecking=no -i private_key.pem $USER@$HOST << EOF
+            cd windpro
+            git pull origin main 
+            docker-compose down
+            docker container prune -f
+            docker image prune -f
+            docker-compose build
+            docker-compose up -d
+          EOF
+          rm -f private_key.pem

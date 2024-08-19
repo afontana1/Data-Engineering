@@ -1,0 +1,15 @@
+atoma==0.0.17
+python-dateutil==2.8.1
+kafka-python==2.0.1
+beautifulsoup4==4.9.1
+lxml==4.6.3
+redis==3.5.3
+requests==2.23.0
+fakeredis==1.4.1
+langid==1.1.6
+pytest==5.4.3
+flake8==3.8.3
+python-coveralls==2.9.3
+pytest==5.4.3
+pytest-cov==2.10.1
+coveralls==2.1.2

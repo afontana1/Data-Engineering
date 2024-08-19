@@ -1,0 +1,567 @@
+    1  cd w205
+    2  git clone https://github.com/mids-w205-martin-mims/course-content
+    3  git clone https://github.com/mids-w205-martin-mims/assignment-01-penpen86
+    4  docker pull midsw205/base
+    5  mkdir w205
+    6  docker run it -rm-v /home/science/w205:/w205midsw205/base:latestbash
+    7  docker run it -rm-v /home/science/w205:/w205 midsw205/base:latest bash
+    8  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+    9  git clone https://github.com/mids-w205-martin-mims/assignment-01-penpen86
+   10  it config --global user.name "penpen86"
+   11  git config --global user.name "penpen86"
+   12  git config --global user.name
+   13  git revert <3622bfe7d56b99d9d1de95f0f9f9eedf22fa1a9f>
+   14  git status
+   15  ls
+   16  cd assigment-01-penpen86
+   17  cd /assigment-01-penpen86
+   18  cd \assigment-01-penpen86
+   19  cd ~\assigment-01-penpen86
+   20  cd ~/assigment-01-penpen86
+   21  cd ~/assignment-01-penpen86
+   22  git status
+   23  git fetch
+   24  git status
+   25  git log
+   26  git pull origin master
+   27  git pull origin penpen86-PR1-1
+   28  git config --global user.email "vinicio.desola@gmail.com"
+   29  git config --global user.name "penpen86"
+   30  git pull origin penpen86-PR1-1
+   31  clear
+   32  pwd
+   33  ls
+   34  cd /course-content
+   35  cd course-content
+   36  ls
+   37  cd 01-Introduction
+   38  ls
+   39  cd ..
+   40  cd 01-Introduction
+   41  cd ../,,
+   42  cd ../..
+   43  ls -s
+   44  cd 
+   45  cd course-content
+   46  ls -l
+   47  cd
+   48  ls
+   49  cd course-content
+   50  cd 01-Introduction
+   51  ls -l
+   52  ls -l -h
+   53  cd ..
+   54  cd 01-Introduction/
+   55  cd ..
+   56  clear
+   57  ls
+   58  cd course-content/
+   59  cd 01-Introduction/
+   60  ls -altr
+   61  ls -a
+   62  ls -l
+   63  ls -t
+   64  ls -r
+   65  ls
+   66  git init
+   67  ls
+   68  ls -a
+   69  cd assignment-01-penpen86/
+   70  ls -la
+   71  ls
+   72  cd
+   73  clear
+   74  cd
+   75  ls
+   76  cd w205
+   77  ls
+   78  cd
+   79  cp /signup-penpen86/README.md /w205
+   80  man cp
+   81  cp -a /signup-penpen86/README.md /w205
+   82  cp -a /signup-penpen86/README.md /w205/README-copy.md
+   83  cp -a ~/signup-penpen86/README.md ~/w205/README-copy.md
+   84  cd w205
+   85  ls
+   86  cd
+   87  cd signup-penpen86/
+   88  ls -a
+   89  git fetch
+   90  ls
+   91  git branch
+   92  pwd
+   93  cd
+   94  cd w205/
+   95  rm README-copy.md 
+   96  ls
+   97  cd 
+   98  cd assignment-01-penpen86/
+   99  git status
+  100  clear
+  101  cd assignment-01-penpen86/
+  102  git log
+  103  cd ~/w205
+  104  curl -L -o annot_fpid.json https://goo.gl/qWiu7d
+  105  curl -L -o lp_data.csv https://goo.gl/FDFPYB
+  106  head lp_data.csv
+  107  man sort
+  108  cat lp_data.csv | sort -n
+  109  head annot_fpid.json | jq
+  110  head annot_fpid.json | jq '.[][]'
+  111  cat lp_data.csv | sort -nr
+  112  head annot_fpid.json | jq '.[][]' -r | sort -r
+  113  head annot_fpid.json | jq '.[][]' -r | sort -r | unique
+  114  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq
+  115  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq -c
+  116  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq -c | sort -r
+  117  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq -c | sort -gr
+  118  man uniq
+  119  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq -c | sort -gr | head 10
+  120  head annot_fpid.json | jq '.[][]' -r | sort -r | uniq -c | sort -gr | head -10
+  121  man bq
+  122  bq --help
+  123  gcloud init
+  124  bq query --use_legacy_sql=false 'SELECT count(*) FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  125  docker ps
+  126  vi .bashrc 
+  127  cat .git/config 
+  128  ls -al
+  129  ls
+  130  cd assignment-01-penpen86/
+  131  ls -al
+  132  git branch -a
+  133  w
+  134  git checkout penpen86-PR1
+  135  git checkout master
+  136  cd
+  137  git status
+  138  ls -al
+  139  ls .git
+  140  cat .git/config 
+  141  mv .git /tmp/
+  142  cd /tmp/
+  143  mv .git not.git
+  144  cd
+  145  clear
+  146  docker images
+  147  docker pull midsw205/base
+  148  clear
+  149  docker ps
+  150  docker run -it --rm -v ~/w205:/w205 midsw205/base bash
+  151  lsb_release -a
+  152  clear
+  153  docker run -it --rm -v ~/w205:/w205 midsw205/base bash
+  154  docker ps -a
+  155  docker run -it --rm -v ~/w205:/w205 midsw205/base bash
+  156  docker ps -a
+  157  clear
+  158  cd w205
+  159  dc ..
+  160  cd ..
+  161  git clone https://github.com/mids-w205-martin-mims/assignment-03-penpen86
+  162  git config --global user.email "penpen86@gmail.com"
+  163  git config --global credential.helper .Q1w2e3r4t5
+  164  git clone https://github.com/mids-w205-martin-mims/assignment-04-penpen86
+  165  clear
+  166  cd assignment-03-penpen86/
+  167  vi README.md
+  168  gcloud init
+  169  bq query --use_legacy_sql=true'
+  170  select count(*) from `bigquery-public-data.san_francisco.bikeshare_status`'
+  171  bq query --use_legacy_sql=false'
+  172  select count(*) from `bigquery-public-data.san_francisco.bikeshare_status`'
+  173  bq query --use_legacy_sql=false 'SELECT count(*) FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  174  vi README.md
+  175  git statys
+  176  git status
+  177  git checkout -- README.md
+  178  git branch penpen-PR01
+  179  git checkout penpen-PR01 
+  180  vi README.md
+  181  bq query --use_legacy_sql=false 'SELECT min(time), max(time) FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  182  bq query --use_legacy_sql=false 'SELECT x.Earliest_Date, y.Latest_Date FROM (SELECT min(start_date) Earliest_Date  FROM `bigquery-public-data.san_francisco.bikeshare_trips`) as x, (SELECT max(end_date) Latest_Date FROM `bigquery-public-data.san_francisco.bikeshare_trips`) as y'
+  183  vi README.md
+  184  bq query --use_legacy_sql=false 'SELECT count(distinct bike_number) Number_Bikes FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  185  vi README.md
+  186  clear
+  187  cd assignment-03-penpen86/
+  188  bq query --use_legacy_sql=false 'SELECT x.Morning, y.Afternoon FROM (SELECT COUNT(*) Morning FROM `bigquery-public-data.san_francisco.bikeshare_trips` WHERE EXTRACT(HOUR FROM end_date) BETWEEN '06' and '12') as x, (SELECT COUNT(*) Afternoon FROM `bigquery-public-data.san_francisco.bikeshare_trips` WHERE EXTRACT(HOUR FROM end_date) BETWEEN '16' and '22') as y'
+  189  vi README.md 
+  190  cd assignment-03-penpen86/
+  191  vi README.md
+  192  git commit -m'Third advance of Query Project - questions ask and answered' README.md
+  193  git push origin penpen-PR01 
+  194  git checkout master
+  195  git fecth --prune
+  196  git fetch --prune
+  197  cd ..
+  198  git clone https://github.com/mids-w205-martin-mims/assignment-02-penpen86
+  199  clear
+  200  docker ps
+  201  docker rm -f'
+  202  '
+  203  docker rm -f
+  204  docker ps -all
+  205  docker run redis
+  206  clear
+  207  docker run -d redis
+  208  docker rm
+  209  docker ps
+  210  docker ps -a
+  211  cd ~/course-content/
+  212  git pull --a
+  213  [Bclear
+  214  clear
+  215  git pull --all
+  216  clear
+  217  ipython
+  218  clear
+  219  cd ~/assignment-04-penpen86/
+  220  rm result_%d%y.csv
+  221  rm y.csv
+  222  clear
+  223  cd assignment-04-penpen86/
+  224  mkdir data
+  225  ls
+  226  cd data
+  227  cd .
+  228  cd ..
+  229  git checkout -b penpen-PR01
+  230  ls
+  231  git log -a
+  232  git status
+  233  vi README.md 
+  234  git status
+  235  git commit -a -m'Created a Jupyter Notebook report, recomendations are inside, with its visaulization'
+  236  git status
+  237  git add .
+  238  git status
+  239  git commit -a -m'Created a Jupyter Notebook report, recomendations are inside, with its visaulization'
+  240  git push origin penpen-PR01 
+  241  git checkout master
+  242  ls
+  243  git branch -d penpen-PR01 
+  244  git checkout penpen-PR01 
+  245  git status
+  246  cd ..
+  247  cd assignment-03-penpen86/
+  248  git checkout penpen-PR01 
+  249  git status
+  250  cd .
+  251  cd ..
+  252  cd assignment-02-penpen86/
+  253  git branch -a
+  254  cd ..
+  255  cd assignment-03-penpen86/
+  256  git branch -a
+  257  git checkout master
+  258  cd ..
+  259  cd assignment-04-penpen86/
+  260  git checkout master
+  261  git branch -a
+  262  cd ..
+  263  clear
+  264  cd course-content/
+  265  git fetch
+  266  cd ..
+  267  git clone https://github.com/mids-w205-martin-mims/assignment-05-penpen86.git
+  268  cd assignment-05-penpen86/
+  269  ls
+  270  cd ..
+  271  ls
+  272  cd w205/
+  273  ls
+  274  cd ..
+  275  cd assignment-05-penpen86/
+  276  clear
+  277  cp ../course-content/05-Storing-Data-II/example-1-docker-compose.yml 
+  278  man cp
+  279  git -b checkout penpen-PR01
+  280  git checkout -b penpen-PR01
+  281  git init
+  282  cp ../course-content/05-Storing-Data-II/example-1-docker-compose.yml docker-compose.yml
+  283  ls
+  284  git add -a
+  285  git add -all
+  286  git add --all
+  287  clear
+  288  vi docker-compose.yml 
+  289  docker-compose up -d
+  290  vi docker-compose.yml 
+  291  docker-compose up -d
+  292  vi docker-compose.yml 
+  293  docker-compose up -d
+  294  docker-compose ps
+  295  docker-compose logs
+  296  docker-compose ps -q
+  297  docker-compose logs redis
+  298  docker-compose exec mids bash
+  299  docker-compose exec mids jupyter notebook --no-browser -port 8080 --ip 0.0.0.0 --allow-root
+  300  docker-compose exec mids jupyter notebook --no-browser --port 8080 --ip 0.0.0.0 --allow-root
+  301  vi docker-compose.yml 
+  302  docker-compose down
+  303  docker-compose ps
+  304  docker-compose ps --all
+  305  docker-compose ps --d
+  306  docker-compose ps -d
+  307  docker ps -a
+  308  docker kill sad_torvalds 
+  309  docker ps
+  310  docker-compose ps
+  311  docker-compose ps -a
+  312  docker ps -a
+  313  docker-compose ps
+  314  docker-compose up -d
+  315  docker-compose logs mids
+  316  vi docker-compose.yml 
+  317  docker-compose down 
+  318  docker-compose up -d
+  319  docker-compose logs mids
+  320  docker-compose down
+  321  cd ~/w205
+  322  curl -L -o trips.csv https://goo.gl/QvHLKe
+  323  cd ..
+  324  cd assignment-05-penpen86/
+  325  vi docker-compose.yml 
+  326  docker-compose up -d
+  327  docker-compose logs mids
+  328  docker-compose down 
+  329  history > penpen86-history.txt
+  330  ls
+  331  git add penpen86-history.txt 
+  332  git status
+  333  git add penpen86-annotations.md 
+  334  git status
+  335  rm htmartin-history.txt 
+  336  git status
+  337  vi penpen86-history.txt 
+  338  git add Extra\ -\ Notebook.ipynb 
+  339  docker run -d --name redis redis
+  340  docker kill redis
+  341  docker ps -a
+  342  docker run -d --name redis -p 6379:6379 redis
+  343  docker-compose ps
+  344  docker ps -a
+  345  docker ps
+  346  docker run -d --name redis -p 6379:6379 redis
+  347  docker rm redis
+  348  docker run -d --name redis -p 6379:6379 redis
+  349  docker ps
+  350  cp ../w205/trips.csv trips.csv
+  351  git add trips.csv 
+  352  docker kill redis
+  353  docker ps
+  354  ls
+  355  git status
+  356  git add Data/
+  357  git status
+  358  vi README.md 
+  359  git status
+  360  git commit -m'Updated all files needed for spin a cluster' all
+  361  git commit -a -m'Updated all files needed for spin a cluster'
+  362  git status
+  363  git push origin penpen-PR01 
+  364  cd ..
+  365  cd assignment-03-penpen86/
+  366  git branches
+  367  git branch
+  368  git branch -d penpen-PR01 
+  369  git fetch
+  370  git branch
+  371  git branch -d penpen-PR01 
+  372  git checkout penpen-PR01 
+  373  git status
+  374  git checkout master
+  375  git branch -d penpen-PR01 
+  376  git branch -D penpen-PR01 
+  377  git branch
+  378  cd ..
+  379  cd assignment-04
+  380  cd assignment-04-penpen86/
+  381  git fetch
+  382  git branches
+  383  git branch
+  384  git checkout penpen-PR01 
+  385  git status
+  386  git checkout master
+  387  git branch -d penpen-PR01 
+  388  git branch -D penpen-PR01 
+  389  clear
+  390  ls
+  391  git clone https://github.com/mids-w205-martin-mims/assignment-06-penpen86.git 
+  392  ls
+  393  cd assignment-06-penpen86/
+  394  git -b checkout penpen-PR01
+  395  git checkout -b penpen-PR01
+  396  git init
+  397  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  398  ls
+  399  cd ..
+  400  cd course-content/
+  401  git pull --all
+  402  cd ..
+  403  clear
+  404  cp course-content/06-Transforming-Data/docker-compose.yml assignment-06-penpen86/docker-compose.yml
+  405  cd assignment-06-penpen86/
+  406  ls
+  407  git status
+  408  mkdir data
+  409  ls
+  410  cp assessment-attempts-20180128-121051-nested.json data/assessment-attempts-20180128-121051-nested.json
+  411  ls
+  412  cd data/
+  413  ls
+  414  cd ..
+  415  rm assessment-attempts-20180128-121051-nested.json 
+  416  ls
+  417  git add data
+  418  git status
+  419  git add docker-compose.yml 
+  420  git status
+  421  clear
+  422  vi docker-compose.yml 
+  423  docker-compose up -d
+  424  docker-compose logs -f kafka
+  425  docker-compose exec kafka kafka-topics --create --topic feduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  426  docker-compose exec kafka kafka-topics --create --topic eduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  427  docker-compose exec kafka kafka-topics --describe --topic eduAssestments --zookeeper zookeeper:32181
+  428  clear
+  429  ls
+  430  cd data
+  431  ls
+  432  cd ..
+  433  ls
+  434  docker-compose exec mids bash -c "cat data/assessment-attempts-20180128-121051-nested.json"
+  435  docker-compose exec mids bash -c "cat /data/assessment-attempts-20180128-121051-nested.json"
+  436  docker-compose exec mids bash -c "cat /assigment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  437  docker-compose exec mids bash -c "cat ~/assigment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  438  docker-compose exec mids bash -c "cat ~/assignment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  439  docker-compose exec mids bash -c "cat /assignment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  440  cat data/assessment-attempts-20180128-121051-nested.json
+  441  clear
+  442  cat data/assessment-attempts-20180128-121051-nested.json | jq
+  443  clear
+  444  docker-compose exec mids bash -c "cat assignment-06-penpen86/data/assessment-attempts-20180128-121051-nested.json"
+  445  docker-compose exec mids bash -c
+  446  docker-compose exec mids bash
+  447  cd w205
+  448  cd ~/w205/
+  449  ls
+  450  cd ~/assignment-06-penpen86/
+  451  ls
+  452  vi docker-compose.yml 
+  453  git status 
+  454  docker-compose down
+  455  docker ps
+  456  docker-compose up -d
+  457  docker-compose exec kafka kafka-topics --create --topic eduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  458  docker-compose exec mids bash -c "cat /data/assessment-attempts-20180128-121051-nested.json"
+  459  docker-compose exec mids bash
+  460  docker-compose down
+  461  vi docker-compose.yml 
+  462  docker-compose up -d
+  463  docker-compose exec mids bash -c "cat /data/assessment-attempts-20180128-121051-nested.json"
+  464  docker-compose exec mids bash
+  465  docker-compose down
+  466  clear
+  467  vi docker-compose.yml 
+  468  docker-compose up -d
+  469  docker-compose exec mids bash -c "cat assessment-attempts-20180128-121051-nested.json"
+  470  docker-compose exec mids bash
+  471  cd ~/w205/
+  472  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  473  cd ~/assignment-06-penpen86/
+  474  ls
+  475  docker-compose down
+  476  docker ps
+  477  vi docker-compose.yml 
+  478  docker-compose up -d
+  479  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json"
+  480  clear
+  481  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.'"
+  482  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+  483  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | wc -l"
+  484  cd ~/w205
+  485  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+  486  cd ~/assignment-06-penpen86/
+  487  ls
+  488  git status 
+  489  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c | wc -l"
+  490  docker-compose down
+  491  docker-compose up -d
+  492  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.[]' -c | wc -l"
+  493  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | wc -l"
+  494  docker-compose exec kafka kafka-topics --create --topic eduAssestments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  495  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssestments && echo 'Produced 3280 messages.'"
+  496  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssestments -o beginning -e"
+  497  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssestments -o beginning -e | wc -l"
+  498  ls
+  499  vi README.md 
+  500  docker-compose down
+  501  history > penpen86-history.txt
+  502  rm htmartin-history.txt 
+  503  ls
+  504  git status
+  505  git add penpen86-history.txt 
+  506  git status
+  507  ls
+  508  git status
+  509  git add penpen86-annotations.md 
+  510  git status
+  511  git commit -a -m'Updated all files needed to produce and consume the Assessment Data'
+  512  git status
+  513  git push origin penpen-PR01 
+  514  clear
+  515  docker ps
+  516  docker cp assignment07penpen86_spark_1:/'PySpark - Unrolling Assessment'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  517  docker cp assignment07penpen86_spark_1:~/'PySpark - Unrolling Assessment'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  518  docker cp assignment07penpen86_spark_1:/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  519  docker-compose exec spark ls
+  520  cd assignment-07-penpen86/
+  521  docker-compose exec spark ls
+  522  docker cp assignment07penpen86_spark_1:/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  523  docker cp 2cafa6f48f5f:'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  524  docker cp 2cafa6f48f5f:'Py/Spark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  525  docker cp 2cafa6f48f5f/:'y/Spark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  526  docker cp 2cafa6f48f5f:/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  527  docker cp 2cafa6f48f5f:/spark-2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  528  ls
+  529  clear
+  530  history > penpen86-history.text
+  531  rm penpen86-history.text 
+  532  git add -A
+  533  ls
+  534  git status
+  535  docker-compose down
+  536  docker-compose up -d
+  537  docker-compose exec kafka kafka-topics --create --topic eduAssessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  538  docker-compose exec kafka kafka-topics --describe --topic eduAssessments --zookeeper zookeeper:32181
+  539  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t eduAssessments && echo 'Produced 3280 messages.'"
+  540  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t eduAssessments -o beginning -e | wc -l"
+  541  docker-compose exec spark ls 
+  542  docker-compose exec spark env PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root' pyspark
+  543  ls
+  544  clear
+  545  rm PySpark.ipynb 
+  546  docker cp 2cafa6f48f5f:/spark-2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  547  docker ps
+  548  docker cp 2cafa6f48f5f:/spark-2.2.0-bin-hadooark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  549  clear
+  550  docker cp 137aec3d0601:/spark2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  551  docker-compose exec spark ls 
+  552  docker cp 137aec3d0601:/spark-2.2.0-bin-hadoop2.6/'PySpark - Unrolling Assessments'.ipynb ~/assignment-07-penpen86/PySpark.ipynb
+  553  git status
+  554  git add -A
+  555  git status
+  556  rm .ipynb_checkpoints/
+  557  rm -R .ipynb_checkpoints/
+  558  git status
+  559  "new" > penpen86-annotations.md
+  560  "new" >> penpen86-annotations.md
+  561  echo "" >> penpen86-annotations.md
+  562  git add penpen86-annotations.md 
+  563  git status
+  564  vi README.md 
+  565  vi penpen86-annotations.md 
+  566  docker-compose down
+  567  history > penpen86-history.txt

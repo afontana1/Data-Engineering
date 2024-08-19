@@ -1,0 +1,16 @@
+{
+  "namespace": "com.udacity",
+  "type": "record",
+  "name": "weather.value",
+  "fields": [
+    {"name": "temperature", "type": "float"},
+    {
+      "name": "status", 
+      "type": {
+        "type": "enum", 
+        "name" : "weather_status",
+        "symbols": ["sunny", "partly_cloudy", "cloudy", "windy", "precipitation"]
+      }
+    }
+  ]
+}

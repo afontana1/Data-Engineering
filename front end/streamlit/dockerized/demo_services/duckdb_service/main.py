@@ -1,0 +1,3 @@
+import duckdb
+import requests
+

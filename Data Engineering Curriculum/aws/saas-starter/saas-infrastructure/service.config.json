@@ -1,0 +1,10 @@
+{
+  "name": "SaasStarter",
+  "awsAccount": "535707483867",
+  "awsRegion": "us-east-1",
+  "domain": "saas-starter-stack.com",
+  "prefix": "starter",
+  "frontendUrl": "https://saas-starter-stack.com/app/",
+  "stripeKey": "sk_test_dVPxaaBuDLylUmztkCmomO0p00dyqHOvDf",
+  "stripePriceId": "price_1Ipw2ECCoJYujIqgPAGPkuYZ"
+}

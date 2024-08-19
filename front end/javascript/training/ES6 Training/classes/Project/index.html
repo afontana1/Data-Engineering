@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src='https://unpkg.com/simple-statistics@7.8.2/dist/simple-statistics.min.js'></script>
+  </head>
+  <body>
+    <h2>Check Status</h2>
+
+    <p>Check the status of your order. We will show you where you land in the queue</p>
+    
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <h2>Enter Name, lets see if post works</h2>
+
+    <form id="myform">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <button type="submit"> Submit </button>
+    </form>
+    <button id="hideform">Hide</button>
+    <button id="showform">Show</button>
+    
+    <h2>Now Enter Name, to Get the data</h2>
+
+    <form id="myotherform" action="/get_status" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <button type="submit"> Submit </button>
+    </form>
+
+  <h2>Now Simply get file without event listeners and Fetch</h2>
+  <form action="/get_file" method="get">
+      <button type="submit">Download Single File</button>
+  </form>
+
+  <br><br>
+
+  <h2>Generate Data</h2>
+  <form id="generateDataForm" action="/generate_data" method="post">
+      <label for="datagen">Size of Data:</label>
+      <input type="text" id="datagen" name="datagen"><br><br>
+      <button type="submit">Generate Data for Graph</button>
+  </form>
+
+  <br><br>
+
+  <h2>D3.js Scatter-Plot</h2>    
+    <p>Click the "Submit" button and the form-data will be sent to backend.</p>
+  </body>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <script>
+    // 
+
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide();
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+      $("#hideform").click(function(){
+        $("[id=myform]").hide();
+      });
+      $("#showform").click(function(){
+        $("[id=myform]").show();
+      });
+
+    });
+
+    const form = document.getElementById('myform');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const fd = new FormData(form);
+      const urlEncoded = new URLSearchParams(fd).toString();
+      fetch('http://localhost:3000/submit_name', {
+        method: "POST",
+        body: urlEncoded,
+        headers: {
+          'Content-type': 'application/x-www-form-urlencoded',
+        }
+      })
+    });
+
+    const otherform = document.getElementById('myotherform');
+    otherform.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const fd = new FormData(otherform);
+        const urlEncoded = new URLSearchParams(fd).toString();
+        fetch('http://localhost:3000/get_status', {
+          method: "GET",
+        })
+        .then( res => res.blob() )
+        .then( blob => {
+          if (blob != null) {
+              var url = window.URL.createObjectURL(blob);
+              var a = document.createElement('a');
+              a.href = url;
+              a.download = "download.txt";
+              document.body.appendChild(a);
+              a.click();
+              a.remove();
+          }
+      });
+    });
+
+    const generateDataForm = document.getElementById('generateDataForm');
+    generateDataForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const fd = new FormData(generateDataForm);
+        const urlEncoded = new URLSearchParams(fd).toString();
+        let d = await fetch('http://localhost:3000/generate_data', {
+          method: "POST",
+          body: urlEncoded,
+          headers: {
+            'Content-type': 'application/x-www-form-urlencoded',
+          }
+        }).then(
+          (response) => response.json()
+        ).then(
+          data => {
+            return data;
+        }
+      ).catch(
+        error => {console.error(error);}
+      );
+      var margin = {
+            top: 20,
+            right: 20,
+            bottom: 30,
+            left: 40
+        },
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+    var x = d3.scale.linear()
+        .range([0, width]);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var data = d.data;
+
+    data.forEach(function(d) {
+        d.x = +d.x;
+        d.y = +d.y;
+        d.yhat = +d.yhat;
+    });
+
+    var line = d3.svg.line()
+        .x(function(d) {
+            return x(d.x);
+        })
+        .y(function(d) {
+            return y(d.yhat);
+        });
+
+    x.domain(d3.extent(data, function(d) {
+        return d.x;
+    }));
+    y.domain(d3.extent(data, function(d) {
+        return d.y;
+    }));
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis)
+        .append("text")
+        .attr("class", "label")
+        .attr("x", width)
+        .attr("y", -6)
+        .style("text-anchor", "end")
+        .text("X-Value");
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .append("text")
+        .attr("class", "label")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Y-Value")
+
+    svg.selectAll(".dot")
+        .data(data)
+        .enter().append("circle")
+        .attr("class", "dot")
+        .attr("r", 3.5)
+        .attr("cx", function(d) {
+            return x(d.x);
+        })
+        .attr("cy", function(d) {
+            return y(d.y);
+        });
+
+    svg.append("path")
+        .datum(data)
+        .attr("class", "line")
+        .attr("d", line);
+
+              
+  });
+    </script>
+</html>

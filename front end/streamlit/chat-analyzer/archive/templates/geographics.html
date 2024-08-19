@@ -1,0 +1,57 @@
+
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp Analyzer</title>
+
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/main.css') }}">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  </head>
+  <body>
+    <nav class="sidebar">
+      <a href="#" class="logo"><center>Whatsapp Analyzer</center></a>
+      <div class="menu-content">
+        <ul class="menu-items">
+          <div class="menu-title"><u>Sections</u></div>
+          <li class="item">
+            <a href="/general_statistics/{{ value }}">General Statistics</a>
+          </li>
+          <li class="item">
+            <a href="/user_level_analysis/{{ value }}">User Level Analysis</a>
+          </li>
+          <li class="item">
+            <a href="/text_analysis/{{ value }}">Text Analysis</a>
+          </li>
+            <li class="item">
+            <a href="/geographics/{{ value }}">Geographic Analysis</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <div id="map" class="map-container"></div>
+<script src="{{ url_for('static', filename='/universal.js') }}" /></script>
+<script>
+{% for marker in markers %}
+L.marker([{{ marker['lat'] }}, {{ marker['lon'] }}]).addTo(map)
+.bindPopup(`
+        <div class="popup-content">
+            {{ marker['popup'] | safe }}
+        </div>`, {maxWidth : 900},{maxHeight:900})
+.openPopup();
+{% endfor %}
+</script>
+
+    </main>
+  </body>
+</html>

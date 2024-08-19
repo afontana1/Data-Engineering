@@ -1,0 +1,8 @@
+credentials.json
+token.pickle
+__pycache__
+gmail-puller-env
+.idea
+.credentials
+.ipynb_checkpoints
+gp-venv

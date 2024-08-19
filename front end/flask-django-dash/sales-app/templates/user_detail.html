@@ -1,0 +1,25 @@
+{%- extends "base.html" %}
+
+{% block content %}
+    <h3>User Details</h3>
+    <div class="container">
+        <form method="GET" action="{{ url_for('user') }}">
+            <input type="text" name="id" value="{{ user.id }}" hidden />
+            <label><b>First Name</b></label>
+            {{ user.first_name }}
+            <br><br>
+            <label><b>Last Name</b></label>
+            {{ user.last_name }}
+            <br><br>
+            <label><b>Username</b></label>
+            {{ user.username }}
+            <br><br>
+            <label><b>Email</b></label>
+            {{ user.email }}
+            <br><br>
+
+            <button type="submit" name="action" value="edit">Edit</button>
+            <button type="submit" name="action" value="delete">Delete</button>
+        </form>
+    </div>
+{%- endblock %}

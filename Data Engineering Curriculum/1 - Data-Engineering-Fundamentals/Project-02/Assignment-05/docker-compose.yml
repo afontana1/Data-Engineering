@@ -1,0 +1,19 @@
+---
+version: '2'
+services:
+  redis:
+    image: redis:latest
+    expose:
+      - "6379"
+
+  mids:
+    image: midsw205/base:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ~/w205:/w205
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
+    command: jupyter notebook --no-browser --port 8080 --ip 0.0.0.0 --allow-root

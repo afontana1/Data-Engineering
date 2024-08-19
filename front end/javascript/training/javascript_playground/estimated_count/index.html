@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+</head>
+<body>
+    <button id = 'btnLoadActual'>Actual Count</button>
+    <button id = 'btnLoadEstimate'>Estimated Count</button>
+    <label id = 'lblDuration'></label>
+    <table id = 'tblGrades' border = 2 cellpadding = 5 cellspacing = 5 >
+    </table>
+    <script>
+
+    //build the grades range
+    //0->10,10->20,20->30,30->40,40-50
+    //50->60,60->70,70->80,80->90,90-100
+     
+    const tblGrades = document.getElementById("tblGrades");
+    const btnLoadActual = document.getElementById("btnLoadActual");
+    const btnLoadEstimate =  document.getElementById("btnLoadEstimate");
+    const lblDuration = document.getElementById("lblDuration");
+
+    btnLoadActual.addEventListener("click", readCountActual)
+
+    btnLoadEstimate.addEventListener("click", readCountEstimate)
+    const tr1 = document.createElement("tr");
+    const tr2 = document.createElement("tr");
+    tblGrades.appendChild(tr1);
+    tblGrades.appendChild(tr2);
+
+    const grades = []; 
+    for (let i = 0; i < 10; i ++)
+        grades.push({
+            "id":`g-${i*10}-${(i+1)*10}`,
+            "from": i*10,
+            "to": (i+1)*10
+        });
+
+    
+    for (let i = 0; i < 10; i ++)
+       {
+           const h = grades [i]
+           const hd = document.createElement("td"); 
+           hd.id = h.id; 
+           hd.textContent = h.id + " (...)";
+           if (i < 5)
+             tr1.appendChild(hd)
+           else
+             tr2.appendChild(hd)
+        }
+
+    let startTime= null;
+
+    async function fetchAndUpdateGrades(grade, endpoint) {
+        const result = await fetch(`http://localhost:8080/${endpoint}?from=${grade.from}&to=${grade.to}`);
+
+        const resultJSON = await result.json();
+
+        document.getElementById(grade.id).textContent = resultJSON.id + ` (${nFormatter(resultJSON.rowCount,2)})`;
+        
+        return resultJSON.rowCount; 
+      }
+
+
+    function readCountActual() {
+        startTime = Date.now();
+        lblDuration.textContent = "Counting...."
+        gradeCalls = []
+
+        Promise.all(grades.map(grade => fetchAndUpdateGrades(grade, 'grades'))).then(allRowCounts => lblDuration.textContent= "Took " + (Date.now() - startTime) + "ms" + ` for ${nFormatter(allRowCounts.reduce((a, c) => a + c),2)} grades`)
+   }
+    function readCountEstimate(){
+        startTime = Date.now();
+        lblDuration.textContent = "Counting...."
+        gradeCalls = []
+
+        Promise.all(grades.map(grade => fetchAndUpdateGrades(grade, 'grades/estimate'))).then(allRowCounts => lblDuration.textContent= "Took " + (Date.now() - startTime) + "ms" + ` for ${nFormatter(allRowCounts.reduce((a, c) => a + c),2)} grades`)
+    }
+     
+
+
+
+ //https://stackoverflow.com/questions/9461621/format-a-number-as-2-5k-if-a-thousand-or-more-otherwise-900
+    function nFormatter(num, digits) {
+  var si = [
+    { value: 1, symbol: "" },
+    { value: 1E3, symbol: "k" },
+    { value: 1E6, symbol: "M" },
+    { value: 1E9, symbol: "G" },
+    { value: 1E12, symbol: "T" },
+    { value: 1E15, symbol: "P" },
+    { value: 1E18, symbol: "E" }
+  ];
+  var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+  var i;
+  for (i = si.length - 1; i > 0; i--) {
+    if (num >= si[i].value) {
+      break;
+    }
+  }
+  return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
+}
+
+    </script>
+</body>
+</html>

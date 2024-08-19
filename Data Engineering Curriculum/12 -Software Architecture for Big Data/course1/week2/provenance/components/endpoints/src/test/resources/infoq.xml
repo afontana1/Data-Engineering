@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>InfoQ</title>
+        <link>https://www.infoq.com</link>
+        <description>InfoQ feed</description>
+        <item>
+            <title>Presentation: InfraCoding with Terraform: Writing Tests for Infrastructure-as-Code</title>
+            <link>https://www.infoq.com/presentations/iac-terraform-testing/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/presentations/iac-terraform-testing/en/headerimage/Peterbig-1583861132792.JPG"/&gt;&lt;p&gt;Peter
+                Souter discusses some approaches for testing Infrastructure-as-code, with a focus on Terraform, covering
+                the benefits, basic linting and formatting, unit testing, and spec testing.&lt;/p&gt; &lt;i&gt;By Peter
+                Souter&lt;/i&gt;
+            </description>
+            <category>TestCon Vilnius 2019</category>
+            <category>TestCon Vilnius</category>
+            <category>Testing</category>
+            <category>Conferences</category>
+            <category>Infrastructure as Code</category>
+            <category>DevOps</category>
+            <category>presentation</category>
+            <pubDate>Tue, 10 Mar 2020 23:43:00 GMT</pubDate>
+            <guid>https://www.infoq.com/presentations/iac-terraform-testing/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Peter Souter</dc:creator>
+            <dc:date>2020-03-10T23:43:00Z</dc:date>
+            <dc:identifier>/presentations/iac-terraform-testing/en</dc:identifier>
+        </item>
+        <item>
+            <title>GitLab 2020 Remote Work Report Highlights Key Motivators for Remote Work</title>
+            <link>https://www.infoq.com/news/2020/03/gitlab-2020-remote-work-report/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/news/2020/03/gitlab-2020-remote-work-report/en/headerimage/gitlab-2020-remote-work-report-1583878895911.jpg"/&gt;&lt;p&gt;GitLab
+                has just released its 2020 Remote Work Report, which provides a thorough perspective on remote work from
+                the viewpoint of both remote workers and employers. Based on over 3,000 respondents across various
+                industries and roles, the report also aims to give a glimpse of what remote work might look like in
+                future. InfoQ has taken the chance to speak with GitLab head of remote Darren Murph.&lt;/p&gt; &lt;i&gt;By
+                Sergio De Simone&lt;/i&gt;
+            </description>
+            <category>Leadership</category>
+            <category>GitLab</category>
+            <category>Management</category>
+            <category>Remote Developer</category>
+            <category>DevOps</category>
+            <category>Development</category>
+            <category>news</category>
+            <pubDate>Tue, 10 Mar 2020 23:00:00 GMT</pubDate>
+            <guid>https://www.infoq.com/news/2020/03/gitlab-2020-remote-work-report/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Sergio De Simone</dc:creator>
+            <dc:date>2020-03-10T23:00:00Z</dc:date>
+            <dc:identifier>/news/2020/03/gitlab-2020-remote-work-report/en</dc:identifier>
+        </item>
+        <item>
+            <title>Presentation: ML/AI Panel</title>
+            <link>https://www.infoq.com/presentations/panel-ml-tooling/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/presentations/panel-ml-tooling/en/headerimage/Chrisbig-1583859513926.jpg"/&gt;&lt;p&gt;M.
+                Casbon, C. Albon, P. Bailey, A. Unruh, J. Andrews discuss what makes ML different from other types of
+                applications and why it requires special tooling. They also talk about where the low-hanging fruit is
+                and how they recommend acquiring those initial quick wins.&lt;/p&gt; &lt;i&gt;By Chris Albon, Paige
+                Bailey, Amy Unruh, June Andrews, Melanie Warrick&lt;/i&gt;
+            </description>
+            <category>QCon San Francisco 2019</category>
+            <category>Transcripts</category>
+            <category>Artificial Intelligence</category>
+            <category>QCon</category>
+            <category>Panel</category>
+            <category>Machine Learning</category>
+            <category>Conferences</category>
+            <category>Programming</category>
+            <category>InfoQ</category>
+            <category>AI, ML &amp; Data Engineering</category>
+            <category>presentation</category>
+            <pubDate>Tue, 10 Mar 2020 21:56:00 GMT</pubDate>
+            <guid>https://www.infoq.com/presentations/panel-ml-tooling/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Chris Albon, Paige Bailey, Amy Unruh, June Andrews, Melanie Warrick</dc:creator>
+            <dc:date>2020-03-10T21:56:00Z</dc:date>
+            <dc:identifier>/presentations/panel-ml-tooling/en</dc:identifier>
+        </item>
+        <item>
+            <title>Presentation: Optimizing You Panel: Path to Awesomeness</title>
+            <link>https://www.infoq.com/presentations/panel-career-stories/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/presentations/panel-career-stories/en/headerimage/Amabig-1583859149587.jpg"/&gt;&lt;p&gt;The
+                panelists discuss their own choices and events from their histories that propelled their careers,
+                improved their circumstances, and generally helped them achieve awesomeness in one or more areas of
+                their lives.&lt;/p&gt; &lt;i&gt;By Christie Wilson, Daniel Bryant, Justin Ryan&lt;/i&gt;
+            </description>
+            <category>QCon San Francisco 2019</category>
+            <category>Transcripts</category>
+            <category>QCon</category>
+            <category>Panel</category>
+            <category>Conferences</category>
+            <category>Personal Growth</category>
+            <category>InfoQ</category>
+            <category>Culture &amp; Methods</category>
+            <category>presentation</category>
+            <pubDate>Tue, 10 Mar 2020 19:45:00 GMT</pubDate>
+            <guid>https://www.infoq.com/presentations/panel-career-stories/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Christie Wilson, Daniel Bryant, Justin Ryan</dc:creator>
+            <dc:date>2020-03-10T19:45:00Z</dc:date>
+            <dc:identifier>/presentations/panel-career-stories/en</dc:identifier>
+        </item>
+        <item>
+            <title>Presentation: Impact Starts with You</title>
+            <link>https://www.infoq.com/presentations/if-me-org/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/presentations/if-me-org/en/headerimage/Julbig-1583858748378.JPG"/&gt;&lt;p&gt;Julia
+                Nguyen delves into what they do at if-me.org to keep themselves accountable as an inclusive and
+                beginner-friendly open source community. This accountability has taught her that the impact people have
+                on themselves is just as powerful as the impact they have on others.&lt;/p&gt; &lt;i&gt;By Julia Nguyen&lt;/i&gt;
+            </description>
+            <category>QCon San Francisco 2019</category>
+            <category>Transcripts</category>
+            <category>Culture</category>
+            <category>QCon</category>
+            <category>Business</category>
+            <category>Conferences</category>
+            <category>InfoQ</category>
+            <category>Culture &amp; Methods</category>
+            <category>presentation</category>
+            <pubDate>Tue, 10 Mar 2020 17:29:00 GMT</pubDate>
+            <guid>https://www.infoq.com/presentations/if-me-org/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Julia Nguyen</dc:creator>
+            <dc:date>2020-03-10T17:29:00Z</dc:date>
+            <dc:identifier>/presentations/if-me-org/en</dc:identifier>
+        </item>
+        <item>
+            <title>What Comes After Microservices? Multi-Runtime Microservices With Bilgin Ibryam at QCon London</title>
+            <link>https://www.infoq.com/news/2020/03/multi-runtime-microservices/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/news/2020/03/multi-runtime-microservices/en/headerimage/Bilgin-Ibryam2-1583842862211.jpg"/&gt;&lt;p&gt;Bilgin
+                Ibryam talked at QCon London about the evolution of distributed systems on Kubernetes and the future
+                architecture trends. Ibryam said that the next trend would be to decouple infrastructure concerns from
+                microservices. Ibryam calls this multi-runtime microservices, a service with business logic along with a
+                sidecar in charge of state management, networking, binding, and lifecycle.&lt;/p&gt; &lt;i&gt;By
+                Christian Melendez&lt;/i&gt;
+            </description>
+            <category>QCon London 2020</category>
+            <category>Sidecar</category>
+            <category>Microservices</category>
+            <category>Cloud Native Architecture</category>
+            <category>Distributed Systems</category>
+            <category>Kubernetes</category>
+            <category>DevOps</category>
+            <category>Development</category>
+            <category>Architecture &amp; Design</category>
+            <category>news</category>
+            <pubDate>Tue, 10 Mar 2020 16:16:00 GMT</pubDate>
+            <guid>https://www.infoq.com/news/2020/03/multi-runtime-microservices/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Christian Melendez</dc:creator>
+            <dc:date>2020-03-10T16:16:00Z</dc:date>
+            <dc:identifier>/news/2020/03/multi-runtime-microservices/en</dc:identifier>
+        </item>
+        <item>
+            <title>Deep Learning Accelerates Scientific Simulations up to Two Billion Times</title>
+            <link>https://www.infoq.com/news/2020/03/deep-learning-simulation/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/news/2020/03/deep-learning-simulation/en/headerimage/deep-learning-simulation-1583679280070.jpg"/&gt;&lt;p&gt;Researchers
+                from several physics and geology laboratories have developed Deep Emulator Network SEarch (DENSE), a
+                technique for using deep-learning to perform scientific simulations from various fields from high-energy
+                physics to climate science. Compared to previous simulators, the results from DENSE achieved speedups
+                ranging from 10 million to 2 billion times.&lt;/p&gt; &lt;i&gt;By Anthony Alford&lt;/i&gt;
+            </description>
+            <category>Neural Networks</category>
+            <category>Deep Learning</category>
+            <category>Simulation</category>
+            <category>AI, ML &amp; Data Engineering</category>
+            <category>news</category>
+            <pubDate>Tue, 10 Mar 2020 13:00:00 GMT</pubDate>
+            <guid>https://www.infoq.com/news/2020/03/deep-learning-simulation/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Anthony Alford</dc:creator>
+            <dc:date>2020-03-10T13:00:00Z</dc:date>
+            <dc:identifier>/news/2020/03/deep-learning-simulation/en</dc:identifier>
+        </item>
+        <item>
+            <title>Article: Has an AI Cyber Attack Happened Yet?</title>
+            <link>https://www.infoq.com/articles/ai-cyber-attacks/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/articles/ai-cyber-attacks/en/headerimage/Has-an-AI-Cyber-Attack-Happened-Yet-h-1583230573532.jpg"/&gt;&lt;p&gt;AI
+                cyber attacks have happened and are happening, with increasing regularity. This article looks at recent
+                attacks, the role of bots, and defense strategies you can employ.&lt;/p&gt; &lt;i&gt;By Sam Bocetta&lt;/i&gt;
+            </description>
+            <category>Artificial Intelligence</category>
+            <category>Threats</category>
+            <category>ChatBots</category>
+            <category>Programming</category>
+            <category>Cloud</category>
+            <category>AI, ML &amp; Data Engineering</category>
+            <category>DevOps</category>
+            <category>Architecture &amp; Design</category>
+            <category>article</category>
+            <pubDate>Tue, 10 Mar 2020 10:15:00 GMT</pubDate>
+            <guid>https://www.infoq.com/articles/ai-cyber-attacks/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Sam Bocetta</dc:creator>
+            <dc:date>2020-03-10T10:15:00Z</dc:date>
+            <dc:identifier>/articles/ai-cyber-attacks/en</dc:identifier>
+        </item>
+        <item>
+            <title>Podcast: Howard Sublett on Current and Future State of the Scrum Alliance</title>
+            <link>https://www.infoq.com/podcasts/scrum-alliance-state/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/podcasts/scrum-alliance-state/en/headerimage/Howard-Sublett-1583790021081.jpeg"/&gt;&lt;p&gt;In
+                this podcast recorded at Agile 2019, Shane Hastie, Lead Editor for Culture &amp; Methods, spoke to
+                Howard Sublett about the current and future state of the Scrum Alliance.&lt;/p&gt; &lt;i&gt;By Howard
+                Sublett&lt;/i&gt;
+            </description>
+            <category>Engineering Culture Podcast</category>
+            <category>Scrum Alliance</category>
+            <category>InfoQ</category>
+            <category>Agile Conferences</category>
+            <category>Scrum</category>
+            <category>Culture</category>
+            <category>NoProjects</category>
+            <category>Conferences</category>
+            <category>Business</category>
+            <category>Agile</category>
+            <category>Development</category>
+            <category>Culture &amp; Methods</category>
+            <category>podcast</category>
+            <pubDate>Mon, 09 Mar 2020 22:16:00 GMT</pubDate>
+            <guid>https://www.infoq.com/podcasts/scrum-alliance-state/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Howard Sublett</dc:creator>
+            <dc:date>2020-03-09T22:16:00Z</dc:date>
+            <dc:identifier>/podcasts/scrum-alliance-state/en</dc:identifier>
+        </item>
+        <item>
+            <title>Presentation: Swift for Tensorflow</title>
+            <link>https://www.infoq.com/presentations/swift-tensorflow/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/presentations/swift-tensorflow/en/headerimage/pabig-1583757950823.JPG"/&gt;&lt;p&gt;Paige
+                Bailey demonstrates how Swift for TensorFlow can make advanced machine learning research easier and
+                faster.&lt;/p&gt; &lt;i&gt;By Paige Bailey&lt;/i&gt;
+            </description>
+            <category>TensorFlow</category>
+            <category>QCon San Francisco 2019</category>
+            <category>Swift</category>
+            <category>Transcripts</category>
+            <category>Deep Learning</category>
+            <category>Languages</category>
+            <category>QCon</category>
+            <category>Machine Learning</category>
+            <category>Conferences</category>
+            <category>Programming</category>
+            <category>InfoQ</category>
+            <category>AI, ML &amp; Data Engineering</category>
+            <category>presentation</category>
+            <pubDate>Mon, 09 Mar 2020 17:42:00 GMT</pubDate>
+            <guid>https://www.infoq.com/presentations/swift-tensorflow/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Paige Bailey</dc:creator>
+            <dc:date>2020-03-09T17:42:00Z</dc:date>
+            <dc:identifier>/presentations/swift-tensorflow/en</dc:identifier>
+        </item>
+        <item>
+            <title>Presentation: Security and Compliance Theater - The Seventh Deadly Disease</title>
+            <link>https://www.infoq.com/presentations/security-compliance/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/presentations/security-compliance/en/headerimage/Jobig-1583757240641.JPG"/&gt;&lt;p&gt;John
+                Willis describes the “Seven Deadly Diseases of DevOps” with a focus on the most costly of them all -
+                Security and Compliance Theater. He talks about the practices needed to create long-term systemic “safe”
+                improvement.&lt;/p&gt; &lt;i&gt;By John Willis&lt;/i&gt;
+            </description>
+            <category>Compliance</category>
+            <category>QCon San Francisco 2019</category>
+            <category>Cloud Security</category>
+            <category>Transcripts</category>
+            <category>Security</category>
+            <category>QCon</category>
+            <category>Conferences</category>
+            <category>Cloud Computing</category>
+            <category>InfoQ</category>
+            <category>DevOps</category>
+            <category>presentation</category>
+            <pubDate>Mon, 09 Mar 2020 15:27:00 GMT</pubDate>
+            <guid>https://www.infoq.com/presentations/security-compliance/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>John Willis</dc:creator>
+            <dc:date>2020-03-09T15:27:00Z</dc:date>
+            <dc:identifier>/presentations/security-compliance/en</dc:identifier>
+        </item>
+        <item>
+            <title>Podcast: Luca Mezzalira on Micro Frontends at DAZN</title>
+            <link>https://www.infoq.com/podcasts/micro-frontends-dazn/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/podcasts/micro-frontends-dazn/en/headerimage/LUCA-MEZZALIRA-h-1583745920647.jpg"/&gt;&lt;p&gt;Luca
+                Mezzalira is the VP of Architecture for DAZN. On the podcast today, Mezzalira and Wes Reisz discuss
+                Micro frontends and how they're implemented at DAZN. The podcast goes into benefits, strategies, and
+                team organization details on building a micro frontend architecture.&lt;/p&gt; &lt;i&gt;By Luca
+                Mezzalira&lt;/i&gt;
+            </description>
+            <category>Microservices</category>
+            <category>The InfoQ Podcast</category>
+            <category>Architecture</category>
+            <category>InfoQ</category>
+            <category>Development</category>
+            <category>Architecture &amp; Design</category>
+            <category>podcast</category>
+            <pubDate>Mon, 09 Mar 2020 12:15:00 GMT</pubDate>
+            <guid>https://www.infoq.com/podcasts/micro-frontends-dazn/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Luca Mezzalira</dc:creator>
+            <dc:date>2020-03-09T12:15:00Z</dc:date>
+            <dc:identifier>/podcasts/micro-frontends-dazn/en</dc:identifier>
+        </item>
+        <item>
+            <title>Article: Q&amp;A on the Book How to Lead in Product Management</title>
+            <link>https://www.infoq.com/articles/book-review-lead-product-management/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/articles/book-review-lead-product-management/en/headerimage/How-to-Lead-in-Product-Management-h-1583245813453.jpg"/&gt;&lt;p&gt;The
+                book How to Lead in Product Management by Roman Pichler provides solutions for product managers and
+                product owners to lead development teams and stakeholders. It covers practices like building trust,
+                setting product goals, listening and speaking, resolving conflict, and securing buy-in to product
+                decisions in order to achieve product success.&lt;/p&gt; &lt;i&gt;By Ben Linders, Roman Pichler&lt;/i&gt;
+            </description>
+            <category>Product Owner</category>
+            <category>Collaboration</category>
+            <category>Communication</category>
+            <category>Distributed Team</category>
+            <category>Product Management</category>
+            <category>Book Review</category>
+            <category>Leadership</category>
+            <category>Scrum</category>
+            <category>Teamwork</category>
+            <category>Agile</category>
+            <category>Stakeholder</category>
+            <category>Trust</category>
+            <category>InfoQ</category>
+            <category>Culture &amp; Methods</category>
+            <category>article</category>
+            <pubDate>Mon, 09 Mar 2020 10:30:00 GMT</pubDate>
+            <guid>https://www.infoq.com/articles/book-review-lead-product-management/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Ben Linders, Roman Pichler</dc:creator>
+            <dc:date>2020-03-09T10:30:00Z</dc:date>
+            <dc:identifier>/articles/book-review-lead-product-management/en</dc:identifier>
+        </item>
+        <item>
+            <title>Presentation: This Isn't Just a Conversation: The Art of User Interviews</title>
+            <link>https://www.infoq.com/presentations/user-interview-basics/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/presentations/user-interview-basics/en/headerimage/Ashbig-1583718755058.JPG"/&gt;&lt;p&gt;Ash
+                Banaszek covers the basics of conducting user interviews: picking the right interview type, asking the
+                “right” questions, do’s/don’ts of interacting with wsers, and how to interpret results.&lt;/p&gt; &lt;i&gt;By
+                Ash Banaszek&lt;/i&gt;
+            </description>
+            <category>Deliver Conference 2019</category>
+            <category>HR</category>
+            <category>Deliver Conference</category>
+            <category>Conferences</category>
+            <category>Agile</category>
+            <category>Culture &amp; Methods</category>
+            <category>presentation</category>
+            <pubDate>Mon, 09 Mar 2020 03:18:00 GMT</pubDate>
+            <guid>https://www.infoq.com/presentations/user-interview-basics/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Ash Banaszek</dc:creator>
+            <dc:date>2020-03-09T03:18:00Z</dc:date>
+            <dc:identifier>/presentations/user-interview-basics/en</dc:identifier>
+        </item>
+        <item>
+            <title>Presentation: Maps and Stories</title>
+            <link>https://www.infoq.com/presentations/maps-stories/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</link>
+            <description>&lt;img
+                src="https://res.infoq.com/presentations/maps-stories/en/headerimage/Talbig-1583718362167.JPG"/&gt;&lt;p&gt;Tal
+                Klein discusses how to build maps using stories: establish a narrative based on historical truths, build
+                upon shared experience, and avoid generalities and provide specifics.&lt;/p&gt; &lt;i&gt;By Tal Klein&lt;/i&gt;
+            </description>
+            <category>Map Camp Conference London 2019</category>
+            <category>Map Camp Conference London</category>
+            <category>Stories &amp; Case Studies</category>
+            <category>Conferences</category>
+            <category>Maps</category>
+            <category>Agile</category>
+            <category>Culture &amp; Methods</category>
+            <category>presentation</category>
+            <pubDate>Mon, 09 Mar 2020 01:56:00 GMT</pubDate>
+            <guid>https://www.infoq.com/presentations/maps-stories/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global</guid>
+            <dc:creator>Tal Klein</dc:creator>
+            <dc:date>2020-03-09T01:56:00Z</dc:date>
+            <dc:identifier>/presentations/maps-stories/en</dc:identifier>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,12 @@
+## Python
+.vscode
+__pycache__
+.idea
+.pytest_cache
+*.pyc
+*.sqlite
+.coverage
+
+## Django
+*.sqlite3
+migrations/

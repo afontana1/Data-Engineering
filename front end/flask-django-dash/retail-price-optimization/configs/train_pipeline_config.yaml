@@ -1,0 +1,13 @@
+enable_cache: True
+extra:
+  tags: zenml-projects
+settings:
+  docker:
+    required_integrations:
+      - numpy
+      - pandas
+      - sklearn
+    requirements:
+      - sklearn
+      - pandas
+      - numpy

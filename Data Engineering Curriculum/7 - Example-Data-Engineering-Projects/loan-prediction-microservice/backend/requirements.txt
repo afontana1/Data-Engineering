@@ -1,0 +1,5 @@
+fastapi
+httpx
+requests
+uvicorn
+redisai

@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  ms:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    networks:
+      - gmail_puller_nw
+    environment:
+      MONGO_HOST: $MONGO_HOST
+      START_DATE: $START_DATE
+      END_DATE: $END_DATE

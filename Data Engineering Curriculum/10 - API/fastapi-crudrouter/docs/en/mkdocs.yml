@@ -1,0 +1,71 @@
+site_name: FastAPI CRUD Router
+repo_url: https://github.com/awtkns/fastapi-crudrouter
+repo_name: awtkns/fastapi-crudrouter
+edit_uri: ''
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github-alt
+  logo: assets/bolt.svg
+  favicon: assets/bolt-grad.svg
+  language: en
+
+nav:
+  - Overview: index.md
+  - Schemas: schemas.md
+  - Backends:
+      - In Memory: backends/memory.md
+      - SQLAlchemy: backends/sqlalchemy.md
+      - Databases (async): backends/async.md
+      - Gino (async): backends/gino.md
+      - Ormar (async): backends/ormar.md
+      - Tortoise (async): backends/tortoise.md
+  - Routing: routing.md
+  - Pagination: pagination.md
+  - Dependencies: dependencies.md
+  - Contributing: contributing.md
+  - Releases: releases.md
+
+markdown_extensions:
+  - extra
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+extra:
+  analytics:
+    provider: google
+    property: UA-186315536-1
+  social:
+  - icon: fontawesome/brands/github-alt
+    link: https://github.com/awtkns/fastapi-crudrouter
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/in/awtkns/
+  - icon: fontawesome/solid/globe
+    link: https://github.com/awtkns
+
+extra_css:
+  - css/main.css
+  - css/termynal.css
+extra_javascript:
+  - js/termynal.js
+  - js/termy.js

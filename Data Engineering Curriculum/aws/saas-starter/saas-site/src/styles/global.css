@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100%;
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  @apply bg-gray-100;
+  height: 100%;
+}
+
+textarea,
+input:matches([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]) {
+  -webkit-appearance: none;
+}

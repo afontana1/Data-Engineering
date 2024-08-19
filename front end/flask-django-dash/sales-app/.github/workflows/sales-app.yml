@@ -1,0 +1,41 @@
+name: Sales App
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Enable Passwordless Login
+      env:
+        APP_HOST: ${{ secrets.APP_HOST }}
+        APP_SSH_USER: ${{ secrets.APP_SSH_USER }}
+        APP_SSH_SECRET_KEY: ${{ secrets.APP_SSH_SECRET_KEY }}
+      run: |
+        mkdir -p /tmp/keys && chmod 700 /tmp/keys
+        echo "$APP_SSH_SECRET_KEY" > /tmp/keys/private_key && chmod 600 /tmp/keys/private_key
+    - name: Create Folder and Deploy Application
+      env:
+        APP_HOST: ${{ secrets.APP_HOST }}
+        APP_SSH_USER: ${{ secrets.APP_SSH_USER }}
+      run: |
+        ssh -o StrictHostKeyChecking=no -i /tmp/keys/private_key ${APP_SSH_USER}@${APP_HOST} '
+          mkdir -p ~/sales-app
+        '
+        scp -i /tmp/keys/private_key -r * ${APP_SSH_USER}@${APP_HOST}:~/sales-app
+    - name: Build and Run Application
+      env:
+        APP_HOST: ${{ secrets.APP_HOST }}
+        APP_SSH_USER: ${{ secrets.APP_SSH_USER }}
+      run: |
+        ssh -i /tmp/keys/private_key ${APP_SSH_USER}@${APP_HOST} "/bin/bash -c 'source ~/sales-app/setup.sh'"

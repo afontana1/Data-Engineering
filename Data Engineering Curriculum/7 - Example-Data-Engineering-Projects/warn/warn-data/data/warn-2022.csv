@@ -1,0 +1,924 @@
+"Notice
+Date","Received
+Date","Effective
+Date",Company,County,No. Of Employees,Layoff/Closure Type,Address
+06/25/2021,07/01/2021,07/31/2021,Hotel Managers Group at the DoubleTree Hotel,Alameda County,63,Layoff Permanent,39900 Balentine Drive Newark CA 94560
+06/29/2021,07/01/2021,07/29/2021,IAP Worldwide Services Inc.,Fresno County,108,Layoff Permanent,5168 E. Dakota Ave. Fresno CA 93727
+06/28/2021,07/01/2021,06/29/2021,Farmgirl Flowers,Santa Cruz County,72,Closure Permanent,"481 San Andreas Road Watsonville CA
+95076"
+06/24/2021,07/01/2021,08/02/2021,"Francis Ford Coppola Presents, LLC",Sonoma County,90,Layoff Permanent,300 Via Archimedes Geyserville CA 95441
+07/01/2021,07/06/2021,09/03/2021,J.J. Charles Inc dba Use Pallet Company,Fresno County,56,Closure Permanent,4115 S. Orange Avenue Fresno CA 93725
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,Imperial County,1,Layoff Permanent,1605 third St. Bldg 214 El Centro CA 92243
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,Kern County,1,Layoff Permanent,"Bldg 98004 E. Moyer Ave. Rm 7 Ridgecrest
+CA 93555"
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,Kings County,5,Layoff Permanent,730 Enterprise Avenue Lemoore CA 93246
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,Monterey County,1,Layoff Permanent,7 Grace Hopper Ave. Monterey CA 93943
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,Orange County,3,Layoff Permanent,"800 Seal Beach Blvd. Bldg 123 Seal Beach
+CA 90740"
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,Riverside County,2,Layoff Permanent,1999 Fourth St. Bldg 509 Norco CA 92860
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,Riverside County,1,Layoff Permanent,17101 Haecock Avenue Moreno CA 92551
+07/06/2021,07/06/2021,09/04/2021,"Chick-fil-A, Inc.",San Bernardino County,110,Closure Temporary,"4350 Ontario Mills Parkway Ontario CA
+91764"
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Bernardino County,1,Layoff Permanent,"MCAGCC Bldg 1431 Twentynine Palms CA
+92277"
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,10,Layoff Permanent,140 Sylvester Rd. San Diego CA 92106
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,17,Layoff Permanent,1482 Read Rd. San Diego CA 92135
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,7,Layoff Permanent,3380 Sturtevant Rd. San Diego CA 92136
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,2,Layoff Permanent,3970 Sherman St. San Diego CA 92110
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,3,Layoff Permanent,4301 Pacific Hwy San Diego CA 92110
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,2,Layoff Permanent,6012 SHields Dr. San Diego CA 92145
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,3,Layoff Permanent,937 N. Harbor Dr. San Diego CA 92132
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,7,Layoff Permanent,"Camp Pendleton - MCB Bldg 2622 Camp
+Pendelton CA 92055"
+07/06/2021,07/06/2021,07/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,1,Layoff Permanent,140 Sylvester Rd. San Diego CA 92106
+07/06/2021,07/06/2021,07/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,34,Layoff Permanent,1482 Read Rd. San Diego CA 92135
+07/06/2021,07/06/2021,07/30/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,107,Layoff Permanent,3970 Sherman St. San Diego CA 92110
+07/06/2021,07/06/2021,08/27/2021,Perspecta Inc. dba Peraton Inc.,San Diego County,5,Layoff Permanent,3970 Sherman St. San Diego CA 92110
+07/06/2021,07/06/2021,09/30/2021,Perpsecta Inc. dba Peraton Inc.,San Diego County,5,Layoff Permanent,3970 Sherman St. San Diego CA 92110
+07/06/2021,07/06/2021,07/30/2021,Perspecta Inc. dba Peraton Inc.,Ventura County,1,Layoff Permanent,"13yj St. Bldg 50 Rm 139 Port Magu NAWC
+CA 93042"
+07/06/2021,07/06/2021,06/30/2021,Perspecta Inc. dba Peraton Inc.,Ventura County,2,Layoff Permanent,Pacific Rd. Bdlg 5 Port Hueneme CA 93041
+07/07/2021,07/08/2021,09/07/2021,Bethesda Lutheran Communities,Kern County,1,Closure Permanent,"9613 Lake Superior Drive Bakersfield CA
+93312"
+07/07/2021,07/08/2021,09/07/2021,Bethesda Lutheran Communities,Kern County,1,Closure Permanent,5704 Charleville Lane Bakersfield CA 93312
+07/08/2021,07/08/2021,09/25/2021,"Southern California Egg Cooperative Inc. dba Norco
+Ranch",San Bernardino County,21,Closure Permanent,12005 Cabernet Drive Fontana CA 92337
+07/08/2021,07/08/2021,09/06/2021,John Hine Pontiac dba John Hine Mazda,San Diego County,94,Closure Permanent,"1545 Camino del Rio South San Diego CA
+92108"
+07/08/2021,07/13/2021,09/04/2021,Kaiser Foundation Hospitals,Alameda County,11,Layoff Permanent,2101 Webster Street Oakland CA 94612
+07/08/2021,07/13/2021,09/04/2021,Kaiser Foundation Hospitals,Alameda County,5,Layoff Permanent,Ordway Oakland CA 94612
+07/12/2021,07/13/2021,09/12/2021,"Crothall Healthcare Inc. operation at Enloe Medical
+Center",Butte County,125,Closure Permanent,1531 Esplanade Chico CA 95926
+07/08/2021,07/13/2021,09/04/2021,Kaiser Foundation Hospitals,Contra Costa County,1,Layoff Permanent,501 Lennon Lane Walnut Creek CA 94598
+07/10/2021,07/13/2021,09/06/2021,Fantasy Activewear Inc.,Los Angeles County,1,Closure Permanent,5383 Alcoa Ave Vernon CA 90058
+07/10/2021,07/13/2021,09/06/2021,Fantasy Dyeing & Finishing Inc.,Los Angeles County,1,Closure Permanent,5389 Alcoa Ave. Vernon CA 90058
+07/12/2021,07/13/2021,11/30/2021,L&R Distributors,San Bernardino County,75,Closure Permanent,"9292 Ninth Street Rancho Cucamonga CA
+91730"
+07/13/2021,07/15/2021,09/11/2021,Gallo Sales Company Inc.,Alameda County,90,Layoff Permanent,30825 Wiegman Road Hayward CA 94544
+07/13/2021,07/15/2021,10/01/2021,Gallo Sales Company Inc.,Alameda County,1,Layoff Permanent,30825 Wiegman Road Hayward CA 94544
+07/13/2021,07/15/2021,09/11/2021,Gallo Sales Company Inc.,Los Angeles County,137,Layoff Permanent,2650 Commerce Way Commerce CA 90040
+07/13/2021,07/15/2021,10/01/2021,Gallo Sales Company Inc.,Los Angeles County,1,Layoff Permanent,2650 Commerce Way Commerce CA 90040
+07/13/2021,07/15/2021,12/31/2021,Gallo Sales Company Inc.,Los Angeles County,1,Layoff Permanent,2650 Commerce Way Commerce CA 90040
+07/14/2021,07/15/2021,09/13/2021,Location Services LLC,Monterey County,3,Closure Temporary,"20790 Spence Rd. Suite 1 Salinas CA
+93908"
+07/14/2021,07/15/2021,09/13/2021,Location Services LLC,San Diego County,2,Closure Temporary,811 Energy Way #D Chula Vista CA 91911
+07/15/2021,07/15/2021,09/30/2021,Morrison Management Specialists Inc.,San Mateo County,84,Closure Permanent,1 Baldwin Avenue San Mateo CA 94401
+07/20/2021,07/22/2021,07/15/2021,Island Creek Associates LLC at NAS China Lake,Kern County,11,Layoff Permanent,"BLDG 20001 RM 1207 Admin Cir MS1016
+Ridgecrest CA 93555"
+07/20/2021,07/22/2021,07/15/2021,Island Creek Associates LLC at NAS Lemoore,Kings County,26,Layoff Permanent,"210 Reeves Blvd Hangar 1 VFA 122
+Lemoore CA 93246"
+07/20/2021,07/22/2021,08/31/2021,Westfall Technik,Riverside County,28,Closure Permanent,235 Citation Circle Corona CA 92880
+07/20/2021,07/22/2021,07/15/2021,Island Creek Associates LLC at NAS North Island,San Diego County,8,Layoff Permanent,"P.O. Box 357051, NASNI San Diego CA
+92135"
+07/20/2021,07/22/2021,07/15/2021,Island Creek Associates LLC at NAS North Island,San Diego County,21,Layoff Permanent,"P.O. Box 357126 Building 1474 San Diego
+CA 92135"
+07/19/2021,07/22/2021,09/17/2021,BBVA Open Platform,San Francisco County,4,Closure Permanent,201 Mission Street San Francisco CA 94105
+07/14/2021,07/29/2021,11/30/2021,Rich Products Corporation,Fresno County,111,Closure Permanent,320 O St. Fresno CA 93728
+03/27/2020,07/29/2021,03/27/2020,Fantasy Activewear Inc.,Los Angeles County,64,Layoff Permanent,5383 Alcoa Ave. Vernon CA 90058
+07/28/2021,07/29/2021,10/01/2021,Sky Chefs Inc.,Los Angeles County,294,Layoff Permanent,"6901 Imperial Highway Los Angeles CA
+90045"
+07/27/2021,07/29/2021,09/27/2021,Los Angeles Times Communications LLC,Los Angeles County,1,Closure Permanent,5091 4th Street Irwindale CA 91706
+07/28/2021,07/29/2021,10/01/2021,Sky Chefs Inc.,Orange County,72,Layoff Permanent,2990-B Airway Ave. Costa Mesa CA 92626
+07/09/2021,07/29/2021,07/09/2021,"SSD Operating Co. LLC dba Sheraton San Diego Hotel
+& Marina",San Diego County,21,Layoff Temporary,"1380 Harbor Island Drive San Diego CA
+92101"
+07/29/2021,07/29/2021,09/27/2021,Radius Aerospace,San Diego County,84,Closure Permanent,203 N. Johnson Ave. El Cajon CA 92020
+07/28/2021,07/29/2021,10/01/2021,Sky Chefs Inc.,San Mateo County,210,Layoff Permanent,868 Cowan Rd. Burlingame CA 94010
+07/30/2021,08/06/2021,09/28/2021,Amazon Logistics - DLA3,Los Angeles County,161,Closure Permanent,5289 Smithway St. Los Angeles CA 90040
+07/30/2021,08/06/2021,09/28/2021,Amazon Logistics,Los Angeles County,161,Closure Permanent,"5289 Smithway Street Los Angeles CA
+90040"
+07/31/2021,08/06/2021,10/22/2021,"Mirion Technologies, Inc.",Orange County,57,Closure Permanent,2652 McGaw Avenue Irvine CA 92614
+07/30/2021,08/06/2021,09/30/2021,Panasonic Avionics,Orange County,221,Layoff Permanent,"26220 Enterprise Way Lake Forest CA
+92630"
+07/29/2021,08/06/2021,09/30/2021,Loma Linda University Health Care,San Bernardino County,81,Layoff Permanent,"11370 Anderson Street Loma Linda CA
+92354"
+08/06/2021,08/06/2021,10/14/2021,"CMC Steel Fabricators, Inc. dba CMC Rebar",San Bernardino County,36,Closure Permanent,"12451 Arrow Route Rancho Cucamonga
+CA 91739"
+07/09/2021,08/06/2021,10/02/2021,"Louis Vuitton USA, Inc.",San Diego County,8,Closure Permanent,7027 Friars Road San Diego CA 92108
+07/29/2021,08/06/2021,09/30/2021,"Bristol-Meyers Squibb and MyoKardia, Inc.",San Mateo County,4,Layoff Permanent,1000 Sierra Point Pkwy. Brisbane CA 94005
+08/01/2021,08/06/2021,10/01/2021,Flying Food Group,San Mateo County,119,Layoff Permanent,"240 Littlefield Ave South San Francisco CA
+94080"
+08/06/2021,08/06/2021,10/05/2021,Novo Technologies,Stanislaus County,68,Layoff Temporary,"5933 Stoddard Road, Building 11 Modesto
+CA 95356"
+08/09/2021,08/10/2021,10/29/2021,S&C Electric Company,Alameda County,31,Closure Permanent,"1125-1135 Atlantic Avenue Alameda CA
+94501"
+06/10/2021,08/10/2021,07/14/2021,Apollo Couriers Inc.,Los Angeles County,42,Closure Permanent,20730 Prairie Street Chatsworth CA 91311
+06/10/2021,08/10/2021,07/14/2021,Apollo Couriers Inc.,Los Angeles County,49,Closure Permanent,"2815 W. El Segundo Blvd. Hawthorne CA
+90250"
+07/30/2021,08/10/2021,10/01/2021,Flying Food Group,Los Angeles County,70,Layoff Permanent,901 W. Hillcrest Blvd. Inglewood CA 90301
+06/10/2021,08/10/2021,07/14/2021,Apollo Couriers Inc.,Orange County,35,Closure Permanent,"17871 Von Karman Avenue Irvine CA
+92614"
+07/30/2021,08/10/2021,10/01/2021,CoorsTek Vista Inc.,San Diego County,39,Closure Permanent,2065 Thibodo Road Vista CA 92081
+08/10/2021,08/10/2021,09/30/2021,Organogenesis Inc.,San Diego County,71,Closure Permanent,"10931 North Torrey Pines Rd. La Jolla CA
+92037"
+08/11/2021,08/17/2021,10/11/2021,Peloton Interactive Inc.,Contra Costa County,123,Layoff Permanent,"2500 Atlas Road Suite C Richmond CA
+94806"
+08/17/2021,08/17/2021,10/19/2021,"Primeritus Financial Services Inc. and Repo
+Remarketing Inc.",El Dorado County,78,Closure Permanent,"4950 Hillsdale Circle El Dorado Hills CA
+95762"
+08/04/2021,08/17/2021,10/04/2021,Location Services LLC,Kern County,2,Layoff Permanent,754 Angus Ln. Bakersfield CA 93308
+08/16/2021,08/17/2021,10/15/2021,"Truck Accessories Group LLC and Customer Fiberglass
+Manufacturing Co. dba SNUGTOP",Los Angeles County,123,Closure Permanent,1711 Harbor Ave. Long Beach CA 90813
+08/11/2021,08/17/2021,10/10/2021,"California Health and Recovery Solutions, PC",San Bernardino County,89,Layoff Permanent,10250 Rancho Road Adelanto CA 92301
+08/16/2021,08/17/2021,09/25/2021,"Chick-fil-A, Inc.",San Bernardino County,110,Closure Temporary,"4350 Ontario Mills Parkway Ontario CA
+91764"
+08/10/2021,08/17/2021,09/30/2022,Providien LLC,San Diego County,81,Closure Permanent,"2731 Loker Avenue West Carlsbad CA
+92010"
+08/10/2021,08/17/2021,12/31/2022,Providien LLC,San Diego County,19,Closure Permanent,"2731 Loker Avenue West Carlsbad CA
+92010"
+08/02/2021,08/17/2021,10/01/2021,Jabil Inc.,San Diego County,74,Closure Permanent,505 Main Street Chula Vista CA 91911
+08/03/2021,08/17/2021,10/01/2021,Nordstrom dba DT San Francisco Rack Store 473,San Francisco County,41,Closure Permanent,555 9th Street San Francisco CA 94103
+08/09/2021,08/17/2021,09/30/2021,GXO,San Joaquin County,56,Closure Permanent,1909 Zephyr Street Stockton CA 95206
+08/13/2021,08/17/2021,09/30/2021,Bristol-Myers Squibb and MyoKardia Inc.,San Mateo County,4,Layoff Permanent,1000 Sierra Point Pkwy Brisbane CA 94005
+08/13/2021,08/17/2021,10/15/2021,Bristol-Myers Squibb and MyoKardia Inc.,San Mateo County,10,Layoff Permanent,1000 Sierra Point Pkwy Brisbane CA 94005
+08/10/2021,08/17/2021,10/11/2021,Spectra Laboratories Inc. and National Medical Care Inc.,Santa Clara County,52,Closure Permanent,525 Sycamore Drive Milpitas CA 95035
+08/10/2021,08/17/2021,01/03/2022,Spectra Laboratories Inc. and National Medical Care Inc.,Santa Clara County,84,Closure Permanent,525 Sycamore Drive Milpitas CA 95035
+08/10/2021,08/17/2021,01/31/2022,Spectra Laboratories Inc. and National Medical Care Inc.,Santa Clara County,42,Closure Permanent,525 Sycamore Drive Milpitas CA 95035
+08/12/2021,08/17/2021,04/01/2022,BANDAI NAMCO Entertainment America Inc.,Santa Clara County,90,Closure Permanent,"2051 Mission College Blvd. Santa Clara CA
+95054"
+08/11/2021,08/17/2021,10/31/2021,Fox Factory Inc.,Santa Cruz County,222,Closure Permanent,130 Hangar Way Watsonville CA 95076
+08/02/2021,08/17/2021,11/26/2021,Smiths Interconnect Inc.,Ventura County,49,Layoff Permanent,"375 Conejo Ridge Avenue Thousand Oaks
+CA 91361"
+08/19/2021,08/19/2021,10/17/2021,Wells Fargo & Company,San Francisco County,5,Layoff Permanent,333 Market Street San Francisco CA 94103
+08/19/2021,08/19/2021,10/17/2021,Wells Fargo & Company,San Francisco County,2,Layoff Permanent,"550 California Street San Francisco CA
+94104"
+07/08/2021,08/19/2021,09/10/2021,Varni Brothers Corporation,San Joaquin County,50,Closure Permanent,"1109 W. Anderson Street Stockton CA
+95206"
+07/08/2021,08/19/2021,09/10/2021,Varni Brothers Corporation,Stanislaus County,48,Closure Permanent,215 Hosmer Avenue Modesto CA 95351
+08/23/2021,08/24/2021,10/21/2021,"Morrison Healthcare dba Morrison Management
+Specialists Inc. at Kaiser Permanente Fresno Medical
+Cen",Fresno County,14,Closure Permanent,7300 N. Fresno St. Fresno CA 93720
+08/17/2021,08/24/2021,10/19/2021,"Basic Energy Services, Inc.",Kern County,111,Closure Permanent,1954 James Road Bakersfield CA 93308
+08/17/2021,08/24/2021,10/19/2021,"Basic Energy Services, Inc.",Kern County,393,Closure Permanent,3752 Allen Road Bakersfield CA 93314
+08/17/2021,08/24/2021,10/19/2021,"Basic Energy Services, Inc.",Kern County,48,Closure Permanent,"7515 Rosedale Highway Bakersfield CA
+93308"
+08/17/2021,08/24/2021,10/19/2021,"Basic Energy Services, Inc.",Kern County,216,Closure Permanent,"1025 Earthmover Court Bakersfield CA
+93314"
+08/17/2021,08/24/2021,10/19/2021,"Basic Energy Services, Inc.",Los Angeles County,98,Closure Permanent,"19431 South Sante Fe Avenue Compton
+CA 90221"
+08/04/2021,08/24/2021,01/01/2022,Endo Pharmaceuticals Inc.,Orange County,99,Closure Permanent,9601 Jeronimo Road Irvine CA 92618
+08/04/2021,08/24/2021,01/01/2022,Endo Pharmaceuticals Inc.,Orange County,75,Closure Permanent,72 Fairbanks Irvine CA 92618
+08/13/2021,08/24/2021,09/30/2021,"GEO Secure Services LLC Western Region Detention
+Facility",San Diego County,298,Closure Permanent,220 West C Street San Diego CA 92101
+08/13/2021,08/24/2021,09/30/2021,"Bristol-Myers Squibb and MyoKardia, Inc",San Mateo County,14,Layoff Permanent,1000 Sierra Point Pkwy Brisbane CA 94005
+08/25/2021,08/26/2021,11/01/2021,Howmet Fastening Systems,Los Angeles County,75,Closure Permanent,12975 Bradley Avenue Sylmar CA 91342
+08/26/2021,08/30/2021,10/25/2021,"ESL Technologies, Inc. dba Teleplan",Placer County,308,Layoff Permanent,"8875 Washington Blvd., Suite B Roseville
+CA 95678"
+08/27/2021,08/30/2021,10/25/2021,Wells Fargo,San Francisco County,1,Layoff Permanent,"420 Montgomery Street San Francisco CA
+94104"
+08/30/2021,08/30/2021,10/20/2021,Bristol-Myers Squibb and MyoKardia Inc.,San Mateo County,5,Layoff Permanent,1000 Sierra Point Pkwy Brisbane CA 94005
+08/27/2021,08/31/2021,10/31/2021,State Farm Mutual Automobile Insurance Company,Kern County,230,Closure Permanent,"900 Old River Road Suite 400 Bakersfield
+Operations Center Bakersfield CA 93311"
+08/29/2021,08/31/2021,10/30/2021,Best Buy,Los Angeles County,50,Closure Permanent,"740 S. Pacific Coast Hwy El Segundo CA
+90245"
+08/31/2021,08/31/2021,10/08/2021,Sanofi's Principia Biopharma,San Mateo County,38,Closure Permanent,"220 East Grande Avenue South San
+Francisco CA 94080"
+09/07/2021,09/07/2021,11/07/2021,Johns Manville,Glenn County,260,Closure Temporary,5916 County Road 49 Willows CA 95988
+09/09/2021,09/09/2021,11/10/2021,"Toca Madera Management LLC dba The Madera Group
+LLC",Los Angeles County,127,Layoff Permanent,8450 W. 3rd Street Los Angeles CA 90048
+09/07/2021,09/09/2021,11/08/2021,The Collected Group,San Bernardino County,94,Layoff Permanent,4775 Eucalyptus Avenue Chino CA 91710
+08/30/2021,09/14/2021,11/01/2021,"Flying Food Group, LLC",Los Angeles County,12,Layoff Permanent,901 W. Hillcrest Blvd. Inglewood CA 90301
+09/14/2021,09/14/2021,09/14/2021,N2 Imaging Systems LLC,Orange County,30,Closure Permanent,14440 Myford Road Irvine CA 92606
+09/14/2021,09/14/2021,09/14/2021,N2 Imaging Systems LLC,Orange County,50,Closure Permanent,14430 Myford Road Irvine CA 92606
+09/14/2021,09/14/2021,09/14/2021,N2 Imaging Systems LLC,Orange County,67,Closure Permanent,14341 Chambers Road Tustin CA 92780
+09/14/2021,09/14/2021,11/17/2021,allthingsecommerce LLC,Santa Clara County,12,Closure Permanent,"205 East Alma Avenue Warehouse E4 San
+Jose CA 95112"
+09/15/2021,09/15/2021,12/06/2021,VSPOne San Diego,San Diego County,49,Closure Permanent,2651 La Mirada Drive Vista CA 92081
+09/16/2021,09/16/2021,09/30/2021,Bristol-Myers Squibb and MyoKardia Inc.,San Mateo County,4,Layoff Permanent,1000 Sierra Point Pkwy Brisbane CA 94005
+09/16/2021,09/16/2021,10/15/2021,Bristol-Myers Squibb and MyoKardia Inc.,San Mateo County,11,Layoff Permanent,1000 Sierra Point Pkwy Brisbane CA 94005
+09/16/2021,09/16/2021,10/20/2021,Bristol-Myers Squibb and MyoKardia Inc.,San Mateo County,1,Layoff Permanent,1000 Sierra Point Pkwy Brisbane CA 94005
+09/16/2021,09/16/2021,10/29/2021,Bristol-Myers Squibb and MyoKardia Inc.,San Mateo County,4,Layoff Permanent,"1000 Sierra Point Pkwy and MyoKardia Inc.
+Brisbane CA 94005"
+09/16/2021,09/16/2021,11/07/2021,Bristol-Myers Squibb and MyoKardia Inc.,San Mateo County,30,Layoff Permanent,1000 Sierra Point Pkwy Brisbane CA 94005
+09/03/2021,09/21/2021,12/17/2021,"Advanex Americas, Inc.",Orange County,80,Closure Permanent,5780 Cerritos Avenue Cypress CA 90630
+09/17/2021,09/21/2021,12/17/2021,"CoorsTek Vista, Inc.",San Diego County,26,Closure Permanent,2055 Thibodo Road Vista CA 92081
+09/17/2021,09/21/2021,12/17/2021,"CoorsTek Vista, Inc.",San Diego County,26,Closure Permanent,2025 Thibodo Road Vista CA 92081
+09/17/2021,09/21/2021,12/17/2021,"CoorsTek Vista, Inc.",San Diego County,26,Closure Permanent,1960 Watson Way Vista CA 92081
+09/17/2021,09/21/2021,12/17/2021,"CoorsTek Vista, Inc.",San Diego County,26,Closure Permanent,2065 Thibodo Road Vista CA 92081
+09/15/2021,09/21/2021,11/19/2021,Gate Gourmet,San Francisco County,289,Layoff Not known at this time,"645 West Field Road San Francisco CA
+94128"
+09/13/2021,09/21/2021,11/01/2021,Flying Food Group,San Mateo County,123,Layoff Not known at this time,"240 LIttlefield Avenue South San Francisco
+CA 94080"
+09/16/2021,09/23/2021,11/20/2021,Angelica,Fresno County,161,Closure Permanent,422 S. Fruit Avenue Fresno CA 93706
+09/14/2021,09/23/2021,11/27/2021,Transform SR LLC,Los Angeles County,10,Closure Permanent,3801 E. Foothill Blvd. Pasadena CA 91107
+09/14/2021,09/23/2021,11/14/2021,Transform SR LLC,Los Angeles County,30,Closure Permanent,3801 E. Foothill Blvd. Pasadena CA 91107
+09/14/2021,09/23/2021,11/27/2021,Transform SR LLC,Los Angeles County,13,Closure Permanent,500 Stonewood St. Downey CA 90241
+09/14/2021,09/23/2021,11/14/2021,Transform SR LLC,Los Angeles County,40,Closure Permanent,500 Stonewood ST. Downey CA 90241
+09/13/2021,09/23/2021,11/20/2021,Angelica,Orange County,169,Closure Permanent,1575 N. Case Street Orange CA 92867
+09/15/2021,09/23/2021,11/20/2021,Angelica,Sacramento County,117,Closure Permanent,"8360 Belvedere Avenue Sacramento CA
+95826"
+09/13/2021,09/23/2021,11/20/2021,Angelica,San Bernardino County,117,Closure Permanent,925 S. 8th Street Colton CA 92324
+09/17/2021,09/27/2021,11/16/2021,"QX Logistix, LLC",Los Angeles County,61,Closure Permanent,"2815 W. El Segundo Blvd Hawthorne CA
+90250"
+09/17/2021,09/27/2021,11/25/2021,Jabil Inc.,Santa Clara County,137,Closure Temporary,"6375 San Ignacio Avenue San Jose CA
+95119"
+09/23/2021,09/28/2021,11/22/2021,Zymergen Inc.,Alameda County,106,Layoff Permanent,"5980 Horton Street Suite 105 Emeryville
+CA 94608"
+09/17/2021,09/28/2021,11/16/2021,"QX Logistix, LLC",Los Angeles County,28,Closure Permanent,"4841 W. San Fernando Rd Los Angeles CA
+90039"
+09/17/2021,09/28/2021,11/16/2021,"QX Logistix, LLC",Los Angeles County,89,Closure Permanent,"4187 Temple City Blvd Rosemead CA
+91770"
+09/17/2021,09/28/2021,11/16/2021,"QX Logistix, LLC",Los Angeles County,29,Closure Permanent,5750 Mesmer Ave Culver City CA 90230
+09/15/2021,09/28/2021,11/19/2021,Gate Gourmet,Los Angeles County,247,Layoff Permanent,"6701 W. Imperial Hwy Los Angeles CA
+90045"
+09/21/2021,09/28/2021,11/21/2021,Panasonic Avionics Corporation,Orange County,3,Layoff Permanent,"26200 Enterprise Way Lake Forest CA
+92630"
+09/21/2021,09/28/2021,03/31/2022,"GEO Secure Services LLC Western Region Detention
+Facility",San Diego County,298,Closure Permanent,220 West C Street San Diego CA 92101
+09/23/2021,09/28/2021,11/26/2021,AMR City of San Diego,San Diego County,1,Layoff Permanent,4955 Ruffner Street San Diego CA 92111
+09/23/2021,09/28/2021,11/26/2021,MAR City of San Diego,San Diego County,1,Layoff Permanent,"8808 Balboa Avenue #150 San Diego CA
+92123"
+09/23/2021,09/28/2021,11/26/2021,AMR City of San Diego,San Diego County,1,Layoff Permanent,9601 Ridgehaven Ct. San Diego CA 92123
+09/23/2021,09/28/2021,11/26/2021,AMR City of San Diego,San Diego County,1,Layoff Permanent,"3870 Kearney Villa Road San Diego CA
+92123"
+09/21/2021,09/28/2021,11/19/2021,Wells Fargo,San Francisco County,5,Layoff Permanent,333 Market Street San Francisco CA 94103
+09/21/2021,09/28/2021,11/19/2021,Wells Fargo,San Francisco County,9,Layoff Permanent,"550 California Street San Francisco CA
+94104"
+09/21/2021,09/28/2021,11/19/2021,Wells Fargo,San Francisco County,4,Layoff Permanent,45 Fremont Street San Francisco CA 94105
+09/21/2021,09/28/2021,11/19/2021,Wells Fargo,San Francisco County,1,Layoff Permanent,"420 Montgomery Street San Francisco CA
+94104"
+09/21/2021,09/28/2021,11/19/2021,Wells Fargo,San Francisco County,1,Layoff Permanent,525 Market Street San Francisco CA 94105
+09/27/2021,09/29/2021,12/31/2021,"Louis Vuitton USA, Inc",Orange County,16,Closure Permanent,3333 Bristol Street Costa Mesa CA 92626
+09/28/2021,09/29/2021,11/30/2021,"Theravance Biopharma US, Inc",San Mateo County,163,Layoff Permanent,"901 Gateway Boulevard South San
+Francisco CA 94080"
+09/24/2021,09/30/2021,10/26/2021,Cherokee Nation Management & Consulting LLC,Los Angeles County,119,Layoff Permanent,1101 W. McKinley Ave. Pomona CA 91768
+09/28/2021,09/30/2021,11/26/2021,Nextgen Leads LLC,San Diego County,36,Closure Permanent,"701 B Street Suite 1255 San Diego CA
+92101"
+10/01/2021,10/01/2021,12/05/2021,Ingallina&rsquo;s Box Lunch,Los Angeles County,76,Closure Permanent,"1398 Monterey Pass Rd Monterey Park CA
+91754"
+09/30/2021,10/01/2021,11/30/2021,Panasonic Avionics Corporation,Orange County,4,Layoff Permanent,"26200 Enterprise Way Lake Forest CA
+92630"
+09/15/2021,10/04/2021,10/26/2021,"Airtight Security Group, Inc.",Los Angeles County,80,Closure Permanent,1101 W. McKinley Ave. Pomona CA 91768
+10/01/2021,10/04/2021,11/30/2021,Sun Distributing Company LLC,Los Angeles County,84,Closure Permanent,2815 El Segundo Blvd Hawthorne CA 90250
+10/01/2021,10/04/2021,12/01/2021,"Milestone Technologies, Inc",San Mateo County,81,Layoff Permanent,1 Hacker Way Menlo Park CA 94025
+09/29/2021,10/06/2021,12/31/2021,Prospect International Airport Services Corporation,San Francisco County,177,Closure Permanent,"San Francisco International Airport IT-A
+Courtyard A Rm. 1-I-103G San Francisco
+CA 94128"
+10/04/2021,10/06/2021,12/06/2021,Ryder,San Joaquin County,132,Closure Permanent,1565 N. MacArthur Drive Tracy CA 95376
+10/04/2021,10/06/2021,01/07/2022,Mylan Pharmaceuticals Inc.,San Mateo County,75,Closure Permanent,150 Industrial Road San Carlos CA 94070
+09/29/2021,10/07/2021,10/11/2021,"Fresenius Medical Care dba Spectra Laboratories Inc.
+and National Medical Care Inc.",Santa Clara County,43,Closure Permanent,525 Sycamore Drive Milpitas CA 95035
+09/29/2021,10/07/2021,01/03/2022,"Fresenius Medical Care dba Spectra Laboratories Inc.
+and National Medical Care Inc.",Santa Clara County,77,Closure Permanent,525 Sycamore Dr. Milpitas CA 95035
+09/29/2021,10/07/2021,01/31/2022,"Fresenius Medical Care dba Spectra Laboratories Inc.
+and National Medical Care Inc.",Santa Clara County,41,Closure Permanent,525 Sycamore Drive Milpitas CA 95035
+09/29/2021,10/07/2021,03/25/2022,"Fresenius Medical Care dba Spectra Laboratories Inc.
+and National Medical Care Inc.",Santa Clara County,13,Closure Permanent,525 Sycamore Drive Milpitas CA 95035
+10/07/2021,10/08/2021,12/10/2021,Carvana,Los Angeles County,56,Closure Permanent,2250 Fair Avenue Pomona CA 91768
+10/05/2021,10/08/2021,12/03/2021,Safran Cabin Inc.,San Bernardino County,93,Closure Permanent,1945 S. Grove Avenue Ontario CA 91761
+09/27/2021,10/12/2021,11/26/2021,Flying Food Group LLC,Los Angeles County,7,Layoff Permanent,901 W. Hillcrest Blvd. Inglewood CA 90301
+10/01/2021,10/12/2021,12/01/2021,Flying Food Group LLC,Los Angeles County,7,Layoff Permanent,901 W. Hillcrest Blvd Inglewood CA 90301
+10/05/2021,10/12/2021,11/01/2021,Flying Food Group LLC,Los Angeles County,78,Layoff Permanent,901 W. Hillcrest Blvd. Inglewood CA 90301
+10/04/2021,10/12/2021,11/01/2021,Flying Food Group LLC,San Mateo County,123,Layoff Permanent,"240 Littlefield Avenue South San Francisco
+CA 94080"
+10/12/2021,10/13/2021,12/15/2021,Juno Transit,Los Angeles County,45,Closure Permanent,"2815 W El Segundo Blvd Hawthorne CA
+90250"
+10/13/2021,10/13/2021,12/15/2021,Trusted Labs Inc,San Francisco County,11,Closure Permanent,"515 Folsom St Floor 2 San Francisco CA
+94105"
+10/07/2021,10/13/2021,04/30/2022,"Takeda Development Center America, Inc",San Mateo County,29,Closure Permanent,3260 Bayshore Blvd Brisbane CA 94005
+10/05/2021,10/15/2021,11/16/2021,Albany Subaru,Alameda County,66,Closure Permanent,718 San Pablo Avenue Albany CA 94706
+10/14/2021,10/15/2021,12/16/2021,"Steadfast Apartment REIT, Inc",Orange County,68,Layoff Permanent,"18100 Von Karman Avenue, Suite 200
+Irvine CA 92612"
+10/07/2021,10/15/2021,12/30/2021,National Express Transit,Stanislaus County,158,Closure Permanent,"1001 9th street, STE A Modesto CA 95354"
+10/18/2021,10/18/2021,10/18/2021,Belcampo,Alameda County,42,Layoff Permanent,55 Webster Street Oakland CA 94607
+10/18/2021,10/18/2021,10/18/2021,Belcampo,Alameda County,18,Layoff Permanent,65 Webster Street Oakland CA 94607
+10/14/2021,10/18/2021,12/15/2021,"American International Group, Inc",Los Angeles County,55,Closure Permanent,"777 S. Figueroa Street, 16th Floor Los
+Angeles CA 90017"
+09/21/2021,10/18/2021,11/20/2021,Fortuna,Sacramento County,217,Layoff Permanent,"3140 Peacekeeper Way, Ste 101 Mcclellan
+CA 95652"
+10/18/2021,10/18/2021,10/18/2021,"Belcampo Butchery, LLC",Siskiyou County,80,Layoff Permanent,329 S. Phillipe Lane Yreka CA 96097
+10/21/2021,10/25/2021,12/23/2021,Musco Family Olive Co.,Glenn County,13,Layoff Temporary,608 5th Avenue Orland CA 95963
+10/20/2021,10/25/2021,10/20/2021,Wells Fargo,San Francisco County,6,Layoff Permanent,333 Market Street San Francisco CA 94105
+10/20/2021,10/25/2021,10/20/2021,Wells Fargo,San Francisco County,5,Layoff Permanent,"550 California Street San Francisco CA
+94104"
+10/20/2021,10/25/2021,10/20/2021,Wells Fargo,San Francisco County,6,Layoff Permanent,525 Market Street San Francisco CA 94105
+10/20/2021,10/25/2021,01/07/2022,Alza Corporation,Solano County,55,Layoff Permanent,700 Eubanks Drive Vacaville CA 95688
+10/21/2021,10/26/2021,12/20/2021,Zymergen Inc.,Alameda County,82,Layoff Permanent,"5980 Horton Street Suite 105 Emeryville
+CA 94608"
+10/25/2021,10/26/2021,12/27/2021,Adamas Pharmaceuticals Inc.,Alameda County,60,Layoff Permanent,1900 Powell Street Emeryville CA 94608
+10/26/2021,10/26/2021,12/31/2021,VSP Global,Sacramento County,13,Layoff Permanent,"3333 Quality Drive Rancho Cordova CA
+95670"
+10/14/2021,10/26/2021,12/13/2021,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+10/14/2021,10/26/2021,12/20/2021,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+10/14/2021,10/26/2021,12/27/2021,Silgan Containers,Stanislaus County,131,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+10/14/2021,10/26/2021,01/03/2022,Silgan Containers,Stanislaus County,131,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+10/14/2021,10/26/2021,01/10/2022,Silgan Containers,Stanislaus County,131,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+10/14/2021,10/26/2021,01/17/2022,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+10/21/2021,10/27/2021,10/25/2021,"Kirkhill, Inc",Orange County,527,Layoff Temporary,300 E Cypress St Brea CA 92821
+10/27/2021,10/27/2021,12/31/2021,VSPOne San Diego,San Diego County,4,Closure Permanent,2651 La Mirada Drive Vista CA 92081
+10/25/2021,10/27/2021,12/31/2021,DHL Supply Chain,Santa Clara County,118,Layoff Permanent,1285 Walsh Avenue Santa Clara CA 95050
+10/29/2021,10/29/2021,01/07/2022,Alza Corporation,Solano County,51,Layoff Permanent,700 Eubanks Drive Vacaville CA 95688
+10/27/2021,11/01/2021,12/31/2021,"National Diversified Sales, Inc.",Fresno County,30,Closure Permanent,2855 South East Avenue Fresno CA 93725
+10/29/2021,11/03/2021,12/29/2021,PD Systems,Monterey County,74,Closure Permanent,"Fort Hunter Liggett, Building 3360, Hunter
+Liggett Road Jolon CA 93928"
+10/29/2021,11/03/2021,12/31/2021,"OrthoNorcal, Inc.",Santa Clara County,67,Layoff Permanent,"340 Dardanelli Lane, Ste. 10 & Ste. 20 Los
+Gatos CA 95032"
+10/29/2021,11/03/2021,12/31/2021,"OrthoNorCal, Inc.",Santa Clara County,1,Layoff Permanent,"50 E. Main St., Suite A Morgan Hill CA
+95037"
+10/29/2021,11/03/2021,12/31/2021,"OrthoNorCal, Inc.",Santa Clara County,8,Layoff Permanent,"1600 Saratoga Ave., Ste. 46 San Jose CA
+95129"
+10/29/2021,11/05/2021,12/31/2021,"OrthoNorCal, Inc.",San Francisco County,6,Layoff Permanent,"2250 Hayes St, Ste 208 San Francisco CA
+94117"
+10/29/2021,11/05/2021,12/31/2021,"OrthoNorCal, Inc",Santa Clara County,12,Layoff Permanent,"900 Lafayette St, Ste 105 Santa Clara CA
+95050"
+10/29/2021,11/05/2021,12/31/2021,"OrthoNorCal, Inc",Santa Clara County,12,Layoff Permanent,"900 Lafayette St, Ste 105 Santa Clara CA
+95050"
+10/29/2021,11/05/2021,12/31/2021,"OrthoNorCal, Inc",Santa Cruz County,30,Layoff Permanent,"4140 Jade, Ste 100 Capitola CA 95010"
+10/29/2021,11/05/2021,12/31/2021,"OrthoNorcal, Inc",Santa Cruz County,1,Layoff Permanent,"1066 S. Green Valley Rd Watsonville CA
+95076"
+10/29/2021,11/05/2021,12/31/2021,"OrthoNorCal, Inc",Santa Cruz County,7,Layoff Permanent,"13540 41st St, Ste 100 Capitola CA 95010"
+10/29/2021,11/08/2021,12/31/2021,Webster Orthopedics,Alameda County,24,Layoff Permanent,"4000 Dublin Blvd., Suite 100 Dublin CA
+94568"
+10/29/2021,11/08/2021,12/31/2021,Webster Orthopedics,Alameda County,24,Layoff Permanent,3315 Broadway Oakland CA 94611
+10/29/2021,11/08/2021,12/31/2021,Webster Orthopedics,Alameda County,7,Layoff Permanent,"3300 Webster Street, Suite 1201 Oakland
+CA 94609"
+10/29/2021,11/08/2021,12/31/2021,Webster Orthopedics,Contra Costa County,11,Layoff Permanent,"200 Porter Drive, Suite 101 San Ramon CA
+94583"
+10/29/2021,11/08/2021,12/31/2021,Webster Orthopedics,Contra Costa County,22,Layoff Permanent,"200 Porter Drive, Suite 215 San Ramon CA
+94583"
+10/29/2021,11/08/2021,12/31/2021,Webster Orthopedics,Contra Costa County,14,Layoff Permanent,"5801 Norris Canyon Road, Suite 210 San
+Ramon CA 94583"
+11/01/2021,11/08/2021,12/31/2021,"MV Transportation, Inc",Orange County,333,Layoff Permanent,"16281 Construction Circle West Irvine CA
+92606"
+11/01/2021,11/09/2021,12/31/2021,Endo Pharmaceuticals,Orange County,98,Closure Permanent,9601 Jeronimo Road Irvine CA 92618
+11/01/2021,11/09/2021,12/31/2021,Endo Pharmaceuticals,Orange County,70,Closure Permanent,72 Fairbanks Irvine CA 92618
+11/04/2021,11/10/2021,11/02/2021,"Coverance Insurance Solutions, Inc.",Los Angeles County,258,Closure Permanent,"100 W. Broadway, Suite 3000 Long Beach
+CA 90802"
+11/05/2021,11/10/2021,01/31/2022,MWN Community Hospital LLC,Los Angeles County,328,Layoff Permanent,"1720 Termino Avenue Long Beach CA
+90802"
+11/02/2021,11/10/2021,01/02/2022,Terre du Soleil dba Auberge du Soleil,Napa County,200,Layoff Temporary,"180 Rutherford Hill Road Rutherford CA
+94573"
+11/03/2021,11/10/2021,01/04/2022,"Genentech, Inc. and Genentech USA",San Mateo County,52,Layoff Permanent,"Inc. 1 DNA Way South San Francisco CA
+94080"
+11/09/2021,11/15/2021,01/21/2022,"TJX Companies, Inc. - TJ Maxx",Los Angeles County,82,Closure Permanent,"14651 Ventura Blvd. Sherman Oaks CA
+91403"
+11/10/2021,11/15/2021,12/31/2021,"Heritage Carbide, Inc",Orange County,4,Closure Permanent,901 S Via Rodeo Placentia CA 92870
+11/09/2021,11/15/2021,01/10/2022,Glen Ivy Hot Springs,Riverside County,262,Layoff Temporary,"25000 Glen Ivy Rd, Corona CA 92883"
+11/08/2021,11/15/2021,12/08/2021,ABS Global Trading Ltd. dba BitMEX,San Francisco County,29,Closure Permanent,"301 Battery St, 4th Floor San Francisco CA
+94111"
+11/08/2021,11/15/2021,01/08/2022,"SDH Services West, LLC. - Sodexo",Sutter County,22,Closure Permanent,1260 Williams Way Yuba City CA 95991
+11/12/2021,11/17/2021,01/14/2022,Schneider Electric,Fresno County,7,Closure Permanent,"200 W. Pontiac Way, Bldg 5 Clovis CA
+93612"
+10/29/2021,11/17/2021,12/28/2021,"Flying Food Group, LLC",Los Angeles County,1,Layoff Permanent,901 W. Hillcrest Blvd. Inglewood CA 90301
+10/29/2021,11/17/2021,11/04/2021,"Flying Food Group, LLC",Los Angeles County,1,Layoff Permanent,901 W. Hillcrest Blvd. Inglewood CA 90301
+10/29/2021,11/17/2021,11/26/2021,"Flying Food Group, LLC",Los Angeles County,1,Layoff Permanent,901 W. Hillcrest Blvd Inglewood CA 90301
+10/26/2021,11/17/2021,01/07/2022,"Westmed Ambulance, Inc dba McCormick Ambulance",Mariposa County,48,Closure Permanent,5114 Bullion Street Mariposa CA 95338
+11/11/2021,11/17/2021,01/10/2022,"Greif, Inc.",San Bernardino County,34,Closure Permanent,4502 East Airport Drive Ontario CA 91761
+11/18/2021,11/18/2021,12/31/2021,Wells Fargo Company,Alameda County,42,Layoff Permanent,"3440 Walnut Ave. Bldg A Fremont CA
+94538"
+11/18/2021,11/18/2021,01/16/2022,Wells Fargo Company,Alameda County,23,Layoff Permanent,"3440 Walnut Ave. Bldg A Fremont CA
+94538"
+11/16/2021,11/18/2021,01/16/2022,Abercrombie & Fitch Co. at Galleria at South Bay,Los Angeles County,21,Closure Permanent,"1815 Hawthorn Blvd #168 Redondo Beach
+CA 90278"
+11/16/2021,11/18/2021,01/16/2022,Abercrombie & Fitch Co. at Westminster Hollister,Orange County,17,Closure Permanent,"1011 Westminster Mall Westminster CA
+92683"
+11/18/2021,11/18/2021,01/16/2022,Wells Fargo,San Francisco County,5,Layoff Permanent,333 Market Street San Francisco CA 94103
+11/18/2021,11/18/2021,01/16/2022,Wells Fargo,San Francisco County,2,Layoff Permanent,"550 California Street San Francisco CA
+94104"
+11/16/2021,11/19/2021,01/28/2022,TE Connectivity,Santa Clara County,31,Closure Permanent,176 Component Drive San Jose CA 95131
+11/18/2021,11/23/2021,01/31/2022,"United States Cold Storage of California, Inc.",Sacramento County,18,Closure Permanent,3100 52nd Avenue Sacramento CA 95823
+11/24/2021,11/24/2021,01/31/2022,Franklin Templeton,Sacramento County,185,Layoff Permanent,"3355 Data Drive Rancho Cordova CA
+95670"
+11/24/2021,11/24/2021,01/31/2022,Direct Shot Distributing Inc,San Bernardino County,42,Closure Permanent,1392 Sarah PI. Unit B Ontario CA 91761
+11/24/2021,11/24/2021,01/31/2022,Franklin Templeton,San Mateo County,4,Layoff Permanent,1 Franklin Parkway San Mateo CA 94403
+11/30/2021,11/30/2021,01/31/2022,Genpact Mortgage Services Inc.,Orange County,14,Layoff Permanent,"15420 Laguna Canyon Road Suite 100
+Irvine CA 92618"
+11/26/2021,11/30/2021,01/28/2022,Watsonville Community Hospital,Santa Cruz County,658,Closure Permanent,75 Nielson Street Watsonville CA 95076
+11/29/2021,11/30/2021,01/28/2022,Watsonville Community Hospital,Santa Cruz County,677,Closure Permanent,75 Nielson Street Watsonville CA 95076
+12/01/2021,12/01/2021,03/31/2022,Tank Holding Corp.,Los Angeles County,62,Closure Permanent,17038 S Figueroa St. Gardena CA 90248
+11/12/2021,12/01/2021,11/20/2021,"Las Posas Berry Farms, LLC",Ventura County,19,Closure Permanent,3220 Wood Road Camarillo CA 93012
+12/01/2021,12/02/2021,12/04/2021,Angelica,Fresno County,161,Closure Permanent,422 S. Fruite Avenue Fresno CA 93706
+12/01/2021,12/02/2021,12/04/2021,Angelica,Orange County,169,Closure Permanent,1575 N. Case Street Orange CA 92867
+12/01/2021,12/02/2021,12/04/2021,Angelica,Sacramento County,117,Closure Permanent,"8360 Belvedere Avenue Sacramento CA
+95826"
+12/01/2021,12/02/2021,12/04/2021,Angelica,San Bernardino County,117,Closure Permanent,925 S. 8th Street Colton CA 92324
+12/01/2021,12/03/2021,12/04/2021,Angelica,Contra Costa County,148,Closure Permanent,"701 Willow Pass Road Suite 10 Pittsburg
+CA 94565"
+12/01/2021,12/03/2021,12/04/2021,Angelica,Los Angeles County,68,Closure Permanent,"300 E. Commercial Drive Pomona CA
+91767"
+12/01/2021,12/03/2021,12/04/2021,Angelica,Los Angeles County,125,Closure Permanent,"451 N. San Fernando Road Los Angeles
+CA 90031"
+11/24/2021,12/03/2021,01/21/2022,"Chick-fil-A, Inc.",San Bernardino County,53,Layoff Temporary,"4350 Ontario Mills Parkway Ontario CA
+91764"
+12/01/2021,12/03/2021,01/30/2022,Boston Scientific Corporation,Santa Clara County,170,Closure Permanent,150 Baytech Drive San Jose CA 95134
+12/03/2021,12/06/2021,12/06/2021,"Jarrow Formulas, Inc.",Los Angeles County,9,Closure Permanent,"10715 Shoemaker Ave Santa Fe Springs
+CA 90670"
+12/03/2021,12/06/2021,02/01/2022,Borrego Community Health Foundation,San Bernardino County,52,Closure Permanent,750 E. Main Street Barstow CA 92311
+12/03/2021,12/06/2021,02/01/2022,Borrego Community Health Foundation,San Bernardino County,30,Closure Permanent,590 N. D Street San Bernardino CA 92401
+12/03/2021,12/06/2021,02/01/2022,Borrego Community Health Foundation,San Diego County,31,Layoff Permanent,"587 Palm Canyon Drive Borrego Springs
+CA 92004"
+12/06/2021,12/07/2021,02/04/2022,Rodan & Fields LLC,Alameda County,1,Layoff Permanent,801 Anthony Street Berkeley CA 94710
+12/06/2021,12/07/2021,02/04/2022,Emerald Textiles LLC,Contra Costa County,145,Closure Permanent,701 Willow Pass Road Pittsburg CA 94565
+12/06/2021,12/07/2021,02/04/2022,Rodan & Fields LLC,Contra Costa County,25,Layoff Permanent,"3001 Bishop Drive Suite 450 San Ramon
+CA 94583"
+11/30/2021,12/07/2021,02/28/2022,"ULBP, Inc. dba Urbn Leaf",San Diego County,19,Closure Permanent,1028 Buenos Ave. San Diego CA 92110
+12/06/2021,12/07/2021,02/04/2022,Rodan & Fields LLC,San Francisco County,44,Layoff Permanent,60 Spear St. #600 San Francisco CA 94105
+12/08/2021,12/09/2021,12/08/2021,Ormco/SPARK,Los Angeles County,63,Layoff Permanent,1937 W. Mission Blvd. Pomona CA 91766
+11/22/2021,12/09/2021,01/24/2022,"Earl of Sandwich, LLC",Orange County,65,Layoff Permanent,"1565 South Disneyland Drive Anaheim CA
+92802"
+12/09/2021,12/13/2021,02/10/2022,"Seal Science, Inc.",Orange County,78,Closure Permanent,17131 Daimler St. Irvine CA 92614
+12/09/2021,12/13/2021,02/08/2022,Biosplice Services Corporation,San Diego County,41,Layoff Permanent,"9360 Towne Centre Drive San Diego CA
+92121"
+12/10/2021,12/14/2021,02/18/2022,Sunrider,Los Angeles County,118,Closure Permanent,1461 Francisco Street Torrance CA 90501
+12/09/2021,12/14/2021,12/29/2021,PD Systems,Monterey County,74,Layoff Temporary,"Fort Hunter Liggett, Building 3360, Hunter
+Liggett Road Jolon CA 93928"
+12/09/2021,12/14/2021,12/31/2021,"ReimbursementIQ, LLC",Orange County,17,Closure Permanent,"12862 Garden Grove Blvd. Suite 240
+Garden Grove CA 92843"
+12/13/2021,12/14/2021,02/11/2022,ESL Technologies Inc. dba Teleplan,Placer County,197,Closure Permanent,"8875 Washington Blvd. Suite B Roseville
+CA 95678"
+12/16/2021,12/16/2021,02/15/2022,"Wyndham Hotels & Resorts dba La Quinta Anaheim
+with L.Q. Management LLC",Orange County,20,Layoff Permanent,"1752 S. Clementine Street Anaheim CA
+92802"
+12/16/2021,12/16/2021,02/15/2022,"Wyndham Hotels & Resorts dba La Quinta Buena Park
+with L.Q. Management LLC",Orange County,25,Layoff Permanent,3 Centerpointe Drive La Palma CA 90623
+12/16/2021,12/16/2021,02/15/2022,"Wyndham Hotels & Resorts dba La Quinta Irvine
+Spectrum with L.Q. Management LLC",Orange County,20,Layoff Permanent,"14972 Sand Canyon Avenue Irvine CA
+92618"
+12/16/2021,12/16/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Orange
+County Airport with L.Q. Management LLC",Orange County,19,Layoff Permanent,2721 Hotel Terrance Santa Ana CA 92705
+12/16/2021,12/16/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Redding with
+L.Q. Management LLC",Shasta County,18,Layoff Permanent,2180 Hilltop Drive Redding CA 96002
+12/16/2021,12/20/2021,02/16/2022,"BMC West, LLC",Riverside County,304,Closure Permanent,"1800 Goetz Road, Unit B Perris CA 92570"
+12/16/2021,12/20/2021,02/28/2022,"Theravance Biopharma US, Inc",San Mateo County,38,Layoff Permanent,"901 Gateway Boulevard South San
+Francisco CA 94080"
+12/16/2021,12/21/2021,02/15/2022,"Wyndham Hotels & Resorts dba La Quinta Fremont with
+L.Q. Management",Alameda County,13,Layoff Permanent,46200 Landing Parkway Fremont CA 94538
+12/16/2021,12/21/2021,02/15/2022,"Wyndham Hotels & Resorts dba La Quinta Fresno with
+L.Q. Management LLC",Fresno County,20,Layoff Permanent,2926 Tulare Fresno CA 93721
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Los Angeles-
+LAX Airport with L.Q. Management LLC",Los Angeles County,61,Layoff Permanent,"5249 West Century Blvd. Los Angeles CA
+90045"
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Sacramento-
+Rancho Cordova with L.Q. Management LLC",Sacramento County,20,Layoff Permanent,"11131 Folsom Blvd. Rancho Cordova CA
+95670"
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Sacramento-
+Downtown with L.Q. Management LLC",Sacramento County,20,Layoff Permanent,200 Jibboom Street Sacramento CA 95811
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Ontario
+Airport with L.Q. Management LLC",San Bernardino County,25,Layoff Permanent,3555 Inland Empire Blvd. Ontario CA 91764
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta San Diego-
+Miramar with L.Q. Management LLC",San Diego County,16,Layoff Permanent,10185 Paseo Montril San Diego CA 92129
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta San Diego-
+Chula Vista with L.Q. Management LLC",San Diego County,28,Layoff Permanent,150 Bonita Road Chula Vista CA 91910
+12/16/2021,12/21/2021,02/15/2022,"Wyndham Hotels & Resorts dba La Quinta San Diego-
+Vista with L.Q. Management LLC",San Diego County,20,Layoff Permanent,630 Sycamore Avenue Vista CA 92083
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta San
+Francisco Airport North",San Mateo County,27,Layoff Permanent,"20 Airport Blvd. South San Francisco CA
+94080"
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Thousand
+Oaks-Newbury Park with L.Q. Management LLC",Ventura County,19,Layoff Permanent,"1320 Newbury Road Thousand Oaks CA
+91320"
+12/16/2021,12/21/2021,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Ventura with
+L.Q. Management LLC",Ventura County,20,Layoff Permanent,5818 Valentine Road Ventura CA 93003
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",Alameda County,6,Closure Permanent,26250 Industrial Blvd. Hayward CA 94545
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",Los Angeles County,113,Closure Permanent,"955 Overland Ct. Suite 200 San Dimas CA
+91773"
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",Los Angeles County,4,Closure Permanent,"5455 Wilshire Blvd. Suite 2219 Los Angeles
+CA 90036"
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",Los Angeles County,4,Closure Permanent,"225 E. Broadway, Suite 216D Glendale CA
+91205"
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",Los Angeles County,4,Closure Permanent,4401 Atlantic Ave. Long Beach CA 90807
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",Orange County,5,Closure Permanent,"600 N. State College Street, 11th Floor
+Orange CA 92868"
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",Placer County,5,Closure Permanent,1110 Melody Lane Roseville CA 95678
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",San Bernardino County,4,Closure Permanent,"3400 Inland Empire Blvd. Suite 101 Ontario
+CA 91764"
+12/17/2021,12/23/2021,02/15/2022,"Med-Legal, LLC",San Diego County,2,Closure Permanent,"3443 S. Camino Del Rio, Suite 214 San
+Diego CA 92108"
+12/21/2021,12/28/2021,02/28/2022,"Hosptial Couriers LLC referred to as Service Contract
+Facilities",Contra Costa County,73,Closure Permanent,"1401 Marina Way South Suite E Richmond
+CA 94804"
+12/21/2021,12/28/2021,02/28/2022,"Hosptial Couriers LLC referred to as Service Contract
+Facilities",Fresno County,5,Closure Permanent,"4025 N. Fresno Road Suite 101 Fresno CA
+93726"
+12/21/2021,12/28/2021,10/18/2021,Ingallina's Box Lunch,Los Angeles County,76,Layoff Permanent,"1398 Monterey Pass Rd. Monterey Park CA
+91754"
+12/23/2021,12/28/2021,03/05/2022,Maywood L'Chaim dba Cookies Los Angeles,Los Angeles County,78,Layoff Permanent,5815 Maywood Avenue Maywood CA 90270
+12/15/2021,12/28/2021,03/31/2022,Q2 Solutions,Orange County,40,Closure Permanent,"33608 Ortega Highway San Juan
+Capistrano CA 92675"
+12/28/2021,12/28/2021,02/26/2022,Bed Bath & beyond,Orange County,69,Closure Permanent,13692 Jamboree Road Irvine CA 92602
+12/21/2021,12/28/2021,02/28/2022,"Hospital Couriers LLC referred to as Service Contract
+Facilities",Sacramento County,8,Closure Permanent,"2500 Marconi Avenue Suite 212
+Sacramento CA 95821"
+12/21/2021,12/28/2021,03/01/2022,Hooker Furniture Corporation,San Bernardino County,4,Closure Permanent,1730 Marigold Ave. Redlands CA 92374
+12/28/2021,12/28/2021,02/26/2022,Bed Bath & Beyond,Santa Clara County,36,Closure Permanent,"515 East Hamilton Avenue Campbell CA
+95008"
+12/30/2021,01/03/2022,02/28/2022,"AMI Expeditionary Healthcare, LLC.",Los Angeles County,144,Layoff Permanent,"404 S. Figueroa Street Los Angeles CA
+90071"
+11/15/2021,01/03/2022,01/18/2022,"Citrix Systems, Inc.",Santa Clara County,80,Layoff Permanent,"4988 Great America Parkway Santa Clara
+CA 95054"
+01/04/2022,01/05/2022,03/18/2022,Macys,Los Angeles County,117,Closure Permanent,"1600 S. Azusa Avenue, Unit 400 City of
+Industry CA 91748"
+01/04/2022,01/05/2022,03/06/2022,"Schenker, Inc",San Bernardino County,108,Layoff Permanent,3971 East Airport Ontario CA 91761
+01/05/2022,01/05/2022,03/06/2022,"Autodesk, Inc.",San Francisco County,2,Closure Permanent,300 Mission Street San Francisco CA 94105
+01/04/2022,01/07/2022,03/07/2022,Outdoor Research,Los Angeles County,57,Layoff Temporary,10668 Hickson St El Monte CA 91731
+01/05/2022,01/07/2022,03/11/2022,"Rise Baking Company dba Traditional Baking, Inc",San Bernardino County,62,Closure Permanent,"2575 S Willow Avenue Bloomington CA
+92316"
+12/21/2021,01/07/2022,02/21/2022,WC IPA LLC dba Green Flash Brewing Co,San Diego County,46,Closure Permanent,6550 Mira Mesa Blvd San Diego CA 92121
+01/07/2022,01/10/2022,03/12/2022,Compton Creamery,Los Angeles County,105,Closure Permanent,1100 W. Artesia Blvd Compton CA 90220
+01/07/2022,01/10/2022,01/07/2022,"Ten Pin Fun Center, LLC",Stanislaus County,90,Closure Temporary,3700 Countryside Dr. Turlock CA 95382
+01/10/2022,01/11/2022,03/11/2022,"FedEx Supply Chain, Inc.",Riverside County,101,Layoff Permanent,"25300 Globe Street Moreno Valley CA
+92551"
+01/10/2022,01/11/2022,03/11/2022,Bristol Farms' La Jolla grocery store,San Diego County,75,Closure Permanent,"8510 Genesee Avenue Costa Verde
+Shopping Center San Diego CA 92122"
+01/06/2022,01/12/2022,03/07/2022,"Murad, LLC",Los Angeles County,33,Closure Permanent,1340 Storm Pkwy Torrance CA 90501
+01/07/2022,01/12/2022,03/08/2022,"Skinny Labs, Inc., dba Spin",San Francisco County,106,Layoff Permanent,"450 Mission Street, Suite 400 San
+Francisco CA 94105"
+01/04/2022,01/13/2022,03/18/2022,Macy's Inc.,Los Angeles County,117,Closure Permanent,"1600 S. Azusa Avenue Unit 400 City of
+Industry CA 91748"
+01/06/2022,01/13/2022,03/07/2022,Spectrum Pharmaceuticals,Orange County,38,Layoff Permanent,157 Technology Drive Irvine CA 92618
+01/09/2022,01/19/2022,03/11/2022,"MV Transportation, Inc",Los Angeles County,56,Layoff Permanent,1242 Los Angeles St. Glendale CA 91204
+01/13/2022,01/19/2022,03/15/2022,"Acutus Medical, Inc.",San Diego County,55,Layoff Permanent,"2210 Faraday Avenue, Suite 100 Carlsbad
+CA 92008"
+01/12/2022,01/21/2022,03/15/2022,"Nob Hill General Store, Inc. dba Nob Hill Foods",Contra Costa County,45,Closure Permanent,"2270 Oak Grove Rd Walnut Creek CA
+94598"
+01/12/2022,01/21/2022,03/15/2022,"Nob Hill General Store, Inc. dba Nob Hill Foods",Contra Costa County,49,Closure Permanent,130 Market Place San Ramon CA 94583
+01/20/2022,01/21/2022,04/08/2022,"Alexion Pharmaceuticals, Inc.",San Mateo County,36,Closure Permanent,"270 E. Grand Avenue South San Francisco
+CA 94080"
+01/17/2022,01/24/2022,03/15/2022,Decathlon USA LLC.,Alameda County,21,Closure Permanent,3938 Horton Street Emeryville CA 94608
+01/18/2022,01/24/2022,03/19/2022,"Stapleton-Spence Packing Company, Inc.",Butte County,78,Closure Permanent,1900 Highway 99 Gridley CA 95948
+01/17/2022,01/24/2022,03/15/2022,Decathlon USA LLC.,San Francisco County,11,Closure Permanent,"2300 16th Street #220 San Francisco CA
+94103"
+01/24/2022,01/25/2022,04/01/2022,Alza Corporation,Solano County,71,Layoff Permanent,700 Eubanks Drive Vacaville CA 95688
+01/25/2022,01/25/2022,02/14/2022,Bueno Beverage Company,Tulare County,68,Layoff Permanent,2122 N. Plaza Drive Visalia CA 93278
+01/25/2022,01/26/2022,03/31/2022,"Paula LeDuc, Inc.",Alameda County,237,Closure Permanent,1350 Park Ave Emeryville CA 94608
+01/10/2022,01/26/2022,03/10/2022,"Red Collar Pet Foods, Inc.",San Bernardino County,69,Closure Permanent,"2765 Lexington Way San Bernardino CA
+92407"
+01/17/2022,01/26/2022,03/25/2022,Coastal Nursery,Santa Cruz County,50,Layoff Permanent,117 Rancho Rd. Watsonville CA 95076
+01/27/2022,01/27/2022,04/01/2022,Schneider Electric,Fresno County,10,Closure Permanent,"200 W. Pontiac Way Bldg 5 Clovis CA
+93612"
+01/27/2022,01/27/2022,03/28/2022,Beachbody LLC,Los Angeles County,70,Layoff Permanent,"400 Continental Blvd Suite 400 El Segundo
+CA 90245"
+01/27/2022,01/27/2022,03/31/2022,"Davidson Hotel Company LLC dba Pivot Hotels and
+Resorts at Bei Hotel San Francisco",San Francisco County,110,Layoff Permanent,50 8th Street San Francisco CA 94103
+01/27/2022,01/28/2022,04/01/2022,"Herbalife International of America, Inc.",Los Angeles County,3,Layoff Permanent,"800 West Olympic Blvd Los Angeles CA
+90015"
+01/27/2022,01/28/2022,04/01/2022,"Herbalife International of America, Inc.",Los Angeles County,53,Layoff Permanent,950 West 190th Street Torrance CA 90502
+01/27/2022,01/28/2022,04/01/2022,"Herbalife International of America, Inc.",Los Angeles County,34,Layoff Permanent,990 West 190th Street Torrance CA 90502
+01/26/2022,01/28/2022,03/28/2022,PD Systems,Monterey County,51,Layoff Permanent,"Fort Hunter Liggett, Building 3360, Hunter
+Liggett Road Jolon CA 93928"
+01/28/2022,01/31/2022,04/02/2022,Accredited Home Health Services,Los Angeles County,128,Closure Permanent,"5955 De Soto Avenue, Suite 160 Woodland
+Hills CA 91367"
+01/28/2022,01/31/2022,04/02/2022,Accredited Home Health Services,Los Angeles County,42,Closure Permanent,"10801 National Blvd, Suite 330 Los
+Angeles CA 90064"
+01/28/2022,01/31/2022,04/02/2022,Accredited Home Health Services,Los Angeles County,25,Closure Permanent,"572 E. Green Street, Suite 300 Pasadena
+CA 91101"
+02/01/2022,02/03/2022,04/07/2022,WinnPointe Corporation dba Interactive Mortgage,Orange County,51,Layoff Permanent,"1 City Blvd. West, Suite 1650 Orange CA
+92868"
+01/31/2022,02/03/2022,03/31/2022,Benchmarks Electronics Inc.,Ventura County,17,Closure Permanent,200 Science Drive Moorpark CA 93021
+01/26/2022,02/07/2022,01/26/2022,"Atara Biotherapeutics, Inc.",Ventura County,140,Layoff Permanent,"2430 Conejo Spectrum St. Thousand Oaks
+CA 91320"
+02/09/2022,02/09/2022,03/27/2022,"Emerald Textiles, LLC",Sacramento County,112,Closure Permanent,8360 Belvedere Ave Sacramento CA 95826
+02/10/2022,02/10/2022,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Fremont with
+L.Q. Management LLC",Alameda County,16,Layoff Permanent,46200 Landing Parkway Fremont CA 94538
+02/10/2022,02/10/2022,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Fresno with
+L.Q. Management LLC",Fresno County,21,Layoff Permanent,2926 Tulare Fresno CA 93721
+02/10/2022,02/10/2022,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Anaheim
+with L.Q. Management LLC",Orange County,19,Layoff Permanent,1752 S. Clementine St. Anaheim CA 92802
+02/10/2022,02/10/2022,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Buena Park
+with L.Q. Management LLC",Orange County,27,Layoff Permanent,3 Centerpointe Drive La Palma CA 90623
+02/10/2022,02/10/2022,03/02/2022,"Wyndham Hotels & Resorts dba La Quinta Irvine
+Spectrum with L.Q. Management LLC",Orange County,21,Layoff Permanent,"14972 Sand Canyon Avenue Irvine CA
+92618"
+02/10/2022,02/11/2022,04/12/2022,Biosplice Services Corporation,San Diego County,23,Layoff Permanent,"9360 Towne Centre Drive San Diego CA
+92121"
+02/10/2022,02/11/2022,03/01/2022,"Land O&rsquo;Lakes, Inc.",Yolo County,6,Closure Permanent,7661 Becker Road Davis CA 95618
+12/02/2021,02/14/2022,01/23/2022,SBE,Los Angeles County,40,Closure Permanent,702 American Way Glendale CA 91210
+02/03/2022,02/16/2022,04/09/2022,Marin General Hospital dba MarinHealth Medical Center,Marin County,42,Layoff Permanent,250 Bon Air Road Greenbrae CA 94904
+02/03/2022,02/16/2022,04/09/2022,Marin General Hospital dba MarinHealth Medical Center,Marin County,14,Layoff Permanent,1240 S Eliseo Dr Greenbrae CA 94904
+02/03/2022,02/16/2022,04/09/2022,Marin General Hospital dba MarinHealth Medical Center,Marin County,4,Layoff Permanent,1300 S Eliseo Dr Greenbrae CA 94904
+02/03/2022,02/16/2022,04/09/2022,Marin General Hospital dba MarinHealth Medical Center,Marin County,3,Layoff Permanent,75 Rowland Way Novato CA 94945
+02/03/2022,02/16/2022,04/09/2022,Marin General Hospital dba MarinHealth Medical Center,Marin County,41,Layoff Permanent,"3950 Civic Center Drive San Rafael CA
+94903"
+02/15/2022,02/16/2022,05/12/2022,Walkenhorst&rsquo;s,Napa County,11,Closure Permanent,"211 Gateway Rd West, Suite 201 Napa CA
+94558"
+02/15/2022,02/16/2022,05/20/2022,Walmart,Orange County,105,Closure Permanent,10912 Katella Ave Garden Grove CA 92804
+02/15/2022,02/16/2022,02/16/2022,Allakos,San Mateo County,61,Layoff Permanent,975 Island Drive Redwood City CA 94065
+02/15/2022,02/17/2022,04/18/2022,"Delicato Vineyards LLC dba Delicato Family Wines and
+San Bernabe Vineyards LLC, Delaware Limited Lia",Monterey County,26,Layoff Permanent,53001 Oasis Rd. King City CA 93930
+02/16/2022,02/17/2022,03/01/2022,Nan McKay & Associates,San Francisco County,68,Closure Permanent,"1815 Egbert Avenue San Francisco CA
+94124"
+02/15/2022,02/17/2022,04/17/2022,"Crothall Healthcare Environmental Services at Adventist
+Health Sonora",Tuolumne County,25,Layoff Permanent,1000 Greenley Rd. Sonora CA 95370
+02/18/2022,02/18/2022,04/20/2022,"Hyperloop Technologies, Inc. dba Virgin Hyperloop",Los Angeles County,84,Layoff Permanent,2159 Bay St. Los Angeles CA 90021
+02/15/2022,02/22/2022,04/17/2022,Crothall Healthcare Delano,Kern County,31,Layoff Permanent,1401 Garces Hwy Delano CA 93215
+02/15/2022,02/22/2022,04/17/2022,Crothall Healthcare Bakersfield,Kern County,89,Layoff Permanent,2615 Chester Avenue Bakersfield CA 93301
+02/15/2022,02/22/2022,04/17/2022,Crothall Healthcare Tehachapi,Kern County,13,Layoff Permanent,1100 Magellan Drive Tehachapi CA 93561
+02/22/2022,02/22/2022,04/29/2022,Alza Corporation,Solano County,6,Layoff Permanent,700 Eubanks Drive Vacaville CA 95688
+02/23/2022,02/23/2022,04/20/2022,St. John&rsquo;s Retirement Village,Yolo County,64,Closure Permanent,135 Woodland Ave. Woodland CA 95695
+02/25/2022,02/25/2022,04/29/2022,"California Psychcare, Inc., Behavior Respite in Action,
+Inc. and Z & S Management Corporation",Kern County,36,Closure Permanent,"732 N Norma Street, Unit B Ridgecrest CA
+93555"
+02/28/2022,02/28/2022,04/30/2022,"Trego/Dugan Aviation of Grand Island, Inc.",San Francisco County,35,Closure Permanent,"780 S Airport Blvd. San Francisco CA
+94128"
+03/04/2022,03/04/2022,05/06/2022,"Nestle USA, Inc",Monterey County,104,Closure Permanent,3080 Hilltop Road Moss Landing CA 95039
+03/02/2022,03/04/2022,05/01/2022,"FedEx Supply Chain, Inc.",San Bernardino County,80,Closure Permanent,"1670 Champagne Avenue Ontario CA
+91761"
+03/02/2022,03/04/2022,03/02/2022,"Fox Factory, Inc",Santa Cruz County,83,Layoff Permanent,200 El Pueblo Road Scotts Valley CA 95066
+03/04/2022,03/07/2022,05/09/2022,"Keeco, LLC",Los Angeles County,134,Closure Permanent,"5770 Peachtree Street Los Angeles CA
+90040"
+03/04/2022,03/07/2022,05/06/2022,"Employnet, Inc.",Monterey County,36,Layoff Permanent,3080 Hilltop Road Moss Landing CA 95039
+01/31/2022,03/07/2022,03/02/2022,"Meriliz, Inc. dba Dome Printing",Sacramento County,34,Closure Permanent,2031 Dome Lane Mcclellan CA 95652
+03/04/2022,03/07/2022,03/04/2022,"Prospect Financial Group Inc. DBA Prospect Home
+Finance",San Diego County,5,Layoff Permanent,"7825 Fay Avenue Suite 160 La Jolla CA
+92037"
+03/04/2022,03/07/2022,03/04/2022,"Prospect Financial Group Inc. DBA Prospect Home
+Finance",San Diego County,5,Layoff Permanent,"7825 Fay Avenue Suite 160 La Jolla CA
+92037"
+03/07/2022,03/08/2022,05/06/2022,Pennymac,Los Angeles County,16,Layoff Permanent,"3043 Townsgate Road Westlake Village CA
+91361"
+03/07/2022,03/08/2022,05/06/2022,Pennymac,Los Angeles County,80,Layoff Permanent,"112 Lakeview Canyon Westlake Village CA
+91361"
+03/07/2022,03/08/2022,05/06/2022,Pennymac,Los Angeles County,24,Layoff Permanent,251 S. Lake Avenue Pasadena CA 91101
+02/16/2022,03/08/2022,04/18/2022,"Pacific Catch, Inc.",San Francisco County,63,Layoff Temporary,1200 9th Avenue San Francisco CA 94122
+03/07/2022,03/09/2022,05/06/2022,Pennymac,Ventura County,16,Layoff Permanent,6101 Condor Drive Moorpark CA 93021
+03/07/2022,03/10/2022,05/15/2022,"CWD, LLC dba Centric Parts",Los Angeles County,252,Layoff Permanent,14528 Bonelli St. City of Industry CA 91746
+03/08/2022,03/10/2022,05/07/2022,Curology Inc.,San Diego County,91,Closure Permanent,"5717 Pacific Center Drive Suite 200 San
+Diego CA 92121"
+03/08/2022,03/10/2022,05/07/2022,Curology Inc.,San Francisco County,39,Closure Permanent,"353 Sacramento St. Suite 1300 San
+Francisco CA 94111"
+03/09/2022,03/10/2022,05/09/2022,Pacific Catch Inc.,Santa Clara County,86,Closure Temporary,"1875 S. Bascom Avenue Suite 550
+Campbell CA 95008"
+03/10/2022,03/14/2022,03/31/2022,DS Operations LLC dba Donahue Schriber,Orange County,36,Closure Permanent,"200 E. Baker Street, Suite 100 Costa Mesa
+CA 92626"
+03/14/2022,03/15/2022,05/14/2022,GXO Logistics Supply Chain Inc.,Fresno County,139,Closure Permanent,"3443 East Central Avenue Fresno CA
+93725"
+03/07/2022,03/15/2022,05/06/2022,MedImpact Healthcare Systems,San Diego County,76,Layoff Permanent,"10181 Scripps Gateway Ct San Diego CA
+92131"
+03/07/2022,03/15/2022,05/06/2022,MedImpact Healthcare Systems,San Diego County,49,Layoff Permanent,"10159 Scripps Gateway Ct. San Diego CA
+92131"
+03/11/2022,03/16/2022,05/13/2022,"Positive Pathways, LLC",Contra Costa County,8,Closure Permanent,640 W. 2nd Street Antioch CA 94509
+03/07/2022,03/16/2022,05/06/2022,Pennymac,Los Angeles County,19,Layoff Permanent,29903 Agoura Road Agoura Hills CA 91301
+03/15/2022,03/16/2022,05/17/2022,"Monarch Delivers, LLC",Orange County,72,Closure Permanent,25725 Jeronimo Rd Mission Viejo CA 92691
+03/07/2022,03/16/2022,05/06/2022,Pennymac,Placer County,81,Layoff Permanent,3013 Douglas Blvd Roseville CA 95661
+03/11/2022,03/16/2022,05/13/2022,"Positive Pathways, LLC",San Francisco County,82,Closure Permanent,"1501 Mariposa Street, Suite 312 San
+Francisco CA 94107"
+03/17/2022,03/17/2022,05/20/2022,Aramark Educational Services LLC,Orange County,140,Layoff Permanent,"800 N. State College Blvd. Fullerton CA
+92831"
+03/15/2022,03/17/2022,04/16/2022,PULAU Corporation,San Bernardino County,48,Layoff Permanent,"Building 6100 Barstow Road Fort Irwin CA
+92310"
+03/15/2022,03/17/2022,04/16/2022,PULAU Corporation,San Bernardino County,12,Layoff Permanent,"Bicycle Lake Army Airfield 6201A
+Westbrook Ave. Fort Irwin CA 92310"
+03/18/2022,03/18/2022,06/30/2022,Siemens Healthcare Diagnostics Inc.,Los Angeles County,86,Closure Permanent,"5210 Pacific Concourse Drive Los Angeles
+CA 90045"
+03/09/2022,03/18/2022,04/01/2022,"Gama Berry Farms, LLC",Ventura County,89,Closure Permanent,4110 Wood Road Oxnard CA 93030
+03/09/2022,03/18/2022,04/01/2022,"Gama Berry Farms, LLC",Ventura County,89,Closure Permanent,4000 Central Avenue Camarillo CA 93010
+03/21/2022,03/21/2022,05/27/2022,"Interviewing Service of America, LLC",Los Angeles County,100,Closure Permanent,"15400 Sherman Way, Suite 400 Van Nuys
+CA 91406"
+03/21/2022,03/21/2022,04/10/2022,"Davidson Hotel Company LLC dba Pivot Hotels and
+Resorts",San Francisco County,83,Layoff Permanent,50 8th St San Francisco CA 94103
+03/21/2022,03/21/2022,04/10/2022,"Davidson Hotel Company LLC dba Pivot Hotels and
+Resorts",San Francisco County,83,Layoff Permanent,50 8th St San Francisco CA 94103
+03/16/2022,03/22/2022,05/16/2022,General Atomics,San Diego County,1,Layoff Permanent,"11222 Flintkote Avenue San Diego CA
+92121"
+03/16/2022,03/22/2022,05/16/2022,General Atomics,San Diego County,11,Layoff Permanent,"16761 Via Del Campo Ct. San Diego CA
+92127"
+03/16/2022,03/22/2022,05/16/2022,General Atomics,San Diego County,3,Layoff Permanent,"16825 Via Del Campo Ct. San Diego CA
+92127"
+03/16/2022,03/22/2022,05/16/2022,General Atomics,San Diego County,47,Layoff Permanent,16969 Mesamint St. San Diego CA 92127
+03/16/2022,03/22/2022,05/16/2022,General Atomics,San Diego County,1,Layoff Permanent,10880 Thornmint Rd. San Diego CA 92127
+03/16/2022,03/22/2022,05/16/2022,General Atomics,San Diego County,40,Layoff Permanent,16530 Via Esprillo San Diego CA 92127
+03/16/2022,03/22/2022,05/16/2022,General Atomics,San Diego County,10,Layoff Permanent,16510 Via Esprillo San Diego CA 92127
+03/23/2022,03/23/2022,04/18/2022,Azusa Pacific University,Los Angeles County,27,Layoff Permanent,901 E. Alosta Ave. Azusa CA 91702
+03/07/2022,03/23/2022,06/30/2022,Edelmann USA Inc.,San Bernardino County,90,Closure Permanent,2150 S. Parco Avenue Ontario CA 91761
+01/21/2022,03/23/2022,07/14/2022,Watsonville Community Hospital,Santa Cruz County,658,Closure Permanent,75 Nielson Street Watsonville CA 95076
+03/25/2022,03/25/2022,06/03/2022,Respironics California LLC,San Diego County,130,Closure Permanent,2271 Cosmos Court Carlsbad CA 92011
+03/18/2022,03/28/2022,06/30/2022,"McWane, Inc. dba Anaco",Riverside County,198,Closure Permanent,1001 El Camino Ave Corona CA 92879
+03/18/2022,03/28/2022,06/30/2022,"McWane, Inc. dba Anaco",Riverside County,198,Closure Permanent,1001 El Camino Ave Corona CA 92879
+03/28/2022,03/28/2022,05/30/2022,"Vestra Labs, LLC",Sacramento County,72,Layoff Permanent,"Serna Center, 5735 47th Avenue
+Sacramento CA 95824"
+03/28/2022,03/28/2022,04/10/2022,"Davidson Hotel Company LLC dba Pivot Hotels and
+Resorts",San Francisco County,83,Layoff Permanent,50 8th St San Francisco CA 94103
+03/28/2022,03/28/2022,05/24/2022,SunPower,Santa Clara County,89,Layoff Permanent,51 Rio Robles San Jose CA 95134
+03/29/2022,03/30/2022,05/31/2022,365 Delivery Inc.,Los Angeles County,58,Closure Permanent,"4187 Temple City Blvd. Rosemead CA
+91770"
+03/29/2022,03/30/2022,05/31/2022,365 Delivery Inc.,Riverside County,53,Closure Permanent,"6250 Sycamore Canyon Blvd. Riverside CA
+92507"
+03/21/2022,03/30/2022,06/30/2022,KRA,San Diego County,11,Layoff Permanent,"330 Park Blvd. Room #555 San Diego CA
+92101"
+03/21/2022,03/30/2022,06/30/2022,KRA,San Diego County,6,Layoff Permanent,151 Van Houten Ave. El Cajon CA 92020
+03/21/2022,03/30/2022,06/30/2022,KRA,San Diego County,6,Layoff Permanent,"649 W. Mission Ave. Room 2400
+Escondido CA 92025"
+03/21/2022,03/30/2022,06/30/2022,KRA,San Diego County,17,Layoff Permanent,4389 Imperial Ave. San Diego CA 92113
+03/21/2022,03/30/2022,06/30/2022,KRA,San Diego County,6,Layoff Permanent,"3708 Ocean Ranch Blvd Oceanside CA
+92056"
+03/21/2022,03/30/2022,06/30/2022,KRA,San Diego County,11,Layoff Permanent,"1111 Bay Blvd., Suite E Chula Vista CA
+91911"
+04/01/2022,04/01/2022,03/31/2022,"Aaren Scientific, Inc.",San Bernardino County,36,Layoff Temporary,"1040 S. Vintage Ave., Bldg. A Ontario CA
+91761"
+03/31/2022,04/01/2022,04/01/2022,San Francisco SPCA,San Francisco County,40,Closure Permanent,"2343 Fillmore Street San Francisco CA
+94115"
+03/29/2022,04/01/2022,05/31/2022,"Arm, Inc.",Santa Clara County,80,Layoff Permanent,150 Rose Orchard Way San Jose CA 95134
+04/01/2022,04/04/2022,06/01/2022,"Autodesk, Inc.",Los Angeles County,1,Closure Permanent,210 Main Street Venice CA 90291
+04/01/2022,04/04/2022,05/31/2022,Buffalo Wild Wings,Los Angeles County,26,Closure Permanent,3939 Crenshaw Blvd Los Angeles CA 90008
+04/04/2022,04/04/2022,05/02/2022,North Island Credit Union,San Diego County,4,Closure Permanent,"288 N El Camino Real, Ste B Encinitas CA
+92024"
+04/04/2022,04/04/2022,05/02/2022,North Island Credit Union,San Diego County,4,Closure Permanent,"288 N El Camino Real, Ste B Encinitas CA
+92024"
+04/01/2022,04/04/2022,06/09/2022,Student Transportation of America,Santa Barbara County,79,Closure Permanent,1331 Jason Way Santa Maria CA 93455
+04/04/2022,04/05/2022,06/04/2022,"PerkinElmer Health Sciences Inc. at the CA Dept. of
+Public Health's Laboratory",Los Angeles County,75,Closure Permanent,28454 Livingston Ave. Valencia CA 91355
+04/04/2022,04/06/2022,06/01/2022,"Cast Parts, Inc. DBA CPP-Pomona",Los Angeles County,132,Closure Permanent,"4200 West Valley Boulevard Pomona CA
+91769"
+04/04/2022,04/07/2022,06/09/2022,AB&I Foundry,Alameda County,193,Closure Permanent,"7825 San Leandro Street Oakland CA
+94621"
+04/06/2022,04/07/2022,07/16/2022,Pitney Bowes Inc.,Orange County,37,Closure Permanent,"16350 Gothard Street Huntington Beach
+CA 92647"
+04/08/2022,04/11/2022,06/07/2022,"Sublime Machining, LLC",Alameda County,47,Closure Permanent,2537 Willow St. Oakland CA 94607
+04/12/2022,04/13/2022,06/12/2022,Vons Companies&rsquo; Norwalk Beverage Plant,Los Angeles County,69,Layoff Permanent,12844 Excelsior Dr. Norwalk CA 90650
+04/12/2022,04/14/2022,05/27/2022,Mag Parts Inc. dba CPP-Azusa,Los Angeles County,41,Closure Permanent,1545 W. Roosevelt St. Azusa CA 91702
+04/13/2022,04/14/2022,06/15/2022,InterValley Health Plan,Los Angeles County,110,Layoff Permanent,"300 S. Park Avenue Suite 300 Pomona CA
+91766"
+04/13/2022,04/14/2022,06/15/2022,InterValley Health Plan,Los Angeles County,1,Layoff Permanent,"1601 Monte Vista Avenue Suite 275
+Claremont CA 91711"
+04/13/2022,04/14/2022,06/15/2022,InterValley Health Plan,Riverside County,1,Layoff Permanent,"300 S. Highland Springs Ave. Suite 10-J
+Banning CA 92220"
+04/13/2022,04/14/2022,06/15/2022,InterValley Health Plan,San Bernardino County,2,Layoff Permanent,"12209 Hesperia Road Suite E Victorville CA
+92395"
+04/15/2022,04/18/2022,06/30/2022,"Transdev Services, Inc.",Los Angeles County,215,Layoff Permanent,6th 42210 Street Lancaster CA 93534
+04/19/2022,04/20/2022,06/16/2022,Albertsons LLC,Los Angeles County,67,Closure Permanent,110 E. Carson St. Carson CA 90745
+04/19/2022,04/20/2022,06/24/2022,Collins Aerospace,Riverside County,33,Closure Permanent,350 W Rincon Street Corona CA 92880
+05/24/2021,04/20/2022,07/31/2021,"ABM Industry Groups, LLC",Santa Clara County,54,Layoff Permanent,"1111 Lockheed Mountain Way Bid. # 157
+Sunnyvale CA 94086"
+04/18/2022,04/25/2022,04/18/2022,Owning,Orange County,189,Layoff Permanent,1 City Blvd. Orange CA 92868
+04/20/2022,04/25/2022,06/20/2022,OptumRx,San Diego County,132,Closure Permanent,2858 Loker Ave. East San Diego CA 92101
+04/25/2022,04/26/2022,06/24/2022,"Pacifica Foods, LLC",San Diego County,86,Closure Permanent,649 Benet Rd. Oceanside CA 92058
+04/25/2022,04/26/2022,06/24/2022,"Analog Devices, Inc.",Santa Clara County,61,Layoff Permanent,1630 McCarthy Blvd. Milpitas CA 95035
+04/26/2022,04/26/2022,12/31/2022,Hunter Douglas Fabrication Company,Yolo County,122,Closure Permanent,"2080 Enterprise Blvd. West Sacramento
+CA 95691"
+04/25/2022,04/27/2022,08/31/2022,Marymount California University,Los Angeles County,131,Closure Permanent,"30800 Palos Verdes Drive East Rancho
+Palos Verdes CA 90275"
+04/26/2022,04/27/2022,06/26/2022,Nektar Therapeutics,San Francisco County,337,Layoff Permanent,"455 Mission Bay Boulevard South San
+Francisco CA 94158"
+04/20/2022,04/28/2022,06/24/2022,S&H Packing and Sales Co. Inc.,Los Angeles County,52,Closure Permanent,"1601 E. Olympic Blvd. Suite 315-318 Los
+Angeles CA 90021"
+04/28/2022,04/28/2022,07/01/2022,"Robinhood Markets, Inc.",San Mateo County,100,Layoff Permanent,85 Willow Road Menlo Park CA 94025
+04/27/2022,04/28/2022,07/01/2022,Alza Corporation,Solano County,14,Layoff Permanent,700 Eubanks Drive Vacaville CA 95688
+04/28/2022,04/29/2022,06/30/2022,Waste Management,Orange County,98,Layoff Permanent,1800 S. Grand Ave Santa Ana CA 92705
+04/28/2022,05/02/2022,06/27/2022,Pennymac,Los Angeles County,21,Layoff Permanent,251 S. Lake Avenue Pasadena CA 91101
+04/29/2022,05/02/2022,05/06/2022,Whole Foods Market,Los Angeles County,117,Closure Permanent,"18700 Ventura Boulevard, Suite #190
+Tarzana CA 91356"
+03/16/2022,05/02/2022,06/30/2022,"Southland Transit, Inc.",Riverside County,97,Closure Permanent,110 South G Street Perris CA 92570
+04/28/2022,05/02/2022,06/30/2022,Waste Management,San Diego County,76,Layoff Permanent,5960 El Camino Real Carlsbad CA 92008
+04/29/2022,05/03/2022,06/30/2022,First Baptist Head Start-Belshaw Center,Contra Costa County,7,Layoff Permanent,2801 Roosevelt Lane Antioch CA 94509
+04/29/2022,05/03/2022,06/30/2022,First Baptist Head Start-Administration Office,Contra Costa County,13,Layoff Permanent,3890 Railroad Avenue Pittsburg CA 94565
+04/29/2022,05/03/2022,06/30/2022,First Baptist Head Start-East Leland Center,Contra Costa County,11,Layoff Permanent,2555 East Leland Road Pittsburg CA 94565
+04/29/2022,05/03/2022,06/30/2022,First Baptist Head Start-Kid's Castle Center,Contra Costa County,19,Layoff Permanent,55 Castlewood Drive Pittsburg CA 94565
+04/29/2022,05/03/2022,06/30/2022,First Baptist Head Start-Lido Square Center,Contra Costa County,5,Layoff Permanent,2131 Crestview Lane Pittsburg CA 94565
+04/29/2022,05/03/2022,06/30/2022,First Baptist Head Start-Fairgrounds Center,Contra Costa County,22,Layoff Permanent,1203 West 20th Street Antioch CA 94509
+04/29/2022,05/03/2022,06/30/2022,First Baptist Head Start-Lone Tree Center,Contra Costa County,7,Layoff Permanent,1931 Mokelumne Drive Antioch CA 94531
+04/29/2022,05/03/2022,06/30/2022,First Baptist Head Start-Odessa Center,Contra Costa County,3,Layoff Permanent,204 Odessa Avenue Pittsburg CA 94565
+04/29/2022,05/03/2022,06/30/2022,Morrison Healthcare at Kaiser Permanente-Downey,Los Angeles County,8,Layoff Permanent,9333 Imperial Hwy Downey CA 90242
+04/29/2022,05/03/2022,06/30/2022,"Morrison Healthcare at Kaiser Permanente-
+Independence Park",Los Angeles County,1,Layoff Permanent,12254 Bellflower Blvd. Downey CA 90242
+04/29/2022,05/03/2022,06/30/2022,"Morrison Healthcare at Kaiser Permanente-Walnut
+Creek",Los Angeles County,5,Layoff Permanent,393 E. Walnut St. Pasadena CA 91188
+05/02/2022,05/04/2022,06/17/2022,"Blend Labs, Inc.",Orange County,89,Layoff Permanent,"1600 East St. Andrew Place Santa Ana CA
+92705"
+04/28/2022,05/04/2022,06/27/2022,Pennymac,Placer County,13,Layoff Permanent,3013 Douglas Blvd Roseville CA 95661
+05/02/2022,05/04/2022,06/17/2022,"Blend Labs, Inc.",San Francisco County,60,Layoff Permanent,415 Kearny St. San Francisco CA 94108
+04/28/2022,05/04/2022,06/27/2022,Pennymac,Ventura County,25,Layoff Permanent,"112 Lakeview Canyon Road Westlake
+Village CA 91361"
+05/02/2022,05/04/2022,06/17/2022,"Blend Labs, Inc.",Ventura County,6,Layoff Permanent,"One Baxter Way, Suite 260 Westlake
+Village CA 91362"
+05/02/2022,05/05/2022,05/02/2022,Public Health Institute (PHI),Alameda County,51,Layoff Permanent,"555 12th Street, 6th Floor Oakland CA
+94607"
+05/02/2022,05/05/2022,06/30/2022,Radford Studio Center LLC,Los Angeles County,54,Layoff Permanent,4024 Radford Avenue Studio City CA 91604
+05/01/2022,05/05/2022,06/30/2022,Telus International dba Voxpro Group LLC,Sacramento County,87,Layoff Permanent,255 Parkshore Drive Folsom CA 95630
+05/05/2022,05/05/2022,07/05/2022,"GATR Technologies Inc./ISR Systems Inc., subsidiary of
+Cubic Corporation",San Diego County,24,Closure Permanent,3635 Afton Rd. San Diego CA 92123
+05/09/2022,05/09/2022,06/30/2022,"MV Transportation, Inc.",Kern County,11,Layoff Permanent,180 W. Merced Avenue Delano CA 93216
+05/06/2022,05/09/2022,06/04/2022,"PerkinElmer Health Sciences, Inc.",Los Angeles County,76,Closure Permanent,28454 Livingston Ave Valencia CA 91355
+05/06/2022,05/09/2022,07/08/2022,Doma,Orange County,113,Layoff Permanent,"4 Park Plaza, Suite 1500 Irvine CA 92614"
+05/09/2022,05/09/2022,06/30/2022,"MV Transportation, Inc.",Tulare County,35,Layoff Permanent,360 North K Street Tulare CA 93274
+05/09/2022,05/09/2022,06/30/2022,"MV Transportation, Inc.",Tulare County,42,Layoff Permanent,25430 Road 140 Visalia CA 93291
+05/05/2022,05/09/2022,07/06/2022,Cascade Windows,Yolo County,61,Closure Permanent,1660 Tide Ct. Woodland CA 95776
+05/09/2022,05/10/2022,07/08/2022,Pennymac,Los Angeles County,14,Layoff Permanent,251 S. Lake Avenue Pasadena CA 91101
+04/01/2022,05/10/2022,04/01/2022,Pacific PPE Corporation,San Bernardino County,9,Closure Permanent,7580 Cherry Avenue Fontana CA 92336
+04/13/2022,05/10/2022,06/15/2022,Furaat Inc.,San Diego County,43,Closure Permanent,16550 Via Esprillo San Diego CA 92127
+04/14/2022,05/10/2022,06/15/2022,Furaat Inc.,San Diego County,62,Closure Permanent,"901 Bay Marina Drive National City CA
+91950"
+05/09/2022,05/10/2022,06/30/2022,San Francisco Art Institute (SFAI),San Francisco County,74,Closure Permanent,"800 Chestnut Street San Francisco CA
+94133"
+05/09/2022,05/11/2022,07/08/2022,Pennymac,Los Angeles County,2,Layoff Permanent,29903 Agoura Road Agoura Hills CA 91301
+05/11/2022,05/11/2022,07/11/2022,"Zwift, Inc.",Los Angeles County,63,Layoff Permanent,"111 W. Ocean Blvd., Ste. 1800 Long Beach
+CA 90802"
+04/28/2022,05/11/2022,06/27/2022,Pennymac,Placer County,3,Layoff Permanent,3013 Douglas Blvd Roseville CA 95661
+05/09/2022,05/11/2022,07/08/2022,Pennymac,Ventura County,72,Layoff Permanent,"112 Lakeview Canyon Road Thousand
+Oaks CA 91362"
+05/09/2022,05/11/2022,07/08/2022,Pennymac,Ventura County,5,Layoff Permanent,"3143 Townsgate Road Thousand Oaks CA
+91361"
+05/09/2022,05/11/2022,07/08/2022,Pennymac,Ventura County,52,Layoff Permanent,6101 Condor Drive Moorpark CA 93021
+05/11/2022,05/12/2022,07/17/2022,USF Reddaway Inc.,Los Angeles County,98,Closure Permanent,575 E. Weber Avenue Compton CA 90222
+05/10/2022,05/12/2022,07/08/2022,California Human Development Disability Services,Sonoma County,18,Closure Permanent,1020 Center Drive Santa Rosa CA 95403
+05/10/2022,05/12/2022,07/29/2022,"California Human Development Substance Recovery
+Services (Residential)",Sonoma County,11,Closure Permanent,"3555 Sonoma HIghway Santa Rosa CA
+95409"
+05/10/2022,05/12/2022,07/08/2022,"California Human Development Substance Recovery
+Services (Outpatient Treatment)",Sonoma County,9,Closure Permanent,3315 Airway Drive Santa Rosa CA 95403
+05/13/2022,05/16/2022,05/13/2022,"Pretium Packaging, LLC",Orange County,101,Closure Permanent,"5235 East Hunter Avenue Anaheim CA
+92807"
+05/12/2022,05/16/2022,10/01/2022,"KIOXIA America, Inc",Orange County,9,Closure Permanent,"205 Technology Drive, Suite 200 Irvine CA
+92618"
+05/17/2022,05/17/2022,04/28/2022,"Netflix, Inc.",Los Angeles County,106,Layoff Permanent,"5808 W. Sunset Blvd. Los Angeles CA
+90028"
+05/12/2022,05/17/2022,04/13/2022,PayPal,Santa Clara County,83,Layoff Permanent,2211 N. First St. San Jose CA 95131
+05/16/2022,05/18/2022,07/30/2022,Valiant Integrated Services,San Bernardino County,114,Closure Permanent,"Operations Group Building 990, Inner Loop
+Road Fort Irwin CA 92310"
+05/19/2022,05/20/2022,07/18/2022,"Nationstar Mortgage, LLC dba Mr. Cooper",Orange County,120,Layoff Permanent,"1600 E. St. Andrew Place Santa Ana CA
+92705"
+05/13/2022,05/23/2022,05/06/2022,"iHerb, LLC",Los Angeles County,43,Layoff Permanent,"301 N. Lake Avenue, Suite 500, Pasadena,
+California Pasadena CA 91101"
+05/05/2022,05/23/2022,07/04/2022,Wells Fargo,San Bernardino County,31,Layoff Permanent,"1003 E. Brier Drive San Bernardino CA
+92408"
+05/09/2022,05/24/2022,07/18/2022,Pennymac,Los Angeles County,10,Layoff Permanent,251 S. Lake Avenue Pasadena CA 91101
+05/19/2022,05/24/2022,07/18/2022,Pennymac,Los Angeles County,9,Layoff Permanent,29903 Agoura Road Agoura Hills CA 91301
+05/25/2022,05/25/2022,06/03/2022,Azusa Pacific University,Los Angeles County,24,Layoff Permanent,901 E. Alosta Ave. Azusa CA 91702
+05/19/2022,05/25/2022,07/18/2022,Pennymac,Ventura County,12,Layoff Permanent,6101 Condor Drive Moorpark CA 93021
+05/25/2022,05/26/2022,07/29/2022,Aisin Electronics Inc.,San Joaquin County,91,Closure Permanent,199 Frank W. Circle Stockton CA 95206
+05/27/2022,05/27/2022,08/31/2022,DistributionNOW,Kern County,12,Closure Permanent,4101 Well Tech Way Bakersfield CA 93308
+05/27/2022,05/27/2022,07/29/2022,Dacor,Los Angeles County,12,Layoff Permanent,"14425 Clark Avenue City of Industry CA
+91745"
+05/22/2022,05/27/2022,07/27/2022,Artisan Bakers,Sonoma County,111,Layoff Permanent,"21684 8th Street East, Suite 400 Sonoma
+CA 95476"
+05/27/2022,05/31/2022,08/26/2022,Cathay Pacific Airways Limited,Los Angeles County,49,Layoff Permanent,"LAX Tom Bradley Terminal 380 World Way,
+Box N-22 Los Angeles CA 90045"
+05/27/2022,05/31/2022,07/31/2022,Sweda,Los Angeles County,130,Layoff Permanent,"17411 E. Valley Blvd. City of Industry CA
+91744"
+05/31/2022,05/31/2022,07/29/2022,Sharp and CHildren's MRI Center (SCMRI),San Diego County,65,Closure Permanent,7901 Frost Street San Diego CA 92123
+05/27/2022,05/31/2022,08/26/2022,Cathay Pacific Airways Limited,San Francisco County,12,Layoff Permanent,"SFO PO Box 251925 San Francisco CA
+94125"
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,Kern County,93,Closure Permanent,"5500 Ming Avenue, Suite 140 Bakersfield
+CA 93309"
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,Orange County,92,Closure Permanent,"1400 Reynolds Avenue, Suite 160 Irvine
+CA 92614"
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,Riverside County,70,Closure Permanent,"73321 Fred Waring Dr. Palm Desert CA
+92260"
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,Riverside County,44,Closure Permanent,"29995 Technology Drive, Suite 200
+Murrieta CA 92563"
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,San Bernardino County,47,Closure Permanent,60 East 9th Street Upland CA 91786
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,San Diego County,110,Closure Permanent,"5050 Murphy Canyon Rd Suite 150 San
+Diego CA 92123"
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,San Luis Obispo County,22,Closure Permanent,889 Murray Ave San Luis Obispo CA 93405
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,Santa Barbara County,5,Closure Permanent,"4141 State Street E-12/13 Santa Barbara
+CA 93110"
+06/01/2022,06/06/2022,07/31/2022,360 Behavioral Health,Ventura County,20,Closure Permanent,"990 Enchanted Way #100 Simi Valley CA
+93065"
+05/31/2022,06/08/2022,06/26/2022,The Vons Companies Inc.,San Diego County,45,Closure Permanent,940 S. Santa Fe Avenue Vista CA 92084
+06/01/2022,06/08/2022,07/31/2022,Carbon Health,San Francisco County,131,Layoff Permanent,"300 California Street, 7th Floor San
+Francisco CA 94104"
+05/31/2022,06/13/2022,05/24/2022,"Bright Futures Academy, LLC",Riverside County,44,Layoff Permanent,9994 County Farm Rd Riverside CA 92503
+06/02/2022,06/13/2022,07/04/2022,Wells Fargo,San Bernardino County,1,Closure Permanent,"1003 E. Brier Drive San Bernardino CA
+92408"
+06/01/2022,06/14/2022,07/31/2022,"Coram, CVS Specialty Infusion Services",Los Angeles County,63,Closure Permanent,"2710 Media Center Drive, Building #6 Suite
+150 Los Angeles CA 90065"
+05/24/2022,06/14/2022,07/25/2022,"Illume Ag HR, Inc.",Riverside County,186,Layoff Permanent,65500 Lincoln Street Mecca CA 92254
+05/24/2022,06/14/2022,07/25/2022,"Illume Ag HR, Inc.",Riverside County,22,Layoff Permanent,88100 58th Avenue Thermal CA 92274
+05/23/2022,06/14/2022,08/15/2022,Silgan Containers,Sacramento County,58,Layoff Temporary,"6200 Franklin Blvd. Suite 100 Sacramento
+CA 95824"
+06/14/2022,06/14/2022,09/01/2022,SummerBio LLC,San Mateo County,101,Closure Permanent,"185 Constitution Drive Menlo Park CA
+94025"
+06/15/2022,06/15/2022,08/15/2022,Azusa Pacific University,Los Angeles County,29,Layoff Permanent,901 E. Alosta Ave. Azusa CA 91702
+06/15/2022,06/15/2022,08/15/2022,Azusa Pacific University,Los Angeles County,1,Layoff Permanent,606 E. Huntington Dr. Monrovia CA 91016
+06/15/2022,06/15/2022,08/15/2022,Azusa Pacific University,Los Angeles County,1,Layoff Permanent,"3580 Wilshire Blvd., Suite 200 Los Angeles
+CA 90010"
+06/15/2022,06/15/2022,08/15/2022,Azusa Pacific University,San Bernardino County,2,Layoff Permanent,15283 Pahute Ave. Victorville CA 92395
+06/15/2022,06/15/2022,08/15/2022,Azusa Pacific University,San Bernardino County,1,Layoff Permanent,"375 W. Hospitality Lane San Bernardino
+CA 92408"
+06/15/2022,06/15/2022,08/15/2022,Azusa Pacific University,San Diego County,2,Layoff Permanent,"5353 Mission Center Rd., Ste. 300 San
+Diego CA 92108"
+06/01/2022,06/16/2022,05/06/2022,"iHerb, LLC",Orange County,40,Layoff Permanent,"17400 Laguna Canyon Road Suite 400
+Irvine CA 92618"
+06/02/2022,06/17/2022,08/08/2022,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,08/15/2022,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,08/22/2022,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,08/29/2022,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,09/05/2022,Silgan Containers,Stanislaus County,164,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,09/12/2022,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,09/19/2022,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,09/26/2022,Silgan Containers,Stanislaus County,80,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,10/03/2022,Silgan Containers,Stanislaus County,110,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,10/10/2022,Silgan Containers,Stanislaus County,110,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,10/17/2022,Silgan Containers,Stanislaus County,120,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/02/2022,06/17/2022,10/24/2022,Silgan Containers,Stanislaus County,120,Layoff Temporary,3250 Patterson Road Riverbank CA 95367
+06/21/2022,06/22/2022,08/22/2022,"Yanka Industries, Inc. dba MasterClass",San Francisco County,95,Layoff Permanent,"475 Brannan Street, Suite 230 San
+Francisco CA 94107"
+"Summary
+by Month",Notices,"Employees
+Affected","Permanent
+Layoff","Temporary
+Layoff","Not Identified
+Layoff",Permanent Closure,Temporary Closure,"Not Identified
+Closure"
+July 2021,62,"2,330",42,1,0,16,3,0
+August 2021,57,"4,780",17,1,0,38,1,0
+September 2021,51,"3,360",21,0,2,25,2,0
+October 2021,47,"3,609",20,8,0,19,0,0
+November 2021,49,"3,919",28,2,0,19,0,0
+December 2021,65,"3,487",27,2,0,36,0,0
+January 2022,39,"2,653",17,1,0,20,1,0
+February 2022,31,"1,251",21,0,0,10,0,0
+March 2022,59,"4,266",35,1,0,22,1,0
+April 2022,34,"2,669",14,1,0,19,0,0
+May 2022,65,"2,838",46,0,0,19,0,0
+June 2022,38,"2,509",12,13,0,13,0,0
+Total,597,"37,671",300,30,2,256,8,0

@@ -1,0 +1,2 @@
+[config]
+  queue_url = "sqs.fake.aws.com"

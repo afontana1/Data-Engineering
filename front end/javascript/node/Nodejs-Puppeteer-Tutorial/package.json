@@ -1,0 +1,17 @@
+{
+  "name": "puppeteer-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^13.5.2",
+    "puppeteer-cluster": "^0.23.0",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-recaptcha": "^3.5.0"
+  }
+}

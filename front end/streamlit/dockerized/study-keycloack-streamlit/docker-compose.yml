@@ -1,0 +1,41 @@
+version: "3.7"
+
+services:
+  streamlit-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+    network_mode: "host" # importat to see keycloack with the same name and port of the frontend localhost:3333
+  
+  postgres:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5432:5432
+    
+  keycloak:
+    image: jboss/keycloak
+    environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: postgres
+      DB_DATABSE: keycloak
+      DB_USER: keycloak
+      DB_SCHEMA: public
+      DB_PASSWORD: password
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: password
+    ports:
+      - 3333:8080
+    depends_on:
+      - postgres
+
+
+volumes:
+  postgres_data:

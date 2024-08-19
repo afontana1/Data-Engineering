@@ -1,0 +1,56 @@
+
+version: '3.7'
+services:
+  workflow:
+    build:
+      context: '.'
+      dockerfile: "./deploy/Dockerfile"
+    command: ["jupyter", "lab", "--no-browser", "--allow-root", "--ip", "0.0.0.0", "--port", "8888"]
+    ports:
+      - 8888:8888
+    volumes:
+      - './data:/data/'
+      - './deploy:/workdir'
+    working_dir: /workdir
+    networks:
+      app_subnet:
+        ipv4_address: 172.20.0.10
+    depends_on:
+      - redisai
+
+  backend:
+    build:
+      context: '.'
+      dockerfile: './backend/Dockerfile'
+    ports:
+      - 8877:8877
+    volumes:
+      - "./backend/:/app/"
+    networks:
+      app_subnet:
+        ipv4_address: 172.20.0.30
+    depends_on:
+      - redisai
+      - workflow
+
+  redisai:
+      image: 'redislabs/redisai:1.2.7-cpu-bionic'
+      ports:
+        - '6379:6379'
+      command: "redis-server /usr/local/etc/redis/redis.conf --loadmodule /usr/lib/redis/modules/redisai.so INTER_OP_PARALLELISM 2"
+      volumes:
+        - redisai_data:/var/lib/redis
+        - ./config/redis.conf:/usr/local/etc/redis/redis.conf
+      networks:
+        app_subnet:
+          ipv4_address: 172.20.0.20
+
+volumes:
+  workflow:
+  redisai_data:
+networks:
+  app_subnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24

@@ -1,0 +1,4 @@
+__pycache__
+sar-venv
+.env
+.DS_Store

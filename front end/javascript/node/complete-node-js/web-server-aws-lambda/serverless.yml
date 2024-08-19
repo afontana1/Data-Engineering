@@ -1,0 +1,19 @@
+service: node-course-weather-app
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-2
+  memorySize: 128
+functions:
+  app:
+    handler: src/app/app.handler
+    events: 
+      - http: 
+          path: /
+          method: ANY
+          cors: true
+      - http: 
+          path: /{proxy+}
+          method: ANY
+          cors: true

@@ -1,0 +1,60 @@
+Return-Path: <juangbhanich.k@gmail.com>
+Received: from mail-io1-f41.google.com (mail-io1-f41.google.com [209.85.166.41])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id rf0vh4pmslvit95ua5dv1c5u1blq05le5bf4osg1
+ for contact@auth.pixegami.com;
+ Mon, 25 Jan 2021 12:10:12 +0000 (UTC)
+Received-SPF: pass (spfCheck: domain of _spf.google.com designates 209.85.166.41 as permitted sender) client-ip=209.85.166.41; envelope-from=juangbhanich.k@gmail.com; helo=mail-io1-f41.google.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of _spf.google.com designates 209.85.166.41 as permitted sender) client-ip=209.85.166.41; envelope-from=juangbhanich.k@gmail.com; helo=mail-io1-f41.google.com;
+ dkim=pass header.i=@gmail.com;
+ dmarc=pass header.from=gmail.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIQ2lESC9wRjJTdy81OTdVYTRMS05IM1RNb0MvQlJndkkvczJISSs2QkRKOFkyYTZzS3FYaFZhQ1BXM1poclI2RmI0Q0FCc2hjSERTMUxjaEJCSjlMVi9KNFgzdlRaMkY4TjhlY3o3V3ovUUpQR0FjUUJpbGVHNTg1U0ZWSjk2NFFuMGtLVW1ienZVbS9PUEFHNVJHbHpYUThUeHgweVY3Ym5NVHJZN3pidVlOZi9VTkNNVkhNMFh3RlJBV2FMZkpwblFOeUdCaitlWjN3MjA5amQweHZBMEVPeHNscGsvalB5WW1oUVd3cXIyVWJNaDNVL1JZM0Npc1JMZW9jTkFObDRjTFJiM2pSRXNCU240YStuaE80Uk9rZlVDY0lyck5nVWw1YTdoSkdKY3lmM0tvRTVIQnYvSUpqenF3MUt3Q3M9
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=MyMNakNLnvP2doLdGMic45+P0oSVKA2SbXMYeinzlIarWGHpHAFspl642gqIDfp8OVtXMly5UuVShJppBb3vsS8Y78C/V/V2UVPQXTt5ICZR1x4uSh2fPoJmF7t+gPcT8V81xrm3GzwidWzscf/dfe9/LzaQyekl3nUMUP3k9QI=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1611576612; v=1; bh=tdkd0mLFT4W/23ayOmSBsK0a5NLRc6qsdHo6JVGtTtQ=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: by mail-io1-f41.google.com with SMTP id u17so26055169iow.1
+        for <contact@auth.pixegami.com>; Mon, 25 Jan 2021 04:10:11 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=tdkd0mLFT4W/23ayOmSBsK0a5NLRc6qsdHo6JVGtTtQ=;
+        b=nEEfJGFQ7FBH3DrTbs6vJtliAfD9PchPoy3D7PmheLYL+otIaSNsfd8kgK2BkTzRs5
+         w0+hewzbz7QHZhmr49r12hO3jBMuRAfV91AAbTPb3NbGZLbYV9oC1YyX6t7lhe7korb8
+         21XksSw6dcUbuHT//l4CinxvjXNBqD6d1sPu6C0uI4j/J4Ivoc+xZS7zEaBppzO+GPKg
+         C5SfgwY0AToMVFJbQGgbwTwuM5kkAQGNMtFMPw+8rXkmXv7LYqqIOh7xbGIhEzirohZC
+         45qlzCvJvfeir1IHrH0vzdWrOV953E9LPgSgsXUKKr21m+njspUNtvOJeqAkIQirFQWd
+         oe9A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=tdkd0mLFT4W/23ayOmSBsK0a5NLRc6qsdHo6JVGtTtQ=;
+        b=Z3XMNx3GM0SvNH3ulkgoGAmKRqnDs7dNsSAjDGcyKfJ90ZMUw5ysbszNopxHBq75vW
+         gQvxdHwe4UGs90G2NeJTN1sIwPyOQ8dhMOT222HOZYB7YJf7r9vPLWD+2imrCl07zBk1
+         DCpiIZOfjZZLlkmtbz3h97eAD2o7BzF4NYZFkPE7EIe9zcBiSncAjGAlQriMiP7S2MTN
+         GMzY78+EAYqQh5JVQ+c43Yj/FY23LjgPSf44ZSUxev7WU1YPusYaYg6X+GeAHu/p3eCV
+         GZp2rrHXW++UFaluHO/pBZOcD74GYRbB45ouatgplS6rgDypEyr4yRdMNUfLXHOkjRVB
+         EyDA==
+X-Gm-Message-State: AOAM532KTIxHmX68xGdHgq4LN8f64PtX8lOz97VlIUuBHg6DvAib4QAJ
+	Nn9VfqxkjNlmtiuKXSyEI3z7MxGZ/WvC3gqYk9S564YKCeg=
+X-Google-Smtp-Source: ABdhPJzjOjPUDIrrQaIV3E08wwQhBS/8BmCMe2xJFJfhPx7Rj/aSJbBMzB6b57gHo2udB8mfC/goriISAo9ayTgvwVk=
+X-Received: by 2002:a05:6e02:1032:: with SMTP id o18mr223132ilj.13.1611576611208;
+ Mon, 25 Jan 2021 04:10:11 -0800 (PST)
+MIME-Version: 1.0
+From: Jakrin Juangbhanich <juangbhanich.k@gmail.com>
+Date: Mon, 25 Jan 2021 23:09:59 +1100
+Message-ID: <CANyo0+Z4MG099C=FRkRZfkTiDASHdxkEV+qabutSiamZVMTGdQ@mail.gmail.com>
+Subject: Hello Subject
+To: contact@auth.pixegami.com
+Content-Type: multipart/alternative; boundary="00000000000070830505b9b86bc7"
+
+--00000000000070830505b9b86bc7
+Content-Type: text/plain; charset="UTF-8"
+
+Hello World. Here is your validation link: https://google.com
+Reset your account front-end: https://ss.pixegami.com/app/reset_password?key=0b4267fa68d78b36e78c6ad0be575d5e918c7de0f92e8a11aac756650f2102ee
+Verify your account here: https://ss.pixegami.com/app/verify_account?key=809154b903cbb4ff88002f5c164cd7fa33377dfb448f66ed26567838cc0f477a
+
+--00000000000070830505b9b86bc7
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">Hello World<br></div>
+
+--00000000000070830505b9b86bc7--

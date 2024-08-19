@@ -1,0 +1,54 @@
+{
+  "event_type": "checkout.session.completed",
+  "client_id": "helloWorld",
+  "data.object": {
+    "id": "cs_test_a1VwdFrbaE0je6OFbHSKPNHxatBhIr2wxOo1xA7vxQrMREKp7gTXuD8iK9",
+    "object": "checkout.session",
+    "allow_promotion_codes": "None",
+    "amount_subtotal": 3000,
+    "amount_total": 3000,
+    "billing_address_collection": "None",
+    "cancel_url": "https://httpbin.org/post",
+    "client_reference_id": "helloWorld",
+    "currency": "usd",
+    "customer": "cus_JXhU04dsbCEtQN",
+    "customer_details": {
+      "email": "stripe@example.com",
+      "tax_exempt": "none",
+      "tax_ids": []
+    },
+    "customer_email": "None",
+    "display_items": [
+      {
+        "amount": 1500,
+        "currency": "usd",
+        "custom": {
+          "description": "comfortable cotton t-shirt",
+          "images": "None",
+          "name": "t-shirt"
+        },
+        "quantity": 2,
+        "type": "custom"
+      }
+    ],
+    "livemode": "False",
+    "locale": "None",
+    "metadata": {},
+    "mode": "payment",
+    "payment_intent": "pi_1Iuc5SCCoJYujIqgeQs8eaXt",
+    "payment_method_options": {},
+    "payment_method_types": ["card"],
+    "payment_status": "paid",
+    "setup_intent": "None",
+    "shipping": "None",
+    "shipping_address_collection": "None",
+    "submit_type": "None",
+    "subscription": "None",
+    "success_url": "https://httpbin.org/post",
+    "total_details": {
+      "amount_discount": 0,
+      "amount_shipping": 0,
+      "amount_tax": 0
+    }
+  }
+}
