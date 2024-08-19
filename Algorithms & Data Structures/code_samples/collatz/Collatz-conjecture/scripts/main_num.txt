@@ -1,0 +1,1 @@
+# main_inf_restart.py lists all encountered numbers here, then checks the current sequence to see if it encounters a previously recorded number.

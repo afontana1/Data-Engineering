@@ -1,0 +1,21 @@
+# Python's byte code
+*.pyc
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# OSX
+.DS_Store
+
+# Measurements
+measurements*.txt
+
+# DuckDB files
+*.ddb
+
+# Files for comparing results
+duckdb.txt
+polars.txt
+pypy.txt
+python.txt

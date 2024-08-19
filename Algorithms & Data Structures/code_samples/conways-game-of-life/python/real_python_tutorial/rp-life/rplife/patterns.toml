@@ -1,0 +1,5 @@
+["Blinker"]
+alive_cells = [[2, 1], [2, 2], [2, 3]]
+
+["Random"]
+alive_cells = []

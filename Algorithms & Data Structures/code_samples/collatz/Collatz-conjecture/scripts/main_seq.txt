@@ -1,0 +1,1 @@
+# main_inf_restart.py records all terminating sequences greater than 0, then checks the last recorded sequence on the next run of the programme.
