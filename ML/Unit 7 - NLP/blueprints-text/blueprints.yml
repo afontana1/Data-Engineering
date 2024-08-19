@@ -1,0 +1,44 @@
+name: blueprints 
+  
+channels:
+  - conda-forge
+  - plotly 
+
+dependencies:
+  - python=3.8
+  - regex 
+  - unidecode 
+  - tabulate
+  
+  - pandas>=1.1.0
+  - scikit-learn>=0.23.2
+  - matplotlib 
+  - seaborn
+  - plotly>=4.8.2
+  # - plotly_express>=0.4.1
+  - umap-learn
+
+  - notebook 
+  - jupyter 
+  # - jupyter_contrib_nbextensions
+  # - jupyter_nbextensions_configurator 
+
+  - networkx
+  - graphviz
+  - python-graphviz
+  
+  - pip
+
+  - pip:
+    # add pip-distributed libraries
+    - beautifulsoup4
+    - nltk
+    - spacy>=2.3.2
+    # - textacy
+    # use this updated version of textacy to make it install with spacy 3.0
+    # careful - it's not completely tested except for the code in the book
+    # otherwise use spacy=2.3.2
+    - git+https://github.com/blueprints-for-text-analytics-python/textacy.git
+    - gensim
+    - pyldavis
+    - wordcloud

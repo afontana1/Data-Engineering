@@ -1,0 +1,4 @@
+plotly>=4.8.2
+pydot
+umap-learn
+gensim>=3.8.3
