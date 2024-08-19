@@ -1,0 +1,9 @@
+langchain==0.0.208 
+deeplake 
+openai 
+google-search-results 
+tiktoken
+python-dotenv
+google-api-python-client
+wikipedia
+Wolframalpha

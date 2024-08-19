@@ -1,0 +1,15 @@
+For a given STR disease:
+What is the mechanism of pathology?
+What is the mode of inheritance?
+What is the age of onset (typical, min, max)?
+How many cases have been observed overall, or how many support the observations above?
+Where in the gene is the pathogenic STR located?
+What is the disease prevalence?
+What is the pathogenic allele frequency?
+What is the pathogenic STR motif/repeat unit?
+What allele size is normal (benign)?
+What allele size is pathogenic?
+Is there an intermediate or permutation allele size?
+What papers or resources were used to support this data?
+
+

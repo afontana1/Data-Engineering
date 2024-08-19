@@ -1,0 +1,6 @@
+langchain 
+deeplake 
+pypdf 
+openai 
+tiktoken
+python-dotenv

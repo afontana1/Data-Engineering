@@ -1,0 +1,6 @@
+newspaper3k==0.2.8 
+python-dotenv
+langchain==0.0.208
+deeplake 
+openai 
+tiktoken
