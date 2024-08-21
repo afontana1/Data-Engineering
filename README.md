@@ -12,6 +12,11 @@
 - [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
 - [Slack Engineering Blog](https://slack.engineering/)
 - [Stripe Engineering Blog](https://stripe.com/blog/engineering)
+- [AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples)
+- [AWS Samples](https://github.com/aws-samples)
+- [AWS Labs](https://github.com/awslabs)
+- [aws-solutions](https://github.com/aws-solutions)
+- [build-on-aws](https://github.com/build-on-aws)
 
 #### Tutorials
 
@@ -499,10 +504,6 @@
 
 <details><summary><h2>Big Data and Cloud API's</h2></summary>
 
-- [AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples)
-- [AWS Samples](https://github.com/aws-samples)
-- [AWS Labs](https://github.com/awslabs)
-- [aws-solutions](https://github.com/aws-solutions)
 - [Spark SQL Programming Guide](https://spark.apache.org/docs/latest/sql-programming-guide.html)
 
 1. [AWS Encryption SDK](https://github.com/aws/aws-encryption-sdk-python)
