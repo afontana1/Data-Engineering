@@ -27,6 +27,7 @@
 
 1. [Course Home Page](https://bloomberg.github.io/foml/#home)
 2. [Github Source](https://github.com/chaaland/bloomberg-ml-course)
+3. [Understanding Deep Learning Notebooks](https://udlbook.github.io/udlbook/)
 
 ## Useful Learning Resources
 
