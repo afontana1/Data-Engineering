@@ -84,6 +84,87 @@
 
 </details>
 
+<details><summary><h2>Software Engineering Resources</h2></summary>
+
+# Reading
+
+1. [Microservices](https://en.wikipedia.org/wiki/Microservices)
+2. [Architectural_pattern_](https://en.wikipedia.org/wiki/Category:Architectural_pattern_(computer_science))
+3. [Software_architecture](https://en.wikipedia.org/wiki/Category:Software_architecture)
+4. [Software_design](https://en.wikipedia.org/wiki/Category:Software_design)
+5. [Engineering_disciplines](https://en.wikipedia.org/wiki/Category:Engineering_disciplines)
+6. [Systems_architecture](https://en.wikipedia.org/wiki/Systems_architecture)
+7. [Systems_engineering](https://en.wikipedia.org/wiki/Category:Systems_engineering)
+8. [Systems_science](https://en.wikipedia.org/wiki/Category:Systems_science)
+9. [Systems_theory](https://en.wikipedia.org/wiki/Category:Systems_theory)
+10. [Software_engineering](https://en.wikipedia.org/wiki/Category:Software_engineering)
+11. [Software_design_patterns](https://en.wikipedia.org/wiki/Category:Software_design_patterns)
+12. [Service-oriented](https://en.wikipedia.org/wiki/Category:Service-oriented_(business_computing))
+13. [Programming_paradigms](https://en.wikipedia.org/wiki/Category:Programming_paradigms)
+14. [Software_requirements](https://en.wikipedia.org/wiki/Category:Software_requirements)
+15. [Software_development](https://en.wikipedia.org/wiki/Software_development)
+16. [Requirements_analysis](https://en.wikipedia.org/wiki/Requirements_analysis)
+17. [Systems_analysis](https://en.wikipedia.org/wiki/Systems_analysis)
+18. [Agile_software_development](https://en.wikipedia.org/wiki/Category:Agile_software_development)
+19. [High_availability](https://en.wikipedia.org/wiki/High_availability)
+20. [Infrastructure_as_code](https://en.wikipedia.org/wiki/Infrastructure_as_code)
+21. [Content_delivery_network](https://en.wikipedia.org/wiki/Content_delivery_network)
+22. [Loose_coupling](https://en.wikipedia.org/wiki/Loose_coupling)
+23. [Programming_principles](https://en.wikipedia.org/wiki/Category:Programming_principles)
+24. [Message_queue](https://en.wikipedia.org/wiki/Message_queue)
+24. [Software_design_pattern)](https://en.wikipedia.org/wiki/Software_design_pattern)
+25. [Software_quality](https://en.wikipedia.org/wiki/Category:Software_quality)
+26. [Computer_programming](https://en.wikipedia.org/wiki/Category:Computer_programming)
+27. [Enterprise_application_integration](https://en.wikipedia.org/wiki/Category:Enterprise_application_integration)
+28. [Object Oriented](https://en.wikipedia.org/wiki/Category:Object-oriented_programming)
+29. [Artificial Intelligence](https://artint.info/2e/html/ArtInt2e.html)
+30. [Programming_language_concepts](https://en.wikipedia.org/wiki/Category:Programming_language_concepts)
+31. [Software_development_philosophies](https://en.wikipedia.org/wiki/Category:Software_development_philosophies)
+32. [Programming Paradigms](https://en.wikipedia.org/wiki/Category:Programming_paradigms)
+33. [Software Design Patterns](https://en.wikipedia.org/wiki/Category:Software_design_patterns)
+34. [Scope Creep](https://en.wikipedia.org/wiki/Scope_creep)
+35. [Data Structures](https://en.wikipedia.org/wiki/Category:Data_structures)
+36. [Algorithms](https://en.wikipedia.org/wiki/Category:Algorithms)
+37. [Software_testing](https://en.wikipedia.org/wiki/Category:Software_testing)
+38. [Aspect Oriented Programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming)
+39. [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
+
+## Design Patterns
+1. [Abstract_factory_pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
+2. [Builder_pattern](https://en.wikipedia.org/wiki/Builder_pattern)
+3. [Singleton_pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+4. [Prototype_pattern](https://en.wikipedia.org/wiki/Prototype_pattern)
+5. [Object_pool_pattern](https://en.wikipedia.org/wiki/Object_pool_pattern)
+6. [Facade_pattern](https://en.wikipedia.org/wiki/Facade_pattern)
+7. [Chain of Responsibility Pattern](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)
+8. [Flyweight Pattern](https://en.wikipedia.org/wiki/Flyweight_pattern)
+9. [Design Factory Patterns](http://coding-geek.com/design-pattern-factory-patterns/)
+10. [Composite Pattern](https://en.wikipedia.org/wiki/Composite_pattern)
+11. [Bridge Pattern](https://en.wikipedia.org/wiki/Bridge_pattern)
+12. [Mediator Pattern](https://en.wikipedia.org/wiki/Mediator_pattern)
+13. [Visitor Pattern](https://en.wikipedia.org/wiki/Visitor_pattern)
+14. [Adapter Pattern](https://en.wikipedia.org/wiki/Adapter_pattern)
+15. [Model View Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+
+
+## Concepts
+1. [Futures_and_promises](https://en.wikipedia.org/wiki/Futures_and_promises)
+2. [Asynchronous_method_invocation](https://en.wikipedia.org/wiki/Asynchronous_method_invocation)
+3. [Asynchronous_I/O](https://en.wikipedia.org/wiki/Asynchronous_I/O)
+4. [Async/await](https://en.wikipedia.org/wiki/Async/await)
+5. [Asynchrony](https://en.wikipedia.org/wiki/Asynchrony_(computer_programming))
+6. [Concurrent_computing](https://en.wikipedia.org/wiki/Concurrent_computing)
+7. [Thread](https://en.wikipedia.org/wiki/Thread_(computing))
+8. [Parallel_computing](https://en.wikipedia.org/wiki/Parallel_computing)
+9. [Birthday_problem](https://en.wikipedia.org/wiki/Birthday_problem)
+10. [SHA 1](https://en.wikipedia.org/wiki/SHA-1)
+11. [Avalanche_effect](https://en.wikipedia.org/wiki/Avalanche_effect)
+12. [Hash_collision](https://en.wikipedia.org/wiki/Hash_collision)
+13. [Lazy_evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation)
+14. [Relational_algebra](https://en.wikipedia.org/wiki/Category:Relational_algebra)
+
+</details>
+
 <details><summary><h2>Continuous Integration and Continuous Deployment (DevOps)</h2></summary>
 
 1. [jenkins-tutorial](https://github.com/ssbostan/jenkins-tutorial)
