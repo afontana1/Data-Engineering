@@ -50,6 +50,8 @@
 34. [Chat with PDFs using Generative AI Part 8 using gpt4all Model with FAISS as Vector DB and Streamlit UI](https://www.linkedin.com/pulse/chat-pdfs-using-generative-ai-part-8-gpt4all-model-faiss-srinivasan/?trackingId=lvxmyfGrQB6ALyPyNFJb%2FA%3D%3D)
 35. [Generative AI Part 9 Text summarization using Salesforce xgen-7b-8k model and Gradio](https://www.linkedin.com/pulse/generative-ai-part-9-text-summarization-using-model-satish-srinivasan/?trackingId=lvxmyfGrQB6ALyPyNFJb%2FA%3D%3D)
 36. [Generative AI Part 10 Text to sql using Langchain ,OpenAI and Llama Index](https://www.linkedin.com/pulse/generative-ai-part-10-text-sql-using-langchain-openai-srinivasan-j6wsc/?trackingId=lvxmyfGrQB6ALyPyNFJb%2FA%3D%3D)
+37. [reAct Agents no Framework](https://github.com/alejandro-ao/agents-no-framework)
+38. [recursive criticism](https://github.com/ashishkrb7/Recursive-Criticism-and-Improvement)
 
 ## Prompt Engineering
 
@@ -92,6 +94,14 @@
 20. [langroid](https://github.com/langroid/langroid)
 21. [trainable-agents](https://github.com/choosewhatulike/trainable-agents)
 22. [devika](https://github.com/stitionai/devika)
+23. [Generative Agents](https://github.com/joonspk-research/generative_agents)
+    * [generative agents example](https://github.com/ayoreis/generative-agents)
+    * [generative agents example](https://github.com/mkturkcan/generative-agents)
+24. [Affordable Generative Agents](https://github.com/AffordableGenerativeAgents/Affordable-Generative-Agents)
+25. [smallville](https://github.com/nickm980/smallville)
+26. [OSGA](https://github.com/ElliottDyson/OSGA)
+27. [HumanoidAgents](https://github.com/HumanoidAgents/HumanoidAgents)
+28. [Generative Agents in Langchain](https://github.com/langchain-ai/langchain/blob/master/cookbook/generative_agents_interactive_simulacra_of_human_behavior.ipynb)
 
 ## Useful Libraries
 
@@ -169,6 +179,18 @@
 34. [vector-search](https://github.com/esteininger/vector-search)
 35. [awesome-vector-search](https://github.com/currentslab/awesome-vector-search)
 36. [Pinecone Examples](https://github.com/pinecone-io/examples)
+37. [rag-using-langchain-amazon-bedrock-and-opensearch](https://github.com/aws-samples/rag-using-langchain-amazon-bedrock-and-opensearch)
+38. [Opensearch-OpenAI-RAG-Pattern-with-Python](https://github.com/Aiven-Labs/Opensearch-OpenAI-RAG-Pattern-with-Python/tree/main)
+39. [rag-chatbot-with-bedrock-opensearch-and-document-summaries-in-govcloud](https://github.com/aws-samples/rag-chatbot-with-bedrock-opensearch-and-document-summaries-in-govcloud)
+40. [serverless-rag-demo](https://github.com/aws-samples/serverless-rag-demo)
+41. [langchain-opensearch-rag](https://github.com/abhirockzz/langchain-opensearch-rag)
+42. [rag-with-amazon-bedrock-and-opensearc](https://github.com/aws-samples/rag-with-amazon-bedrock-and-opensearch)
+
+## Reranking and Cross Encoders
+
+1. [Sentence Transformers - Cross-Encoders](https://huggingface.co/cross-encoder)
+2. [ms marco](https://github.com/UKPLab/sentence-transformers/tree/master/examples/training/ms_marco)
+3. [infinity](https://github.com/michaelfeil/infinity)
 
 
 ## Video Resources

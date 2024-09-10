@@ -202,6 +202,8 @@
 16. [Bytewax](https://github.com/bytewax/bytewax)
 17. [ml-design-patterns](https://github.com/GoogleCloudPlatform/ml-design-patterns)
 18. [mlflow](https://github.com/mlflow/mlflow)
+19. [kestra](https://github.com/kestra-io/kestra)
+20. [kedro](https://github.com/kedro-org/kedro)
 
 </details>
 
