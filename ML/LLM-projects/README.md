@@ -52,6 +52,16 @@
 36. [Generative AI Part 10 Text to sql using Langchain ,OpenAI and Llama Index](https://www.linkedin.com/pulse/generative-ai-part-10-text-sql-using-langchain-openai-srinivasan-j6wsc/?trackingId=lvxmyfGrQB6ALyPyNFJb%2FA%3D%3D)
 37. [reAct Agents no Framework](https://github.com/alejandro-ao/agents-no-framework)
 38. [recursive criticism](https://github.com/ashishkrb7/Recursive-Criticism-and-Improvement)
+39. [aws-bedrock-with-rag-and-react](https://github.com/aws-samples/aws-bedrock-with-rag-and-react)
+40. [Valilla-React from Scratch](https://github.com/alexnodeland/vanilla-react)
+41. [Interactive RAG](https://github.com/ranfysvalle02/Interactive-RAG)
+42. [React Agebt Adaptive Rag Cohere](https://github.com/cohere-ai/notebooks/blob/main/notebooks/react_agent_adaptive_rag_cohere.ipynb)
+43. [Chain of Thought React](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/language/prompts/examples/chain_of_thought_react.ipynb)
+44. [llms-using-rag-for-docs](https://github.com/Andre-Gilbert/llms-using-rag-for-docs)
+45. [local-rag](https://github.com/jonfairbanks/local-rag)
+46. [grocery_assistant_bot](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/language/use-cases/chatbots/grocerybot_assistant.ipynb)
+47. [RAGTune](https://github.com/misbahsy/RAGTune)
+48. [LangChain-RAG-Pattern-with-React-FastAPI-and-Cosmos-DB-Vector-Store](https://github.com/jonathanscholtes/LangChain-RAG-Pattern-with-React-FastAPI-and-Cosmos-DB-Vector-Store)
 
 ## Prompt Engineering
 
@@ -102,6 +112,7 @@
 26. [OSGA](https://github.com/ElliottDyson/OSGA)
 27. [HumanoidAgents](https://github.com/HumanoidAgents/HumanoidAgents)
 28. [Generative Agents in Langchain](https://github.com/langchain-ai/langchain/blob/master/cookbook/generative_agents_interactive_simulacra_of_human_behavior.ipynb)
+29. [Langroid](https://github.com/langroid/langroid)
 
 ## Useful Libraries
 
@@ -185,12 +196,20 @@
 40. [serverless-rag-demo](https://github.com/aws-samples/serverless-rag-demo)
 41. [langchain-opensearch-rag](https://github.com/abhirockzz/langchain-opensearch-rag)
 42. [rag-with-amazon-bedrock-and-opensearc](https://github.com/aws-samples/rag-with-amazon-bedrock-and-opensearch)
+43. [Raptor](https://github.com/parthsarthi03/raptor)
+44. [autofaiss](https://github.com/criteo/autofaiss)
+45. [quivr](https://github.com/QuivrHQ/quivr)
+46. [R2R](https://github.com/SciPhi-AI/R2R)
+47. [ragna](https://github.com/Quansight/ragna)
+48. [cohere-toolkit](https://github.com/cohere-ai/cohere-toolkit)
 
-## Reranking and Cross Encoders
+## Reranking, Cross Encoders, & Semantic Routing
 
 1. [Sentence Transformers - Cross-Encoders](https://huggingface.co/cross-encoder)
 2. [ms marco](https://github.com/UKPLab/sentence-transformers/tree/master/examples/training/ms_marco)
 3. [infinity](https://github.com/michaelfeil/infinity)
+4. [semantic-router](https://github.com/aurelio-labs/semantic-router)
+5. [Another Get-Rich-Quick Scheme Using LLMs, RAG, Semantic Routing & Prompts Driven Feedback](https://pub.towardsai.net/another-get-rich-quick-scheme-using-llms-rag-semantic-routing-prompts-driven-feedback-5b43e2b6661a)
 
 
 ## Video Resources
