@@ -1,0 +1,9 @@
+backoff==2.2.1
+chromadb==0.4.22
+langchain==0.1.4
+pandas
+torch==2.1.2
+tqdm==4.66.1
+transformers==4.37.2
+llama-index
+sentence-transformers
