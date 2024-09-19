@@ -1,0 +1,15 @@
+llama-index==0.10.55
+openai
+setuptools==70.0.0
+llama-cpp-python==0.2.26
+# Ollama
+llama-index-llms-ollama
+# LLamaCPP
+llama-index-llms-llama-cpp
+transformers
+torch
+# Required for llama-index (reading documents)
+llama-index-embeddings-huggingface
+pypdf
+docx2txt
+wikipedia

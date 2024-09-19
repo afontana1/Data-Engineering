@@ -69,6 +69,7 @@
 2. [Prompt Engineering Guide](https://www.promptingguide.ai/)
 3. [dspy](https://github.com/stanfordnlp/dspy)
 4. [fewshot](https://www.promptingguide.ai/techniques/fewshot)
+5. [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
 ## Agent Frameworks
 
@@ -154,6 +155,9 @@
 
 ## Vector Databases and RAG
 
+- [ragflow](https://github.com/infiniflow/ragflow)
+- [fastRAG](https://github.com/IntelLabs/fastRAG)
+
 1. [VectorVerse](https://github.com/abhishek-ch/VectorVerse)
 2. [lancedb](https://github.com/lancedb/lancedb)
 3. [qdrant-js](https://github.com/qdrant/qdrant-js)
@@ -211,6 +215,31 @@
 4. [semantic-router](https://github.com/aurelio-labs/semantic-router)
 5. [Another Get-Rich-Quick Scheme Using LLMs, RAG, Semantic Routing & Prompts Driven Feedback](https://pub.towardsai.net/another-get-rich-quick-scheme-using-llms-rag-semantic-routing-prompts-driven-feedback-5b43e2b6661a)
 
+## Fine Tuning
+
+- [awesome-LLMs-finetuning](https://github.com/pdaicode/awesome-LLMs-finetuning)
+- [NLP-LLM-Fine-tuning-Llame-2-QLoRA-2024](https://github.com/YanSte/NLP-LLM-Fine-tuning-Llame-2-QLoRA-2024)
+- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+
+1. [autotrain](https://huggingface.co/docs/autotrain/index)
+2. [Auto Data](https://github.com/Itachi-Uchiha581/Auto-Data)
+3. [llm-finetuning](https://github.com/modal-labs/llm-finetuning)
+4. [Fine Tuning LLMs](https://github.com/poloclub/Fine-tuning-LLMs)
+5. [peft](https://github.com/huggingface/peft)
+6. [LoRA](https://github.com/microsoft/LoRA)
+7. [LLM-Fine-Tuning](https://github.com/meetrais/LLM-Fine-Tuning)
+8. [simple-llm-finetuner](https://github.com/lxe/simple-llm-finetuner)
+9. [autotrain-advanced](https://github.com/huggingface/autotrain-advanced)
+10. [LLM-Finetuning-Toolkit](https://github.com/georgian-io/LLM-Finetuning-Toolkit)
+11. [LLM-FineTuning-Large-Language-Models](https://github.com/rohan-paul/LLM-FineTuning-Large-Language-Models)
+12. [LLM-FineTuning](https://github.com/roy-sub/LLM-FineTuning)
+13. [LLM-Finetuning](https://github.com/ashishpatel26/LLM-Finetuning)
+14. [litgpt](https://github.com/Lightning-AI/litgpt)
+15. [xllm](https://github.com/BobaZooba/xllm)
+16. [LLM-Finetuning](https://github.com/Sentdex/LLM-Finetuning)
+17. [llm_finetuning](https://github.com/taprosoft/llm_finetuning)
+18. [Finetuning-Large-Language-Models](https://github.com/ksm26/Finetuning-Large-Language-Models)
+19. [LLM-finetuning](https://github.com/Abonia1/LLM-finetuning)
 
 ## Video Resources
 
