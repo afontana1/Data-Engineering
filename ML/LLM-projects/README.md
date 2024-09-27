@@ -4,13 +4,21 @@
 - [Udemy Course: LangChain- Develop LLM powered applications with LangChain](https://github.com/emarco177/ice_breaker)
 - [AI Agents Masterclass](https://github.com/coleam00/ai-agents-masterclass)
 - [langchain-experiments](https://github.com/daveebbelaar/langchain-experiments)
+- [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners/tree/main)
+- [RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)
 
-- [HuggingFace](https://huggingface.co/) (LLM Leaderboard)(https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-- [LangChain Website](https://www.langchain.com/) and [github](https://github.com/langchain-ai/langchain)
-- [open-llms](https://github.com/eugeneyan/open-llms)
-- [openai cookbook](https://cookbook.openai.com/)
-- [vLLM](https://docs.vllm.ai/en/latest/index.html)
-- [awesome-ai-sdks](https://github.com/e2b-dev/awesome-ai-sdks)
+## Resources
+
+1. [Setting a Natural Language to SQL Code Generator with Python](https://medium.com/@rami.krispin/setting-a-natural-language-to-sql-code-generator-with-python-d267f40d7218)
+2. [Text splitting (chunking) for RAG applications](https://medium.com/@hadiazouni/text-splitting-chunking-for-rag-applications-7ccbb6dcc9f9)
+3. [Advanced RAG: Extracting Complex PDFs containing tables & Text Using LlamaParse](https://aksdesai1998.medium.com/advanced-rag-extracting-complex-pdfs-containing-tables-text-using-llamaparse-48b61693da58)
+4. [Beyond the Hype: Effective Implementation of Retrieval-Augmented Generation (RAG)](https://medium.com/@dinabavli/beyond-the-hype-effective-implementation-of-retrieval-augmented-generation-rag-49b2ce3c9b23)
+5. [So you want to improve your RAG pipeline](https://howaibuildthis.substack.com/p/so-you-want-to-improve-your-rag-pipeline)
+6. [RAG Pipeline Pitfalls: The Untold Challenges of Embedding Table](https://howaibuildthis.substack.com/p/rag-pipeline-pitfalls-the-untold)
+7. [A Guide to Processing Tables in RAG Pipelines with LlamaIndex and UnstructuredIO](https://howaibuildthis.substack.com/p/a-guide-to-processing-tables-in-rag)
+8. [Advanced RAG 07: Exploring RAG for Tables](https://plainenglish.io/blog/advanced-rag-07-exploring-rag-for-tables)
+9. [Advanced RAG Implementation using Hybrid Search and Reranking](https://medium.com/@nadikapoudel16/advanced-rag-implementation-using-hybrid-search-reranking-with-zephyr-alpha-llm-4340b55fef22)
+10. [https://medium.com/the-ai-forum/semantic-chunking-for-rag-f4733025d5f5](https://medium.com/the-ai-forum/semantic-chunking-for-rag-f4733025d5f5)
 
 ## Practical Guides
 
@@ -62,6 +70,7 @@
 46. [grocery_assistant_bot](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/language/use-cases/chatbots/grocerybot_assistant.ipynb)
 47. [RAGTune](https://github.com/misbahsy/RAGTune)
 48. [LangChain-RAG-Pattern-with-React-FastAPI-and-Cosmos-DB-Vector-Store](https://github.com/jonathanscholtes/LangChain-RAG-Pattern-with-React-FastAPI-and-Cosmos-DB-Vector-Store)
+49. [Semi Structured RAG](https://github.com/langchain-ai/langchain/blob/master/cookbook/Semi_Structured_RAG.ipynb)
 
 ## Prompt Engineering
 
@@ -152,11 +161,21 @@
 33. [Rath](https://github.com/Kanaries/Rath)
 34. [llama_index](https://github.com/run-llama/llama_index)
 35. [benchllm](https://github.com/v7labs/benchllm)
+36. [chainlit](https://github.com/Chainlit/chainlit)
+37. [vanna](https://github.com/vanna-ai/vanna)
+
+
+## Text to SQL
+
+1. [Dataherald](https://github.com/Dataherald/dataherald/tree/main)
+2. [Awesome-Text2SQL](https://github.com/eosphoros-ai/Awesome-Text2SQL)
 
 ## Vector Databases and RAG
 
+- [A Practical Approach to Retrieval Augmented Generation Systems](https://mallahyari.github.io/rag-ebook/)
 - [ragflow](https://github.com/infiniflow/ragflow)
 - [fastRAG](https://github.com/IntelLabs/fastRAG)
+- [dspy](https://github.com/stanfordnlp/dspy)
 
 1. [VectorVerse](https://github.com/abhishek-ch/VectorVerse)
 2. [lancedb](https://github.com/lancedb/lancedb)
@@ -206,6 +225,9 @@
 46. [R2R](https://github.com/SciPhi-AI/R2R)
 47. [ragna](https://github.com/Quansight/ragna)
 48. [cohere-toolkit](https://github.com/cohere-ai/cohere-toolkit)
+49. [weaviate](https://github.com/weaviate/weaviate)
+50. [pgvector](https://github.com/pgvector/pgvector)
+51. [Verba](https://github.com/weaviate/Verba)
 
 ## Reranking, Cross Encoders, & Semantic Routing
 
