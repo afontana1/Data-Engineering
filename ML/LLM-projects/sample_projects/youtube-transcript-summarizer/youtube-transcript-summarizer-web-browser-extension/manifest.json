@@ -1,0 +1,12 @@
+{
+  "name": "Youtube Transcript Summarizer",
+  "description": "Get Your Summarized text, within a click",
+  "version": "2.0",
+  "manifest_version": 3,
+  "permissions": [],
+  "action": {
+    "default_title": "Youtube Transcript Summarizer",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
