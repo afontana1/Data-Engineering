@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wren-config
+data:
+
+  # Wren Engine Service Port
+  WREN_ENGINE_PORT: "8080"
+  # Wren AI Service Port
+  WREN_AI_SERVICE_PORT: "5555"
+  WREN_AI_SERVICE_ENABLE_TIMER: "1"
+
+  WREN_UI_ENDPOINT: http://wren-ui-svc:3000
+
+  #Release version used by wren ui https://github.com/Canner/WrenAI/blob/main/docker/docker-compose.yaml#L85-L88
+  WREN_PRODUCT_VERSION: "0.8.0"
+  WREN_ENGINE_VERSION: "0.9.3"
+  WREN_AI_SERVICE_VERSION: "0.8.11"
+  WREN_UI_VERSION: "0.11.1"
+
+  # LLM and Embedder Configurations
+  LLM_PROVIDER: "openai_llm"
+  LLM_OPENAI_API_BASE: "https://api.openai.com/v1"
+  GENERATION_MODEL: "gpt-4o-mini"
+
+  EMBEDDER_PROVIDER: "openai_embedder"
+  EMBEDDER_OPENAI_API_BASE: "https://api.openai.com/v1"
+
+  # Document store related
+  QDRANT_HOST: "wren-qdrant"
+  DOCUMENT_STORE_PROVIDER: "qdrant"
+
+  # Langfuse: for LLM tracing
+  LANGFUSE_HOST: "https://cloud.langfuse.com"
+  LANGFUSE_ENABLE: ""
+
+  # Telemetry
+  POSTHOG_HOST: "https://app.posthog.com"
+  TELEMETRY_ENABLED: "false"
+
+  # service endpoints of AI service & engine service
+  WREN_ENGINE_ENDPOINT: "http://wren-engine-svc:8080"
+  WREN_AI_ENDPOINT: "http://wren-ai-service-svc:5555"
+  #WREN_AI_ENDPOINT: "http://wren-ai-service-svc.ai-system.svc.cluster.local:5555"
+
+  # "pg" for postgres as UI application database
+  WREN_UI_DB_TYPE: pg
+
+  #For bootstrap
+  WREN_ENGINE_DATA_PATH: "/app/data"
+
+  ### if DB_TYPE = "postgres" you must provide PG_URL string in the *Secret* manifest file (deployment/kustomizations/examples/secret-wren_example.yaml) to connect to postgres
+  
+  #DEBUG, INFO
+  LOGGING_LEVEL: INFO
+
+  IBIS_SERVER_ENDPOINT: http://wren-ibis-server-svc:8000

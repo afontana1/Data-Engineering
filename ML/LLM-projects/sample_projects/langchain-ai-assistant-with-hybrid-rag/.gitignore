@@ -1,0 +1,12 @@
+.env
+.git/*
+.github/*
+__pycache__/*
+modules/__pycache__/*
+config/__pycache__/*
+chromadb/*
+files/*
+nohup.out
+chroma.log
+blobfuse.yaml
+blobfusetmp/*
