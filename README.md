@@ -17,9 +17,13 @@
 - [AWS Labs](https://github.com/awslabs)
 - [aws-solutions](https://github.com/aws-solutions)
 - [build-on-aws](https://github.com/build-on-aws)
+- [Microservices.io](https://microservices.io/)
+- [martin fowler](https://martinfowler.com/) and [Gregor Hohpe](https://architectelevator.com/)
 
 #### Tutorials
 
+- [ArjanCodes](https://github.com/ArjanCodes)
+- [mCodingLLC](https://github.com/mCodingLLC)
 - [Building a Poor Mans Datalake from Scratch with DuckDB](https://dagster.io/blog/duckdb-data-lake)
 - [Revisiting the Poor Man’s Data Lake with MotherDuck](https://dagster.io/blog/poor-mans-datalake-motherduck)
 - [Database Transactions](https://bbengfort.github.io/2017/12/psycopg2-transactions/)
@@ -30,14 +34,14 @@
 4. [Design Patterns: Elements of Reusable Software](https://wiki.c2.com/?DesignPatternsBook)
 5. [UI Design Patterns](https://ui-patterns.com/patterns)
 6. [OO Design](https://www.oodesign.com/)
-7. [martin fowler](https://martinfowler.com/) and [Gregor Hohpe](https://architectelevator.com/)
+7. [python-ddd](https://github.com/pgorecki/python-ddd)
 8. [Design Patterns Scala](https://pavelfatin.com/design-patterns-in-scala/)
 9. [Enterprise Application Patterns](https://www.enterpriseintegrationpatterns.com/index.html)
 10. [Practical Cryptography for Developers](https://cryptobook.nakov.com/)
 11. [Problem Solving with Algorithms and Data Structures using Python](http://www.openbookproject.net/books/pythonds/index.html#)
 12. [Computer Security](https://textbook.cs161.org/)
 13. [Open DSA Data Structures and Algorithms](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/index.html)
-14. [Microservices.io](https://microservices.io/)
+14. [Awesome ETL](https://github.com/pawl/awesome-etl)
 15. [Scala Design Patterns](https://github.com/josephguan/scala-design-patterns)
 16. [Goodreads ETL Pipeline](https://github.com/san089/goodreads_etl_pipeline)
 17. [Around Data Engineering](https://github.com/abhishek-ch/around-dataengineering)
@@ -59,8 +63,8 @@
 33. [data oriented design](https://github.com/dbartolini/data-oriented-design)
 34. [Patterns of Distributed Systems](https://martinfowler.com/articles/patterns-of-distributed-systems/)
 35. [Data Mesh Principles](https://martinfowler.com/articles/data-mesh-principles.html) and [Architecture](https://www.datamesh-architecture.com/)
-36. [mCodingLLC](https://github.com/mCodingLLC)
-37. [ArjanCodes](https://github.com/ArjanCodes)
+36. [Patterns for API Design](https://microservice-api-patterns.org/)
+37. [gaphor](https://github.com/gaphor/gaphor)
 38. [Data Centric Design](https://delftdesignlabs.org/dcd-lab/)
 39. [open-data-fabric](https://github.com/open-data-fabric/open-data-fabric)
 40. [serverlessland](https://serverlessland.com/)
@@ -77,10 +81,6 @@
 51. [awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)
 52. [Google Site Reliabilty Engineering](https://sre.google/sre-book/table-of-contents/)
 53. [Microservice API Patterns](https://microservice-api-patterns.org/)
-54. [python-ddd](https://github.com/pgorecki/python-ddd)
-55. [Awesome ETL](https://github.com/pawl/awesome-etl)
-56. [Patterns for API Design](https://microservice-api-patterns.org/)
-57. [gaphor](https://github.com/gaphor/gaphor)
 
 </details>
 
@@ -123,6 +123,7 @@
 15. [Programming_principles](https://en.wikipedia.org/wiki/Category:Programming_principles)
     * [Loose_coupling](https://en.wikipedia.org/wiki/Loose_coupling)
     * [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
+    * [SOLID](https://en.wikipedia.org/wiki/SOLID)
 
 ## Design Patterns
 1. [Abstract_factory_pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
