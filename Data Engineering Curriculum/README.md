@@ -10,3 +10,14 @@ When I first started data engineering, there was not a good learning pathway. Da
 4. [docker-templates](https://github.com/devopshobbies/docker-templates)
 5. [awesome-apache-airflow](https://github.com/jghoman/awesome-apache-airflow)
 6. [Spark-with-Python](https://github.com/tirthajyoti/Spark-with-Python)
+
+## Relevant Courses
+
+- [Cloud Computing](https://www.coursera.org/specializations/cloud-computing)
+- [Data Mining](https://www.coursera.org/specializations/data-mining)
+- [Machine Learning](https://www.coursera.org/specializations/machine-learnin-theory-and-hands-on-practice-with-pythong-cu)
+- [Data Science for Quality Improvement](https://www.coursera.org/specializations/data-science-methods-for-quality-improvement)
+- [Text Analytics](https://www.coursera.org/specializations/text-marketing-analytics)
+- [GCP Machine Learning](https://www.coursera.org/specializations/gcp-data-machine-learning)
+- [IBM Data Engineer](https://www.coursera.org/professional-certificates/ibm-data-engineer)
+- [Big Data](https://www.coursera.org/specializations/big-data)
