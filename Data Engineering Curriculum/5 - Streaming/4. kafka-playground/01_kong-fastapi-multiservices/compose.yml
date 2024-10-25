@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  microservice1:
+    build:
+      context: ./microservice1
+      dockerfile: Dockerfile.dev
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./microservice1:/code
+    networks:
+      - kong-net
+      
+  microservice2:
+    build:
+      context: ./microservice2
+      dockerfile: Dockerfile.dev
+    ports:
+      - "9001:9000"
+    volumes:
+      - ./microservice2:/code
+    networks:
+      - kong-net
+
+  kong-gateway:
+    image: kong:3.6.1
+    environment:
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: "/kong/declarative/kong.yml"
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001, 0.0.0.0:8444 ssl
+      KONG_ADMIN_GUI_URL: http://localhost:8002
+    volumes:
+      - ./kong.yml:/kong/declarative/kong.yml
+    ports:
+      - "8000:8000"
+      - "8443:8443"
+      - "8001:8001"
+      - "8002:8002"
+      - "8444:8444"
+    networks:
+      - kong-net
+
+networks:
+  kong-net:
+    driver: bridge

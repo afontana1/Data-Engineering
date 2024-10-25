@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  hello-api:
+    build:
+      context: ./hello
+      dockerfile: Dockerfile.dev
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./hello:/code
+

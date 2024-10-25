@@ -1,0 +1,10 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: myapi
+    url: http://microservice1:9000
+    routes:
+      - name: myapi-route
+        paths:
+          - /
