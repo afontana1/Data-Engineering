@@ -1,0 +1,35 @@
+FROM postgres:latest
+
+# Install dependencies for building decoderbufs
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    protobuf-c-compiler \
+    libprotobuf-c-dev \
+    postgresql-server-dev-all \
+    wget \
+    git
+
+# Clone the decoderbufs repository
+RUN git clone https://github.com/debezium/postgres-decoderbufs.git /decoderbufs
+
+# Build and install decoderbufs
+WORKDIR /decoderbufs
+RUN make && make install
+
+# Change the ownership of the decoderbufs library
+RUN chown postgres:postgres /usr/lib/postgresql/16/lib/decoderbufs.so
+
+# Clean up
+RUN apt-get remove -y \
+    build-essential \
+    protobuf-c-compiler \
+    libprotobuf-c-dev \
+    postgresql-server-dev-all \
+    wget \
+    git && \
+    apt-get autoremove -y && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Set the default command to run PostgreSQL
+CMD ["postgres"]

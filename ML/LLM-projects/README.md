@@ -71,6 +71,8 @@
 47. [RAGTune](https://github.com/misbahsy/RAGTune)
 48. [LangChain-RAG-Pattern-with-React-FastAPI-and-Cosmos-DB-Vector-Store](https://github.com/jonathanscholtes/LangChain-RAG-Pattern-with-React-FastAPI-and-Cosmos-DB-Vector-Store)
 49. [Semi Structured RAG](https://github.com/langchain-ai/langchain/blob/master/cookbook/Semi_Structured_RAG.ipynb)
+50. [text-to-sql-bedrock-workshop](https://github.com/aws-samples/text-to-sql-bedrock-workshop)
+51. [llama stack appas](https://github.com/meta-llama/llama-stack-apps)
 
 ## Prompt Engineering
 
@@ -169,6 +171,8 @@
 
 1. [Dataherald](https://github.com/Dataherald/dataherald/tree/main)
 2. [Awesome-Text2SQL](https://github.com/eosphoros-ai/Awesome-Text2SQL)
+3. [premsql](https://github.com/premAI-io/premsql)
+4. [Vanna](https://github.com/vanna-ai/vanna)
 
 ## Vector Databases and RAG
 

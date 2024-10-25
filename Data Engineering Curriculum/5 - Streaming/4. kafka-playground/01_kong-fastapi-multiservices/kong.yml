@@ -1,0 +1,25 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: myapi
+    url: http://microservice1:9000
+    routes:
+      - name: myapi-route
+        paths:
+          - /service1
+        hosts:
+          - server1
+          - localhost
+  - name: service2
+    url: http://microservice2:9000
+    routes:
+      - name: service2-route
+        paths:
+          - /service2
+        hosts:
+          - localhost
+          - server2
+        strip_path: true
+          
+
