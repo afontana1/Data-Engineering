@@ -76,6 +76,8 @@
 
 ## Prompt Engineering
 
+- [Prompt Engineering Techniques](https://github.com/NirDiamant/Prompt_Engineering)
+
 1. [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 2. [Prompt Engineering Guide](https://www.promptingguide.ai/)
 3. [dspy](https://github.com/stanfordnlp/dspy)
@@ -180,6 +182,9 @@
 - [ragflow](https://github.com/infiniflow/ragflow)
 - [fastRAG](https://github.com/IntelLabs/fastRAG)
 - [dspy](https://github.com/stanfordnlp/dspy)
+- [rag_bootcamp](https://github.com/VectorInstitute/rag_bootcamp)
+- [Awesome-LLM-RAG](https://github.com/jxzhangjhu/Awesome-LLM-RAG)
+- [rag_detective](https://github.com/healthy-chicken-saladeers/rag_detective)
 
 1. [VectorVerse](https://github.com/abhishek-ch/VectorVerse)
 2. [lancedb](https://github.com/lancedb/lancedb)
@@ -232,6 +237,20 @@
 49. [weaviate](https://github.com/weaviate/weaviate)
 50. [pgvector](https://github.com/pgvector/pgvector)
 51. [Verba](https://github.com/weaviate/Verba)
+
+### RAG Frameworks
+
+- [Top 10 RAG Frameworks Github Repos 2024](https://sebastian-petrus.medium.com/top-10-rag-frameworks-github-repos-2024-12b2a81f4a49)
+
+1. [haystack](https://github.com/deepset-ai/haystack)
+2. [ragflow](https://github.com/infiniflow/ragflow)
+3. [txtai](https://github.com/neuml/txtai)
+4. [storm](https://github.com/stanford-oval/storm)
+5. [llm-app](https://github.com/pathwaycom/llm-app)
+6. [cognita](https://github.com/truefoundry/cognita)
+7. [Neurite](https://github.com/satellitecomponent/Neurite)
+8. [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG)
+9. [canopy](https://github.com/pinecone-io/canopy)
 
 ## Reranking, Cross Encoders, & Semantic Routing
 
