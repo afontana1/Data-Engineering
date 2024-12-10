@@ -84,13 +84,27 @@
 
 </details>
 
+<details><summary><h3>Data Concepts</h3></summary>
+
+1. [Data](https://en.wikipedia.org/wiki/Data_(computing))
+2. [Databases](https://en.wikipedia.org/wiki/Category:Databases)
+3. [Database Management Systems](https://en.wikipedia.org/wiki/Category:Database_management_systems)
+4. [Data Warehouse](https://en.wikipedia.org/wiki/Category:Data_warehousing)
+5. [Data Modeling](https://en.wikipedia.org/wiki/Category:Data_modeling)
+    * [Dimensional Modeling](https://en.wikipedia.org/wiki/Dimensional_modeling)
+    * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
+6. [Data Ops](https://www.dataopsmanifesto.org/)
+7. [Metadata](https://en.wikipedia.org/wiki/Category:Metadata)
+8. [Data Management](https://en.wikipedia.org/wiki/Category:Data_management)
+
+</details>
+
 <details><summary><h2>Software Engineering Resources</h2></summary>
 
 # Reading
 
 1. [Algorithms](https://en.wikipedia.org/wiki/Category:Algorithms)
 2. [Data Structures](https://en.wikipedia.org/wiki/Category:Data_structures)
-    * [Data_modeling](https://en.wikipedia.org/wiki/Category:Data_modeling)
 3. [Software_architecture](https://en.wikipedia.org/wiki/Category:Software_architecture)
     * [Microservices](https://en.wikipedia.org/wiki/Microservices)
     * [Service-oriented](https://en.wikipedia.org/wiki/Category:Service-oriented_(business_computing))
@@ -874,50 +888,5 @@
 9. [scrapy](https://github.com/scrapy/scrapy)
 10. [puppeteer](https://github.com/puppeteer/puppeteer)
 11. [awesome-web-scraping](https://github.com/lorien/awesome-web-scraping)
-
-</details>
-
-<details><summary><h2>Data Governance</h2></summary>
-
-1. [Awesome Data Catalogs](https://github.com/opendatadiscovery/awesome-data-catalogs)
-
-<details><summary><h3>Concepts</h3></summary>
-
-1. [Automated reasoning](https://en.wikipedia.org/wiki/Automated_reasoning)
-2. [Ontology: Barry Smith](http://ontology.buffalo.edu/smith/)
-3. [Knowledge Representation](https://en.wikipedia.org/wiki/Category:Knowledge_representation)
-4. [Knowledge Graphs](https://en.wikipedia.org/wiki/Category:Knowledge_graphs)
-
-</details>
-
-<details><summary><h3>Data Management</h3></summary>
-
-1. [Data](https://en.wikipedia.org/wiki/Data_(computing))
-2. [Databases](https://en.wikipedia.org/wiki/Category:Databases)
-3. [Database Management Systems](https://en.wikipedia.org/wiki/Category:Database_management_systems)
-4. [Data Warehouse](https://en.wikipedia.org/wiki/Category:Data_warehousing)
-5. [Data Modeling](https://en.wikipedia.org/wiki/Category:Data_modeling)
-6. [Data Ops](https://www.dataopsmanifesto.org/)
-7. [Metadata](https://en.wikipedia.org/wiki/Category:Metadata)
-8. [Data Management](https://en.wikipedia.org/wiki/Category:Data_management)
-
-</details>
-
-<details><summary><h3>Tools</h3></summary>
-
-* [amundsen](https://github.com/amundsen-io/amundsen)
-* [datahub](https://github.com/datahub-project/datahub)
-* [marquez](https://marquezproject.github.io/marquez/)
-* [apache atlas](https://atlas.apache.org/#/)
-* [ground context](http://www.ground-context.org/)
-* [data bricks](https://databricks.com/discover/data-lakes/introduction)
-* [data lineage tools](http://www.databaseanswers.org/data_lineage_tools.htm)
-* [Sparql](https://jena.apache.org/tutorials/sparql.html)
-* [knowledge-graph](https://developers.google.com/knowledge-graph)
-* [griffin](https://github.com/apache/griffin)
-* [GridCal](https://github.com/SanPen/GridCal)
-* [Awesome Data Catalogues](https://github.com/opendatadiscovery/awesome-data-catalogs)
-
-</details>
 
 </details>
