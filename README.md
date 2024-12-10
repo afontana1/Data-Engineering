@@ -1,5 +1,7 @@
 # Resources
 
+- [Data Engineering Wiki](https://dataengineering.wiki/Index)
+
 <details><summary><h1>Design Guides</h1></summary>
 
 - [The Data Engineering Cookbook](https://cookbook.learndataengineering.com/)
