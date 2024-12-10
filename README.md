@@ -95,6 +95,7 @@
 5. [Data Modeling](https://en.wikipedia.org/wiki/Category:Data_modeling)
     * [Dimensional Modeling](https://en.wikipedia.org/wiki/Dimensional_modeling)
     * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
+    * [Kimball Techniques](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/)
 6. [Data Ops](https://www.dataopsmanifesto.org/)
 7. [Metadata](https://en.wikipedia.org/wiki/Category:Metadata)
 8. [Data Management](https://en.wikipedia.org/wiki/Category:Data_management)
