@@ -90,6 +90,7 @@
 
 1. [Algorithms](https://en.wikipedia.org/wiki/Category:Algorithms)
 2. [Data Structures](https://en.wikipedia.org/wiki/Category:Data_structures)
+    * [Data_modeling](https://en.wikipedia.org/wiki/Category:Data_modeling)
 3. [Software_architecture](https://en.wikipedia.org/wiki/Category:Software_architecture)
     * [Microservices](https://en.wikipedia.org/wiki/Microservices)
     * [Service-oriented](https://en.wikipedia.org/wiki/Category:Service-oriented_(business_computing))
@@ -97,6 +98,8 @@
     * [Systems_architecture](https://en.wikipedia.org/wiki/Systems_architecture)
     * [Message_queue](https://en.wikipedia.org/wiki/Message_queue)
     * [Aspect Oriented Programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming)
+    * [Enterprise_architecture](https://en.wikipedia.org/wiki/Category:Enterprise_architecture)
+    * [Unified Modeling Language](https://en.wikipedia.org/wiki/Category:Unified_Modeling_Language)
 4. [Software_engineering](https://en.wikipedia.org/wiki/Category:Software_engineering)
     * [Software_design_patterns](https://en.wikipedia.org/wiki/Category:Software_design_patterns)
     * [Software_design](https://en.wikipedia.org/wiki/Category:Software_design)
