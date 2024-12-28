@@ -126,6 +126,7 @@
 27. [HumanoidAgents](https://github.com/HumanoidAgents/HumanoidAgents)
 28. [Generative Agents in Langchain](https://github.com/langchain-ai/langchain/blob/master/cookbook/generative_agents_interactive_simulacra_of_human_behavior.ipynb)
 29. [Langroid](https://github.com/langroid/langroid)
+30. [Agenta](https://github.com/Agenta-AI/agenta)
 
 ## Useful Libraries
 
@@ -189,6 +190,7 @@
 - [RAGHub](https://github.com/Andrew-Jang/RAGHub)
 - [RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)
 - [RAG Cookbooks](https://github.com/athina-ai/rag-cookbooks)
+- [12-rag-pain-points-and-solutions](https://originshq.com/blog/12-rag-pain-points-and-solutions/)
 
 1. [VectorVerse](https://github.com/abhishek-ch/VectorVerse)
 2. [lancedb](https://github.com/lancedb/lancedb)
@@ -244,6 +246,7 @@
 52. [Advanced RAG output Grading](https://github.com/predlico/ARAGOG)
 53. [Advanced RAG Experiments](https://github.com/machinelearningzuu/Advanced-RAG-Experiments)
 54. [llamaindex RAG techniques](https://github.com/edumunozsala/llamaindex-RAG-techniques)
+55. [ragas](https://github.com/explodinggradients/ragas)
 
 ### RAG Frameworks
 
