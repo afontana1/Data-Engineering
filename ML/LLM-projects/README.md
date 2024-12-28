@@ -5,7 +5,6 @@
 - [AI Agents Masterclass](https://github.com/coleam00/ai-agents-masterclass)
 - [langchain-experiments](https://github.com/daveebbelaar/langchain-experiments)
 - [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners/tree/main)
-- [RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)
 
 ## Resources
 
@@ -185,6 +184,11 @@
 - [rag_bootcamp](https://github.com/VectorInstitute/rag_bootcamp)
 - [Awesome-LLM-RAG](https://github.com/jxzhangjhu/Awesome-LLM-RAG)
 - [rag_detective](https://github.com/healthy-chicken-saladeers/rag_detective)
+- [Awesome RAG](https://github.com/Danielskry/Awesome-RAG)
+- [Advanced RAG](https://github.com/NisaarAgharia/Advanced_RAG)
+- [RAGHub](https://github.com/Andrew-Jang/RAGHub)
+- [RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)
+- [RAG Cookbooks](https://github.com/athina-ai/rag-cookbooks)
 
 1. [VectorVerse](https://github.com/abhishek-ch/VectorVerse)
 2. [lancedb](https://github.com/lancedb/lancedb)
@@ -237,6 +241,9 @@
 49. [weaviate](https://github.com/weaviate/weaviate)
 50. [pgvector](https://github.com/pgvector/pgvector)
 51. [Verba](https://github.com/weaviate/Verba)
+52. [Advanced RAG output Grading](https://github.com/predlico/ARAGOG)
+53. [Advanced RAG Experiments](https://github.com/machinelearningzuu/Advanced-RAG-Experiments)
+54. [llamaindex RAG techniques](https://github.com/edumunozsala/llamaindex-RAG-techniques)
 
 ### RAG Frameworks
 
