@@ -38,7 +38,7 @@
 6. [OO Design](https://www.oodesign.com/)
 7. [python-ddd](https://github.com/pgorecki/python-ddd)
 8. [Design Patterns Scala](https://pavelfatin.com/design-patterns-in-scala/)
-9. [Enterprise Application Patterns](https://www.enterpriseintegrationpatterns.com/index.html)
+9. [Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/index.html)
 10. [Practical Cryptography for Developers](https://cryptobook.nakov.com/)
 11. [Problem Solving with Algorithms and Data Structures using Python](http://www.openbookproject.net/books/pythonds/index.html#)
 12. [Computer Security](https://textbook.cs161.org/)
