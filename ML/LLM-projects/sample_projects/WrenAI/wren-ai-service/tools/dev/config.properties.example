@@ -1,6 +1,0 @@
-node.environment=production
-wren.directory=/usr/src/app/etc/mdl
-wren.experimental-enable-dynamic-fields=true
-wren.datasource.type=duckdb
-duckdb.storage.access-key=
-duckdb.storage.secret-key=

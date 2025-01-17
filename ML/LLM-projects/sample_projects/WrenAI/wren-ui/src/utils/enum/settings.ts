@@ -1,4 +1,0 @@
-export enum SETTINGS {
-  DATA_SOURCE = 'DATA_SOURCE',
-  PROJECT = 'PROJECT',
-}
