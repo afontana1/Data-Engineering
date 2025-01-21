@@ -1,1 +1,0 @@
-# This File contains Files related to Web Browser Extension.
