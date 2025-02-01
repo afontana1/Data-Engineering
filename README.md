@@ -181,6 +181,8 @@
 12. [Hash_collision](https://en.wikipedia.org/wiki/Hash_collision)
 13. [Lazy_evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation)
 14. [Relational_algebra](https://en.wikipedia.org/wiki/Category:Relational_algebra)
+15. [Effective Method](https://en.wikipedia.org/wiki/Effective_method)
+16. [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
 
 </details>
 
