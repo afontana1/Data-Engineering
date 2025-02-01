@@ -1,13 +1,16 @@
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/nir-diamant-759323134/)
 [![Twitter](https://img.shields.io/twitter/follow/NirDiamantAI?label=Follow%20@NirDiamantAI&style=social)](https://twitter.com/NirDiamantAI)
 [![Discord](https://img.shields.io/badge/Discord-Join%20our%20community-7289da?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/cA6Aa4uyDX)
-
-<a href="https://app.commanddash.io/agent/github_NirDiamant_RAG_Techniques"><img src="https://img.shields.io/badge/AI-Code%20Agent-EB9FDA"></a>
+[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4)](https://github.com/sponsors/NirDiamant)
 
 > 🌟 **Support This Project:** Your sponsorship fuels innovation in RAG technologies. **[Become a sponsor](https://github.com/sponsors/NirDiamant)** to help maintain and expand this valuable resource!
 
+## Sponsors ❤️
+
+A big thank you to the wonderful sponsor(s) who support this project!
+
+<a href="https://github.com/sponsors/Eisenh"><img src="https://github.com/Eisenh.png" style="border-radius: 50%;" width="64" height="64" alt=""></a>
 
 # Advanced RAG Techniques: Elevating Your Retrieval-Augmented Generation Systems 🚀
 
@@ -15,9 +18,25 @@ Welcome to one of the most comprehensive and dynamic collections of Retrieval-Au
 
 ## 📫 Stay Updated!
 
-Don't miss out on cutting-edge developments, new tutorials, and community insights!
+<div align="center">
+<table>
+<tr>
+<td align="center">🚀<br><b>Cutting-edge<br>Updates</b></td>
+<td align="center">💡<br><b>Expert<br>Insights</b></td>
+<td align="center">🎯<br><b>Top 0.1%<br>Content</b></td>
 
-**[Subscribe to the RAG Techniques Newsletter of DiamantAI](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)**
+</tr>
+</table>
+
+[![Subscribe to DiamantAI Newsletter](images/subscribe-button.svg)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
+
+*Join over 10,000 of AI enthusiasts getting unique cutting-edge insights and free tutorials!* ***Plus, subscribers get exclusive early access and special discounts to our upcoming RAG Techniques course!***
+</div>
+
+
+
+[![DiamantAI's newsletter](images/substack_image.png)](https://diamantai.substack.com/?r=336pe4&utm_campaign=pub-share-checklist)
+
 
 ## Introduction
 
@@ -25,11 +44,11 @@ Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine infor
 
 Our goal is to provide a valuable resource for researchers and practitioners looking to push the boundaries of what's possible with RAG. By fostering a collaborative environment, we aim to accelerate innovation in this exciting field.
 
-## Related Project
+## Related Projects
 
-If you're interested in AI Agents implementations and tutorials, check out our sister project:
+🖋️ Check out my  **[Prompt Engineering Techniques guide](https://github.com/NirDiamant/Prompt_Engineering)** for a comprehensive collection of prompting strategies, from basic concepts to advanced techniques, enhancing your ability to interact effectively with AI language models.
 
-🤖 **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)**
+🤖 Explore my **[GenAI Agents Repository](https://github.com/NirDiamant/GenAI_Agents)** to discover a variety of AI agent implementations and tutorials, showcasing how different AI technologies can be combined to create powerful, interactive systems.
 
 ## A Community-Driven Knowledge Hub
 
@@ -298,9 +317,29 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Use the LLM to analyze initial results and generate follow-up queries to fill in gaps or clarify information.
 
+### 📊 Evaluation
+
+23. **[DeepEval Evaluation](evaluation/evaluation_deep_eval.ipynb)** 📘
+
+    #### Overview 🔎
+    Performing evaluations Retrieval-Augmented Generation systems, by covering several metrics and creating test cases.
+
+    #### Implementation 🛠️
+    Use the `deepeval` library to conduct test cases on correctness, faithfulness and contextual relevancy of RAG systems.
+    
+
+24. **[GroUSE Evaluation](evaluation/evaluation_grouse.ipynb)** 🐦
+
+    #### Overview 🔎
+    Evaluate the final stage of Retrieval-Augmented Generation using metrics of the GroUSE framework and meta-evaluate your custom LLM judge on GroUSE unit tests.
+
+    #### Implementation 🛠️
+    Use the `grouse` package to evaluate contextually-grounded LLM generations with GPT-4 on the 6 metrics of the GroUSE framework and use unit tests to evaluate a custom Llama 3.1 405B evaluator.
+    
+
 ### 🔬 Explainability and Transparency
 
-23. Explainable Retrieval 🔍  
+25. Explainable Retrieval 🔍  
     - **[LangChain](all_rag_techniques/explainable_retrieval.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/explainable_retrieval.py)**
 
@@ -312,7 +351,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ### 🏗️ Advanced Architectures
 
-24. Knowledge Graph Integration (Graph RAG) 🕸️  
+26. Knowledge Graph Integration (Graph RAG) 🕸️  
     - **[LangChain](all_rag_techniques/graph_rag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/graph_rag.py)**
 
@@ -322,16 +361,16 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Retrieve entities and their relationships from a knowledge graph relevant to the query, combining this structured data with unstructured text for more informative responses.
     
-25. GraphRag (Microsoft) 🎯
+27. GraphRag (Microsoft) 🎯
     - **[GraphRag](all_rag_techniques/Microsoft_GraphRag.ipynb)**  
 
     #### Overview 🔎
     Microsoft GraphRAG (Open Source) is an advanced RAG system that integrates knowledge graphs to improve the performance of LLMs
     
     #### Implementation 🛠️
-    • Analyze an input corpus by extracting entities, relationshipsfrom text units. generates summaries of each community and its constituents from the bottom-up.
+    • Analyze an input corpus by extracting entities, relationships from text units. generates summaries of each community and its constituents from the bottom-up.
 
-26. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
+28. RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 🌳  
     - **[LangChain](all_rag_techniques/raptor.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/raptor.py)**
 
@@ -341,7 +380,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     Use abstractive summarization to recursively process and summarize retrieved documents, organizing the information in a tree structure for hierarchical context.
 
-27. Self RAG 🔁  
+29. Self RAG 🔁  
     - **[LangChain](all_rag_techniques/self_rag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/self_rag.py)**
 
@@ -351,7 +390,7 @@ Explore the extensive list of cutting-edge RAG techniques:
     #### Implementation 🛠️
     • Implement a multi-step process including retrieval decision, document retrieval, relevance evaluation, response generation, support assessment, and utility evaluation to produce accurate, relevant, and useful outputs.
 
-28. Corrective RAG 🔧  
+30. Corrective RAG 🔧  
     - **[LangChain](all_rag_techniques/crag.ipynb)**  
     - **[Runnable Script](all_rag_techniques_runnable_scripts/crag.py)**
 
@@ -363,7 +402,7 @@ Explore the extensive list of cutting-edge RAG techniques:
 
 ## 🌟 Special Advanced Technique 🌟
 
-29. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
+31. **[Sophisticated Controllable Agent for Complex RAG Tasks 🤖](https://github.com/NirDiamant/Controllable-RAG-Agent)**
 
     #### Overview 🔎
     An advanced RAG solution designed to tackle complex questions that simple semantic similarity-based retrieval cannot solve. This approach uses a sophisticated deterministic graph as the "brain" 🧠 of a highly controllable autonomous agent, capable of answering non-trivial questions from your own data.
@@ -403,7 +442,7 @@ We welcome contributions from the community! If you have a new technique or impr
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under a custom non-commercial license - see the [LICENSE](LICENSE) file for details.
 
 ---
 
