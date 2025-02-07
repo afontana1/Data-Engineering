@@ -1,5 +1,12 @@
 # LLM Resources for Building Tools
 
+## AI Based Data Wrangling Tools
+
+1. [data-juicer](https://github.com/modelscope/data-juicer)
+2. [extractous](https://github.com/yobix-ai/extractous)
+3. [data-prep-kit](https://github.com/IBM/data-prep-kit)
+4. [unstructured](https://github.com/Unstructured-IO/unstructured)
+
 ## Prompt Engineering
 
 - [Prompt Engineering Techniques](https://github.com/NirDiamant/Prompt_Engineering)
@@ -12,6 +19,7 @@
 
 ## Agent Frameworks
 
+- [LLM-Agent-Paper-List](https://github.com/WooooDyy/LLM-Agent-Paper-List)
 - [llm-agents overview](https://www.promptingguide.ai/research/llm-agents)
 - [awesome-ai-agents](https://github.com/slavakurilyak/awesome-ai-agents)
 - [awesome-autonomous-gpt](https://github.com/ScarletPan/awesome-autonomous-gpt)
@@ -20,6 +28,7 @@
 - [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents)
 - [AgentBench](https://github.com/THUDM/AgentBench)
 - [ToolBench](https://github.com/OpenBMB/ToolBench)
+- [multi-agent-orchestrator](https://github.com/awslabs/multi-agent-orchestrator)
 
 1. [crewAI](https://github.com/crewAIInc/crewAI)
 2. [autogen](https://github.com/microsoft/autogen)
@@ -56,7 +65,14 @@
 30. [Agenta](https://github.com/Agenta-AI/agenta)
 31. [phidata](https://github.com/phidatahq/phidata)
 32. [jar3d_meta_expert](https://github.com/brainqub3/jar3d_meta_expert)
-
+33. [WarAgent](https://github.com/agiresearch/WarAgent)
+34. [OpenResearcher](https://github.com/GAIR-NLP/OpenResearcher)
+35. [gpt-researcher](https://github.com/assafelovic/gpt-researcher)
+36. [vision-agent](https://github.com/landing-ai/vision-agent)
+37. [letta](https://github.com/letta-ai/letta)
+38. [meadow](https://github.com/NumbersStationAI/meadow)
+39. [hands-on-llms](https://github.com/iusztinpaul/hands-on-llms)
+40. [AgentSims](https://github.com/py499372727/AgentSims)
 
 ## Text to SQL
 
@@ -64,6 +80,7 @@
 2. [Awesome-Text2SQL](https://github.com/eosphoros-ai/Awesome-Text2SQL)
 3. [premsql](https://github.com/premAI-io/premsql)
 4. [Vanna](https://github.com/vanna-ai/vanna)
+5. [lang2sql](https://github.com/RamiKrispin/lang2sql)
 
 ## Vector Databases and RAG
 
@@ -80,6 +97,10 @@
 7. [Neurite](https://github.com/satellitecomponent/Neurite)
 8. [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG)
 9. [canopy](https://github.com/pinecone-io/canopy)
+10. [AutoRAG](https://github.com/Marker-Inc-Korea/AutoRAG)
+11. [LightRAG](https://github.com/HKUDS/LightRAG)
+12. [kotaemon](https://github.com/Cinnamon/kotaemon)
+13. [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding)
 
 ### Tools and Guides
 
@@ -97,6 +118,7 @@
 - [RAG Cookbooks](https://github.com/athina-ai/rag-cookbooks)
 - [12-rag-pain-points-and-solutions](https://originshq.com/blog/12-rag-pain-points-and-solutions/)
 - [vectordb-recipes](https://github.com/lancedb/vectordb-recipes)
+- [rStar](https://github.com/zhentingqi/rStar/)
 
 1. [VectorVerse](https://github.com/abhishek-ch/VectorVerse)
 2. [lancedb](https://github.com/lancedb/lancedb)
@@ -154,6 +176,10 @@
 54. [llamaindex RAG techniques](https://github.com/edumunozsala/llamaindex-RAG-techniques)
 55. [ragas](https://github.com/explodinggradients/ragas)
 56. [dsRAG](https://github.com/D-Star-AI/dsRAG)
+57. [HtmlRAG](https://github.com/plageon/HtmlRAG)
+58. [ragapp](https://github.com/ragapp/ragapp)
+59. [SeaGOAT](https://github.com/kantord/SeaGOAT)
+60. [llm-search](https://github.com/snexus/llm-search)
 
 ## Reranking, Cross Encoders, & Semantic Routing
 
@@ -168,6 +194,8 @@
 - [awesome-LLMs-finetuning](https://github.com/pdaicode/awesome-LLMs-finetuning)
 - [NLP-LLM-Fine-tuning-Llame-2-QLoRA-2024](https://github.com/YanSte/NLP-LLM-Fine-tuning-Llame-2-QLoRA-2024)
 - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+- [HuggingFaceModelDownloader](https://github.com/bodaay/HuggingFaceModelDownloader)
+- [llm-server-docs](https://github.com/varunvasudeva1/llm-server-docs)
 
 1. [autotrain](https://huggingface.co/docs/autotrain/index)
 2. [Auto Data](https://github.com/Itachi-Uchiha581/Auto-Data)

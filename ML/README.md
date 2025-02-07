@@ -95,6 +95,8 @@
 28. [LDA](https://github.com/shaheen-syed/LDA)
 29. [Text-Analytics-Tool](https://github.com/prakharrathi25/Text-Analytics-Tool)
 30. [Legal-Text-Analytics](https://github.com/Liquid-Legal-Institute/Legal-Text-Analytics)
+31. [BERTopic](https://github.com/MaartenGr/BERTopic)
+32. [similarity-search-kit](https://github.com/ZachNagengast/similarity-search-kit)
 
 ## Ensemble Learning
 1. [Hands-On-Ensemble-Learning-with-Python](https://github.com/PacktPublishing/Hands-On-Ensemble-Learning-with-Python)
