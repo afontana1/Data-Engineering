@@ -86,7 +86,7 @@
 
 </details>
 
-<details><summary><h3>Data Concepts</h3></summary>
+<details><summary><h2>Data Concepts</h2></summary>
 
 1. [Data](https://en.wikipedia.org/wiki/Data_(computing))
 2. [Databases](https://en.wikipedia.org/wiki/Category:Databases)
@@ -352,6 +352,7 @@
 64. [pyscaffold](https://github.com/pyscaffold/pyscaffold)
 65. [xmltodict](https://github.com/martinblech/xmltodict)
 66. [duckdb](https://github.com/duckdb/duckdb)
+67. [dirty-equals](https://github.com/samuelcolvin/dirty-equals)
 
 </details>
 
