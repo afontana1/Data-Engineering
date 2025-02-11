@@ -1,0 +1,10 @@
+eqassertions
+httpx
+mypy
+psycopg2-binary
+pytest
+pytest-cov
+pytest-env
+pytest-mock
+pytest-randomly
+ruff

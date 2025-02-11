@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.upload-btn').on('click', function(){
+                $('#file-input').click();
+            });
+            $('#file-input').on('change', function(){
+                var files = $(this).get(0).files;
+                var formData = new FormData();
+                for (var i = 0; i < files.length; i++) {
+                    var file = files[i];
+                    formData.append('files[]', file, file.name);
+                }
+                $.ajax({
+                    url: '/upload',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(data){
+                        if(confirm('Files uploaded. Are you ready to ask questions?')){
+                            window.location.href = '/ask_question';
+                        } else {
+                            // They can continue to upload files
+                            $('#file-input').val('');
+                        }
+                    },
+                    error: function(data){
+                        alert('An error occurred. Please try again.');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="text-align:center; margin-top:50px;">
+        <!-- Image container -->
+        <div id="image-container" style="margin-bottom: 20px;">
+            <img src="{{ url_for('static', filename='assets/Awesomo-4000.png') }}" alt="Upload Interface" style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Upload box below the image -->
+        <div id="upload-box" style="border: 2px dashed black; width: 300px; height: 200px; line-height: 200px; text-align: center; margin: auto;">
+            Upload your files here:
+            <button class="upload-btn">Choose Files</button>
+            <input id="file-input" type="file" multiple style="display: none;">
+        </div>
+        <ul>
+            {% for filename in filenames %}
+            <li><a href="{{ url_for('uploaded_file', filename=filename) }}">{{ filename }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

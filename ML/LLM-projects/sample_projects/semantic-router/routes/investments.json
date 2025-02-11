@@ -1,0 +1,29 @@
+{
+  "name": "investments",
+  "score_threshold": 0.7,
+  "utterances": [
+    "Can you guide me about investing in stocks?",
+    "How can I start investing in real estate?",
+    "What's the best way to invest in mutual funds?",
+    "I want to invest in cryptocurrency, can you guide me?",
+    "What are the risks associated with stock market investment?",
+    "Can you explain how bond investments work?",
+    "I'm interested in commodity investment, any advice?",
+    "What's your suggestion for long-term investment strategies?",
+    "How do I diversify my investment portfolio?",
+    "Can you tell me about high yield investments?",
+    "What are the best low risk investments?",
+    "How can I invest in the foreign exchange market?",
+    "I'm thinking about venture capital investment, what should I know?",
+    "Can you explain how to invest in index funds?",
+    "What's your opinion on investing in ETFs?",
+    "Can you guide me about tax efficient investing?",
+    "I'm considering investing in peer-to-peer lending, any thoughts?",
+    "What should I know about investing in startups?"
+  ],
+  "responses": [
+    "I'm afraid I can't provide help with investment matters. My primary role is to offer insight on vacation recommendations. Please ask me anything about those topics, and I'd be more than happy to assist.",
+    "Sorry for any misunderstanding, but I am not equipped to answer investment-related questions. My expertise lies in recommendations for the best vacation. Feel free to ask me anything in that regard!",
+    "Unfortunately, I can't assist with investment queries. As a Vacation Recommendations ChatBot assistant, I'm trained to help with questions regarding our vacations only. Please ask me any queries related to these topics!"
+  ]
+}

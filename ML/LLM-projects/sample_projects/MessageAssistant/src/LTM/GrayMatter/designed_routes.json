@@ -1,0 +1,60 @@
+{
+    "encoder_type": "openai",
+    "encoder_name": "text-embedding-ada-002",
+    "routes": [
+        {
+            "name": "press-release",
+            "utterances": [
+                "is the tone of this press release appropriate for our target media outlets?",
+                "summarize the key points of this press release",
+                "what is the sentiment of this PR's content?",
+                "check for any grammatical or factual errors in this press release",
+                "identify the primary message and target audience of this press release",
+                "what are the key products or services introduced in this press release?",
+                "does the press release mention any upcoming events or launches?",
+                "can you identify any specific target markets or audiences the press release is addressing?",
+                "what are the plans or directions outlined in the press release for the company or its products/services"
+            ],
+            "description": null,
+            "function_schema": null,
+            "llm": null,
+            "score_threshold": 0.82
+        },
+        {
+            "name": "client-brief-clarification",
+            "utterances": [
+                "can you help me understand the primary goals of this campaign as outlined in their brief?",
+                "who is the target audience for this campaign, according to the client brief",
+                "what are the main messages we need to communicate in this campaign?",
+                "based on the client brief, which media outlets should we prioritize?",
+                "are there any specific media outlets mentioned in the client brief that we should focus on for outreach?",
+                "what strategic approach is suggested in the client brief for achieving the campaign objectives?",
+                "what tone and style of content does the client brief recommend for engaging the target demographic?",
+                "does the client brief mention any competitors, and how does client want to differentiate from them?",
+                "what are the key performance indicators (KPIs) outlined in the client brief for the campaign?"
+            ],
+            "description": null,
+            "function_schema": null,
+            "llm": null,
+            "score_threshold": 0.82
+        },
+        {
+            "name": "client-strategy-suggestion",
+            "utterances": [
+                "can you analyze the trends in our past content to suggest themes for the given time-frame?",
+                "what are the emerging topics in our industry that we haven't covered yet?",
+                "how can we align our content strategy with the latest research findings?",
+                "hold brainstorming sessions to translate research insights into strategic content ideas",
+                "can you recommend content ideas that would fill the gaps in our current coverage?",
+                "how can we diversify our content to reach a broader audience in the given time-frame?",
+                "create a pilot project to test new content formats and measure audience engagement",
+                "are there any industry events or milestones coming up that we should focus our content around?",
+                "identify upcoming industry events, milestones, or seasonal topics that should be the content strategy"
+            ],
+            "description": null,
+            "function_schema": null,
+            "llm": null,
+            "score_threshold": 0.82
+        }
+    ]
+}

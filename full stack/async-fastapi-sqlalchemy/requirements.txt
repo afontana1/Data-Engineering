@@ -1,0 +1,5 @@
+alembic
+black
+fastapi[standard]
+pydantic-settings
+sqlalchemy[postgresql_asyncpg]
