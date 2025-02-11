@@ -1,0 +1,59 @@
+[tool.poetry]
+authors = ["admin <admin@example.com>"]
+description = "FastAPI project generated using minimal-fastapi-postgres-template."
+name = "app"
+version = "0.1.0-alpha"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+alembic = "^1.14.0"
+asyncpg = "^0.30.0"
+bcrypt = "^4.2.1"
+fastapi = "^0.115.6"
+pydantic = { extras = ["dotenv", "email"], version = "^2.10.4" }
+pydantic-settings = "^2.7.1"
+pyjwt = "^2.10.1"
+python-multipart = "^0.0.20"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.36"}
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.10"
+freezegun = "^1.5.1"
+greenlet = "^3.1.1"
+httpx = "^0.28.1"
+mypy = "^1.14.1"
+pre-commit = "^4.0.1"
+pytest = "^8.3.4"
+pytest-asyncio = "^0.25.0"
+pytest-cov = "^6.0.0"
+pytest-xdist = "^3.6.1"
+ruff = "^0.8.4"
+uvicorn = { extras = ["standard"], version = "^0.34.0" }
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.pytest.ini_options]
+addopts = "-vv -n auto --cov --cov-report xml --cov-report term-missing --cov-fail-under=100"
+asyncio_default_fixture_loop_scope = "session"
+asyncio_mode = "auto"
+testpaths = ["app/tests"]
+
+[tool.coverage.run]
+concurrency = ["greenlet"]
+omit = ["app/tests/*"]
+source = ["app"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+
+[tool.ruff]
+target-version = "py313"
+
+[tool.ruff.lint]
+# pycodestyle, pyflakes, isort, pylint, pyupgrade
+ignore = ["E501"]
+select = ["E", "F", "I", "PL", "UP", "W"]
