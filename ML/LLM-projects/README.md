@@ -81,6 +81,11 @@
 3. [premsql](https://github.com/premAI-io/premsql)
 4. [Vanna](https://github.com/vanna-ai/vanna)
 5. [lang2sql](https://github.com/RamiKrispin/lang2sql)
+6. [WrenAI](https://github.com/Canner/WrenAI)
+7. [text-to-sql-bedrock-workshop](https://github.com/aws-samples/text-to-sql-bedrock-workshop)
+8. [NL2SQL_Handbook](https://github.com/HKUSTDial/NL2SQL_Handbook)
+9. [Chat2DB](https://github.com/CodePhiliaX/Chat2DB)
+10. [sqlchat](https://github.com/sqlchat/sqlchat)
 
 ## Vector Databases and RAG
 
