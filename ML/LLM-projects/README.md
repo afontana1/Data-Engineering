@@ -17,6 +17,42 @@
 4. [fewshot](https://www.promptingguide.ai/techniques/fewshot)
 5. [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
+## MCP
+
+- [MCP Overview](https://www.philschmid.de/mcp-introduction)
+- [MCP - Model Context Protocol End-To-End Course 2025](https://youtube.com/playlist?list=PL6tW9BrhiPTCDteflzehKS6Cn3a79-iCs&si=j99ofpke6JPiLD-h)
+- [OpenAI MCP Client](https://github.com/philschmid/mcp-openai-gemini-llama-example/tree/master)
+- [MCP Example Llama](https://www.philschmid.de/mcp-example-llama)
+- [python-a2a](https://github.com/themanojdesai/python-a2a)
+- [MCP Bridge](https://github.com/SecretiveShell/MCP-Bridge/tree/master)
+
+1. [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
+2. [FastMCP](https://github.com/jlowin/fastmcp)
+3. [MCP Agent](https://github.com/lastmile-ai/mcp-agent)
+4. [FastAPI MCP](https://github.com/tadata-org/fastapi_mcp)
+5. [mcp-client](https://github.com/RGGH/mcp-client-x/tree/hybrid)
+6. [introduction-to-mcp-with-sql-agent](https://github.com/bitswired/demos/tree/main/projects/introduction-to-mcp-with-sql-agent)
+7. [mcp-client-cli](https://github.com/adhikasp/mcp-client-cli)
+8. [llama-index-tools-mcp](https://github.com/run-llama/llama_index/tree/main/llama-index-integrations/tools/llama-index-tools-mcp)
+9. [mcp-openai](https://github.com/S1M0N38/mcp-openai)
+
+### MCP Servers
+
+1. [sqlite-explorer-fastmcp-mcp-server](https://github.com/hannesrudolph/sqlite-explorer-fastmcp-mcp-server)
+2. [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server)
+3. [Mysql MCP Server](https://github.com/designcomputer/mysql_mcp_server)
+4. [Excel MCP Server](https://github.com/haris-musa/excel-mcp-server)
+5. [pydantic-ai-mcp-agent](https://github.com/coleam00/ottomator-agents/tree/main/pydantic-ai-mcp-agent)
+6. [MCP Client Python](https://github.com/modelcontextprotocol/quickstart-resources/tree/main/mcp-client-python)
+7. [MCP Youtube](https://github.com/adhikasp/mcp-youtube)
+8. [MCP Trader](https://github.com/wshobson/mcp-trader)
+9. [gmail-mcp-server](https://github.com/jasonsum/gmail-mcp-server)
+10. [mcp-server-duckdb](https://github.com/ktanaka101/mcp-server-duckdb)
+11. [mcp-solver](https://github.com/szeider/mcp-solver)
+12. [mcp-server-calculator](https://github.com/githejie/mcp-server-calculator)
+13. [Ghidra MCP](https://github.com/LaurieWired/GhidraMCP/)
+14. [mcp_and_pydanticai](https://github.com/riza-io/examples/tree/main/demos/mcp_and_pydanticai)
+
 ## Agent Frameworks
 
 - [LLM-Agent-Paper-List](https://github.com/WooooDyy/LLM-Agent-Paper-List)
