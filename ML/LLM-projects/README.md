@@ -22,6 +22,7 @@
 - [MCP Overview](https://www.philschmid.de/mcp-introduction)
 - [MCP - Model Context Protocol End-To-End Course 2025](https://youtube.com/playlist?list=PL6tW9BrhiPTCDteflzehKS6Cn3a79-iCs&si=j99ofpke6JPiLD-h)
 - [OpenAI MCP Client](https://github.com/philschmid/mcp-openai-gemini-llama-example/tree/master)
+- [MCP-sse](https://github.com/sidharthrajaram/mcp-sse)
 - [MCP Example Llama](https://www.philschmid.de/mcp-example-llama)
 - [python-a2a](https://github.com/themanojdesai/python-a2a)
 - [MCP Bridge](https://github.com/SecretiveShell/MCP-Bridge/tree/master)
@@ -35,6 +36,7 @@
 7. [mcp-client-cli](https://github.com/adhikasp/mcp-client-cli)
 8. [llama-index-tools-mcp](https://github.com/run-llama/llama_index/tree/main/llama-index-integrations/tools/llama-index-tools-mcp)
 9. [mcp-openai](https://github.com/S1M0N38/mcp-openai)
+10. [supergateway](https://github.com/supercorp-ai/supergateway)
 
 ### MCP Servers
 
