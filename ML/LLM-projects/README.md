@@ -67,6 +67,7 @@
 - [AgentBench](https://github.com/THUDM/AgentBench)
 - [ToolBench](https://github.com/OpenBMB/ToolBench)
 - [multi-agent-orchestrator](https://github.com/awslabs/multi-agent-orchestrator)
+- [AgentLite](https://github.com/SalesforceAIResearch/AgentLite)
 
 1. [crewAI](https://github.com/crewAIInc/crewAI)
 2. [autogen](https://github.com/microsoft/autogen)
@@ -111,6 +112,18 @@
 38. [meadow](https://github.com/NumbersStationAI/meadow)
 39. [hands-on-llms](https://github.com/iusztinpaul/hands-on-llms)
 40. [AgentSims](https://github.com/py499372727/AgentSims)
+41. [talkhier](https://github.com/sony/talkhier)
+42. [redel](https://github.com/zhudotexe/redel)
+43. [owl](https://github.com/camel-ai/owl)
+44. [camel](https://github.com/camel-ai/camel)
+45. [oasis](http://github.com/camel-ai/oasis)
+46. [pydantic-ai](https://github.com/pydantic/pydantic-ai)
+47. [SuperAGI](https://github.com/TransformerOptimus/SuperAGI)
+48. [OpenAgents](https://github.com/xlang-ai/OpenAgents)
+49. [AutoAgents](https://github.com/Link-AGI/AutoAgents)
+50. [agents](https://github.com/aiwaves-cn/agents)
+51. [smolagents](https://github.com/huggingface/smolagents)
+52. [adk-python](https://github.com/google/adk-python)
 
 ## Text to SQL
 
@@ -223,6 +236,9 @@
 58. [ragapp](https://github.com/ragapp/ragapp)
 59. [SeaGOAT](https://github.com/kantord/SeaGOAT)
 60. [llm-search](https://github.com/snexus/llm-search)
+61. [PIKE-RAG](https://github.com/microsoft/PIKE-RAG)
+62. [Reasoning Augmented Generation](https://github.com/superagent-ai/reag)
+63. [super-rag](https://github.com/superagent-ai/super-rag)
 
 ## Reranking, Cross Encoders, & Semantic Routing
 
