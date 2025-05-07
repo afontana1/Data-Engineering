@@ -1,0 +1,6 @@
+[book]
+authors = ["mbrav"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Applying Design Patterns in Python"

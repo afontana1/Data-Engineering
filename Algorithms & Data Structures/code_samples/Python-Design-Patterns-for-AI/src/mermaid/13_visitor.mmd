@@ -1,0 +1,49 @@
+%%{init: {'theme': 'base', 'themeVariables': {
+    'primaryColor': '#f8f4ff',
+    'secondaryColor': '#f4fff8',
+    'tertiaryColor': '#fff8f4',
+    'mainBkg': '#ffffff',
+    'nodeBorder': '#6a5acd',
+    'clusterBkg': '#fafafa',
+    'clusterBorder': '#6a5acd',
+    'lineColor': '#6a5acd',
+    'fontFamily': 'Helvetica, Arial, sans-serif',
+    'fontSize': '14px'
+}}}%%
+
+flowchart TB
+    subgraph Models
+        style Models fill:#f8f4ff,stroke:#6a5acd,stroke-width:2px
+        Model[("Abstract Model")]
+        ClassificationModel["ClassificationModel"]
+        Model --> ClassificationModel
+    end
+
+    subgraph Visitors
+        style Visitors fill:#f4fff8,stroke:#6a5acd,stroke-width:2px
+        Visitor[("Abstract Visitor")]
+        SHAPVisitor["SHAPVisitor"]
+        LIMEVisitor["LIMEVisitor"]
+        Visitor --> SHAPVisitor
+        Visitor --> LIMEVisitor
+    end
+
+    subgraph Client
+        style Client fill:#fff8f4,stroke:#6a5acd,stroke-width:2px
+        MainFunction["main()"]
+        MainFunction -->|"accept(shap_visitor)"| ClassificationModel
+        MainFunction -->|"accept(lime_visitor)"| ClassificationModel
+    end
+    
+    ClassificationModel -->|"visit_classification_model()"| SHAPVisitor
+    ClassificationModel -->|"visit_classification_model()"| LIMEVisitor
+    
+    classDef abstract fill:#f8f4ff,stroke:#6a5acd,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef concrete fill:#ffffff,stroke:#6a5acd,stroke-width:2px;
+    classDef client fill:#fff8f4,stroke:#6a5acd,stroke-width:2px;
+
+    class Model,Visitor abstract;
+    class ClassificationModel,SHAPVisitor,LIMEVisitor concrete;
+    class MainFunction client;
+
+    linkStyle default stroke:#6a5acd,stroke-width:1.5px;

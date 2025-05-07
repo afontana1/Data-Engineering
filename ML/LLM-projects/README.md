@@ -14,8 +14,7 @@
 1. [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 2. [Prompt Engineering Guide](https://www.promptingguide.ai/)
 3. [dspy](https://github.com/stanfordnlp/dspy)
-4. [fewshot](https://www.promptingguide.ai/techniques/fewshot)
-5. [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+4. [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
 ## MCP
 
