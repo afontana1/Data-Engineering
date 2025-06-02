@@ -25,6 +25,8 @@
 - [MCP Example Llama](https://www.philschmid.de/mcp-example-llama)
 - [python-a2a](https://github.com/themanojdesai/python-a2a)
 - [MCP Bridge](https://github.com/SecretiveShell/MCP-Bridge/tree/master)
+- [mcp-introduction](https://www.philschmid.de/mcp-introduction)
+- [fast-api mcp](https://uselessai.in/implementing-mcp-architecture-in-a-fastapi-application-f513989b65d9)
 
 1. [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 2. [FastMCP](https://github.com/jlowin/fastmcp)
@@ -67,6 +69,7 @@
 - [ToolBench](https://github.com/OpenBMB/ToolBench)
 - [multi-agent-orchestrator](https://github.com/awslabs/multi-agent-orchestrator)
 - [AgentLite](https://github.com/SalesforceAIResearch/AgentLite)
+- [LLM_MultiAgents_Survey_Papers](https://github.com/taichengguo/LLM_MultiAgents_Survey_Papers)
 
 1. [crewAI](https://github.com/crewAIInc/crewAI)
 2. [autogen](https://github.com/microsoft/autogen)
@@ -123,6 +126,20 @@
 50. [agents](https://github.com/aiwaves-cn/agents)
 51. [smolagents](https://github.com/huggingface/smolagents)
 52. [adk-python](https://github.com/google/adk-python)
+53. [Agent Verse](https://github.com/OpenBMB/AgentVerse)
+54. [DATAGEN](https://github.com/starpig1129/DATAGEN)
+55. [Memary](https://github.com/kingjulio8238/Memary)
+56. [mallm](https://github.com/Multi-Agent-LLMs/mallm)
+57. [ISEK](https://github.com/isekOS/ISEK)
+58. [spade](https://github.com/javipalanca/spade)
+59. [pilottai](https://github.com/pygig/pilottai)
+60. [agents-aea](https://github.com/fetchai/agents-aea)
+61. [swarmzero](https://github.com/swarmzero/swarmzero)
+62. [FilmAgent](https://github.com/HITsz-TMG/FilmAgent)
+63. [company-research-agent](https://github.com/pogjester/company-research-agent)
+64. [PraisonAI](https://github.com/MervinPraison/PraisonAI)
+65. [agent-squad](https://github.com/awslabs/agent-squad)
+66. [agentscope](https://github.com/modelscope/agentscope)
 
 ## Text to SQL
 
@@ -174,6 +191,8 @@
 - [12-rag-pain-points-and-solutions](https://originshq.com/blog/12-rag-pain-points-and-solutions/)
 - [vectordb-recipes](https://github.com/lancedb/vectordb-recipes)
 - [rStar](https://github.com/zhentingqi/rStar/)
+- [ragapp](https://github.com/ragapp/ragapp)
+- [gpt-rag-agentic](https://github.com/Azure/gpt-rag-agentic)
 
 1. [VectorVerse](https://github.com/abhishek-ch/VectorVerse)
 2. [lancedb](https://github.com/lancedb/lancedb)
@@ -238,6 +257,7 @@
 61. [PIKE-RAG](https://github.com/microsoft/PIKE-RAG)
 62. [Reasoning Augmented Generation](https://github.com/superagent-ai/reag)
 63. [super-rag](https://github.com/superagent-ai/super-rag)
+64. [raglite](https://github.com/superlinear-ai/raglite)
 
 ## Reranking, Cross Encoders, & Semantic Routing
 
