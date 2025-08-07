@@ -53,6 +53,9 @@
 20. [Automated Reasoning](https://cs.stanford.edu/~ermon/cs323/index.html)
 21. [applied-ml](https://github.com/eugeneyan/applied-ml)
 22. [ML Refined](https://github.com/neonwatty/machine_learning_refined)
+23. [Dive into Deep Learning](https://d2l.ai/index.html)
+24. [Deep Learning: Ian Goodfellow](https://www.deeplearningbook.org/)
+25. [Mastering Reinforcement learning](https://gibberblot.github.io/rl-notes/index.html#)
 
 ## Computer Vision
 1. [awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision)
