@@ -353,6 +353,12 @@
 65. [xmltodict](https://github.com/martinblech/xmltodict)
 66. [duckdb](https://github.com/duckdb/duckdb)
 67. [dirty-equals](https://github.com/samuelcolvin/dirty-equals)
+68. [diagrams](https://github.com/mingrammer/diagrams)
+69. [flowchart-fun](https://github.com/tone-row/flowchart-fun)
+70. [roadmapper](https://github.com/csgoh/roadmapper)
+71. [DgrmJS](https://github.com/AlexeyBoiko/DgrmJS)
+72. [flowy](https://github.com/alyssaxuu/flowy)
+73. [Drawflow](https://github.com/jerosoler/Drawflow)
 
 </details>
 

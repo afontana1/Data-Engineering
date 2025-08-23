@@ -70,6 +70,9 @@
 - [multi-agent-orchestrator](https://github.com/awslabs/multi-agent-orchestrator)
 - [AgentLite](https://github.com/SalesforceAIResearch/AgentLite)
 - [LLM_MultiAgents_Survey_Papers](https://github.com/taichengguo/LLM_MultiAgents_Survey_Papers)
+- [mem0](https://github.com/mem0ai/mem0)
+- [memorizz](https://github.com/RichmondAlake/memorizz)
+- [A2A](https://github.com/a2aproject/A2A)
 
 1. [crewAI](https://github.com/crewAIInc/crewAI)
 2. [autogen](https://github.com/microsoft/autogen)
@@ -140,6 +143,7 @@
 64. [PraisonAI](https://github.com/MervinPraison/PraisonAI)
 65. [agent-squad](https://github.com/awslabs/agent-squad)
 66. [agentscope](https://github.com/modelscope/agentscope)
+67. [openai-agents-python](https://github.com/openai/openai-agents-python)
 
 ## Text to SQL
 
@@ -193,6 +197,8 @@
 - [rStar](https://github.com/zhentingqi/rStar/)
 - [ragapp](https://github.com/ragapp/ragapp)
 - [gpt-rag-agentic](https://github.com/Azure/gpt-rag-agentic)
+- [AgenticRag-Survey](https://github.com/asinghcsu/AgenticRAG-Survey)
+- [deep-searcher](https://github.com/zilliztech/deep-searcher)
 
 1. [VectorVerse](https://github.com/abhishek-ch/VectorVerse)
 2. [lancedb](https://github.com/lancedb/lancedb)
@@ -258,6 +264,12 @@
 62. [Reasoning Augmented Generation](https://github.com/superagent-ai/reag)
 63. [super-rag](https://github.com/superagent-ai/super-rag)
 64. [raglite](https://github.com/superlinear-ai/raglite)
+65. [HiRAG](https://github.com/hhy-huang/HiRAG)
+66. [tiny-graphrag](https://github.com/sdiehl/tiny-graphrag)
+67. [pathrag](https://github.com/embedded-robotics/path-rag)
+68. [aidevos](https://github.com/jmanhype/aidevos)
+69. [awesome-dspy](https://github.com/ganarajpr/awesome-dspy)
+70. [LeapRAG](https://github.com/MegrezAI/LeapRAG)
 
 ## Reranking, Cross Encoders, & Semantic Routing
 
