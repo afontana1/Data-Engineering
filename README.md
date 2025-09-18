@@ -27,6 +27,9 @@
 - [mCodingLLC](https://github.com/mCodingLLC)
 - [Building a Poor Mans Datalake from Scratch with DuckDB](https://dagster.io/blog/duckdb-data-lake)
 - [Revisiting the Poor Man’s Data Lake with MotherDuck](https://dagster.io/blog/poor-mans-datalake-motherduck)
+- [Building Data Lakehouse](https://github.com/ysfesr/Building-Data-LakeHouse)
+- [Building Lakehouse](https://github.com/harrydevforlife/building-lakehouse)
+- [Lakehouse Project](https://github.com/tranthe170/NYC-Taxi-pipeline)
 - [Database Transactions](https://bbengfort.github.io/2017/12/psycopg2-transactions/)
 
 1. [Design Patterns in the Real World](https://holub.com/patterns/)
@@ -95,6 +98,7 @@
 7. [Metadata](https://en.wikipedia.org/wiki/Category:Metadata)
 8. [Data Management](https://en.wikipedia.org/wiki/Category:Data_management)
 9. [Data Integration](https://en.wikipedia.org/wiki/Category:Data_integration)
+10. [aws-analytics-reference-architecture](https://github.com/aws-samples/aws-analytics-reference-architecture)
 
 </details>
 
@@ -202,6 +206,8 @@
 
 <details><summary><h2>ML Ops</h2></summary>
 
+- [Awesome MLOps](https://github.com/visenger/awesome-mlops)
+
 1. [ML Ops Cookbook](https://github.com/noahgift/Python-MLOps-Cookbook)
 2. [awesome-mlops](https://github.com/kelvins/awesome-mlops)
 3. [ML Ops Specialization](https://github.com/kennethleungty/MLOps-Specialization-Notes)
@@ -222,6 +228,14 @@
 18. [mlflow](https://github.com/mlflow/mlflow)
 19. [kestra](https://github.com/kestra-io/kestra)
 20. [kedro](https://github.com/kedro-org/kedro)
+21. [mlops sagemaker](https://github.com/aws-samples/mlops-amazon-sagemaker)
+22. [ML on AWS](https://github.com/PacktPublishing/Machine-Learning-Engineering-on-AWS)
+23. [MLOps with Data Scientists](https://github.com/manifoldailearning/mlops-with-aws-datascientists)
+24. [MLOps Workload Orchestrator](https://github.com/aws-solutions/mlops-workload-orchestrator)
+25. [AWS Enterprise MLOps Framework](https://github.com/aws-samples/aws-enterprise-mlops-framework)
+26. [mlops-zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp)
+27. [MLOps pipeline for Recommendation System](https://github.com/aws-samples/machine-learning-operations-pipeline-for-recommendation-model)
+28. [MLOps End to End example](https://github.com/aws-samples/mlops-e2e)
 
 </details>
 
