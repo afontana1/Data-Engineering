@@ -279,6 +279,38 @@
 4. [semantic-router](https://github.com/aurelio-labs/semantic-router)
 5. [Another Get-Rich-Quick Scheme Using LLMs, RAG, Semantic Routing & Prompts Driven Feedback](https://pub.towardsai.net/another-get-rich-quick-scheme-using-llms-rag-semantic-routing-prompts-driven-feedback-5b43e2b6661a)
 
+## Context Engineering
+
+1. [context-engineering-dspy](https://github.com/avbiswas/context-engineering-dspy)
+2. [awesome-context-engineering](https://github.com/yzfly/awesome-context-engineering)
+3. [awesome-context-engineering](https://github.com/Meirtz/Awesome-Context-Engineering)
+4. [langchain-context-engineering](https://github.com/langchain-ai/context_engineering)
+5. [cognee](https://github.com/topoteretes/cognee)
+6. [ApeRAG](https://github.com/apecloud/ApeRAG)
+7. [trustgraph](https://github.com/trustgraph-ai/trustgraph)
+8. [nemori](https://github.com/nemori-ai/nemori)
+9. [AI-Governor-Framework](https://github.com/Fr-e-d/AI-Governor-Framework)
+10. [contextual-engineering-guide](https://github.com/FareedKhan-dev/contextual-engineering-guide)
+11. [memoripilot](https://github.com/Deltaidiots/memoripilot)
+12. [mloda](https://github.com/mloda-ai/mloda)
+13. [Context-Engineering](https://github.com/davidkimai/Context-Engineering)
+
+## Complexity of Transformers
+
+1. [How to Estimate the Number of Parameters in Transformer models](https://towardsdatascience.com/how-to-estimate-the-number-of-parameters-in-transformer-models-ca0f57d8dff0/)
+2. [All the Transformer Math You Need to Know](https://jax-ml.github.io/scaling-book/transformers/)
+3. [flops profiler](https://www.deepspeed.ai/tutorials/flops-profiler/)
+4. [Transformer FLOPs](https://www.adamcasson.com/posts/transformer-flops)
+5. [Analysis of Transformer Model](https://insujang.github.io/2022-07-30/analysis-of-transformer-model/)
+6. [How to Calculate the Number of FLOPs in Transformer Based Models?](https://www.gaohongnan.com/playbook/training/how_to_calculate_flops_in_transformer_based_models.html)
+7. [Transformer Inference Estimations: Arithmetic Intensity, Throughput and Cost Optimization](https://www.yadavsaurabh.com/transformer-inference-arithmetic-intensity-cost-and-optimization/)
+8. [A Guide to Hand-Calculating FLOPs and MACs](https://medium.com/@pashashaik/a-guide-to-hand-calculating-flops-and-macs-fa5221ce5ccc)
+9. [Comprehensive Analysis of FLOP Calculations in Large Language Models](https://medium.com/my-aiml/comprehensive-analysis-of-flop-calculations-in-large-language-models-ae023647f66a)
+10. [calflops: a FLOPs and Params calculate tool for neural networks](https://github.com/MrYxJ/calculate-flops.pytorch)
+11. [flops-calculator.py](https://huggingface.co/spaces/holistic-ai/flops-calculator/tree/main)
+12. [Transformer Inference Arithmetic](https://kipp.ly/transformer-inference-arithmetic/)
+13. [The GPT-3 Architecture, on a Napkin](https://dugas.ch/artificial_curiosity/GPT_architecture.html)
+
 ## Fine Tuning
 
 - [awesome-LLMs-finetuning](https://github.com/pdaicode/awesome-LLMs-finetuning)
