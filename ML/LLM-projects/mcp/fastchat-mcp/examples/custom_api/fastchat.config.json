@@ -1,0 +1,6 @@
+{
+    "app_name": "Example fastchat-mcp-empty",
+    "mcp_servers": {},
+    "db_conection": {},
+    "auth-middleware": {}
+}

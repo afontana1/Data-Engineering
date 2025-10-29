@@ -27,6 +27,7 @@
 - [MCP Bridge](https://github.com/SecretiveShell/MCP-Bridge/tree/master)
 - [mcp-introduction](https://www.philschmid.de/mcp-introduction)
 - [fast-api mcp](https://uselessai.in/implementing-mcp-architecture-in-a-fastapi-application-f513989b65d9)
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
 
 1. [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 2. [FastMCP](https://github.com/jlowin/fastmcp)
@@ -38,6 +39,7 @@
 8. [llama-index-tools-mcp](https://github.com/run-llama/llama_index/tree/main/llama-index-integrations/tools/llama-index-tools-mcp)
 9. [mcp-openai](https://github.com/S1M0N38/mcp-openai)
 10. [supergateway](https://github.com/supercorp-ai/supergateway)
+11. [biomcp](https://github.com/genomoncology/biomcp)
 
 ### MCP Servers
 
@@ -294,6 +296,19 @@
 11. [memoripilot](https://github.com/Deltaidiots/memoripilot)
 12. [mloda](https://github.com/mloda-ai/mloda)
 13. [Context-Engineering](https://github.com/davidkimai/Context-Engineering)
+14. [Context Rot](https://github.com/chroma-core/context-rot)
+
+## LLM Evaluations
+
+1. [Evaluation Guidebook](https://github.com/huggingface/evaluation-guidebook)
+2. [Deep Eval](https://github.com/confident-ai/deepeval)
+3. [lm evaluation harness](https://github.com/EleutherAI/lm-evaluation-harness)
+4. [evals](https://github.com/openai/evals)
+5. [opik](https://github.com/comet-ml/opik)
+6. [helm](https://github.com/stanford-crfm/helm)
+7. [trulens](https://github.com/truera/trulens)
+8. [awesome-llm-evaluation](https://github.com/onejune2018/Awesome-LLM-Eval)
+9. [Awesome-LLMs-Evaluation-Papers](https://github.com/tjunlp-lab/Awesome-LLMs-Evaluation-Papers)
 
 ## Complexity of Transformers
 

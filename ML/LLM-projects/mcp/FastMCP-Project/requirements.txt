@@ -1,0 +1,3 @@
+fastmcp==2.10.2
+tavily-python==0.7.9
+openai==1.93.1

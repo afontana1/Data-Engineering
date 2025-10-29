@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-simple-arxiv"
+version = "0.3.0"
+description = "An MCP server that provides access to arXiv papers through their API."
+readme = "README.md"
+authors = [
+    {name = "Andy Brandt", email = "andy@codesprinters.com"}
+]
+requires-python = ">=3.10"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastmcp",
+    "feedparser",  # for parsing arXiv API responses
+    "httpx",      # for making HTTP requests with async support
+    "beautifulsoup4",  # for parsing arXiv taxonomy page
+]
+
+[project.urls]
+Homepage = "https://github.com/andybrandt/mcp-simple-arxiv"
+
+[project.scripts]
+mcp-simple-arxiv = "mcp_simple_arxiv:main"

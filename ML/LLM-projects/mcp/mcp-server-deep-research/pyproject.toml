@@ -1,0 +1,20 @@
+[project]
+name = "mcp-server-deep-research"
+version = "0.1.1"
+description = "A MCP server for deep research and report generation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[[project.authors]]
+name = "Xing Xing"
+email = "xing@readingplus.ai"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mcp-server-deep-research = "mcp_server_deep_research:main"

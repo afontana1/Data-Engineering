@@ -1,0 +1,32 @@
+# Environment
+.env
+/fastchat.config.json
+.fastauth.config.json
+
+# Cache
+*.cpython-313.pyc
+
+
+#Publish files
+dist/*
+*.egg-info
+
+#Text Editor
+.vscode/*
+
+#Chats
+chats
+
+#token storage
+data
+
+#Development Files
+src/api_dev.py
+src/terminal_dev.py
+xbuild.md
+
+#Testing files 
+examples/basic_cleanup_test.py 
+examples/simple_cleanup_test.py 
+examples/cleanup_demo.py 
+examples/complete_cleanup_test.py
