@@ -368,6 +368,8 @@
 71. [DgrmJS](https://github.com/AlexeyBoiko/DgrmJS)
 72. [flowy](https://github.com/alyssaxuu/flowy)
 73. [Drawflow](https://github.com/jerosoler/Drawflow)
+74. [react-diagrams](https://github.com/projectstorm/react-diagrams)
+75. [react-flow-chart](https://github.com/MrBlenny/react-flow-chart)
 
 </details>
 
