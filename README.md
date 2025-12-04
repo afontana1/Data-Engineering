@@ -19,7 +19,10 @@
 - [build-on-aws](https://github.com/build-on-aws)
 - [Google Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
 - [Microservices.io](https://microservices.io/)
-- [martin fowler](https://martinfowler.com/) and [Gregor Hohpe](https://architectelevator.com/)
+- [martin fowler](https://martinfowler.com/architecture/) and [Gregor Hohpe](https://architectelevator.com/)
+- [Architectural Metapatterns](https://metapatterns.io/)
+- [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html)
+- [Design Patterns Catalog](https://hillside.net/patterns/patterns-catalog)
 
 #### Design Tutorials
 
