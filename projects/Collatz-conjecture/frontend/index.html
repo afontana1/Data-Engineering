@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collatz Conjecture</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Collatz Conjecture</h1>
+      <p>Compute sequences and scan ranges via the FastAPI backend.</p>
+    </header>
+
+    <section class="card">
+      <h2>Backend Settings</h2>
+      <label>
+        API Base URL
+        <input id="apiBase" type="text" value="http://localhost:8000" />
+      </label>
+      <p class="hint">Start your API with <code>collatz --reload --port 8000</code>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Sequence</h2>
+      <div class="form-row">
+        <label>
+          Start
+          <input id="seqStart" type="number" min="1" value="7" />
+        </label>
+        <label>
+          Max Steps (optional)
+          <input id="seqMax" type="number" min="1" />
+        </label>
+        <button id="runSequence">Run</button>
+      </div>
+      <pre id="seqResult" class="output">Results will appear here.</pre>
+      <div id="seqChart" class="chart"></div>
+    </section>
+
+    <section class="card">
+      <h2>Scan Range</h2>
+      <div class="form-row">
+        <label>
+          Start
+          <input id="scanStart" type="number" min="1" value="1" />
+        </label>
+        <label>
+          Count
+          <input id="scanCount" type="number" min="1" value="5" />
+        </label>
+        <label>
+          Max Steps (optional)
+          <input id="scanMax" type="number" min="1" />
+        </label>
+        <button id="runScan">Scan</button>
+      </div>
+      <pre id="scanResult" class="output">Results will appear here.</pre>
+      <div id="scanChart" class="chart"></div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
