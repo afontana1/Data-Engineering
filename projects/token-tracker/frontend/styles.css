@@ -1,0 +1,129 @@
+:root {
+  color-scheme: light;
+  --bg: #0e1116;
+  --card: #161b22;
+  --text: #e6edf3;
+  --muted: #9da9bb;
+  --accent: #3fb950;
+  --border: #273040;
+  --input-bg: #0d1117;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at 10% 20%, #172033, #0d111a 35%), var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.app {
+  width: min(960px, 100%);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+header h1 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+}
+
+header p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.chat-history {
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  height: 60vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.bubble.user {
+  align-self: flex-end;
+  background: #2d3a4f;
+  border: 1px solid #3c4b63;
+}
+
+.bubble.bot {
+  align-self: flex-start;
+  background: #18361f;
+  border: 1px solid #24512c;
+}
+
+.meta {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.chat-form button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: #0f1b0f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.12s ease;
+}
+
+.chat-form button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 640px) {
+  .bubble {
+    max-width: 100%;
+  }
+  .app {
+    padding: 18px;
+  }
+  .chat-history {
+    height: 55vh;
+  }
+}

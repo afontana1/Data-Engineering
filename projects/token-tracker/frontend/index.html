@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Token Tracker Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Token Tracker Chat</h1>
+      <p>Talk to the backend at <span id="api-base-label"></span></p>
+    </header>
+
+    <main>
+      <div id="chat-history" class="chat-history" aria-live="polite"></div>
+
+      <form id="chat-form" class="chat-form">
+        <input id="question" name="question" type="text" placeholder="Ask me something..." autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
