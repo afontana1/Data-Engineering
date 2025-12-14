@@ -1,6 +1,0 @@
-version: "3.3"
-services:
-  python-streamlit-docker-sample:
-    build: .
-    ports:
-      - 8501:8501

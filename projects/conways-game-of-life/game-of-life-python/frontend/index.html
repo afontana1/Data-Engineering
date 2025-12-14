@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Life Stream</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="panel">
+        <h1>Game of Life</h1>
+        <div>
+          <label>Backend WS URL</label>
+          <input id="wsUrl" value="ws://localhost:8000/ws/simulate" />
+
+          <label>Pattern</label>
+          <select id="pattern">
+            <option>Random</option>
+            <option>Blinker</option>
+            <option>Glider</option>
+            <option>Toad</option>
+            <option>Beacon</option>
+            <option>Block</option>
+          </select>
+
+          <label>Board Width</label>
+          <input id="width" type="number" value="60" min="5" />
+
+          <label>Board Height</label>
+          <input id="height" type="number" value="40" min="5" />
+
+          <label>Generations (blank = endless)</label>
+          <input id="generations" type="number" min="1" placeholder="e.g. 500" />
+
+          <label>Delay (ms)</label>
+          <input id="delay" type="number" value="120" min="0" />
+
+          <label>Random Fill (0-1)</label>
+          <input id="randomFill" type="number" step="0.05" min="0" max="1" value="0.22" />
+
+          <label>
+            <input id="wrap" type="checkbox" />
+            Wrap edges
+          </label>
+        </div>
+        <div class="actions">
+          <button id="startBtn">Start</button>
+          <button id="stopBtn" class="stop" disabled>Stop</button>
+        </div>
+        <div class="status">
+          <span id="status">Disconnected</span>
+          <span id="generation">Generation: -</span>
+        </div>
+      </div>
+      <div class="panel">
+        <canvas id="board" width="1200" height="800"></canvas>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

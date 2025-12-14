@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7fb;
+  color: #1d2533;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.8rem;
+}
+
+h2 {
+  margin: 0 0 0.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 0.25rem;
+  min-width: 160px;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #d2d7e0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.65rem 1rem;
+  background: #2f6fed;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #2559c0;
+}
+
+pre.output {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 0.75rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  min-height: 80px;
+}
+
+.chart {
+  width: 100%;
+  min-height: 320px;
+  margin-top: 0.75rem;
+}
+
+.hint {
+  color: #51607a;
+  margin: 0.5rem 0 0;
+}
+
+code {
+  background: #eef2ff;
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+}

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mini-dataframe"
+version = "0.1.0"
+description = "Lightweight MiniDataFrame with joins, querying, and basic stats."
+requires-python = ">=3.8"
+authors = [{ name = "mini-dataframe developers" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.hatch.build.targets.wheel]
+# Point hatchling at the src-based package path
+packages = ["src/mini_dataframe"]
