@@ -1,0 +1,12 @@
+{
+  "top_event_id": "TOP",
+  "nodes": [
+    { "kind": "basic_event", "id": "PUMP_FAIL", "name": "Pump fails", "p": 0.01 },
+    { "kind": "basic_event", "id": "VALVE_STUCK", "name": "Valve stuck", "p": 0.02 },
+    { "kind": "house_event", "id": "MAINT_MODE", "name": "Maintenance mode", "value": false },
+
+    { "kind": "gate", "id": "LOSS_FLOW", "name": "Loss of flow", "gate_type": "and", "inputs": ["PUMP_FAIL", "VALVE_STUCK"] },
+
+    { "kind": "gate", "id": "TOP", "name": "Top event", "gate_type": "inhibit", "inputs": ["LOSS_FLOW", "MAINT_MODE"] }
+  ]
+}
