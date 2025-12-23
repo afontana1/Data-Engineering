@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #050816;
+  color: #e5e7eb;
+}
+
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  margin: 0 0 0.4rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #1f2933;
+  padding-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.nav-tab {
+  border: 1px solid #374151;
+  background: #111827;
+  color: #e5e7eb;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.nav-tab--active {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.nav-tab:hover {
+  transform: translateY(-1px);
+  border-color: #4b5563;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  background: radial-gradient(circle at top left, #111827, #020617);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.6);
+}
+
+.section-eyebrow {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  color: #60a5fa;
+  margin-bottom: 0.25rem;
+}
+
+.section-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.3rem;
+}
+
+.section-body p {
+  margin: 0.4rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.section-body ul,
+.section-body ol {
+  margin: 0.4rem 0 0.4rem 1.1rem;
+  padding-left: 0.9rem;
+}
+
+.section-body li {
+  margin: 0.2rem 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+@media (min-width: 800px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.concept-card {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  border-radius: 0.85rem;
+  padding: 0.8rem 0.9rem;
+}
+
+.concept-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.concept-card p,
+.concept-card li {
+  font-size: 0.9rem;
+}
+
+.code-block {
+  margin-top: 1rem;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+  background: #020617;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  background: linear-gradient(to right, #0f172a, #111827);
+  border-bottom: 1px solid #111827;
+}
+
+.code-header > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.code-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #93c5fd;
+}
+
+.code-filename {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.run-button {
+  border: 1px solid #2563eb;
+  background: #1d4ed8;
+  color: #e5e7eb;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.run-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.run-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+.code-pre {
+  margin: 0;
+  padding: 0.8rem 0.9rem;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.code-pre code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+.code-output {
+  border-top: 1px solid #0b1224;
+  background: #0a1224;
+  padding: 0.8rem 0.9rem;
+}
+
+.code-output__label {
+  font-size: 0.75rem;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.code-output__body {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #e5e7eb;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+.code-output__body--error {
+  color: #fca5a5;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
