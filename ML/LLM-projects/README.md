@@ -1,11 +1,14 @@
 # LLM Resources for Building Tools
 
+- [500-AI-Agents-Projects](https://github.com/ashishpatel26/500-AI-Agents-Projects)
+
 ## AI Based Data Wrangling Tools
 
 1. [data-juicer](https://github.com/modelscope/data-juicer)
 2. [extractous](https://github.com/yobix-ai/extractous)
 3. [data-prep-kit](https://github.com/IBM/data-prep-kit)
 4. [unstructured](https://github.com/Unstructured-IO/unstructured)
+5. [chonkie](https://github.com/chonkie-inc/chonkie)
 
 ## Prompt Engineering
 
@@ -75,6 +78,8 @@
 - [mem0](https://github.com/mem0ai/mem0)
 - [memorizz](https://github.com/RichmondAlake/memorizz)
 - [A2A](https://github.com/a2aproject/A2A)
+- [adk-samples](https://github.com/google/adk-samples)
+- [awesome-data-agents](https://github.com/HKUSTDial/awesome-data-agents)
 
 1. [crewAI](https://github.com/crewAIInc/crewAI)
 2. [autogen](https://github.com/microsoft/autogen)
@@ -272,6 +277,12 @@
 68. [aidevos](https://github.com/jmanhype/aidevos)
 69. [awesome-dspy](https://github.com/ganarajpr/awesome-dspy)
 70. [LeapRAG](https://github.com/MegrezAI/LeapRAG)
+71. [nano-graphrag](https://github.com/gusye1234/nano-graphrag)
+72. [graphrag-toolkit](https://github.com/awslabs/graphrag-toolkit)
+73. [neo4j-graphrag-python](https://github.com/neo4j/neo4j-graphrag-python)
+74. [GraphRAG-Breakdown](https://github.com/ALucek/GraphRAG-Breakdown)
+75. [GraphRAG](https://github.com/JayLZhou/GraphRAG)
+76. [graphiti](https://github.com/getzep/graphiti)
 
 ## Reranking, Cross Encoders, & Semantic Routing
 
@@ -393,6 +404,7 @@
 35. [benchllm](https://github.com/v7labs/benchllm)
 36. [chainlit](https://github.com/Chainlit/chainlit)
 37. [vanna](https://github.com/vanna-ai/vanna)
+38. [data-formulator](https://github.com/microsoft/data-formulator)
 
 ## Practical Guides
 
