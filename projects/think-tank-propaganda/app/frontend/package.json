@@ -1,0 +1,24 @@
+{
+  "name": "atlas-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@highcharts/map-collection": "^2.1.0",
+    "highcharts": "^11.4.0",
+    "highcharts-react-official": "^3.2.1",
+    "papaparse": "^5.4.1",
+    "proj4": "^2.11.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
+  }
+}
