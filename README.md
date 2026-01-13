@@ -158,6 +158,8 @@
 9. [Programming_paradigms](https://en.wikipedia.org/wiki/Category:Programming_paradigms)
     * [Object Oriented](https://en.wikipedia.org/wiki/Category:Object-oriented_programming)
     * [Aspect Oriented Programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming)
+    * [Agent Oriented Programming](https://en.wikipedia.org/wiki/Agent-oriented_programming)
+    * [Actor Model](https://en.wikipedia.org/wiki/Category:Actor_model_(computer_science))
 10. [Programming_language_concepts](https://en.wikipedia.org/wiki/Category:Programming_language_concepts)
 11. [Programming_principles](https://en.wikipedia.org/wiki/Category:Programming_principles)
     * [Loose_coupling](https://en.wikipedia.org/wiki/Loose_coupling)
