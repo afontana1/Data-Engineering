@@ -23,6 +23,7 @@
 - [Architectural Metapatterns](https://metapatterns.io/)
 - [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html)
 - [Design Patterns Catalog](https://hillside.net/patterns/patterns-catalog)
+- [ISE Engineering Fundamentals Playbook](https://microsoft.github.io/code-with-engineering-playbook/)
 
 #### Design Tutorials
 
