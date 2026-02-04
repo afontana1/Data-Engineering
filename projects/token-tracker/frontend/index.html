@@ -14,12 +14,31 @@
     </header>
 
     <main>
-      <div id="chat-history" class="chat-history" aria-live="polite"></div>
+      <div class="tabs" role="tablist" aria-label="Views">
+        <button class="tab active" role="tab" aria-selected="true" data-tab="chat">Chat</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="telemetry">Telemetry</button>
+      </div>
 
-      <form id="chat-form" class="chat-form">
-        <input id="question" name="question" type="text" placeholder="Ask me something..." autocomplete="off" required />
-        <button type="submit">Send</button>
-      </form>
+      <section id="tab-chat" class="tab-panel active" role="tabpanel">
+        <div id="chat-history" class="chat-history" aria-live="polite"></div>
+
+        <form id="chat-form" class="chat-form">
+          <input id="question" name="question" type="text" placeholder="Ask me something..." autocomplete="off" required />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <section id="tab-telemetry" class="tab-panel" role="tabpanel">
+        <div class="query-panel">
+          <label for="sql-query">SQL query (read-only)</label>
+          <textarea id="sql-query" rows="6" spellcheck="false">SELECT * FROM usage_events ORDER BY id DESC LIMIT 50</textarea>
+          <div class="query-actions">
+            <button id="run-query" type="button">Run Query</button>
+            <span id="query-status" class="muted"></span>
+          </div>
+        </div>
+        <div id="query-results" class="query-results" aria-live="polite"></div>
+      </section>
     </main>
   </div>
 

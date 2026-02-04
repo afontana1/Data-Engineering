@@ -27,6 +27,13 @@ FastAPI backend with LiteLLM telemetry plus a lightweight HTML/CSS/JS chat front
      -d '{"question": "hello"}'
    ```
 
+Telemetry writes to three sinks on startup:
+- stdout
+- sqlite (`usage_events.db`)
+- DynamoDB via boto3 client (`TOKEN_TRACKER_DYNAMODB_TABLE`, default `usage_events`)
+
+AWS credentials/region are read from environment variables (including `.env`) and used to call `put_item` on your real table.
+
 ## Frontend
 Static assets live in `frontend/` (`index.html`, `styles.css`, `script.js`). The JS expects the API at `http://localhost:8000` by default.
 
