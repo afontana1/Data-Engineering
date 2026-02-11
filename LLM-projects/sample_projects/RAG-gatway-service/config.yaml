@@ -1,0 +1,21 @@
+topics:
+  password_reset:
+    route: ${AGENT_PASSWORD_RESET_URL}/query
+    descriptions:
+      - "How to reset password"
+      - "Forgot password"
+      - "Change password"
+      - "Password recovery"
+      - "Reset account access"
+  billing:
+    route: ${AGENT_BILLING_URL}/query
+    descriptions:
+      - "Billing questions"
+      - "Payment issues"
+      - "Invoice problems"
+      - "Subscription management"
+      - "Refund requests"
+      - "Payment methods"
+      - "Billing history"
+
+default_agent: ${AGENT_FALLBACK_URL}/query 

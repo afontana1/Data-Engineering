@@ -1,0 +1,23 @@
+# Environment variables
+.env
+
+# Ignore other files
+.idea/
+
+
+
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
+
+
+
+# Ignore embedding model files
+app/src/embedder/model_checkpoints/
+
+
+
+#Ignore docs files
+app/data/preprocessed/
+
+

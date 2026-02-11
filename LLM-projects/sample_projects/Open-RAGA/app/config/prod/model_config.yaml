@@ -1,0 +1,25 @@
+chat_llm_args:
+  type: nvidia
+  model_name: google/gemma-2-9b-it
+  temperature: 0.3
+  max_tokens: 4096
+  
+   
+db_args:
+  type: faiss
+  chunk_size: 1500
+  chunk_overlap: 350
+  output_path: ""
+
+
+embedder_args:
+  type: huggingface
+  model_name: sentence-transformers/all-mpnet-base-v2
+  model_kwargs:
+    device: cpu
+    local_files_only: true
+  encode_kwargs:
+    normalize_embeddings: true
+  
+
+

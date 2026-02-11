@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 80%;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      padding: 0 10px;
+    }
+
+    .chat-container {
+      flex: 1;
+      padding: 10px 0;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .message-block {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 10px;
+    }
+
+    .message-block.user {
+      justify-content: flex-end;
+    }
+
+    .message-block.bot {
+      justify-content: flex-start;
+    }
+
+    .message {
+      max-width: 80%;
+      padding: 10px 14px;
+      border-radius: 14px;
+      word-wrap: break-word;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .message.user {
+      background-color: #0084ff;
+      color: white;
+      border-bottom-right-radius: 0;
+    }
+
+    .message.bot {
+      background-color: #e4e6eb;
+      color: #000;
+      border-bottom-left-radius: 0;
+    }
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin: 0 8px;
+    }
+
+    .input-area {
+      display: flex;
+      padding: 10px;
+    }
+
+    .input-area input {
+      flex: 1;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .input-area button {
+      margin-left: 10px;
+      padding: 12px 20px;
+      border: none;
+      background-color: #0084ff;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .input-area button:hover {
+      background-color: #006fd6;
+    }
+
+    .typing-indicator {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .typing-indicator::after {
+      content: '';
+      display: inline-block;
+      animation: dots 1.2s infinite;
+    }
+
+    @keyframes dots {
+      0% { content: '.'; }
+      33% { content: '..'; }
+      66% { content: '...'; }
+      100% { content: ''; }
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 0 8px;
+      }
+
+      .message {
+        font-size: 14px;
+      }
+
+      .input-area input {
+        padding: 10px;
+      }
+
+      .input-area button {
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="chat-container" id="chat"></div>
+
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chat = document.getElementById("chat");
+    const userInput = document.getElementById("userInput");
+
+    function appendMessage(text, sender, isTyping = false) {
+      const messageBlock = document.createElement("div");
+      messageBlock.className = `message-block ${sender}`;
+
+      const avatar = document.createElement("img");
+      avatar.className = "avatar";
+      avatar.src = sender === "user" ? "./assets/icon/user.png" : "./assets/icon/ai.png";
+
+      const message = document.createElement("div");
+      message.className = `message ${sender}`;
+      message.innerText = text;
+
+      if (isTyping) {
+        message.innerHTML = '<span class="typing-indicator"></span>';
+        message.dataset.typing = "true";
+      }
+
+      if (sender === "user") {
+        messageBlock.appendChild(message);
+        messageBlock.appendChild(avatar);
+      } else {
+        messageBlock.appendChild(avatar);
+        messageBlock.appendChild(message);
+      }
+
+      chat.appendChild(messageBlock);
+      chat.scrollTop = chat.scrollHeight;
+
+      return message;
+    }
+
+    async function sendMessage() {
+      const text = userInput.value.trim();
+      if (!text) return;
+
+      appendMessage(text, "user");
+      userInput.value = "";
+
+      // Show typing indicator
+      const loader = appendMessage("", "bot", true);
+
+      try {
+        const response = await fetch("http://localhost:8000/query", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: text }),
+        });
+
+        const result = await response.json();
+        const reply = result.reply || result.status || "No response.";
+
+        // Replace loading with real message
+        loader.classList.remove("typing-indicator");
+        loader.innerText = reply;
+      } catch (err) {
+        console.error(err);
+        loader.innerText = "Error talking to the server.";
+      }
+    }
+
+    userInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") sendMessage();
+    });
+  </script>
+</body>
+</html>
