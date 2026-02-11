@@ -1,0 +1,8 @@
+langchain==0.0.208
+deeplake
+openai
+tiktoken
+deeplake
+python-dotenv
+streamlit
+google-api-python-client

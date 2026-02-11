@@ -1,0 +1,84 @@
+{
+    "app_name": "fastchat-mcp",
+    "mcp_servers": {
+        "example_public_server": {
+            "protocol": "httpstream",
+            "httpstream-url": "http://127.0.0.1:8000/public-example-server/mcp",
+            "name": "example-public-server",
+            "description": "Example public server."
+        },
+        "example_private_mcp": {
+            "protocol": "httpstream",
+            "httpstream-url": "http://127.0.0.1:8000/private-example-server/mcp",
+            "name": "example-private-server",
+            "description": "Example private server with oauth required.",
+            "auth": {
+                "required": true,
+                "post_body": {
+                    "username": "user",
+                    "password": "password"
+                }
+            }
+        },
+        "github": {
+            "protocol": "httpstream",
+            "httpstream-url": "https://api.githubcopilot.com/mcp",
+            "name": "github",
+            "description": "This server specializes in github operations.",
+            "auth": {
+                "required": false,
+                "post_body": null
+            },
+            "headers": {
+                "Authorization": "Bearer {your-github-access-token}"
+            }
+        },
+        "my-stdio-server": {
+            "protocol": "stdio",
+            "name": "my-stdio-server",
+            "config": {
+                "command": "npx",
+                "args": [
+                    "-y",
+                    "@modelcontextprotocol/example-stdio-server"
+                ]
+            }
+        }
+    },
+    "db_conection": {
+        "root_path": "http://127.0.0.1:6543/fastchatdb",
+        "headers": {
+            "example_autorization_token": "<your_token_here>",
+            "other_header": "value",
+            "...": "..."
+        },
+        "base_body": {
+            "company_id": "<your_company_id>",
+            "example_body_param": "<your_value_here>",
+            "other_body_param": "value",
+            "...": "..."
+        },
+        "base_query": {
+            "company_id": "<your_company_id>",
+            "example_query_param": "<your_value_here>",
+            "other_query_param": "value",
+            "...": "..."
+        },
+        "endpoints": {
+            "save_message": {
+                "path": "/message/save"
+            },
+            "load_history": {
+                "path": "/history/load"
+            }
+        }
+    },
+    "auth_middleware": {
+        "database_api_path": "http://127.0.0.1:6789/mydb/data",
+        "headers": {
+            "header_key": "header_value",
+            "other_header": "header_value",
+            "...": "..."
+        }
+    }
+}

@@ -1,0 +1,6 @@
+crewai
+streamlit 
+openai
+unstructured
+pyowm
+tools

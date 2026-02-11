@@ -1,0 +1,54 @@
+name: mcp-wolframalpha
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+      
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v3
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: 📦 Install dependencies
+      run: |
+        set -e
+        python -m pip install --upgrade pip
+        pip install uv
+        uv sync
+
+    - name: Interact with Google Generative AI
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINIAPI }}
+      run: |
+        set -e
+        source .venv/bin/activate
+        OUTPUT=$(echo -e "Hey\nexit" | python main.py --model)
+        echo "Model output: $OUTPUT"
+    
+        if [ -z "$OUTPUT" ]; then
+          echo "❌ No output from model"
+          exit 1
+        fi
+
+    - name: Test WolframAlpha Client
+      env:
+        WOLFRAM_API_KEY: ${{ secrets.WOLFRAMAPI }}
+      run: |
+        set -e
+        source .venv/bin/activate
+        OUTPUT=$(python src/api/wolfram_client.py)
+        echo "Model output: $OUTPUT"
+    
+        if [ -z "$OUTPUT" ]; then
+          echo "❌ No output from WolframAlpha Client"
+          exit 1
+        fi

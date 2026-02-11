@@ -1,0 +1,23 @@
+{
+  "name": "coding",
+  "score_threshold": 0.75,
+  "utterances": [
+    "Can you help me code a function in Python that calculates the factorial of a number?",
+    "I'm trying to write a Python script to automate security alerts. Can you guide me?",
+    "What's the best way to check if a number is prime using Python code?",
+    "How do I use loops in JavaScript?",
+    "Do you have any tips for coding a responsive website using HTML and CSS?",
+    "What's the best practice for handling exceptions in Python?",
+    "Can you guide me on how to implement a sorting algorithm in Java?",
+    "I'm learning C++. Could you explain how pointers are used?",
+    "How can I use Python to extract data from a website?",
+    "I need help writing SQL queries, can you assist?",
+    "How can I use JavaScript to change the content of a HTML element?",
+    "What's the best way to implement multi-threading in Java?"
+  ],
+  "responses": [
+    "I'm afraid I can't assist with that. My expertise is in vacation recommendations, not coding inquiries. Feel free to ask anything about vacations though!",
+    "Oops! Looks like you're asking about coding. I'm the Vacation Recommendations ChatBot and my speciality lies in the domain of vacations. Try me with any query related to that and I'll do my best to assist!",
+    "My apologies, but your query seems to be about coding. As a Vacation Recommendations ChatBot, my skills are geared towards providing assistance on finding the best tips to ypur vacation. Please do ask me any question on this topic and I'll be glad to help!"
+  ]
+}

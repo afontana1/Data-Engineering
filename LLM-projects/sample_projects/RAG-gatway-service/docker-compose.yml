@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  gateway:
+    build: .
+    ports:
+      - "${GATEWAY_PORT:-8000}:8000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app
+      - GATEWAY_PORT=${GATEWAY_PORT:-8000}
+      - GATEWAY_HOST=${GATEWAY_HOST:-0.0.0.0}
+      - GATEWAY_WORKERS=${GATEWAY_WORKERS:-4}
+      - GATEWAY_RELOAD=${GATEWAY_RELOAD:-true}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - REQUEST_TIMEOUT=${REQUEST_TIMEOUT:-30}
+      - AGENT_TIMEOUT=${AGENT_TIMEOUT:-25}
+      # Local development URLs
+      - AGENT_PASSWORD_RESET_URL=http://agent-password-reset:8000
+      - AGENT_BILLING_URL=http://agent-billing:8000
+      - AGENT_FALLBACK_URL=http://agent-fallback:8000
+    depends_on:
+      - agent-password-reset
+      - agent-billing
+      - agent-fallback
+
+  agent-password-reset:
+    build: ./mock_agents
+    ports:
+      - "${AGENT_PASSWORD_RESET_PORT:-8001}:8000"
+    environment:
+      - AGENT_TYPE=password_reset
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+
+  agent-billing:
+    build: ./mock_agents
+    ports:
+      - "${AGENT_BILLING_PORT:-8002}:8000"
+    environment:
+      - AGENT_TYPE=billing
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+
+  agent-fallback:
+    build: ./mock_agents
+    ports:
+      - "${AGENT_FALLBACK_PORT:-8003}:8000"
+    environment:
+      - AGENT_TYPE=fallback
+      - LOG_LEVEL=${LOG_LEVEL:-INFO} 

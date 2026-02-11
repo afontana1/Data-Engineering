@@ -1,0 +1,15 @@
+__pycache__
+prep
+.env
+.env.local
+chroma_db
+test.py
+data
+creds
+credentials
+credentials.json
+token.json
+node_modules
+venv
+venv2
+*.db

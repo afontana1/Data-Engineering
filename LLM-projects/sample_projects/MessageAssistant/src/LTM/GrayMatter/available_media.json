@@ -1,0 +1,51 @@
+{
+    "Technology": [
+        "TechCrunch",
+        "Wired",
+        "The Verge",
+        "Ars Technica",
+        "CNET"
+    ],
+    "Finance": [
+        "Bloomberg",
+        "Financial Times",
+        "The Wall Street Journal",
+        "CNBC",
+        "Reuters Finance"
+    ],
+    "Healthcare": [
+        "Modern Healthcare",
+        "Health Affairs",
+        "Medical News Today",
+        "The Lancet",
+        "BMJ (British Medical Journal)"
+    ],
+    "Entertainment": [
+        "Variety",
+        "The Hollywood Reporter",
+        "Rolling Stone",
+        "Billboard",
+        "Entertainment Weekly"
+    ],
+    "Sports": [
+        "ESPN",
+        "Sports Illustrated",
+        "Bleacher Report",
+        "The Athletic",
+        "Sky Sports"
+    ],
+    "Fashion": [
+        "Vogue",
+        "Elle",
+        "Harper's Bazaar",
+        "GQ",
+        "W Magazine"
+    ],
+    "Travel": [
+        "Conde Nast Traveler",
+        "Travel + Leisure",
+        "Lonely Planet",
+        "National Geographic Traveler",
+        "TripAdvisor"
+    ]
+}

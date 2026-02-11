@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Your CSS styles remain unchanged */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="chat-container" id="chat"></div>
+
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chat = document.getElementById("chat");
+    const userInput = document.getElementById("userInput");
+
+    function appendMessage(text, sender, isTyping = false) {
+      const messageBlock = document.createElement("div");
+      messageBlock.className = `message-block ${sender}`;
+
+      const avatar = document.createElement("img");
+      avatar.className = "avatar";
+      avatar.src = sender === "user" ? "./assets/icon/user.png" : "./assets/icon/ai.png";
+
+      const message = document.createElement("div");
+      message.className = `message ${sender}`;
+      message.innerText = text;
+
+      if (isTyping) {
+        message.innerHTML = '<span class="typing-indicator"></span>';
+        message.dataset.typing = "true";
+      }
+
+      if (sender === "user") {
+        messageBlock.appendChild(message);
+        messageBlock.appendChild(avatar);
+      } else {
+        messageBlock.appendChild(avatar);
+        messageBlock.appendChild(message);
+      }
+
+      chat.appendChild(messageBlock);
+      chat.scrollTop = chat.scrollHeight;
+
+      return message;
+    }
+
+    async function sendMessage() {
+      const text = userInput.value.trim();
+      if (!text) return;
+
+      appendMessage(text, "user");
+      userInput.value = "";
+
+      // Show typing indicator
+      const loader = appendMessage("", "bot", true);
+
+      const send_data = JSON.stringify({
+        query: "what is my name",
+        last_3_turn: [
+          { role: "user", content: "Hello, my name is Akash" },
+          { role: "assistant", content: "Hi! How can I help you today?" }
+        ]
+      });
+
+      try {
+        const response = await fetch("http://localhost:8000/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: send_data,
+        });
+
+        const result = await response.json();
+        const reply = result.response || result.status || "No response.";
+        console.log(result.response);
+
+        loader.classList.remove("typing-indicator");
+        loader.innerText = reply;
+
+      } catch (err) {
+        console.error(err);
+        loader.innerText = "Error talking to the server.";
+      }
+    }
+  </script>
+</body>
+</html>

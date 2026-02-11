@@ -1,0 +1,36 @@
+# PyTorch CPU version
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Docling and dependencies
+docling
+layoutparser>=0.3.4
+
+# LangChain ecosystem
+langchain==0.3.10
+langchain-openai==0.2.11
+langchain-anthropic==0.3.0
+langchain-community==0.3.10
+langchain-core==0.3.22
+langchain-qdrant==0.2.0
+langgraph==0.2.56
+langsmith>=0.1.8
+tavily-python
+
+# Vector store
+qdrant-client>=1.12.1 
+
+# Core dependencies
+streamlit>=1.40.2
+python-dotenv>=1.0.0
+pypdf>=4.0.0
+python-docx>=1.0.0
+python-pptx>=0.6.21
+Pillow>=10.0.0
+beautifulsoup4>=4.12.0
+opencv-python>=4.9.0
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+pytest-cov>=4.1.0
+unstructured>=0.11.0
+tiktoken>=0.5.0
+

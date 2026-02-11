@@ -1,0 +1,7 @@
+streamlit==1.38.0
+youtube-transcript-api==0.6.2
+pypdf2==3.0.1
+tiktoken==0.7.0
+openai==1.42.0
+scikit-learn==1.5.1
+numpy==2.0.2

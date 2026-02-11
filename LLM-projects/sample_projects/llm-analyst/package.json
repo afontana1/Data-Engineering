@@ -1,0 +1,33 @@
+{
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "watch": "nodemon --watch ./chains -e ts --exec \"relevance deploy\"",
+        "upload": "curl -X POST -H 'Content-Type: application/json' http://localhost:3000/api/upload"
+    },
+    "devDependencies": {
+        "@types/node": "^18",
+        "nuxt": "^3.5.0",
+        "prisma": "^4.14.0"
+    },
+    "dependencies": {
+        "@faker-js/faker": "^8.0.1",
+        "@formkit/auto-animate": "^1.0.0-beta.6",
+        "@nuxtjs/tailwindcss": "^6.7.0",
+        "@planetscale/database": "^1.7.0",
+        "@prisma/client": "^4.14.0",
+        "@relevanceai/chain": "^0.0.14",
+        "chart.js": "^4.3.0",
+        "dotenv": "^16.0.3",
+        "sass": "^1.62.1",
+        "sass-loader": "^13.2.2",
+        "uuid": "^9.0.0",
+        "vue3-lottie": "^2.7.0"
+    }
+}

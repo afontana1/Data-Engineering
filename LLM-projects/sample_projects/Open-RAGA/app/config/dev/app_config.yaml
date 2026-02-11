@@ -1,0 +1,91 @@
+# === Vector Store Settings ===
+vector_store:
+  type: "faiss"           
+  persist_path: "./data/vector_db/knowlege_base/"
+  index_name: "knowledge_base"
+  top_k: 1
+ 
+
+# ===== docs path ==========
+
+docs_path:
+  preprocessed: "./data/preprocessed/"
+  chat_history: "./data/raw/chat_history"
+
+  
+
+# === Retrieval Settings ===
+retriever:
+  chunk_size: 1200
+  chunk_overlap: 300
+  similarity_metric: "cosine"  
+  
+
+
+# === UI Settings (if you have a front end) ===
+ui:
+  enable_frontend: true
+  frontend_url: "http://localhost:3000"
+
+  
+
+
+# === General App Settings ===
+app_name: "Alankar-RAG Assistant"
+host: "0.0.0.0"
+port: 8000
+debug: true
+environment: "dev"  
+
+
+
+
+# ===== prompt functions list ===============
+
+functions:
+  - place_order
+  - cancel_order
+  - modify_order
+  - track_order
+  - get_samples
+  - get_complaints_status
+  - write_complaints
+  - cancel_complaints
+  - get_product_price
+
+
+
+
+# ===== prompt top_label intent list ===============
+
+
+top_label_intent:
+     - Products
+     - Order Placement
+     - Business Information
+     - Complaints
+     - Promotions / Offers
+     - Persona
+     - Unknown/Intent
+     - greetings
+
+
+
+
+# ===== prompt intent mode ===============
+
+intent_mode:
+    - Action
+    - Other
+
+
+
+
+      
+     
+
+
+
+
+
+

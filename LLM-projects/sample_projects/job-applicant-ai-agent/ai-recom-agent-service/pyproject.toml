@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Muhammad Junaid <mr.junaidshaukat@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12, <3.13"
+fastapi = "<0.111.0"
+uvicorn = "^0.29.0"
+confluent-kafka = {extras = ["protobuf"], version = "^2.4.0"}
+aiokafka = "^0.10.0"
+emails = "^0.6"
+crewai = "^0.30.11"
+crewai-tools = "^0.2.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

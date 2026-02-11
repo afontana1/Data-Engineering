@@ -1,0 +1,50 @@
+inference_models:
+
+  - provider: huggingface
+    class: AutoModelForSeq2SeqLM
+    name: google/flan-t5-large
+    type: text2text-generation
+    max_length: 256
+    do_sample: true
+    temperature: 0.3
+
+   
+      
+  - provider: huggingface
+    class: AutoModelForCausalLM
+    name:  mistralai/Mistral-7B-Instruct-v0.3
+    type: text-generation
+    max_length: 128
+    do_sample: false
+    temperature: 0.4
+
+
+  - provider: ollama
+    name: gemma3:1b-it-fp16
+    address: http://localhost:11434/
+    temperature: 0.3
+    max_tokens: 1024
+
+
+      
+
+embedding_model:
+  path: "./llms/embedding_models/all-mpnet-base-v2/"
+  name: sentence-transformers/all-mpnet-base-v2
+  safe_tensor_path: https://drive.google.com/file/d/1DMGzywcYTXzhsS-ozKISjSE_u_xLcln-/view?usp=drive_link
+  model_kwargs:
+    device: cpu
+  encode_kwargs:
+    normalize_embeddings: true
+
+
+
+
+
+
+
+
+
+
+
+

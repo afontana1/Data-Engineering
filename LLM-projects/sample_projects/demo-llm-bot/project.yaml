@@ -1,0 +1,32 @@
+kind: project
+metadata:
+  name: llmbot
+spec:
+  params:
+    source: v3io:///bigdata/demo-llm-bot.zip
+    secrets_file: secrets.env
+    image: nschenone/llmbot:1.4.1
+  functions:
+  - url: src/ingest.py
+    name: ingest
+    kind: job
+    image: nschenone/llmbot:1.4.1
+    with_repo: true
+  - url: src/serve_llm.py
+    name: serve-llm
+    kind: serving
+    image: nschenone/llmbot:1.4.1
+    with_repo: true
+  workflows:
+  - path: src/ingest_and_deploy_workflow.py
+    name: main
+  artifacts: []
+  conda: ''
+  source: v3io:///bigdata/demo-llm-bot.zip
+  origin_url: git://github.com/mlrun/demo-llm-bot.git#refs/heads/main
+  load_source_on_run: true
+  desired_state: online
+  build:
+    commands: []
+    requirements: []
+  custom_packagers: []

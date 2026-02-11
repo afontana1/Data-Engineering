@@ -1,0 +1,9 @@
+langchain
+deeplake
+openai
+cohere
+apify-client
+watchdog==3.0.0
+streamlit==1.26.O
+databutton==O.36.O
+ipykernel==6.25.1

@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run my code",
+            "type": "python",
+            "cwd": "${workspaceFolder}/vscode_python_template", // change path to your file
+            "request": "launch",
+            "program": "main.py", // change file to run if it is not main.py
+            "console": "integratedTerminal"
+        }
+    ]
+}

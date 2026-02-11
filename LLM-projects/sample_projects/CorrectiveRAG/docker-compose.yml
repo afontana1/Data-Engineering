@@ -1,0 +1,38 @@
+services:
+  application:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      tags:
+        - "<app-tag>:latest"
+        - "<aws-ecr-repo-tag>:latest"
+    image: application
+    container_name: application
+    volumes:
+      - ./:/app/
+    ports:
+      - 8501:8501
+    networks:
+      - net
+
+  chroma:
+    image: ghcr.io/chroma-core/chroma:latest
+    volumes:
+      - index_data:/chroma/.chroma/index
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ALLOW_RESET=TRUE
+    ports:
+      - 8000:8000
+    networks:
+      - net
+
+volumes:
+  index_data:
+    driver: local
+  backups:
+    driver: local
+
+networks:
+  net:
+    driver: bridge

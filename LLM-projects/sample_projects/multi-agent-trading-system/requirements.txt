@@ -1,0 +1,31 @@
+# LangChain and LangGraph core components
+langchain
+langgraph
+langchain-openai
+langchain-community
+
+# Foundational libraries for data and LLMs
+openai
+pydantic
+rich
+typing-extensions
+
+# Data retrieval and analysis tools
+yfinance
+finnhub-python
+stockstats
+pandas
+requests
+
+# Web search tool provider
+tavily-python
+
+# Vector store for memory
+chromadb
+
+# Web scraping (often a dependency of other tools)
+beautifulsoup4
+
+# For notebook-specific functionality and visualization
+ipython
+pygraphviz

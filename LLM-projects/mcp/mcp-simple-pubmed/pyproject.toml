@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-simple-pubmed"
+version = "0.1.13"
+description = "An MCP server that provides access to PubMed articles through Entrez API."
+readme = "README.md"
+authors = [
+    {name = "Andy Brandt", email = "andy@codesprinters.com"}
+]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastmcp>=2.10.0",
+    "biopython",  # for PubMed/Entrez API access
+    "metapub",    # for full-text paper access
+    "httpx",      # for making HTTP requests with async support
+]
+
+[project.urls]
+Homepage = "https://github.com/andybrandt/mcp-simple-pubmed"
+
+[project.scripts]
+mcp-simple-pubmed = "mcp_simple_pubmed.__main__:main"
