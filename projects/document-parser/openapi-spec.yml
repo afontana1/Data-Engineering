@@ -1,0 +1,885 @@
+openapi: 3.0.3
+info:
+  title: Document Parsing Job API
+  version: 1.0.0
+  description: >
+    Async document parsing API (S3 upload + start + polling + result retrieval).
+    Designed for large PDFs. Clients typically upload directly to S3 using presigned URLs.
+
+servers:
+  - url: https://api.example.com
+    description: Production
+  - url: https://api.dev.example.com
+    description: Dev
+
+tags:
+  - name: Jobs
+    description: Create, start, poll, and retrieve parsing jobs
+
+security:
+  - bearerAuth: []
+
+paths:
+  /jobs:
+    post:
+      tags: [Jobs]
+      summary: Create a new job and obtain a presigned S3 upload URL
+      operationId: createJob
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateJobRequest"
+            examples:
+              pdfUpload:
+                value:
+                  tenantId: acme
+                  filename: big-report.pdf
+                  contentType: application/pdf
+                  clientReferenceId: "ui-upload-2026-02-16T12:00:00Z"
+                  metadata:
+                    source: web
+                    docType: report
+      responses:
+        "201":
+          description: Job created; upload URL issued
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CreateJobResponse"
+              examples:
+                created:
+                  value:
+                    jobId: 3f4e9c8b-1a2b-4c5d-9e0f-1a2b3c4d5e6f
+                    status: UPLOADING
+                    upload:
+                      method: PUT
+                      url: https://s3-presigned-put-url
+                      headers:
+                        Content-Type: application/pdf
+                      expiresAt: "2026-02-16T21:15:00Z"
+                      s3Uri: s3://raw-bucket/acme/3f4e.../input/big-report.pdf
+                    links:
+                      start: /jobs/3f4e.../start
+                      status: /jobs/3f4e...
+                      result: /jobs/3f4e.../result
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /jobs:submitS3:
+    post:
+      tags: [Jobs]
+      summary: Create and start a job from an existing S3 object (offline/batch)
+      operationId: submitJobFromS3
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SubmitS3JobRequest"
+            examples:
+              submitExisting:
+                value:
+                  tenantId: acme
+                  inputS3Uri: s3://raw-bucket/acme/incoming/big-report.pdf
+                  filename: big-report.pdf
+                  contentType: application/pdf
+                  clientReferenceId: "batch-42"
+                  metadata:
+                    source: batch
+      responses:
+        "202":
+          description: Job accepted and started
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SubmitS3JobResponse"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "409":
+          $ref: "#/components/responses/Conflict"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /jobs/{jobId}/start:
+    post:
+      tags: [Jobs]
+      summary: Start processing a job after the client uploads to S3
+      operationId: startJob
+      parameters:
+        - $ref: "#/components/parameters/JobId"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/StartJobRequest"
+            examples:
+              defaultStart:
+                value:
+                  processingProfile: default
+                  options:
+                    extractTables: true
+                    extractForms: true
+                    storeTextractRaw: true
+      responses:
+        "202":
+          description: Job started (or already running); poll status endpoint
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StartJobResponse"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "409":
+          $ref: "#/components/responses/Conflict"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /jobs/{jobId}:
+    get:
+      tags: [Jobs]
+      summary: Get job status for polling
+      operationId: getJobStatus
+      parameters:
+        - $ref: "#/components/parameters/JobId"
+      responses:
+        "200":
+          description: Job status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobStatusResponse"
+              examples:
+                running:
+                  value:
+                    jobId: 3f4e9c8b-1a2b-4c5d-9e0f-1a2b3c4d5e6f
+                    tenantId: acme
+                    status: TEXTRACT_RUNNING
+                    createdAt: "2026-02-16T20:00:00Z"
+                    updatedAt: "2026-02-16T20:02:10Z"
+                    progress:
+                      stage: TEXTRACT_RUNNING
+                      partsTotal: 3
+                      partsDone: 1
+                      percent: 33
+                    input:
+                      s3Uri: s3://raw-bucket/acme/3f4e.../input/big-report.pdf
+                      filename: big-report.pdf
+                      contentType: application/pdf
+                      bytes: 382901233
+                    output:
+                      resultS3Uri: null
+                      resultContentType: application/json
+                      expiresAt: null
+                    error: null
+                    links:
+                      result: /jobs/3f4e.../result
+                succeeded:
+                  value:
+                    jobId: 3f4e9c8b-1a2b-4c5d-9e0f-1a2b3c4d5e6f
+                    tenantId: acme
+                    status: SUCCEEDED
+                    createdAt: "2026-02-16T20:00:00Z"
+                    updatedAt: "2026-02-16T20:12:45Z"
+                    progress:
+                      stage: SUCCEEDED
+                      partsTotal: 3
+                      partsDone: 3
+                      percent: 100
+                    input:
+                      s3Uri: s3://raw-bucket/acme/3f4e.../input/big-report.pdf
+                      filename: big-report.pdf
+                      contentType: application/pdf
+                      bytes: 382901233
+                    output:
+                      resultS3Uri: s3://parsed-bucket/acme/3f4e.../output/document.json
+                      resultContentType: application/json
+                      expiresAt: "2026-02-16T21:12:45Z"
+                    error: null
+                    links:
+                      result: /jobs/3f4e.../result
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+    delete:
+      tags: [Jobs]
+      summary: Cancel a job (best-effort) and mark it as cancelled
+      operationId: cancelJob
+      parameters:
+        - $ref: "#/components/parameters/JobId"
+      responses:
+        "202":
+          description: Cancellation requested
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CancelJobResponse"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "409":
+          $ref: "#/components/responses/Conflict"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+  /jobs/{jobId}/result:
+    get:
+      tags: [Jobs]
+      summary: Get the parsed result (inline or via presigned download URL)
+      operationId: getJobResult
+      parameters:
+        - $ref: "#/components/parameters/JobId"
+        - name: mode
+          in: query
+          required: false
+          description: |
+            - url: return a presigned URL for downloading the result (recommended for large outputs)
+            - inline: return JSON inline (subject to size limits)
+          schema:
+            type: string
+            enum: [url, inline]
+            default: url
+      responses:
+        "200":
+          description: Result is ready
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: "#/components/schemas/ResultUrlResponse"
+                  - $ref: "#/components/schemas/CanonicalDocument"
+        "202":
+          description: Result not ready yet; keep polling
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ResultNotReadyResponse"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "410":
+          description: Result expired or deleted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+        "500":
+          $ref: "#/components/responses/InternalError"
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    JobId:
+      name: jobId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+      description: Job identifier
+
+  responses:
+    BadRequest:
+      description: Bad request (validation error)
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    Unauthorized:
+      description: Missing/invalid credentials
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    Forbidden:
+      description: Not allowed for this tenant/resource
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    Conflict:
+      description: Conflict (e.g., job already started or invalid state transition)
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    TooManyRequests:
+      description: Rate limit exceeded
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+    InternalError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+
+  schemas:
+    CreateJobRequest:
+      type: object
+      required: [tenantId, filename, contentType]
+      properties:
+        tenantId:
+          type: string
+          description: Tenant/account identifier for multi-tenancy
+        filename:
+          type: string
+          description: Original filename as provided by client
+        contentType:
+          type: string
+          description: MIME type (e.g., application/pdf)
+        clientReferenceId:
+          type: string
+          description: Optional idempotency key from client domain (UI upload id, batch id)
+        metadata:
+          type: object
+          additionalProperties:
+            type: string
+          description: Arbitrary metadata/tags stored with the job
+
+    CreateJobResponse:
+      type: object
+      required: [jobId, status, upload, links]
+      properties:
+        jobId:
+          type: string
+          format: uuid
+        status:
+          $ref: "#/components/schemas/JobStatus"
+        upload:
+          $ref: "#/components/schemas/PresignedUpload"
+        links:
+          $ref: "#/components/schemas/JobLinks"
+
+    PresignedUpload:
+      type: object
+      required: [method, url, expiresAt, s3Uri]
+      properties:
+        method:
+          type: string
+          enum: [PUT]
+        url:
+          type: string
+          format: uri
+        headers:
+          type: object
+          additionalProperties:
+            type: string
+          description: Headers the client must include when uploading
+        expiresAt:
+          type: string
+          format: date-time
+        s3Uri:
+          type: string
+          description: Target S3 URI for the uploaded object
+
+    SubmitS3JobRequest:
+      type: object
+      required: [tenantId, inputS3Uri]
+      properties:
+        tenantId:
+          type: string
+        inputS3Uri:
+          type: string
+          description: S3 URI for an already-uploaded document
+        filename:
+          type: string
+        contentType:
+          type: string
+        clientReferenceId:
+          type: string
+        metadata:
+          type: object
+          additionalProperties:
+            type: string
+
+    SubmitS3JobResponse:
+      type: object
+      required: [jobId, status, links]
+      properties:
+        jobId:
+          type: string
+          format: uuid
+        status:
+          $ref: "#/components/schemas/JobStatus"
+        links:
+          $ref: "#/components/schemas/JobLinks"
+
+    StartJobRequest:
+      type: object
+      properties:
+        processingProfile:
+          type: string
+          default: default
+          description: Named configuration profile (limits, concurrency, features)
+        options:
+          $ref: "#/components/schemas/ProcessingOptions"
+
+    ProcessingOptions:
+      type: object
+      properties:
+        extractTables:
+          type: boolean
+          default: true
+        extractForms:
+          type: boolean
+          default: true
+        storeTextractRaw:
+          type: boolean
+          default: true
+        outputFormats:
+          type: array
+          items:
+            type: string
+            enum: [json, markdown]
+          default: [json]
+
+    StartJobResponse:
+      type: object
+      required: [jobId, status, links]
+      properties:
+        jobId:
+          type: string
+          format: uuid
+        status:
+          $ref: "#/components/schemas/JobStatus"
+        links:
+          $ref: "#/components/schemas/JobLinks"
+
+    CancelJobResponse:
+      type: object
+      required: [jobId, status]
+      properties:
+        jobId:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum: [CANCEL_REQUESTED, CANCELLED]
+        message:
+          type: string
+
+    JobStatusResponse:
+      type: object
+      required: [jobId, tenantId, status, createdAt, updatedAt, progress, input, output, error, links]
+      properties:
+        jobId:
+          type: string
+          format: uuid
+        tenantId:
+          type: string
+        status:
+          $ref: "#/components/schemas/JobStatus"
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        progress:
+          $ref: "#/components/schemas/JobProgress"
+        input:
+          $ref: "#/components/schemas/JobInput"
+        output:
+          $ref: "#/components/schemas/JobOutput"
+        error:
+          oneOf:
+            - type: "null"
+            - $ref: "#/components/schemas/JobError"
+        links:
+          $ref: "#/components/schemas/JobLinks"
+
+    JobStatus:
+      type: string
+      enum:
+        - UPLOADING
+        - SUBMITTED
+        - STARTED
+        - SPLITTING
+        - TEXTRACT_RUNNING
+        - POSTPROCESSING
+        - SUCCEEDED
+        - FAILED
+        - CANCEL_REQUESTED
+        - CANCELLED
+
+    JobProgress:
+      type: object
+      required: [stage]
+      properties:
+        stage:
+          type: string
+          description: High-level current stage
+        partsTotal:
+          type: integer
+          minimum: 0
+          description: Number of document parts to process (after splitting)
+        partsDone:
+          type: integer
+          minimum: 0
+        percent:
+          type: integer
+          minimum: 0
+          maximum: 100
+
+    JobInput:
+      type: object
+      required: [s3Uri]
+      properties:
+        s3Uri:
+          type: string
+        filename:
+          type: string
+        contentType:
+          type: string
+        bytes:
+          type: integer
+          format: int64
+
+    JobOutput:
+      type: object
+      required: [resultContentType]
+      properties:
+        resultS3Uri:
+          type: [string, "null"]
+          description: S3 URI of canonical output (document.json)
+        resultContentType:
+          type: string
+          enum: [application/json]
+        expiresAt:
+          type: [string, "null"]
+          format: date-time
+
+    JobLinks:
+      type: object
+      required: [status, result]
+      properties:
+        start:
+          type: string
+          description: Relative URL to start processing (if applicable)
+        status:
+          type: string
+          description: Relative URL to poll for status
+        result:
+          type: string
+          description: Relative URL to fetch result
+
+    JobError:
+      type: object
+      required: [code, message]
+      properties:
+        code:
+          type: string
+          description: Stable error code (e.g., INPUT_NOT_FOUND, TEXTRACT_LIMIT_EXCEEDED, TIMEOUT)
+        message:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
+
+    ResultUrlResponse:
+      type: object
+      required: [jobId, downloadUrl, expiresAt, contentType]
+      properties:
+        jobId:
+          type: string
+          format: uuid
+        downloadUrl:
+          type: string
+          format: uri
+        expiresAt:
+          type: string
+          format: date-time
+        contentType:
+          type: string
+          enum: [application/json]
+
+    ResultNotReadyResponse:
+      type: object
+      required: [jobId, status, retryAfterSeconds]
+      properties:
+        jobId:
+          type: string
+          format: uuid
+        status:
+          $ref: "#/components/schemas/JobStatus"
+        retryAfterSeconds:
+          type: integer
+          minimum: 1
+          description: Server hint for next poll interval
+        message:
+          type: string
+
+    # Canonical output (minimal skeleton; expand to match your full schema)
+    CanonicalDocument:
+      type: object
+      required: [documentId, jobId, tenantId, source, pageCount, pages, createdAt, processedAt, outputVersion]
+      properties:
+        documentId:
+          type: string
+        jobId:
+          type: string
+          format: uuid
+        tenantId:
+          type: string
+        outputVersion:
+          type: string
+          example: "1.0"
+        createdAt:
+          type: string
+          format: date-time
+        processedAt:
+          type: string
+          format: date-time
+        source:
+          $ref: "#/components/schemas/DocumentSource"
+        pageCount:
+          type: integer
+        metadata:
+          $ref: "#/components/schemas/DocumentMetadata"
+        pages:
+          type: array
+          items:
+            $ref: "#/components/schemas/Page"
+
+    DocumentSource:
+      type: object
+      required: [filename, s3Uri, contentType]
+      properties:
+        filename:
+          type: string
+        s3Uri:
+          type: string
+        contentType:
+          type: string
+
+    DocumentMetadata:
+      type: object
+      properties:
+        mimeType:
+          type: string
+        sourceBytes:
+          type: integer
+          format: int64
+        sha256:
+          type: string
+        partsCount:
+          type: integer
+        partS3Uris:
+          type: array
+          items:
+            type: string
+        warnings:
+          type: array
+          items:
+            $ref: "#/components/schemas/Warning"
+
+    Warning:
+      type: object
+      required: [code, message, severity]
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+        severity:
+          type: string
+          enum: [INFO, WARN, ERROR]
+
+    Page:
+      type: object
+      required: [pageNumber, text]
+      properties:
+        pageNumber:
+          type: integer
+          minimum: 1
+        text:
+          type: string
+          description: Reading-order page text
+        blocks:
+          type: array
+          items:
+            $ref: "#/components/schemas/TextBlock"
+        tables:
+          type: array
+          items:
+            $ref: "#/components/schemas/Table"
+
+    TextBlock:
+      type: object
+      required: [id, type, text]
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+          enum: [LINE, PARAGRAPH, TITLE, HEADER, FOOTER, LIST_ITEM]
+        text:
+          type: string
+        bbox:
+          $ref: "#/components/schemas/BoundingBox"
+        confidence:
+          type: number
+          format: float
+        sourceBlockIds:
+          type: array
+          items:
+            type: string
+
+    Table:
+      type: object
+      required: [tableId, rows]
+      properties:
+        tableId:
+          type: string
+        indexOnPage:
+          type: integer
+          minimum: 0
+        bbox:
+          $ref: "#/components/schemas/BoundingBox"
+        confidence:
+          type: number
+          format: float
+        rows:
+          type: array
+          items:
+            $ref: "#/components/schemas/TableRow"
+        sourceBlockIds:
+          type: array
+          items:
+            type: string
+
+    TableRow:
+      type: object
+      required: [rowIndex, cells]
+      properties:
+        rowIndex:
+          type: integer
+          minimum: 0
+        cells:
+          type: array
+          items:
+            $ref: "#/components/schemas/TableCell"
+
+    TableCell:
+      type: object
+      required: [rowIndex, columnIndex, text]
+      properties:
+        rowIndex:
+          type: integer
+          minimum: 0
+        columnIndex:
+          type: integer
+          minimum: 0
+        rowSpan:
+          type: integer
+          minimum: 1
+          default: 1
+        colSpan:
+          type: integer
+          minimum: 1
+          default: 1
+        text:
+          type: string
+        bbox:
+          $ref: "#/components/schemas/BoundingBox"
+        confidence:
+          type: number
+          format: float
+        isHeader:
+          type: boolean
+          default: false
+        sourceBlockIds:
+          type: array
+          items:
+            type: string
+
+    BoundingBox:
+      type: object
+      required: [left, top, width, height]
+      properties:
+        left:
+          type: number
+          format: float
+          description: Normalized left (0..1) unless otherwise specified
+        top:
+          type: number
+          format: float
+        width:
+          type: number
+          format: float
+        height:
+          type: number
+          format: float
+
+    ErrorResponse:
+      type: object
+      required: [error, message, requestId]
+      properties:
+        error:
+          type: string
+          description: Stable error code
+        message:
+          type: string
+        requestId:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
