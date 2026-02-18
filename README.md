@@ -1,6 +1,50 @@
-# Resources
+# Data Engineering Learning Hub
 
-<details><summary><h1>Design Guides</h1></summary>
+## Table of Contents
+
+- [Resources & Communities](#resources--communities)
+- [Architecture, Design & System Thinking](#architecture-design--system-thinking)
+  - [Design Guides & Engineering Blogs](#design-guides--engineering-blogs)
+  - [Design Tutorials & Hands-on Lakehouse Builds](#design-tutorials--hands-on-lakehouse-builds)
+  - [System Design (Interview + References)](#system-design-interview--references)
+  - [Patterns, Architecture, and Core Reading](#patterns-architecture-and-core-reading)
+- [Core Data Concepts](#core-data-concepts)
+- [Software Engineering Foundations](#software-engineering-foundations)
+  - [Reading](#reading)
+  - [Design Patterns](#design-patterns)
+  - [Concepts](#concepts)
+- [CI/CD, DevOps & Infrastructure](#cicd-devops--infrastructure)
+- [MLOps](#mlops)
+- [Security, Privacy & Reliability](#security-privacy--reliability)
+- [Serverless Frameworks](#serverless-frameworks)
+- [General Helpful Tools](#general-helpful-tools)
+- [Data Visualization & BI](#data-visualization--bi)
+- [Databases, SQL & Parsing](#databases-sql--parsing)
+- [API & Web Frameworks](#api--web-frameworks)
+- [Async, Multitasking & Distributed](#async-multitasking--distributed)
+- [Data Flow, Processing & Pipelines](#data-flow-processing--pipelines)
+- [Big Data & Cloud SDKs / APIs](#big-data--cloud-sdks--apis)
+- [Data Quality, Profiling & Business Rules](#data-quality-profiling--business-rules)
+- [Data Lineage, Discovery & Observability](#data-lineage-discovery--observability)
+- [Schemas, Parsing, Validation & Scraping](#schemas-parsing-validation--scraping)
+- [Excel Tools](#excel-tools)
+- [Cache & Hash](#cache--hash)
+- [Logging, Testing & Monitoring](#logging-testing--monitoring)
+- [Web Scraping](#web-scraping)
+
+---
+
+## Resources & Communities
+
+1. [Software Engineering Institute](https://www.sei.cmu.edu/)
+2. [Society of Research Software Engineering](https://society-rse.org/)
+3. [Association for IT Architects](https://iasaglobal.org/)
+
+---
+
+## Architecture, Design & System Thinking
+
+### Design Guides & Engineering Blogs
 
 - [The Data Engineering Cookbook](https://cookbook.learndataengineering.com/)
 - [Data Engineer Handbook](https://github.com/DataEngineer-io/data-engineer-handbook)
@@ -25,7 +69,7 @@
 - [Design Patterns Catalog](https://hillside.net/patterns/patterns-catalog)
 - [ISE Engineering Fundamentals Playbook](https://microsoft.github.io/code-with-engineering-playbook/)
 
-#### Design Tutorials
+### Design Tutorials & Hands-on Lakehouse Builds
 
 - [ArjanCodes](https://github.com/ArjanCodes)
 - [mCodingLLC](https://github.com/mCodingLLC)
@@ -35,6 +79,8 @@
 - [Building Lakehouse](https://github.com/harrydevforlife/building-lakehouse)
 - [Lakehouse Project](https://github.com/tranthe170/NYC-Taxi-pipeline)
 - [Database Transactions](https://bbengfort.github.io/2017/12/psycopg2-transactions/)
+
+### System Design (Interview + References)
 
 - [System Design](https://github.com/codersguild/System-Design)
 - [Complete System Design](https://github.com/Coder-World04/Complete-System-Design)
@@ -53,6 +99,8 @@
 - [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap)
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [Mobile System Design](https://github.com/weeeBox/mobile-system-design)
+
+### Patterns, Architecture, and Core Reading
 
 1. [Design Patterns in the Real World](https://holub.com/patterns/)
 2. [Design Patterns](https://sourcemaking.com/)
@@ -104,9 +152,9 @@
 48. [awesome-system-design](https://github.com/madd86/awesome-system-design)
 49. [awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)
 
-</details>
+---
 
-<details><summary><h2>Data Concepts</h2></summary>
+## Core Data Concepts
 
 1. [Data](https://en.wikipedia.org/wiki/Data_(computing))
 2. [Databases](https://en.wikipedia.org/wiki/Category:Databases)
@@ -122,11 +170,11 @@
 9. [Data Integration](https://en.wikipedia.org/wiki/Category:Data_integration)
 10. [aws-analytics-reference-architecture](https://github.com/aws-samples/aws-analytics-reference-architecture)
 
-</details>
+---
 
-<details><summary><h2>Software Engineering Resources</h2></summary>
+## Software Engineering Foundations
 
-# Reading
+### Reading
 
 1. [Algorithms](https://en.wikipedia.org/wiki/Category:Algorithms)
 2. [Data Structures](https://en.wikipedia.org/wiki/Category:Data_structures)
@@ -167,7 +215,8 @@
     * [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
     * [SOLID](https://en.wikipedia.org/wiki/SOLID)
 
-## Design Patterns
+### Design Patterns
+
 1. [Abstract_factory_pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
 2. [Builder_pattern](https://en.wikipedia.org/wiki/Builder_pattern)
 3. [Singleton_pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
@@ -187,8 +236,8 @@
 17. [Chain of Responsibility Pattern](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)
 18. [Command Pattern](https://en.wikipedia.org/wiki/Command_pattern)
 
+### Concepts
 
-## Concepts
 1. [Futures_and_promises](https://en.wikipedia.org/wiki/Futures_and_promises)
 2. [Asynchronous_method_invocation](https://en.wikipedia.org/wiki/Asynchronous_method_invocation)
 3. [Asynchronous_I/O](https://en.wikipedia.org/wiki/Asynchronous_I/O)
@@ -207,9 +256,9 @@
 16. [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
 17. [Message_queue](https://en.wikipedia.org/wiki/Message_queue)
 
-</details>
+---
 
-<details><summary><h2>Continuous Integration and Continuous Deployment (DevOps)</h2></summary>
+## CI/CD, DevOps & Infrastructure
 
 1. [jenkins-tutorial](https://github.com/ssbostan/jenkins-tutorial)
 2. [awesome-ciandcd](https://github.com/cicdops/awesome-ciandcd)
@@ -226,9 +275,9 @@
 13. [gitlab-ci](https://github.com/dokku/gitlab-ci)
 14. [pulumi](https://github.com/pulumi/pulumi)
 
-</details>
+---
 
-<details><summary><h2>ML Ops</h2></summary>
+## MLOps
 
 - [Awesome MLOps](https://github.com/visenger/awesome-mlops)
 
@@ -261,9 +310,9 @@
 27. [MLOps pipeline for Recommendation System](https://github.com/aws-samples/machine-learning-operations-pipeline-for-recommendation-model)
 28. [MLOps End to End example](https://github.com/aws-samples/mlops-e2e)
 
-</details>
+---
 
-<details><summary><h2>Data and System Security</h2></summary>
+## Security, Privacy & Reliability
 
 1. [ThreatDragon](https://threatdragon.github.io/)
 2. [Kotlin Faker](https://github.com/serpro69/kotlin-faker)
@@ -301,9 +350,9 @@
 34. [Python for Network Engineers](https://pyneng.readthedocs.io/en/latest/index.html)
 35. [awesome-network-automation](https://github.com/networktocode/awesome-network-automation)
 
-</details>
+---
 
-<details><summary><h2>Serverless Frameworks</h2></summary>
+## Serverless Frameworks
 
 1. [Architect](https://github.com/architect/architect)
 2. [Webiny-JS](https://github.com/webiny/webiny-js)
@@ -316,9 +365,9 @@
 9. [Serverless](https://github.com/serverless/serverless)
 10. [tomodachi](https://github.com/kalaspuff/tomodachi)
 
-</details>
+---
 
-<details><summary><h2>Helpful Tools</h2></summary>
+## General Helpful Tools
 
 1. [Boltons](https://github.com/mahmoud/boltons)
 2. [Docker-py](https://github.com/docker/docker-py)
@@ -395,10 +444,9 @@
 74. [react-diagrams](https://github.com/projectstorm/react-diagrams)
 75. [react-flow-chart](https://github.com/MrBlenny/react-flow-chart)
 
-</details>
+---
 
-
-<details><summary><h2>Data Viz and BI</h2></summary>
+## Data Visualization & BI
 
 1. [Dash](https://github.com/plotly/dash) and [Sample Apps](https://github.com/plotly/dash-sample-apps)
 2. [Seaborn](https://github.com/mwaskom/seaborn)
@@ -448,9 +496,9 @@
 46. [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
 47. [voila](https://github.com/voila-dashboards/voila)
 
-</details>
+---
 
-<details><summary><h2>Databases and Parsing</h2></summary>
+## Databases, SQL & Parsing
 
 - [dbeaver](https://github.com/dbeaver/dbeaver)
 - [awesome-db-tools](https://github.com/mgramin/awesome-db-tools)
@@ -503,9 +551,9 @@
 43. [camelot](https://github.com/camelot-dev/camelot)
 44. [ingestr](https://github.com/bruin-data/ingestr)
 
-</details>
+---
 
-<details><summary><h2>API and Web Framework</h2></summary>
+## API & Web Frameworks
 
 1. [Flask](https://github.com/pallets/flask)
 2. [Tornado](https://github.com/tornadoweb/tornado)
@@ -543,9 +591,9 @@
 35. [awesome-fastapi](https://github.com/mjhea0/awesome-fastapi)
 36. [awesome-fastapi-projects](https://github.com/Kludex/awesome-fastapi-projects)
 
-</details>
+---
 
-<details><summary><h2>Async & Multitasking & Distributed</h2></summary>
+## Async, Multitasking & Distributed
 
 1. [Requests-futures](https://github.com/ross/requests-futures)
 2. [Requests-threads](https://github.com/requests/requests-threads)
@@ -573,9 +621,9 @@
 25. [aiobotocore](https://github.com/aio-libs/aiobotocore)
 26. [aioboto3](https://github.com/terrycain/aioboto3)
 
-</details>
+---
 
-<details><summary><h2>Data Flow, Processing, Pipelines</h2></summary>
+## Data Flow, Processing & Pipelines
 
 1. [dataflow](https://github.com/tensorpack/dataflow)
 2. [pyfi](https://github.com/radiantone/pyfi)
@@ -646,9 +694,9 @@
 67. [pachyderm](https://github.com/pachyderm/pachyderm)
 68. [elementary](https://github.com/elementary-data/elementary)
 
-</details>
+---
 
-<details><summary><h2>Big Data and Cloud API's</h2></summary>
+## Big Data & Cloud SDKs / APIs
 
 - [Spark SQL Programming Guide](https://spark.apache.org/docs/latest/sql-programming-guide.html)
 
@@ -686,9 +734,9 @@
 32. [PyLazyS3](https://github.com/Den1al/PyLazyS3)
 33. [Minio](https://github.com/minio/minio)
 
-</details>
+---
 
-<details><summary><h2>Data Quality & Profiling & Business Rules</h2></summary>
+## Data Quality, Profiling & Business Rules
 
 1. [Pandas Profiling](https://github.com/ydataai/pandas-profiling)
 2. [WhyLogs](https://github.com/whylabs/whylogs)
@@ -727,9 +775,9 @@
 35. [Awesome Streaming](https://github.com/manuzhang/awesome-streaming)
 36. [Storm](https://github.com/apache/storm)
 
-</details>
+---
 
-<details><summary><h2>Data lineage & Discovery & Observability</h2></summary>
+## Data Lineage, Discovery & Observability
 
 1. [bigquery-data-lineage](https://github.com/marcin-kolda/bigquery-data-lineage)
 2. [multi-data-lineage-capture-py](https://github.com/IBM/multi-data-lineage-capture-py)
@@ -763,9 +811,9 @@
 30. [awesome-observability](https://github.com/adriannovegil/awesome-observability)
 31. [malloy](https://github.com/malloydata/malloy)
 
-</details>
+---
 
-<details><summary><h2>Data Schemas & Parsing & Scraping</h2></summary>
+## Schemas, Parsing, Validation & Scraping
 
 1. [Json Classes](https://github.com/fillmula/jsonclasses)
 2. [Schema](https://github.com/keleshev/schema)
@@ -845,10 +893,9 @@
 76. [liaison](https://github.com/Julian-Nash/liaison)
 77. [DataCleaner](https://github.com/datacleaner/DataCleaner)
 
-</details>
+---
 
-
-<details><summary><h2>Excel Tools</h2></summary>
+## Excel Tools
 
 1. [xltable](https://github.com/fkarb/xltable)
 2. [xlwings](https://github.com/xlwings/xlwings)
@@ -866,9 +913,9 @@
 14. [pyxlsb2](https://github.com/DissectMalware/pyxlsb2)
 15. [pyxlsb](https://github.com/willtrnr/pyxlsb)
 
-</details>
+---
 
-<details><summary><h2>Cache and Hash</h2></summary>
+## Cache & Hash
 
 1. [cachecontrol](https://github.com/ionrock/cachecontrol)
 2. [Cached Property](https://github.com/pydanny/cached-property)
@@ -893,9 +940,9 @@
 21. [shortuuid](https://github.com/skorokithakis/shortuuid)
 22. [human-readable-id](https://github.com/hnimminh/human-readable-id)
 
-</details>
+---
 
-<details><summary><h2>Logging and Testing and Monitoring</h2></summary>
+## Logging, Testing & Monitoring
 
 1. [structlog](https://github.com/hynek/structlog)
 2. [Local Stack](https://github.com/localstack/localstack)
@@ -920,9 +967,9 @@
 21. [refurb](https://github.com/dosisod/refurb)
 22. [Factory Boy](https://github.com/FactoryBoy/factory_boy)
 
-</details>
+---
 
-<details><summary><h2>Webscraping</h2></summary>
+## Web Scraping
 
 1. [Mechanical Soup](https://github.com/MechanicalSoup/MechanicalSoup)
 2. [tiktok-downloader](https://github.com/krypton-byte/tiktok-downloader)
@@ -935,5 +982,3 @@
 9. [scrapy](https://github.com/scrapy/scrapy)
 10. [puppeteer](https://github.com/puppeteer/puppeteer)
 11. [awesome-web-scraping](https://github.com/lorien/awesome-web-scraping)
-
-</details>
