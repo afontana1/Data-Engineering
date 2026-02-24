@@ -1,7 +1,0 @@
-include README.rst
-include LICENSE
-include Makefile
-graft async_lru
-graft tests
-recursive-exclude * __pycache__
-recursive-exclude * *.py[co]

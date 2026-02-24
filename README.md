@@ -68,6 +68,7 @@
 - [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html)
 - [Design Patterns Catalog](https://hillside.net/patterns/patterns-catalog)
 - [ISE Engineering Fundamentals Playbook](https://microsoft.github.io/code-with-engineering-playbook/)
+- [Awesome Open Source Data Engineering](https://github.com/gunnarmorling/awesome-opensource-data-engineering)
 
 ### Design Tutorials & Hands-on Lakehouse Builds
 
@@ -99,6 +100,10 @@
 - [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap)
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [Mobile System Design](https://github.com/weeeBox/mobile-system-design)
+- [system design notebook](https://github.com/bregman-arie/system-design-notebook)
+- [Design Resources for Developers](https://github.com/bradtraversy/design-resources-for-developers)
+- [Awesome Javascript Interviews](https://github.com/rohan-paul/Awesome-JavaScript-Interviews)
+- [Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook)
 
 ### Patterns, Architecture, and Core Reading
 
@@ -151,6 +156,7 @@
 47. [Serverless Patterns](https://github.com/aws-samples/serverless-patterns)
 48. [awesome-system-design](https://github.com/madd86/awesome-system-design)
 49. [awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)
+50. [Programming Principles](https://github.com/webpro/programming-principles)
 
 ---
 

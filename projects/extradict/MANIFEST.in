@@ -1,4 +1,0 @@
-include *.txt *.md
-recursive-include extradict *.py
-recursive-include tests *.py *.txt
-include COPYING setup.cfg
