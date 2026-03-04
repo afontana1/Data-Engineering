@@ -1,4 +1,0 @@
-transformers==4.39.1
-torch==2.2.1
-semantic-router==0.0.28
-langchain==0.1.13

@@ -1,4 +1,0 @@
-langchain
-deeplake
-openai
-tiktoken

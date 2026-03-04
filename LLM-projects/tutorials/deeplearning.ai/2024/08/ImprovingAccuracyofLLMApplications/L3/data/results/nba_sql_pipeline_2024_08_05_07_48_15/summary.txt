@@ -1,3 +1,0 @@
-Total size of eval dataset: 20
-Percent Valid SQL Syntax: 55.00000000000001
-Percent Correct SQL Query: 30.0

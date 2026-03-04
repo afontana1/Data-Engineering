@@ -1,9 +1,0 @@
-#ignore 
-/../../data/*.csv
-log/*.csv
-
-__pycache__/
-.ipynb_checkpoints/
-
-
-

@@ -1,4 +1,0 @@
-openai
-mcp[cli]
-mcp-oauth
-fastauth-api

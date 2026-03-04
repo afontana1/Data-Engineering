@@ -1,1 +1,0 @@
-FROM ankane/pgvector:latest

@@ -1,3 +1,0 @@
-flask
-google-cloud-aiplatform
-python-dotenv

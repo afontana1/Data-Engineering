@@ -1,3 +1,0 @@
-mlrun==1.4.1
-ipywidgets==8.0.6
-graphviz==0.20.1

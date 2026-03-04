@@ -1,4 +1,0 @@
-.env
-__pycache__/
-training_data.pkl
-trained_agents_data.pkl

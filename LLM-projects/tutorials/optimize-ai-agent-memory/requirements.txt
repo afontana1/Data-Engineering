@@ -1,5 +1,0 @@
-openai
-numpy
-faiss-cpu
-networkx
-tiktoken

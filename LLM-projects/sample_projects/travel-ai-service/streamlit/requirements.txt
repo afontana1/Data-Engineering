@@ -1,4 +1,0 @@
-plotly
-requests
-streamlit
-python-dotenv

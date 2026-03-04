@@ -1,6 +1,0 @@
-syntax = "proto3";
-
-message Recommendation {
-  int32 id = 1;
-  string recommendation = 2;
-}

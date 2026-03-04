@@ -1,3 +1,0 @@
-dspy-ai
-langtrace-python-sdk
-loguru
