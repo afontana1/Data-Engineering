@@ -1,0 +1,749 @@
+version: '3.9'
+#https://github.com/compose-spec/compose-spec/blob/master/spec.md#using-extensions-as-fragments
+x-logging: &default-logging
+  options:
+    max-size: "100m"
+    max-file: "5"
+  driver: json-file
+
+x-airflow-common:
+  &airflow-common
+  build:
+    dockerfile: ./Dockerfiles/airflow.dockerfile
+  environment:
+    &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+  user: "${AIRFLOW_UID:-50000}:0"
+  depends_on:
+    &airflow-common-depends-on
+    redis:
+      condition: service_healthy
+    postgres:
+      condition: service_healthy
+
+services:
+
+  #MYSQLDB - ERP
+  mysql_db:
+    container_name: datasource-mysql-db
+    image: mysql:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${MY_SQL_DATABASE}
+      MYSQL_USER: ${MY_SQL_USER}
+      MYSQL_PASSWORD: ${MY_SQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MY_SQL_ROOT_PASSWORD}
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: "256M"
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    profiles:
+      - datasource
+    networks:
+      - datastack
+  
+  #DATA INGESTION SCRIPT
+  ingestion-python:
+    container_name: ingestionscript-ingestion-python
+    build:
+      dockerfile: ./Dockerfiles/ingestion.dockerfile
+    depends_on:
+      - mysql_db
+    profiles:
+      - ingestionscript
+    env_file:
+      - .env
+    networks:
+      - datastack
+
+  
+  #SGBD
+  adminer:
+    container_name: datasource-adminer
+    image: adminer:latest
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: "256M"
+    restart: always
+    ports:
+      - 8888:8080
+    profiles:
+      - datasource
+    networks:
+      - datastack
+  
+
+  #DATA WAREHOUSE
+  warehouse:
+    container_name: warehouse-warehouse
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: "256M"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+      - ./configs/postgres-config:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    profiles:
+      - warehouse
+    networks:
+      - datastack
+  
+  #AIRBYTE
+  init:
+    container_name: ingestion-airbyte-init
+    image: airbyte/init:${VERSION}
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: "128M"
+    command: /bin/sh -c "./scripts/create_mount_directories.sh /local_parent ${HACK_LOCAL_ROOT_PARENT} ${LOCAL_ROOT}"
+    environment:
+      - LOCAL_ROOT=${LOCAL_ROOT}
+      - HACK_LOCAL_ROOT_PARENT=${HACK_LOCAL_ROOT_PARENT}
+    volumes:
+      - ${HACK_LOCAL_ROOT_PARENT}:/local_parent
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+  bootloader:
+    container_name: ingestion-airbyte-bootloader
+    image: airbyte/bootloader:${VERSION}
+    deploy:
+      resources:
+        limits:
+          cpus: "0.4"
+          memory: "256M"
+    logging: *default-logging
+    environment:
+      - AIRBYTE_VERSION=${VERSION}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_URL=${DATABASE_URL}
+      - DATABASE_USER=${DATABASE_USER}
+      - LOG_LEVEL=${LOG_LEVEL}
+    depends_on:
+      init:
+        condition: service_completed_successfully
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+  
+  db:
+    image: airbyte/db:${VERSION}
+    logging: *default-logging
+    container_name: ingestion-airbyte-db
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: "256M"
+    environment:
+      - CONFIG_DATABASE_PASSWORD=${CONFIG_DATABASE_PASSWORD:-}
+      - CONFIG_DATABASE_URL=${CONFIG_DATABASE_URL:-}
+      - CONFIG_DATABASE_USER=${CONFIG_DATABASE_USER:-}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_URL=${DATABASE_URL}
+      - DATABASE_USER=${DATABASE_USER}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_USER=${DATABASE_USER}
+    volumes:
+      - db:/var/lib/postgresql/data
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+
+  worker:
+    image: airbyte/worker:${VERSION}
+    logging: *default-logging
+    container_name: ingestion-airbyte-worker
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: "4GB"
+    environment:
+      - AIRBYTE_VERSION=${VERSION}
+      - AUTO_DISABLE_FAILING_CONNECTIONS=${AUTO_DISABLE_FAILING_CONNECTIONS}
+      - CONFIG_DATABASE_PASSWORD=${CONFIG_DATABASE_PASSWORD:-}
+      - CONFIG_DATABASE_URL=${CONFIG_DATABASE_URL:-}
+      - CONFIG_DATABASE_USER=${CONFIG_DATABASE_USER:-}
+      - CONFIGS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION=${CONFIGS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION:-}
+      - CONFIG_ROOT=${CONFIG_ROOT}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_URL=${DATABASE_URL}
+      - DATABASE_USER=${DATABASE_USER}
+      - DEPLOYMENT_MODE=${DEPLOYMENT_MODE}
+      - INTERNAL_API_HOST=${INTERNAL_API_HOST}
+      - JOBS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION=${JOBS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION:-}
+      - JOB_MAIN_CONTAINER_CPU_LIMIT=${JOB_MAIN_CONTAINER_CPU_LIMIT}
+      - JOB_MAIN_CONTAINER_CPU_REQUEST=${JOB_MAIN_CONTAINER_CPU_REQUEST}
+      - JOB_MAIN_CONTAINER_MEMORY_LIMIT=${JOB_MAIN_CONTAINER_MEMORY_LIMIT}
+      - JOB_MAIN_CONTAINER_MEMORY_REQUEST=${JOB_MAIN_CONTAINER_MEMORY_REQUEST}
+      - LOCAL_DOCKER_MOUNT=${LOCAL_DOCKER_MOUNT}
+      - LOCAL_ROOT=${LOCAL_ROOT}
+      - LOG_LEVEL=${LOG_LEVEL}
+      - LOG_CONNECTOR_MESSAGES=${LOG_CONNECTOR_MESSAGES}
+      - MAX_CHECK_WORKERS=${MAX_CHECK_WORKERS}
+      - MAX_DISCOVER_WORKERS=${MAX_DISCOVER_WORKERS}
+      - MAX_SPEC_WORKERS=${MAX_SPEC_WORKERS}
+      - MAX_SYNC_WORKERS=${MAX_SYNC_WORKERS}
+      - MAX_NOTIFY_WORKERS=${MAX_NOTIFY_WORKERS}
+      - SHOULD_RUN_NOTIFY_WORKFLOW=${SHOULD_RUN_NOTIFY_WORKFLOW}
+      - NORMALIZATION_JOB_MAIN_CONTAINER_MEMORY_LIMIT=${NORMALIZATION_JOB_MAIN_CONTAINER_MEMORY_LIMIT}
+      - NORMALIZATION_JOB_MAIN_CONTAINER_MEMORY_REQUEST=${NORMALIZATION_JOB_MAIN_CONTAINER_MEMORY_REQUEST}
+      - NORMALIZATION_JOB_MAIN_CONTAINER_CPU_LIMIT=${NORMALIZATION_JOB_MAIN_CONTAINER_CPU_LIMIT}
+      - NORMALIZATION_JOB_MAIN_CONTAINER_CPU_REQUEST=${NORMALIZATION_JOB_MAIN_CONTAINER_CPU_REQUEST}
+      - SECRET_PERSISTENCE=${SECRET_PERSISTENCE}
+      - SYNC_JOB_MAX_ATTEMPTS=${SYNC_JOB_MAX_ATTEMPTS}
+      - SYNC_JOB_MAX_TIMEOUT_DAYS=${SYNC_JOB_MAX_TIMEOUT_DAYS}
+      - TEMPORAL_HOST=${TEMPORAL_HOST}
+      - TRACKING_STRATEGY=${TRACKING_STRATEGY}
+      - WEBAPP_URL=${WEBAPP_URL}
+      - WORKSPACE_DOCKER_MOUNT=${WORKSPACE_DOCKER_MOUNT}
+      - WORKSPACE_ROOT=${WORKSPACE_ROOT}
+      - METRIC_CLIENT=${METRIC_CLIENT}
+      - OTEL_COLLECTOR_ENDPOINT=${OTEL_COLLECTOR_ENDPOINT}
+      - JOB_ERROR_REPORTING_STRATEGY=${JOB_ERROR_REPORTING_STRATEGY}
+      - JOB_ERROR_REPORTING_SENTRY_DSN=${JOB_ERROR_REPORTING_SENTRY_DSN}
+      - ACTIVITY_MAX_ATTEMPT=${ACTIVITY_MAX_ATTEMPT}
+      - ACTIVITY_INITIAL_DELAY_BETWEEN_ATTEMPTS_SECONDS=${ACTIVITY_INITIAL_DELAY_BETWEEN_ATTEMPTS_SECONDS}
+      - ACTIVITY_MAX_DELAY_BETWEEN_ATTEMPTS_SECONDS=${ACTIVITY_MAX_DELAY_BETWEEN_ATTEMPTS_SECONDS}
+      - WORKFLOW_FAILURE_RESTART_DELAY_SECONDS=${WORKFLOW_FAILURE_RESTART_DELAY_SECONDS}
+      - AUTO_DETECT_SCHEMA=${AUTO_DETECT_SCHEMA}
+      - USE_STREAM_CAPABLE_STATE=${USE_STREAM_CAPABLE_STATE}
+      - MICRONAUT_ENVIRONMENTS=${WORKERS_MICRONAUT_ENVIRONMENTS}
+      - APPLY_FIELD_SELECTION=${APPLY_FIELD_SELECTION}
+      - FIELD_SELECTION_WORKSPACES=${FIELD_SELECTION_WORKSPACES}
+      - STRICT_COMPARISON_NORMALIZATION_WORKSPACES=${STRICT_COMPARISON_NORMALIZATION_WORKSPACES}
+      - STRICT_COMPARISON_NORMALIZATION_TAG=${STRICT_COMPARISON_NORMALIZATION_TAG}
+    configs:
+      - flags
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - workspace:${WORKSPACE_ROOT}
+      - ${LOCAL_ROOT}:${LOCAL_ROOT}
+    ports:
+      - "9000"
+    depends_on:
+      bootloader:
+        condition: service_completed_successfully
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+
+  airbyte-server:
+    image: airbyte/server:${VERSION}
+    logging: *default-logging
+    container_name: ingestion-airbyte-server
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: "1GB"
+    restart: unless-stopped
+    environment:
+      - AIRBYTE_ROLE=${AIRBYTE_ROLE:-}
+      - AIRBYTE_VERSION=${VERSION}
+      - CONFIG_DATABASE_PASSWORD=${CONFIG_DATABASE_PASSWORD:-}
+      - CONFIG_DATABASE_URL=${CONFIG_DATABASE_URL:-}
+      - CONFIG_DATABASE_USER=${CONFIG_DATABASE_USER:-}
+      - CONFIGS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION=${CONFIGS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION:-}
+      - CONFIG_ROOT=${CONFIG_ROOT}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_URL=${DATABASE_URL}
+      - DATABASE_USER=${DATABASE_USER}
+      - JOB_MAIN_CONTAINER_CPU_LIMIT=${JOB_MAIN_CONTAINER_CPU_LIMIT}
+      - JOB_MAIN_CONTAINER_CPU_REQUEST=${JOB_MAIN_CONTAINER_CPU_REQUEST}
+      - JOB_MAIN_CONTAINER_MEMORY_LIMIT=${JOB_MAIN_CONTAINER_MEMORY_LIMIT}
+      - JOB_MAIN_CONTAINER_MEMORY_REQUEST=${JOB_MAIN_CONTAINER_MEMORY_REQUEST}
+      - JOBS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION=${JOBS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION:-}
+      - LOG_LEVEL=${LOG_LEVEL}
+      - NEW_SCHEDULER=${NEW_SCHEDULER}
+      - SECRET_PERSISTENCE=${SECRET_PERSISTENCE}
+      - TEMPORAL_HOST=${TEMPORAL_HOST}
+      - TRACKING_STRATEGY=${TRACKING_STRATEGY}
+      - JOB_ERROR_REPORTING_STRATEGY=${JOB_ERROR_REPORTING_STRATEGY}
+      - JOB_ERROR_REPORTING_SENTRY_DSN=${JOB_ERROR_REPORTING_SENTRY_DSN}
+      - WEBAPP_URL=${WEBAPP_URL}
+      - WORKER_ENVIRONMENT=${WORKER_ENVIRONMENT}
+      - WORKSPACE_ROOT=${WORKSPACE_ROOT}
+      - GITHUB_STORE_BRANCH=${GITHUB_STORE_BRANCH}
+      - MICRONAUT_ENVIRONMENTS=${WORKERS_MICRONAUT_ENVIRONMENTS}
+      - AUTO_DETECT_SCHEMA=${AUTO_DETECT_SCHEMA}
+      - MAX_NOTIFY_WORKERS=5
+      - SHOULD_RUN_NOTIFY_WORKFLOWS=false
+    ports:
+      - "8001"
+    configs:
+      - flags
+    volumes:
+      - workspace:${WORKSPACE_ROOT}
+      - data:${CONFIG_ROOT}
+      - ${LOCAL_ROOT}:${LOCAL_ROOT}
+    depends_on:
+      bootloader:
+        condition: service_completed_successfully
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+
+  airbyte-webapp:
+    image: airbyte/webapp:${VERSION}
+    logging: *default-logging
+    container_name: ingestion-airbyte-webapp
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: "1GB"
+    ports:
+      - 3569:80
+    environment:
+      - AIRBYTE_ROLE=${AIRBYTE_ROLE:-}
+      - AIRBYTE_VERSION=${VERSION}
+      - API_URL=${API_URL:-}
+      - CONNECTOR_BUILDER_API_URL=${CONNECTOR_BUILDER_API_URL:-}
+      - INTERNAL_API_HOST=${INTERNAL_API_HOST}
+      - CONNECTOR_BUILDER_API_HOST=${CONNECTOR_BUILDER_API_HOST}
+      - OPENREPLAY=${OPENREPLAY:-}
+      - PAPERCUPS_STORYTIME=${PAPERCUPS_STORYTIME:-}
+      - TRACKING_STRATEGY=${TRACKING_STRATEGY}
+    depends_on:
+      bootloader:
+        condition: service_completed_successfully
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+  
+  airbyte-temporal:
+    image: airbyte/temporal:${VERSION}
+    logging: *default-logging
+    container_name: ingestion-airbyte-temporal
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: "512M"
+    environment:
+      - DB=postgresql
+      - DB_PORT=${DATABASE_PORT}
+      - DYNAMIC_CONFIG_FILE_PATH=config/dynamicconfig/development.yaml
+      - LOG_LEVEL=${LOG_LEVEL}
+      - POSTGRES_PWD=${DATABASE_PASSWORD}
+      - POSTGRES_SEEDS=${DATABASE_HOST}
+      - POSTGRES_USER=${DATABASE_USER}
+    volumes:
+      - ./temporal/dynamicconfig:/etc/temporal/config/dynamicconfig
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+
+  airbyte-cron:
+    image: airbyte/cron:${VERSION}
+    logging: *default-logging
+    container_name: ingestion-airbyte-cron
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "0.3"
+          memory: "256M"
+    environment:
+      - AIRBYTE_VERSION=${VERSION}
+      - CONFIGS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION=${CONFIGS_DATABASE_MINIMUM_FLYWAY_MIGRATION_VERSION}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_URL=${DATABASE_URL}
+      - DATABASE_USER=${DATABASE_USER}
+      - DEPLOYMENT_MODE=${DEPLOYMENT_MODE}
+      - LOG_LEVEL=${LOG_LEVEL}
+      - REMOTE_CONNECTOR_CATALOG_URL=${REMOTE_CONNECTOR_CATALOG_URL}
+      - TEMPORAL_HISTORY_RETENTION_IN_DAYS=${TEMPORAL_HISTORY_RETENTION_IN_DAYS}
+      - UPDATE_DEFINITIONS_CRON_ENABLED=${UPDATE_DEFINITIONS_CRON_ENABLED}
+      - WORKSPACE_ROOT=${WORKSPACE_ROOT}
+      - MICRONAUT_ENVIRONMENTS=${CRON_MICRONAUT_ENVIRONMENTS}
+    configs:
+      - flags
+    volumes:
+      - workspace:${WORKSPACE_ROOT}
+    depends_on:
+      bootloader:
+        condition: service_completed_successfully
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+  
+  airbyte-connector-builder-server:
+    image: airbyte/connector-builder-server:${VERSION}
+    logging: *default-logging
+    container_name: ingestion-airbyte-connector-builder-server
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: "128M"
+    ports:
+      - 80
+    environment:
+      - AIRBYTE_VERSION=${VERSION}
+    depends_on:
+      bootloader:
+        condition: service_completed_successfully
+    profiles:
+      - ingestion
+    networks:
+      - datastack
+  
+  airbyte-proxy:
+    image: airbyte/proxy:${VERSION}
+    container_name: ingestion-airbyte-proxy
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: "128M"
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+      - "8003:8003"
+    environment:
+      - BASIC_AUTH_USERNAME=${BASIC_AUTH_USERNAME}
+      - BASIC_AUTH_PASSWORD=${BASIC_AUTH_PASSWORD}
+      - BASIC_AUTH_PROXY_TIMEOUT=${BASIC_AUTH_PROXY_TIMEOUT}
+    depends_on:
+      - airbyte-webapp
+      - airbyte-server
+    profiles:
+      - ingestion
+    networks:
+      - datastack  
+
+  #AIRFLOW
+  postgres:
+    container_name: scheduling-airflow-postgres
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    deploy:
+      resources:
+        limits:
+          cpus: "0.40"
+          memory: 1200M
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+    restart: always
+    profiles:
+      - scheduling
+    networks:
+      - datastack  
+
+  redis:
+    container_name: scheduling-airflow-redis
+    image: redis:latest
+    expose:
+      - 6379
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 30s
+      retries: 50
+    restart: always
+    profiles:
+      - scheduling
+    networks:
+      - datastack  
+
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: scheduling-airflow-webserver
+    command: webserver
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+          limits:
+            cpus: "0.50"
+            memory: 1200M
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8081/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+    profiles:
+      - scheduling
+    networks:
+      - datastack  
+
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: scheduling-airflow-scheduler
+    command: scheduler
+    deploy:
+      resources:
+          limits:
+            cpus: "2"
+            memory: "6GB"
+    healthcheck:
+      test: ["CMD-SHELL", 'airflow jobs check --job-type SchedulerJob --hostname "$${HOSTNAME}"']
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+    profiles:
+      - scheduling
+    networks:
+      - datastack
+
+  airflow-worker:
+    <<: *airflow-common
+    container_name: scheduling-airflow-worker
+    command: celery worker
+    deploy:
+      resources:
+        limits:
+            cpus: "1"
+            memory: 1200M
+    healthcheck:
+      test:
+        - "CMD-SHELL"
+        - 'celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    environment:
+      <<: *airflow-common-env
+      # Required to handle warm shutdown of the celery workers properly
+      # See https://airflow.apache.org/docs/docker-stack/entrypoint.html#signal-propagation
+      DUMB_INIT_SETSID: "0"
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+    profiles:
+      - scheduling
+    networks:
+      - datastack
+
+  airflow-triggerer:
+    <<: *airflow-common
+    container_name: scheduling-airflow-triggerer
+    command: triggerer
+    deploy:
+        resources:
+            limits:
+              cpus: "0.5"
+              memory: 512M
+    healthcheck:
+      test: ["CMD-SHELL", 'airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"']
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+    profiles:
+      - scheduling
+    networks:
+      - datastack
+
+  airflow-init:
+    <<: *airflow-common
+    container_name: scheduling-airflow-init   
+    entrypoint: /bin/bash
+    deploy:
+        resources:
+            limits:
+              cpus: "0.5"
+              memory: 512M
+    # yamllint disable rule:line-length
+    command:
+      - -c
+      - |
+        function ver() {
+          printf "%04d%04d%04d%04d" $${1//./ }
+        }
+        airflow_version=$$(AIRFLOW__LOGGING__LOGGING_LEVEL=INFO && gosu airflow airflow version)
+        airflow_version_comparable=$$(ver $${airflow_version})
+        min_airflow_version=2.2.0
+        min_airflow_version_comparable=$$(ver $${min_airflow_version})
+        if (( airflow_version_comparable < min_airflow_version_comparable )); then
+          echo
+          echo -e "\033[1;31mERROR!!!: Too old Airflow version $${airflow_version}!\e[0m"
+          echo "The minimum Airflow version supported: $${min_airflow_version}. Only use this or higher!"
+          echo
+          exit 1
+        fi
+        if [[ -z "${AIRFLOW_UID}" ]]; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: AIRFLOW_UID not set!\e[0m"
+          echo "If you are on Linux, you SHOULD follow the instructions below to set "
+          echo "AIRFLOW_UID environment variable, otherwise files will be owned by root."
+          echo "For other operating systems you can get rid of the warning with manually created .env file:"
+          echo "    See: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#setting-the-right-airflow-user"
+          echo
+        fi
+        one_meg=1048576
+        mem_available=$$(($$(getconf _PHYS_PAGES) * $$(getconf PAGE_SIZE) / one_meg))
+        cpus_available=$$(grep -cE 'cpu[0-9]+' /proc/stat)
+        disk_available=$$(df / | tail -1 | awk '{print $$4}')
+        warning_resources="false"
+        if (( mem_available < 4000 )) ; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough memory available for Docker.\e[0m"
+          echo "At least 4GB of memory required. You have $$(numfmt --to iec $$((mem_available * one_meg)))"
+          echo
+          warning_resources="true"
+        fi
+        if (( cpus_available < 2 )); then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough CPUS available for Docker.\e[0m"
+          echo "At least 2 CPUs recommended. You have $${cpus_available}"
+          echo
+          warning_resources="true"
+        fi
+        if (( disk_available < one_meg * 10 )); then
+          echo
+          echo -e "\033[1;33mWARNING!!!: Not enough Disk space available for Docker.\e[0m"
+          echo "At least 10 GBs recommended. You have $$(numfmt --to iec $$((disk_available * 1024 )))"
+          echo
+          warning_resources="true"
+        fi
+        if [[ $${warning_resources} == "true" ]]; then
+          echo
+          echo -e "\033[1;33mWARNING!!!: You have not enough resources to run Airflow (see above)!\e[0m"
+          echo "Please follow the instructions to increase amount of resources available:"
+          echo "   https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#before-you-begin"
+          echo
+        fi
+        mkdir -p /sources/logs /sources/dags /sources/plugins
+        chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
+        exec /entrypoint airflow version
+    # yamllint enable rule:line-length
+    environment:
+      <<: *airflow-common-env
+      _AIRFLOW_DB_UPGRADE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
+      _PIP_ADDITIONAL_REQUIREMENTS: ''
+    user: "0:0"
+    volumes:
+      - ${AIRFLOW_PROJ_DIR:-.}:/sources
+    profiles:
+      - scheduling
+    networks:
+      - datastack
+
+  #SPARK
+  spark-master:
+    container_name: processing-spark-master
+    image: docker.io/bitnami/spark:3.3
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+    ports:
+      - '4001:8080'
+    profiles:
+      - processing
+    networks:
+      - datastack
+
+  spark-worker:
+    container_name: processing-spark-worker
+    image: docker.io/bitnami/spark:3.3
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=6G
+      - SPARK_WORKER_CORES=3
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+    profiles:
+        - processing
+    networks:
+      - datastack
+
+networks:
+  datastack:
+    driver: bridge
+    ipam:
+        driver: default
+        config:
+            - subnet: "172.18.0.0/16"
+
+
+volumes:
+  postgres-db-volume:
+  workspace:
+    name: ${WORKSPACE_DOCKER_MOUNT}
+  data:
+    name: ${DATA_DOCKER_MOUNT}
+  db:
+    name: ${DB_DOCKER_MOUNT}
+configs:
+  flags:
+    file: ./flags.yml
