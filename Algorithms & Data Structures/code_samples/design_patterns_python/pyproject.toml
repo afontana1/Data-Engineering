@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "design_patterns"
+version = "0.3.0"
+description = "A collection of design patterns in Python"
+authors = ["mbrav <mbrav@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "design_patterns"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.982"
+flake8 = "^5.0.4"
+
+[mypy]
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_calls = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

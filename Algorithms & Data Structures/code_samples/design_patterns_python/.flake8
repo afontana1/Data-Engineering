@@ -1,0 +1,12 @@
+[flake8]
+ignore =
+    F811,
+    F401
+exclude =
+    tests/,
+    venv/,
+    env/
+per-file-ignores =
+    */settings.py:E501
+max-complexity = 10
+max-line-length = 99
