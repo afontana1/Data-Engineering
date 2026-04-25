@@ -28,79 +28,353 @@
 
 # 1. Problem framing and requirements clarification
 
-These questions probe whether they understood the actual problem before building.
+These questions probe whether the candidate understood the actual problem before designing or building a solution. The goal is to see whether they can reason from user needs, business goals, constraints, and ambiguity rather than jumping straight to implementation.
 
-* What problem was this system solving, and for whom?
-* Who were the primary users or consumers of this system?
-* What were the most important user or business goals?
-* What constraints were already present before you started? Technical, organizational, regulatory, timeline, team skillset?
-* What requirements were explicit, and what important requirements had to be inferred?
-* What ambiguities did you have to clarify before you could design or implement anything?
-* What tradeoffs were already implied by the problem statement?
-* Were there conflicting stakeholder goals? How did you resolve them?
-* What did success look like for this system?
-* What would have happened if the team had optimized for the wrong thing?
+## A. Problem context and users
+
+* What problem was this system solving?
+* Who was the system solving it for?
+* Who were the primary users, customers, operators, or downstream consumers?
+* What pain point or opportunity made this problem worth solving?
+* How did you know this was the right problem to focus on?
+* Were there different user groups with different needs?
+* What would have been different if you designed only for one user group and ignored the others?
+* How did the user or business context shape the technical approach?
 
 What this reveals:
-Whether they think in terms of problem definition, stakeholder alignment, and hidden constraints instead of jumping straight to code.
+Whether they understand the system in terms of real users, real needs, and business context rather than describing it as a collection of features.
+
+---
+
+## B. Goals, success criteria, and priorities
+
+* What were the most important goals for this system?
+* How was success defined?
+* Were the success criteria product-facing, operational, technical, business-facing, or some combination?
+* Which goal mattered most if the team could not optimize for everything?
+* What would have counted as a failure even if the system technically worked?
+* How did you distinguish must-haves from nice-to-haves?
+* Were there metrics, user outcomes, service-level expectations, or business milestones that shaped the design?
+* What would have happened if the team optimized for the wrong goal?
+
+What this reveals:
+Whether they can connect technical work to outcomes, priorities, and measurable success instead of treating all requirements as equally important.
+
+---
+
+## C. Constraints and non-negotiables
+
+* What constraints were already present before you started?
+* Which constraints were technical, organizational, regulatory, financial, timeline-related, or team-related?
+* Which constraints were hard requirements versus preferences?
+* Did any legacy systems, existing contracts, team skills, or operational realities limit the solution space?
+* What was the most important constraint shaping the design?
+* What constraint was easiest to underestimate?
+* Were there constraints that seemed annoying at first but actually clarified the design?
+* If one major constraint had been removed, how would your approach have changed?
+
+What this reveals:
+Whether they understand that design happens inside constraints, and whether they can explain how those constraints shaped realistic engineering choices.
+
+---
+
+## D. Ambiguity, assumptions, and requirement discovery
+
+* What requirements were explicit, and what important requirements had to be inferred?
+* What was ambiguous when the project started?
+* What questions did you need answered before making design decisions?
+* What assumptions did you make early on?
+* Which assumptions were validated, and which turned out to be wrong or incomplete?
+* How did you uncover hidden requirements?
+* Were there edge cases, operational needs, or user behaviors that were not obvious from the initial request?
+* What would have gone wrong if you had started building from the first version of the requirements?
+
+What this reveals:
+Whether they can operate in ambiguity, discover missing information, and avoid overcommitting to an underdefined problem.
+
+---
+
+## E. Stakeholder alignment and tradeoffs
+
+* Who cared about this system, and what did each stakeholder care about most?
+* Were there conflicting stakeholder goals?
+* How did you resolve or negotiate those conflicts?
+* What tradeoffs were already implied by the problem statement?
+* Where did product, engineering, operations, security, or business needs pull in different directions?
+* What did the team intentionally choose not to optimize for?
+* Was there a decision where the “best” technical answer was not the right product or business answer?
+* How did you make sure the team was aligned before moving deeper into design or implementation?
+
+What this reveals:
+Whether they can navigate competing priorities and recognize that engineering decisions often reflect stakeholder tradeoffs, not just technical preferences.
 
 ---
 
 # 2. Scope, boundaries, and context
 
-These questions test whether they can define a system clearly.
+These questions test whether the candidate can define a system clearly: what it is responsible for, where its edges are, how it interacts with surrounding systems, and what was intentionally left out. The goal is to see whether they can model a system as a set of responsibilities, interfaces, and assumptions rather than as just a list of features.
 
-* What was the boundary of the system you owned versus adjacent systems?
-* What did this system depend on, and what depended on it?
-* Which parts were inside your control and which parts were external constraints?
-* What assumptions did your design rely on?
-* Which assumptions later turned out to be wrong or incomplete?
-* If you had to explain this system to a new engineer in five minutes, what are the most important boundaries they need to understand?
-* What were the most important inputs, outputs, and state transitions?
-* What did you intentionally choose not to include in the first version?
+## A. System boundary and ownership
+
+* What was the boundary of the system you owned?
+* What responsibilities clearly belonged inside this system?
+* What responsibilities clearly belonged outside it?
+* What adjacent systems or teams sat closest to this boundary?
+* Where was the boundary clean, and where was it blurry?
+* Were there areas where ownership was shared or ambiguous?
+* If a new engineer joined the team, what is the first thing you would explain about what this system does and does not own?
+* What confusion would most likely happen if someone misunderstood the system boundary?
 
 What this reveals:
-Whether they can model a system as a set of responsibilities and interfaces, not just a pile of features.
+Whether they can define a system in terms of responsibility and ownership, not just implementation details.
+
+---
+
+## B. Dependencies, consumers, and surrounding context
+
+* What did this system depend on?
+* What other systems, teams, or users depended on it?
+* Which dependencies were critical to its operation?
+* Which dependencies were stable and predictable, and which were risky or hard to control?
+* What assumptions did the system make about the behavior of upstream or downstream systems?
+* Were there any dependencies that became bottlenecks, sources of failure, or design constraints?
+* How did the surrounding ecosystem shape the design of this system?
+* If one important dependency changed or disappeared, what part of the system would be most affected?
+
+What this reveals:
+Whether they understand the system as part of a larger ecosystem of producers, consumers, and dependencies rather than as an isolated component.
+
+---
+
+## C. Inputs, outputs, and core behavior
+
+* What were the most important inputs into the system?
+* What were the primary outputs or externally visible behaviors?
+* What were the most important state transitions or lifecycle changes inside the system?
+* What events, requests, or conditions caused those transitions?
+* Which inputs were simple and well-formed, and which were messy or unpredictable?
+* What outputs mattered most to users or downstream systems?
+* If you had to describe the system as a flow of information or decisions, what would that flow look like?
+* What part of the input/output behavior was easiest to misunderstand?
+
+What this reveals:
+Whether they can describe the system in operational terms: how information enters, changes, and leaves, rather than only describing components or code structure.
+
+---
+
+## D. Assumptions, invariants, and mental model
+
+* What assumptions did your design rely on?
+* Which assumptions were explicit, and which were implicit?
+* What did the system assume about user behavior, data shape, traffic patterns, or dependency behavior?
+* Which assumptions later turned out to be wrong or incomplete?
+* What invariants or guarantees did the system need to preserve?
+* What parts of the design were most sensitive to a broken assumption?
+* How did you validate or revisit key assumptions as the project evolved?
+* If an important assumption failed, what would break first?
+
+What this reveals:
+Whether they can articulate the mental model behind the system and recognize that every design depends on assumptions that need to be made visible and tested.
+
+---
+
+## E. Scope control and intentional exclusions
+
+* What did you intentionally choose not to include in the first version?
+* What was out of scope, even if it sounded related?
+* How did you decide what belonged in the initial system versus a later iteration?
+* Were there tempting features or integrations that you deliberately excluded?
+* What complexity did those exclusions help you avoid?
+* Were any scope cuts painful but necessary?
+* What would have happened if the team had tried to include too much in the first version?
+* Looking back, was there anything excluded that should actually have been included earlier?
+
+What this reveals:
+Whether they can control scope deliberately, make boundaries practical, and understand that a good system definition often depends as much on what is excluded as on what is included.
 
 ---
 
 # 3. Scale estimation and design impact
 
-These questions reveal whether they can connect expected scale to architecture.
+These questions reveal whether the candidate can connect expected scale to practical design decisions. The goal is not to see whether they can produce perfect estimates, but whether they understand how users, traffic, data volume, growth, and bottlenecks shape architecture.
 
-* Roughly how many users, requests, records, or events did the system handle?
-* What were the expected traffic patterns? Spiky, steady, bursty, seasonal?
-* What growth did you expect over 6 to 12 months?
-* Which scale assumptions most influenced the design?
-* At what scale would your design start to break down?
-* Which resource was the bottleneck you worried about most: CPU, memory, network, storage, latency, developer velocity?
-* What was cheap at your current scale but would become expensive later?
-* Did you optimize for current scale or anticipated scale? Why?
-* What did you deliberately not over-engineer?
-* If usage increased by 10x, what would you change first?
+## A. Current scale and usage profile
+
+* Roughly how many users, requests, records, jobs, events, or transactions did the system handle?
+* Which scale dimension mattered most for this system?
+* What did normal usage look like?
+* What did peak usage look like?
+* Were traffic patterns steady, spiky, bursty, seasonal, or tied to specific user behavior?
+* Was the load mostly read-heavy, write-heavy, compute-heavy, storage-heavy, or coordination-heavy?
+* What scale number would someone need to know first to understand the design?
+* How accurate did your scale estimates need to be for the design to be useful?
 
 What this reveals:
-Whether they understand that scale is not a buzzword but an input to design decisions.
+Whether they can describe scale concretely and identify which dimensions of scale actually mattered for the system.
+
+---
+
+## B. Growth expectations and uncertainty
+
+* What growth did you expect over the next 6 to 12 months?
+* Which parts of the system were expected to grow fastest?
+* Which growth assumptions most influenced the design?
+* How confident were you in those assumptions?
+* What would have changed if growth had been slower than expected?
+* What would have changed if growth had been much faster than expected?
+* Did you design for current scale, near-term growth, or a longer-term future state?
+* How did uncertainty about growth affect the choices you made?
+
+What this reveals:
+Whether they can reason about future scale without blindly overbuilding for hypothetical demand.
+
+---
+
+## C. Bottlenecks and limiting resources
+
+* Which resource were you most worried about: CPU, memory, network, database load, storage, latency, external API limits, operational complexity, or developer velocity?
+* What made that resource the likely bottleneck?
+* How did you know where the bottleneck was, or where it would probably appear?
+* Were there any limits imposed by dependencies, vendors, infrastructure, or existing systems?
+* What was cheap at the current scale but likely to become expensive later?
+* What part of the system would saturate first under higher load?
+* Were there bottlenecks caused by coordination, locking, contention, or shared state?
+* Did the real bottleneck turn out to be different from the one you expected?
+
+What this reveals:
+Whether they understand that scale pressure usually appears through specific constrained resources, not through vague “scalability” concerns.
+
+---
+
+## D. Design choices shaped by scale
+
+* Which design decisions were directly shaped by scale assumptions?
+* Did scale influence your data model, API design, caching strategy, async processing, storage choice, or deployment model?
+* Where did batching, pagination, indexing, partitioning, queueing, caching, or precomputation become important?
+* What did you keep simple because the expected scale did not justify more complexity?
+* What did you deliberately avoid over-engineering?
+* Where did you choose a less scalable approach because it was simpler and good enough?
+* Where did you add complexity specifically to handle scale?
+* What design choice would have been different if the system were 10x smaller?
+
+What this reveals:
+Whether they can explain how scale translated into architecture and implementation choices, rather than treating scale as an abstract concern.
+
+---
+
+## E. Breaking points and scaling strategy
+
+* At what scale would your design start to break down?
+* What would break first if usage increased by 10x?
+* What would you change first under significantly higher load?
+* Which parts of the system could scale horizontally, and which could not?
+* What would require a redesign rather than just more infrastructure?
+* Were there any single points of capacity or coordination?
+* How would you detect that the system was approaching its limits?
+* If you had to prepare the system for the next order of magnitude, what would you do first?
+
+What this reveals:
+Whether they can reason about limits, failure thresholds, and practical scaling paths instead of assuming the current design will scale indefinitely.
 
 ---
 
 # 4. High-level architecture and major tradeoffs
 
-These questions probe their ability to reason at the system level.
+These questions probe whether the candidate can reason about the system at an architectural level. The goal is to see whether they can explain the major components, why the design took its shape, what alternatives were considered, and what tradeoffs the team knowingly accepted.
+
+## A. Architectural overview and system shape
 
 * Can you walk me through the architecture at a high level?
+* What were the major components or layers in the system?
+* What role did each major component play?
+* How did data, requests, or events flow through the architecture?
+* Which part of the architecture was most central to the system’s behavior?
+* What part would a new engineer need to understand first?
+* What was intentionally simple in the architecture?
+* What was inherently complex because of the problem itself?
+
+What this reveals:
+Whether they can describe the system clearly at the right level of abstraction, without getting lost in implementation details too early.
+
+---
+
+## B. Architectural alternatives and decision rationale
+
 * Why did you choose this architecture instead of one or two plausible alternatives?
+* What other designs did you seriously consider?
+* What made those alternatives less appropriate in this context?
+* Which constraints or goals pushed you toward the chosen design?
+* Was there an architecture that would have been technically cleaner but less practical?
+* Was there an architecture that would have been faster to ship but harder to evolve?
+* If a different team built the same product, what architectural choice might they reasonably make differently?
+* What would have had to be true for you to choose a different architecture?
+
+What this reveals:
+Whether they can reason from context to design choice, and whether they understand that architecture is selected among alternatives rather than discovered as a single “correct” answer.
+
+---
+
+## C. Major tradeoffs and design priorities
+
 * What were the top design decisions that shaped the rest of the system?
-* Where did you centralize complexity, and where did you push it to the edges?
-* Which tradeoffs did you knowingly make around simplicity, performance, reliability, flexibility, and speed of delivery?
+* Which tradeoffs did you knowingly make around simplicity, performance, reliability, flexibility, cost, and speed of delivery?
+* Which quality did you optimize for most strongly?
+* What did you intentionally sacrifice or de-prioritize?
+* Where did the design favor short-term delivery over long-term flexibility?
+* Where did it favor reliability or correctness over simplicity?
+* Which tradeoff was hardest to explain to stakeholders or teammates?
+* Looking back, which tradeoff still feels right, and which one would you revisit?
+
+What this reveals:
+Whether they understand architecture as priority-setting and tradeoff navigation, not as applying generic best practices.
+
+---
+
+## D. Placement of complexity and responsibility
+
+* Where did you centralize complexity?
+* Where did you push complexity to the edges?
+* What logic belonged in the core system versus clients, workers, services, or integrations?
+* Which parts of the system were kept deliberately dumb or thin?
+* Which component carried the most responsibility, and was that intentional?
+* Did the architecture create any “god component” or overly powerful coordination point?
+* Where did the architecture reduce complexity for one group but increase it for another?
+* Who paid the cost of the hardest complexity: users, developers, operators, clients, or downstream systems?
+
+What this reveals:
+Whether they can reason about where complexity lives in a system and how architectural decisions shift burden between components and people.
+
+---
+
+## E. Coupling, cohesion, and architectural seams
+
+* What parts of the system were tightly coupled?
+* Was that coupling intentional?
+* Where did you try to preserve loose coupling?
+* What were the most important architectural seams or interfaces?
+* Which components changed together most often?
+* Which components could be replaced or evolved independently?
+* Did the architecture reflect the business domain well, or did it expose implementation details?
+* What coupling seemed harmless early but became painful later?
+
+What this reveals:
+Whether they understand how architectural boundaries affect changeability, ownership, coordination, and long-term maintainability.
+
+---
+
+## F. Design risks and lessons learned
+
 * What part of the design gave you the most concern at the time?
 * What part looked good on paper but turned out awkward in practice?
 * Which design decision bought the most leverage?
-* If a different team built the same product, what architectural choice do you think they might reasonably make differently?
-* What parts of the system were tightly coupled, and was that intentional?
+* Which decision created the most future work?
+* What surprised you after the system was built or operated?
+* What would you redesign if you were starting again?
+* What did this architecture make easier than expected?
+* What did it make harder than expected?
 
 What this reveals:
-Whether they understand design as tradeoff navigation rather than “best practices.”
+Whether they can reflect honestly on architectural risk, unintended consequences, and what they learned from real usage rather than only defending the original design.
 
 ---
 
