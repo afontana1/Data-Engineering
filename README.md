@@ -68,6 +68,7 @@
 - [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html)
 - [Design Patterns Catalog](https://hillside.net/patterns/patterns-catalog)
 - [ISE Engineering Fundamentals Playbook](https://microsoft.github.io/code-with-engineering-playbook/)
+- [Abstraction Layered Architecture](https://www.abstractionlayeredarchitecture.com/)
 - [Awesome Open Source Data Engineering](https://github.com/gunnarmorling/awesome-opensource-data-engineering)
 
 ### Design Tutorials & Hands-on Lakehouse Builds
