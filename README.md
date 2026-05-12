@@ -153,7 +153,7 @@
 43. [python-ddd](https://github.com/pgorecki/python-ddd)
 44. [awesome-ddd](https://github.com/heynickc/awesome-ddd)
 45. [designing-data-intensive-applications](https://github.com/ResidentMario/designing-data-intensive-applications-notes)
-46. [Microservice API Patterns](https://microservice-api-patterns.org/)
+46. [Microservice Design Patterns - playlist](https://youtube.com/playlist?list=PLVz2XdJiJQxw1H3JVhclHc__WYDaiS1uL&si=Ao62pmu8l2vu-Kt6)
 47. [Serverless Patterns](https://github.com/aws-samples/serverless-patterns)
 48. [awesome-system-design](https://github.com/madd86/awesome-system-design)
 49. [awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)
