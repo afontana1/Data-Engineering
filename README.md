@@ -39,6 +39,14 @@
 1. [Software Engineering Institute](https://www.sei.cmu.edu/)
 2. [Society of Research Software Engineering](https://society-rse.org/)
 3. [Association for IT Architects](https://iasaglobal.org/)
+4. [An Overview of the SWEBOK Guide](https://sebokwiki.org/wiki/An_Overview_of_the_SWEBOK_Guide)
+5. [Advanced Programming](https://textbooks.cs.ksu.edu/cc410/)
+6. [Algorithms and Data Structures](https://www.wild-inter.net/teaching/algorithms-data-structures/)
+    - [Advanced Data Structures](https://www.wild-inter.net/teaching/advds/)
+    - [Advanced Algorithms](https://www.wild-inter.net/teaching/advanced-algorithms/)
+    - [Efficient Algorithms](https://www.wild-inter.net/teaching/comp526/)
+    - [Data Structures and Data Management](https://www.wild-inter.net/teaching/cs240/)
+    - [competitive Programming](https://www.wild-inter.net/teaching/competitive-programming/)
 
 ---
 
@@ -70,6 +78,7 @@
 - [ISE Engineering Fundamentals Playbook](https://microsoft.github.io/code-with-engineering-playbook/)
 - [Abstraction Layered Architecture](https://www.abstractionlayeredarchitecture.com/)
 - [Awesome Open Source Data Engineering](https://github.com/gunnarmorling/awesome-opensource-data-engineering)
+- [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
 
 ### Design Tutorials & Hands-on Lakehouse Builds
 
