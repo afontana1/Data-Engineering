@@ -47,6 +47,9 @@
     - [Efficient Algorithms](https://www.wild-inter.net/teaching/comp526/)
     - [Data Structures and Data Management](https://www.wild-inter.net/teaching/cs240/)
     - [competitive Programming](https://www.wild-inter.net/teaching/competitive-programming/)
+    - [Advanced Algorithms - Strategies for Tackling Hard Problems](https://youtube.com/playlist?list=PLzL0t_-LZiYl5ZmP8BjagROiH7fgA3fec&si=JDIim46NLHoyY_ay)
+7. [Database Internals](https://youtube.com/playlist?list=PLhgFs9q2EVg91l17UXoPdzsEhJrokLiMx&si=B72Cpn0UwDgL49G4)
+8. [Designing Data Intensive Applications](https://youtube.com/playlist?list=PLhgFs9q2EVg_rB-XT1zaJ3k9z0KVGrR2h&si=3ddGjz3EBk8Nt8T-)
 
 ---
 
