@@ -82,6 +82,7 @@
 - [Abstraction Layered Architecture](https://www.abstractionlayeredarchitecture.com/)
 - [Awesome Open Source Data Engineering](https://github.com/gunnarmorling/awesome-opensource-data-engineering)
 - [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
+- [data-engineering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp)
 
 ### Design Tutorials & Hands-on Lakehouse Builds
 
