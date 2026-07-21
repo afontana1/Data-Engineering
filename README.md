@@ -628,7 +628,7 @@
 11. [Needle](https://github.com/BitTheByte/Needle)
 12. [atasker](https://github.com/alttch/atasker)
 13. [asgiref](https://github.com/django/asgiref)
-14. 
+14. [aiofiles](https://github.com/Tinche/aiofiles)
 16. [concurrency-in-python-with-asyncio](https://github.com/concurrency-in-python-with-asyncio/concurrency-in-python-with-asyncio)
 17. [Async & Multitasking](https://github.com/timofurrer/awesome-asyncio)
 18. [fast_map](https://github.com/michalmonday/fast_map)
@@ -637,9 +637,6 @@
 21. [aiohttp-client-cache](https://github.com/requests-cache/aiohttp-client-cache)
 22. [aiohttp](https://github.com/aio-libs/aiohttp)
 23. [multiprocess](https://github.com/uqfoundation/multiprocess)
-24. [aiofiles](https://github.com/Tinche/aiofiles)
-25. [aiobotocore](https://github.com/aio-libs/aiobotocore)
-26. [aioboto3](https://github.com/terrycain/aioboto3)
 
 ---
 
