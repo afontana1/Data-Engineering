@@ -1,4 +1,0 @@
-from account.sign_up_handler import SignUpHandler
-from account.sign_in_handler import SignInHandler
-from account.sign_up_test_user_handler import SignUpTestUserHandler
-from account.verify_token_handler import VerifyTokenHandler
