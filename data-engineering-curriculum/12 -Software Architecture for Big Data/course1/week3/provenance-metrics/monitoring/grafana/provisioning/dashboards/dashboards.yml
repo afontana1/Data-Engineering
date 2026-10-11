@@ -1,0 +1,13 @@
+apiVersion: 1
+
+providers:
+  - name: Provenance
+    orgId: 1
+    folder: ""
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 5
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards
+

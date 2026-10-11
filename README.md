@@ -95,6 +95,7 @@
 - [Building Lakehouse](https://github.com/harrydevforlife/building-lakehouse)
 - [Lakehouse Project](https://github.com/tranthe170/NYC-Taxi-pipeline)
 - [Database Transactions](https://bbengfort.github.io/2017/12/psycopg2-transactions/)
+- [Introduction to the Databricks well-architected framework](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/)
 
 ### System Design (Interview + References)
 
@@ -190,6 +191,9 @@
 8. [Data Management](https://en.wikipedia.org/wiki/Category:Data_management)
 9. [Data Integration](https://en.wikipedia.org/wiki/Category:Data_integration)
 10. [aws-analytics-reference-architecture](https://github.com/aws-samples/aws-analytics-reference-architecture)
+11. [How Query Engines Work](https://howqueryengineswork.com/00-introduction.html)
+12. [Introduction to Data Lake Architectures](https://apxml.com/courses/intro-data-lake-architectures)
+13. [Datamesh Architecture](https://www.datamesh-architecture.com/)
 
 ---
 

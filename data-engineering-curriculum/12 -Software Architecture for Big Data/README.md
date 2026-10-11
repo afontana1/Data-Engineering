@@ -1,6 +1,8 @@
 # Software Architecture for Big Data
 
-## 
+## Course 1: Fundamentals
+
+- https://colorado.initialcapacity.io/contents
 
 1. [Test Driven Development in Go](https://github.com/PacktPublishing/Test-Driven-Development-in-Go)
 2. [test-driven-development-example](https://github.com/daylerees/test-driven-development-example)
