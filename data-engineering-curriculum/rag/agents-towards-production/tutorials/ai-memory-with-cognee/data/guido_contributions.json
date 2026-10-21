@@ -1,0 +1,280 @@
+[
+  {
+    "type": "pr",
+    "repository": "mypy",
+    "title": "[mypyc] Add type annotations to tests",
+    "description": "Missing type annotations can compromise test coverage. My eventual goal is to require annotations by default in all run tests.\r\n",
+    "url": "https://github.com/python/mypy/pull/19794",
+    "date": "2025-09-04T15:56:30Z",
+    "files_changed": [
+      "mypyc/test-data/fixtures/ir.py",
+      "mypyc/test-data/fixtures/typing-full.pyi",
+      "mypyc/test-data/run-dunders.test",
+      "mypyc/test-data/run-singledispatch.test"
+    ],
+    "related_issues": [],
+    "code_samples": [
+      {
+        "file_path": "mypyc/test-data/fixtures/ir.py",
+        "language": "python",
+        "before_code": "    def __iadd__(self, value: Iterable[_T], /) -> List[_T]: ...  # type: ignore[misc]\n    def append(self, x: _T) -> None: pass\n    def pop(self, i: int = -1) -> _T: pass\n    def count(self, _T) -> int: pass\n    def extend(self, l: Iterable[_T]) -> None: pass\n    def insert(self, i: int, x: _T) -> None: pass\n    def sort(self) -> None: pass",
+        "after_code": "    def __iadd__(self, value: Iterable[_T], /) -> List[_T]: ...  # type: ignore[misc]\n    def append(self, x: _T) -> None: pass\n    def pop(self, i: int = -1) -> _T: pass\n    def count(self, x: _T) -> int: pass\n    def extend(self, l: Iterable[_T]) -> None: pass\n    def insert(self, i: int, x: _T) -> None: pass\n    def sort(self) -> None: pass",
+        "diff_context": "    def __iadd__(self, value: Iterable[_T], /) -> List[_T]: ...  # type: ignore[misc]\n    def append(self, x: _T) -> None: pass\n    def pop(self, i: int = -1) -> _T: pass\n    def count(self, _T) -> int: pass\n    def count(self, x: _T) -> int: pass\n    def extend(self, l: Iterable[_T]) -> None: pass\n    def insert(self, i: int, x: _T) -> None: pass\n    def sort(self) -> None: pass",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": "sort",
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": [
+          "function_definition",
+          "type_hint"
+        ]
+      },
+      {
+        "file_path": "mypyc/test-data/fixtures/ir.py",
+        "language": "python",
+        "before_code": "def id(o: object) -> int: pass\n# This type is obviously wrong but the test stubs don't have Sized anymore\ndef len(o: object) -> int: pass\ndef print(*object) -> None: pass\ndef isinstance(x: object, t: object) -> bool: pass\ndef iter(i: Iterable[_T]) -> Iterator[_T]: pass\n@overload",
+        "after_code": "def id(o: object) -> int: pass\n# This type is obviously wrong but the test stubs don't have Sized anymore\ndef len(o: object) -> int: pass\ndef print(*args: object) -> None: pass\ndef isinstance(x: object, t: object) -> bool: pass\ndef iter(i: Iterable[_T]) -> Iterator[_T]: pass\n@overload",
+        "diff_context": "def id(o: object) -> int: pass\n# This type is obviously wrong but the test stubs don't have Sized anymore\ndef len(o: object) -> int: pass\ndef print(*object) -> None: pass\ndef print(*args: object) -> None: pass\ndef isinstance(x: object, t: object) -> bool: pass\ndef iter(i: Iterable[_T]) -> Iterator[_T]: pass\n@overload",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": "iter",
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": [
+          "function_definition",
+          "type_hint"
+        ]
+      },
+      {
+        "file_path": "mypyc/test-data/fixtures/typing-full.pyi",
+        "language": "python",
+        "before_code": "class GenericMeta(type): pass\n\nclass _SpecialForm:\n    def __getitem__(self, index): ...\nclass TypeVar:\n    def __init__(self, name, *args, bound=None): ...\n    def __or__(self, other): ...\n\ncast = 0\noverload = 0",
+        "after_code": "class GenericMeta(type): pass\n\nclass _SpecialForm:\n    def __getitem__(self, index: Any) -> Any: ...\nclass TypeVar:\n    def __init__(self, name: str, *args: Any, bound: Any = None): ...\n    def __or__(self, other: Any) -> Any: ...\n\ncast = 0\noverload = 0",
+        "diff_context": "class GenericMeta(type): pass\n\nclass _SpecialForm:\n    def __getitem__(self, index): ...\n    def __getitem__(self, index: Any) -> Any: ...\nclass TypeVar:\n    def __init__(self, name, *args, bound=None): ...\n    def __or__(self, other): ...\n    def __init__(self, name: str, *args: Any, bound: Any = None): ...\n    def __or__(self, other: Any) -> Any: ...\n\ncast = 0\noverload = 0",
+        "change_type": "modification",
+        "lines_of_context": 7,
+        "function_name": "__or__",
+        "class_name": "TypeVar",
+        "docstring": null,
+        "coding_patterns": [
+          "function_definition",
+          "type_hint"
+        ]
+      }
+    ],
+    "commit_message_style": "concise_subject",
+    "python_version": null,
+    "pep_status": null
+  },
+  {
+    "type": "pr",
+    "repository": "mypy",
+    "title": "Check functions without annotations in mypyc tests",
+    "description": "c.f. https://github.com/python/mypy/pull/19217#discussion_r2314303410\r\n\r\nDisallowing functions without annotations (where not relevant to the tests) is probably a good idea, but this creates a large number of failures which would take some time to go through (many due to common issues, like untyped functions in the fixtures).\r\n\r\nAs a smaller step in the right direction, this sets `check_untyped_defs = True` for the `run-*` tests so that we at least check functions without annotations. ",
+    "url": "https://github.com/python/mypy/pull/19792",
+    "date": "2025-09-04T14:42:17Z",
+    "files_changed": [
+      "mypyc/test-data/fixtures/ir.py",
+      "mypyc/test-data/run-classes.test",
+      "mypyc/test/test_run.py"
+    ],
+    "related_issues": [],
+    "code_samples": [
+      {
+        "file_path": "mypyc/test-data/fixtures/ir.py",
+        "language": "python",
+        "before_code": "class type:\n    def __init__(self, o: object) -> None: ...\n    def __or__(self, o: object) -> Any: ...\n    __name__ : str\n    __annotations__: Dict[str, Any]\n",
+        "after_code": "class type:\n    def __init__(self, o: object) -> None: ...\n    def __or__(self, o: object) -> Any: ...\n    def __new__(cls, *args: object) -> Any: ...\n    __name__ : str\n    __annotations__: Dict[str, Any]\n",
+        "diff_context": "class type:\n    def __init__(self, o: object) -> None: ...\n    def __or__(self, o: object) -> Any: ...\n    def __new__(cls, *args: object) -> Any: ...\n    __name__ : str\n    __annotations__: Dict[str, Any]\n",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": "__new__",
+        "class_name": "type",
+        "docstring": null,
+        "coding_patterns": [
+          "function_definition"
+        ]
+      }
+    ],
+    "commit_message_style": "concise_subject",
+    "python_version": null,
+    "pep_status": null
+  },
+  {
+    "type": "commit",
+    "repository": "cpython",
+    "title": "gh-74929: Rudimentary docs for PEP 667 (#118581)",
+    "description": "gh-74929: Rudimentary docs for PEP 667 (#118581)\n\nThis is *not* sufficient for the final 3.13 release, but it will do for beta 1:\r\n\r\n- What's new entry\r\n- Updated changelog entry (news blurb)\r\n- Mention the proxy for f_globals in the datamodel and Python frame object docs\r\n\r\nThis doesn't have any C API details (what's new refers to the PEP).",
+    "url": "https://github.com/python/cpython/commit/9c13d9e37a194f574b8591da634bf98419786448",
+    "date": "2024-05-05T15:31:26Z",
+    "files_changed": [
+      "Doc/c-api/frame.rst",
+      "Doc/reference/datamodel.rst",
+      "Doc/whatsnew/3.13.rst",
+      "Misc/NEWS.d/next/Core and Builtins/2024-04-27-21-44-40.gh-issue-74929.C2nESp.rst"
+    ],
+    "related_issues": [
+      "118581"
+    ],
+    "code_samples": [
+      {
+        "file_path": "Doc/c-api/frame.rst",
+        "language": "restructuredtext",
+        "before_code": "\n.. c:function:: PyObject* PyFrame_GetLocals(PyFrameObject *frame)\n\n   Get the *frame*'s :attr:`~frame.f_locals` attribute (:class:`dict`).\n\n   Return a :term:`strong reference`.\n\n   .. versionadded:: 3.11\n\n\n.. c:function:: int PyFrame_GetLineNumber(PyFrameObject *frame)\n",
+        "after_code": "\n.. c:function:: PyObject* PyFrame_GetLocals(PyFrameObject *frame)\n\n   Get the *frame*'s :attr:`~frame.f_locals` attribute.\n   If the frame refers to a function or comprehension, this returns\n   a write-through proxy object that allows modifying the locals.\n   In all other cases (classes, modules) it returns the :class:`dict`\n   representing the frame locals directly.\n\n   Return a :term:`strong reference`.\n\n   .. versionadded:: 3.11\n\n   .. versionchanged:: 3.13\n      Return a proxy object for functions and comprehensions.\n\n\n.. c:function:: int PyFrame_GetLineNumber(PyFrameObject *frame)\n",
+        "diff_context": "\n.. c:function:: PyObject* PyFrame_GetLocals(PyFrameObject *frame)\n\n   Get the *frame*'s :attr:`~frame.f_locals` attribute (:class:`dict`).\n   Get the *frame*'s :attr:`~frame.f_locals` attribute.\n   If the frame refers to a function or comprehension, this returns\n   a write-through proxy object that allows modifying the locals.\n   In all other cases (classes, modules) it returns the :class:`dict`\n   representing the frame locals directly.\n\n   Return a :term:`strong reference`.\n\n   .. versionadded:: 3.11\n\n   .. versionchanged:: 3.13\n      Return a proxy object for functions and comprehensions.\n\n\n.. c:function:: int PyFrame_GetLineNumber(PyFrameObject *frame)\n",
+        "change_type": "modification",
+        "lines_of_context": 11,
+        "function_name": null,
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": []
+      },
+      {
+        "file_path": "Doc/reference/datamodel.rst",
+        "language": "restructuredtext",
+        "before_code": "\n   * - .. attribute:: frame.f_locals\n     - The dictionary used by the frame to look up\n       :ref:`local variables <naming>`\n\n   * - .. attribute:: frame.f_globals\n     - The dictionary used by the frame to look up",
+        "after_code": "\n   * - .. attribute:: frame.f_locals\n     - The dictionary used by the frame to look up\n       :ref:`local variables <naming>`.\n       If the frame refers to a function or comprehension,\n       this may return a write-through proxy object.\n\n       .. versionchanged:: 3.13\n          Return a proxy for functions and comprehensions.\n\n   * - .. attribute:: frame.f_globals\n     - The dictionary used by the frame to look up",
+        "diff_context": "\n   * - .. attribute:: frame.f_locals\n     - The dictionary used by the frame to look up\n       :ref:`local variables <naming>`\n       :ref:`local variables <naming>`.\n       If the frame refers to a function or comprehension,\n       this may return a write-through proxy object.\n\n       .. versionchanged:: 3.13\n          Return a proxy for functions and comprehensions.\n\n   * - .. attribute:: frame.f_globals\n     - The dictionary used by the frame to look up",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": null,
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": []
+      },
+      {
+        "file_path": "Doc/whatsnew/3.13.rst",
+        "language": "restructuredtext",
+        "before_code": "  Performance improvements are modest -- we expect to be improving this\n  over the next few releases.\n\nNew typing features:\n\n* :pep:`696`: Type parameters (:data:`typing.TypeVar`, :data:`typing.ParamSpec`,",
+        "after_code": "  Performance improvements are modest -- we expect to be improving this\n  over the next few releases.\n\n* :pep:`667`: :attr:`FrameType.f_locals <frame.f_locals>` when used in\n  a function now returns a write-through proxy to the frame's locals,\n  rather than a ``dict``. See the PEP for corresponding C API changes\n  and deprecations.\n\nNew typing features:\n\n* :pep:`696`: Type parameters (:data:`typing.TypeVar`, :data:`typing.ParamSpec`,",
+        "diff_context": "  Performance improvements are modest -- we expect to be improving this\n  over the next few releases.\n\n* :pep:`667`: :attr:`FrameType.f_locals <frame.f_locals>` when used in\n  a function now returns a write-through proxy to the frame's locals,\n  rather than a ``dict``. See the PEP for corresponding C API changes\n  and deprecations.\n\nNew typing features:\n\n* :pep:`696`: Type parameters (:data:`typing.TypeVar`, :data:`typing.ParamSpec`,",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": null,
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": []
+      }
+    ],
+    "commit_message_style": "concise_subject; references_issue; has_body",
+    "python_version": null,
+    "pep_status": null
+  },
+  {
+    "type": "commit",
+    "repository": "mypy",
+    "title": "Support TypeGuard (PEP 647) (#9865)",
+    "description": "Support TypeGuard (PEP 647) (#9865)\n\nPEP 647 is still in draft mode, but it is likely to be accepted, and this helps solve some real issues.",
+    "url": "https://github.com/python/mypy/commit/fffbe88fc54807c8b10ac40456522ad2faf8d350",
+    "date": "2021-01-18T18:13:36Z",
+    "files_changed": [
+      "mypy/checker.py",
+      "mypy/checkexpr.py",
+      "mypy/constraints.py",
+      "mypy/expandtype.py",
+      "mypy/fixup.py",
+      "mypy/nodes.py",
+      "mypy/test/testcheck.py",
+      "mypy/typeanal.py",
+      "mypy/types.py",
+      "test-data/unit/check-python38.test",
+      "test-data/unit/check-serialize.test",
+      "test-data/unit/check-typeguard.test",
+      "test-data/unit/lib-stub/typing_extensions.pyi"
+    ],
+    "related_issues": [
+      "9865"
+    ],
+    "code_samples": [
+      {
+        "file_path": "mypy/checker.py",
+        "language": "python",
+        "before_code": "                if literal(expr) == LITERAL_TYPE:\n                    vartype = type_map[expr]\n                    return self.conditional_callable_type_map(expr, vartype)\n        elif isinstance(node, ComparisonExpr):\n            # Step 1: Obtain the types of each operand and whether or not we can\n            # narrow their types. (For example, we shouldn't try narrowing the",
+        "after_code": "                if literal(expr) == LITERAL_TYPE:\n                    vartype = type_map[expr]\n                    return self.conditional_callable_type_map(expr, vartype)\n            elif isinstance(node.callee, RefExpr):\n                if node.callee.type_guard is not None:\n                    # TODO: Follow keyword args or *args, **kwargs\n                    if node.arg_kinds[0] != nodes.ARG_POS:\n                        self.fail(\"Type guard requires positional argument\", node)\n                        return {}, {}\n                    if literal(expr) == LITERAL_TYPE:\n                        return {expr: TypeGuardType(node.callee.type_guard)}, {}\n        elif isinstance(node, ComparisonExpr):\n            # Step 1: Obtain the types of each operand and whether or not we can\n            # narrow their types. (For example, we shouldn't try narrowing the",
+        "diff_context": "                if literal(expr) == LITERAL_TYPE:\n                    vartype = type_map[expr]\n                    return self.conditional_callable_type_map(expr, vartype)\n            elif isinstance(node.callee, RefExpr):\n                if node.callee.type_guard is not None:\n                    # TODO: Follow keyword args or *args, **kwargs\n                    if node.arg_kinds[0] != nodes.ARG_POS:\n                        self.fail(\"Type guard requires positional argument\", node)\n                        return {}, {}\n                    if literal(expr) == LITERAL_TYPE:\n                        return {expr: TypeGuardType(node.callee.type_guard)}, {}\n        elif isinstance(node, ComparisonExpr):\n            # Step 1: Obtain the types of each operand and whether or not we can\n            # narrow their types. (For example, we shouldn't try narrowing the",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": null,
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": []
+      },
+      {
+        "file_path": "mypy/checkexpr.py",
+        "language": "python",
+        "before_code": "                                        ret_type=self.object_type(),\n                                        fallback=self.named_type('builtins.function'))\n        callee_type = get_proper_type(self.accept(e.callee, type_context, always_allow_any=True))\n        if (self.chk.options.disallow_untyped_calls and\n                self.chk.in_checked_function() and\n                isinstance(callee_type, CallableType)",
+        "after_code": "                                        ret_type=self.object_type(),\n                                        fallback=self.named_type('builtins.function'))\n        callee_type = get_proper_type(self.accept(e.callee, type_context, always_allow_any=True))\n        if (isinstance(e.callee, RefExpr)\n                and isinstance(callee_type, CallableType)\n                and callee_type.type_guard is not None):\n            # Cache it for find_isinstance_check()\n            e.callee.type_guard = callee_type.type_guard\n        if (self.chk.options.disallow_untyped_calls and\n                self.chk.in_checked_function() and\n                isinstance(callee_type, CallableType)",
+        "diff_context": "                                        ret_type=self.object_type(),\n                                        fallback=self.named_type('builtins.function'))\n        callee_type = get_proper_type(self.accept(e.callee, type_context, always_allow_any=True))\n        if (isinstance(e.callee, RefExpr)\n                and isinstance(callee_type, CallableType)\n                and callee_type.type_guard is not None):\n            # Cache it for find_isinstance_check()\n            e.callee.type_guard = callee_type.type_guard\n        if (self.chk.options.disallow_untyped_calls and\n                self.chk.in_checked_function() and\n                isinstance(callee_type, CallableType)",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": null,
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": [
+          "generator_expression"
+        ]
+      },
+      {
+        "file_path": "mypy/checkexpr.py",
+        "language": "python",
+        "before_code": "        \"\"\"\n        if literal(expr) >= LITERAL_TYPE:\n            restriction = self.chk.binder.get(expr)\n            # If the current node is deferred, some variables may get Any types that they\n            # otherwise wouldn't have. We don't want to narrow down these since it may\n            # produce invalid inferred Optional[Any] types, at least.",
+        "after_code": "        \"\"\"\n        if literal(expr) >= LITERAL_TYPE:\n            restriction = self.chk.binder.get(expr)\n            # Ignore the error about using get_proper_type().\n            if isinstance(restriction, TypeGuardType):  # type: ignore[misc]\n                # A type guard forces the new type even if it doesn't overlap the old.\n                return restriction.type_guard\n            # If the current node is deferred, some variables may get Any types that they\n            # otherwise wouldn't have. We don't want to narrow down these since it may\n            # produce invalid inferred Optional[Any] types, at least.",
+        "diff_context": "        \"\"\"\n        if literal(expr) >= LITERAL_TYPE:\n            restriction = self.chk.binder.get(expr)\n            # Ignore the error about using get_proper_type().\n            if isinstance(restriction, TypeGuardType):  # type: ignore[misc]\n                # A type guard forces the new type even if it doesn't overlap the old.\n                return restriction.type_guard\n            # If the current node is deferred, some variables may get Any types that they\n            # otherwise wouldn't have. We don't want to narrow down these since it may\n            # produce invalid inferred Optional[Any] types, at least.",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": null,
+        "class_name": null,
+        "docstring": "\"\"\"",
+        "coding_patterns": [
+          "type_hint"
+        ]
+      },
+      {
+        "file_path": "mypy/constraints.py",
+        "language": "python",
+        "before_code": "                for t, a in zip(template.arg_types, cactual.arg_types):\n                    # Negate direction due to function argument type contravariance.\n                    res.extend(infer_constraints(t, a, neg_op(self.direction)))\n            res.extend(infer_constraints(template.ret_type, cactual.ret_type,\n                                         self.direction))\n            return res\n        elif isinstance(self.actual, AnyType):",
+        "after_code": "                for t, a in zip(template.arg_types, cactual.arg_types):\n                    # Negate direction due to function argument type contravariance.\n                    res.extend(infer_constraints(t, a, neg_op(self.direction)))\n            template_ret_type, cactual_ret_type = template.ret_type, cactual.ret_type\n            if template.type_guard is not None:\n                template_ret_type = template.type_guard\n            if cactual.type_guard is not None:\n                cactual_ret_type = cactual.type_guard\n            res.extend(infer_constraints(template_ret_type, cactual_ret_type,\n                                         self.direction))\n            return res\n        elif isinstance(self.actual, AnyType):",
+        "diff_context": "                for t, a in zip(template.arg_types, cactual.arg_types):\n                    # Negate direction due to function argument type contravariance.\n                    res.extend(infer_constraints(t, a, neg_op(self.direction)))\n            res.extend(infer_constraints(template.ret_type, cactual.ret_type,\n            template_ret_type, cactual_ret_type = template.ret_type, cactual.ret_type\n            if template.type_guard is not None:\n                template_ret_type = template.type_guard\n            if cactual.type_guard is not None:\n                cactual_ret_type = cactual.type_guard\n            res.extend(infer_constraints(template_ret_type, cactual_ret_type,\n                                         self.direction))\n            return res\n        elif isinstance(self.actual, AnyType):",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": null,
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": [
+          "type_hint"
+        ]
+      },
+      {
+        "file_path": "mypy/expandtype.py",
+        "language": "python",
+        "before_code": "\n    def visit_callable_type(self, t: CallableType) -> Type:\n        return t.copy_modified(arg_types=self.expand_types(t.arg_types),\n                               ret_type=t.ret_type.accept(self))\n\n    def visit_overloaded(self, t: Overloaded) -> Type:\n        items = []  # type: List[CallableType]",
+        "after_code": "\n    def visit_callable_type(self, t: CallableType) -> Type:\n        return t.copy_modified(arg_types=self.expand_types(t.arg_types),\n                               ret_type=t.ret_type.accept(self),\n                               type_guard=(t.type_guard.accept(self)\n                                           if t.type_guard is not None else None))\n\n    def visit_overloaded(self, t: Overloaded) -> Type:\n        items = []  # type: List[CallableType]",
+        "diff_context": "\n    def visit_callable_type(self, t: CallableType) -> Type:\n        return t.copy_modified(arg_types=self.expand_types(t.arg_types),\n                               ret_type=t.ret_type.accept(self))\n                               ret_type=t.ret_type.accept(self),\n                               type_guard=(t.type_guard.accept(self)\n                                           if t.type_guard is not None else None))\n\n    def visit_overloaded(self, t: Overloaded) -> Type:\n        items = []  # type: List[CallableType]",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": "visit_overloaded",
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": []
+      },
+      {
+        "file_path": "mypy/fixup.py",
+        "language": "python",
+        "before_code": "        for arg in ct.bound_args:\n            if arg:\n                arg.accept(self)\n\n    def visit_overloaded(self, t: Overloaded) -> None:\n        for ct in t.items():",
+        "after_code": "        for arg in ct.bound_args:\n            if arg:\n                arg.accept(self)\n        if ct.type_guard is not None:\n            ct.type_guard.accept(self)\n\n    def visit_overloaded(self, t: Overloaded) -> None:\n        for ct in t.items():",
+        "diff_context": "        for arg in ct.bound_args:\n            if arg:\n                arg.accept(self)\n        if ct.type_guard is not None:\n            ct.type_guard.accept(self)\n\n    def visit_overloaded(self, t: Overloaded) -> None:\n        for ct in t.items():",
+        "change_type": "modification",
+        "lines_of_context": 6,
+        "function_name": "visit_overloaded",
+        "class_name": null,
+        "docstring": null,
+        "coding_patterns": []
+      }
+    ],
+    "commit_message_style": "concise_subject; references_issue; has_body",
+    "python_version": null,
+    "pep_status": null
+  }
+]

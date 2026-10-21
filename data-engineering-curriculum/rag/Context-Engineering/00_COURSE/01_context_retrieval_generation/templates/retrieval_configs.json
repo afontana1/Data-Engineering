@@ -1,0 +1,990 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "RAG Configuration Templates for Context Engineering",
+    "mathematical_basis": "C = A(c_instr, Retrieve(query, KB), c_query)",
+    "last_updated": "2024-01-15",
+    "compatibility": {
+      "vector_databases": ["Pinecone", "Weaviate", "Chroma", "FAISS", "Milvus", "Qdrant"],
+      "embedding_models": ["OpenAI", "Cohere", "Sentence-Transformers", "BGE", "E5"],
+      "llm_backends": ["OpenAI", "Anthropic", "Cohere", "Together", "Ollama"],
+      "frameworks": ["LangChain", "LlamaIndex", "Haystack", "Semantic Kernel"]
+    },
+    "research_grounding": {
+      "papers_analyzed": 1400,
+      "systematic_review": "arXiv:2507.13334v1",
+      "key_techniques": ["FlashRAG", "KRAGEN", "GraphRAG", "HippoRAG", "RAPTOR"]
+    }
+  },
+
+  "basic_rag_configurations": {
+    "simple_rag": {
+      "name": "Simple RAG Pipeline",
+      "description": "Basic retrieval-augmented generation setup",
+      "mathematical_formulation": "C = A(instructions, top_k_retrieval(query, vector_db), query)",
+      "use_cases": ["Q&A systems", "Document search", "Knowledge lookup"],
+      
+      "components": {
+        "retriever": {
+          "type": "dense_vector",
+          "embedding_model": {
+            "provider": "sentence-transformers",
+            "model_name": "all-MiniLM-L6-v2",
+            "dimension": 384,
+            "normalization": true,
+            "batch_size": 32
+          },
+          "vector_store": {
+            "provider": "faiss",
+            "index_type": "IndexFlatIP",
+            "metric": "cosine",
+            "ef_construction": 200,
+            "m": 16
+          },
+          "retrieval_params": {
+            "top_k": 5,
+            "similarity_threshold": 0.7,
+            "max_tokens_per_doc": 512,
+            "reranking": false
+          }
+        },
+        
+        "generator": {
+          "llm_provider": "openai",
+          "model": "gpt-3.5-turbo",
+          "temperature": 0.1,
+          "max_tokens": 1000,
+          "system_prompt": "You are a helpful assistant. Use the provided context to answer the user's question accurately and concisely."
+        },
+        
+        "context_assembly": {
+          "max_context_tokens": 3000,
+          "document_separator": "\n\n---\n\n",
+          "include_source_metadata": true,
+          "relevance_scoring": "cosine_similarity",
+          "redundancy_removal": true
+        }
+      },
+      
+      "evaluation_metrics": {
+        "retrieval_quality": ["recall@k", "precision@k", "mrr", "ndcg"],
+        "generation_quality": ["faithfulness", "answer_relevancy", "context_precision"],
+        "end_to_end": ["accuracy", "completeness", "response_time"]
+      },
+      
+      "optimization_settings": {
+        "embedding_cache_size": 10000,
+        "query_expansion": false,
+        "negative_sampling": false,
+        "hard_negative_mining": false
+      }
+    },
+
+    "enhanced_rag": {
+      "name": "Enhanced RAG with Reranking",
+      "description": "RAG pipeline with reranking and query expansion",
+      "mathematical_formulation": "C = A(instructions, rerank(expand_query(query), candidates), query)",
+      
+      "components": {
+        "query_processor": {
+          "expansion_strategy": "llm_based",
+          "expansion_model": "gpt-3.5-turbo",
+          "expansion_prompt": "Generate 3 alternative phrasings of this query: {query}",
+          "query_rewriting": true,
+          "intent_classification": true
+        },
+        
+        "retriever": {
+          "type": "hybrid",
+          "dense_retrieval": {
+            "embedding_model": {
+              "provider": "openai",
+              "model_name": "text-embedding-ada-002",
+              "dimension": 1536
+            },
+            "top_k": 20
+          },
+          "sparse_retrieval": {
+            "method": "bm25",
+            "top_k": 20,
+            "b": 0.75,
+            "k1": 1.6
+          },
+          "fusion_strategy": "reciprocal_rank_fusion",
+          "alpha": 0.6
+        },
+        
+        "reranker": {
+          "provider": "cohere",
+          "model": "rerank-english-v2.0",
+          "top_n": 5,
+          "return_scores": true,
+          "max_chunks_per_doc": 10
+        },
+        
+        "generator": {
+          "llm_provider": "anthropic",
+          "model": "claude-3-sonnet-20240229",
+          "temperature": 0.0,
+          "max_tokens": 2000,
+          "system_prompt": "You are an expert assistant. Answer the question using only the provided context. If the context doesn't contain enough information, say so explicitly."
+        },
+        
+        "context_assembly": {
+          "max_context_tokens": 8000,
+          "chunking_strategy": "recursive_character",
+          "chunk_size": 1000,
+          "chunk_overlap": 200,
+          "metadata_inclusion": ["source", "timestamp", "confidence_score"],
+          "citation_format": "[Source: {source}]"
+        }
+      },
+      
+      "performance_optimizations": {
+        "async_processing": true,
+        "batch_retrieval": true,
+        "result_caching": {
+          "ttl_seconds": 3600,
+          "cache_key_strategy": "query_hash",
+          "max_cache_size": "1GB"
+        },
+        "streaming_response": true
+      }
+    }
+  },
+
+  "advanced_rag_architectures": {
+    "modular_rag": {
+      "name": "Modular RAG Architecture",
+      "description": "Flexible, component-based RAG system",
+      "mathematical_formulation": "C = A(∪ᵢ Module_i(query, context), composition_strategy)",
+      "architecture_type": "microservices",
+      
+      "modules": {
+        "query_understanding": {
+          "intent_classifier": {
+            "model": "bert-base-uncased",
+            "labels": ["factual", "analytical", "creative", "procedural"],
+            "confidence_threshold": 0.8
+          },
+          "entity_extractor": {
+            "model": "spacy_en_core_web_sm",
+            "entity_types": ["PERSON", "ORG", "GPE", "DATE", "MONEY"],
+            "custom_patterns": []
+          },
+          "query_complexity_scorer": {
+            "factors": ["length", "entities", "question_type", "domain_specificity"],
+            "weights": [0.2, 0.3, 0.3, 0.2]
+          }
+        },
+        
+        "adaptive_retrieval": {
+          "strategy_selector": {
+            "rules": [
+              {
+                "condition": "intent == 'factual' and complexity < 0.5",
+                "strategy": "simple_dense"
+              },
+              {
+                "condition": "intent == 'analytical' or complexity > 0.7",
+                "strategy": "hybrid_with_rerank"
+              },
+              {
+                "condition": "entities_count > 3",
+                "strategy": "entity_aware"
+              }
+            ],
+            "fallback_strategy": "hybrid_with_rerank"
+          },
+          
+          "retrieval_strategies": {
+            "simple_dense": {
+              "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+              "top_k": 5,
+              "reranking": false
+            },
+            "hybrid_with_rerank": {
+              "dense_weight": 0.7,
+              "sparse_weight": 0.3,
+              "top_k_dense": 15,
+              "top_k_sparse": 15,
+              "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+              "final_top_k": 5
+            },
+            "entity_aware": {
+              "entity_boosting": true,
+              "boost_factor": 1.5,
+              "entity_expansion": true,
+              "knowledge_graph_integration": true
+            }
+          }
+        },
+        
+        "context_synthesizer": {
+          "synthesis_strategy": "llm_based",
+          "synthesis_model": "gpt-3.5-turbo",
+          "synthesis_prompt": "Synthesize the following documents into a coherent context for answering the query: {query}",
+          "max_synthesis_tokens": 2000,
+          "redundancy_removal": true,
+          "coherence_scoring": true
+        },
+        
+        "response_generator": {
+          "adaptive_prompting": true,
+          "prompt_templates": {
+            "factual": "Based on the provided context, provide a factual answer to: {query}",
+            "analytical": "Analyze the provided information to answer: {query}. Include reasoning.",
+            "creative": "Use the context as inspiration to creatively address: {query}",
+            "procedural": "Provide step-by-step guidance based on the context for: {query}"
+          },
+          "post_processing": {
+            "fact_checking": true,
+            "citation_insertion": true,
+            "confidence_scoring": true
+          }
+        }
+      },
+      
+      "orchestration": {
+        "workflow_engine": "apache_airflow",
+        "parallel_processing": true,
+        "error_handling": "graceful_degradation",
+        "monitoring": {
+          "metrics": ["latency", "accuracy", "resource_usage"],
+          "alerting": true,
+          "logging_level": "INFO"
+        }
+      }
+    },
+
+    "graph_enhanced_rag": {
+      "name": "Graph-Enhanced RAG (GraphRAG)",
+      "description": "RAG system with knowledge graph integration",
+      "mathematical_formulation": "C = A(instructions, graph_traverse(entity_extract(query), KG), vector_retrieve(query), query)",
+      
+      "knowledge_graph": {
+        "graph_database": {
+          "provider": "neo4j",
+          "connection": {
+            "uri": "bolt://localhost:7687",
+            "auth": {"username": "neo4j", "password": "password"}
+          },
+          "schema": {
+            "node_types": ["Entity", "Concept", "Document", "Topic"],
+            "relationship_types": ["RELATES_TO", "CONTAINS", "MENTIONS", "PART_OF"],
+            "properties": ["name", "type", "confidence", "embedding"]
+          }
+        },
+        
+        "entity_linking": {
+          "method": "hybrid",
+          "string_matching": {
+            "algorithm": "fuzzy_wuzzy",
+            "threshold": 0.85
+          },
+          "embedding_matching": {
+            "model": "sentence-transformers/all-MiniLM-L6-v2",
+            "threshold": 0.8
+          },
+          "disambiguation": {
+            "context_window": 100,
+            "confidence_threshold": 0.7
+          }
+        },
+        
+        "graph_traversal": {
+          "max_hops": 3,
+          "relationship_weights": {
+            "RELATES_TO": 1.0,
+            "CONTAINS": 0.8,
+            "MENTIONS": 0.6,
+            "PART_OF": 0.9
+          },
+          "pruning_strategy": "confidence_based",
+          "max_nodes_per_hop": 10
+        }
+      },
+      
+      "retrieval_fusion": {
+        "vector_retrieval": {
+          "embedding_model": "text-embedding-ada-002",
+          "top_k": 10,
+          "similarity_threshold": 0.75
+        },
+        "graph_retrieval": {
+          "subgraph_extraction": true,
+          "path_ranking": "pagerank",
+          "context_expansion": true
+        },
+        "fusion_strategy": {
+          "method": "weighted_combination",
+          "vector_weight": 0.6,
+          "graph_weight": 0.4,
+          "confidence_adjustment": true
+        }
+      },
+      
+      "context_construction": {
+        "graph_context_template": "Entity: {entity}\nRelationships: {relationships}\nConnected concepts: {concepts}",
+        "vector_context_template": "Document: {title}\nContent: {content}\nRelevance: {score}",
+        "integration_strategy": "interleaved",
+        "max_graph_tokens": 1000,
+        "max_vector_tokens": 2000
+      }
+    },
+
+    "hierarchical_rag": {
+      "name": "Hierarchical RAG (RAPTOR)",
+      "description": "Multi-level hierarchical retrieval and summarization",
+      "mathematical_formulation": "C = A(instructions, ∪ᵢ level_i_retrieval(query, hierarchy), query)",
+      
+      "hierarchy_construction": {
+        "clustering_algorithm": "gmm",
+        "embedding_model": "text-embedding-ada-002",
+        "cluster_levels": 3,
+        "clustering_params": {
+          "n_components_range": [2, 10],
+          "covariance_type": "full",
+          "max_iter": 100
+        },
+        "summarization": {
+          "model": "gpt-3.5-turbo",
+          "max_summary_tokens": 500,
+          "summary_prompt": "Summarize the following documents, capturing the key themes and information:"
+        }
+      },
+      
+      "retrieval_strategy": {
+        "multi_level_retrieval": true,
+        "level_weights": [0.5, 0.3, 0.2],
+        "adaptive_level_selection": {
+          "query_complexity_threshold": 0.6,
+          "high_complexity_levels": [0, 1, 2],
+          "low_complexity_levels": [0, 1]
+        },
+        "cross_level_validation": true
+      },
+      
+      "context_assembly": {
+        "hierarchical_organization": true,
+        "level_separation": "\n=== LEVEL {level} ===\n",
+        "summary_integration": "top_down",
+        "detail_preservation": "bottom_up",
+        "max_tokens_per_level": [1000, 800, 600]
+      }
+    }
+  },
+
+  "specialized_rag_configurations": {
+    "conversational_rag": {
+      "name": "Conversational RAG",
+      "description": "RAG optimized for multi-turn conversations",
+      "mathematical_formulation": "C = A(instructions, retrieve(rewrite(query, history), KB), memory, query)",
+      
+      "conversation_memory": {
+        "memory_type": "sliding_window",
+        "window_size": 10,
+        "memory_compression": {
+          "strategy": "summarization",
+          "compression_threshold": 5,
+          "summary_model": "gpt-3.5-turbo"
+        },
+        "entity_memory": {
+          "extraction_model": "spacy_en_core_web_sm",
+          "persistence": "redis",
+          "ttl_hours": 24
+        }
+      },
+      
+      "query_rewriting": {
+        "method": "llm_based",
+        "rewrite_model": "gpt-3.5-turbo",
+        "rewrite_prompt": "Rewrite the following query to be standalone, incorporating relevant context from the conversation history:\n\nHistory: {history}\nCurrent query: {query}\n\nStandalone query:",
+        "fallback_strategy": "concatenation"
+      },
+      
+      "context_personalization": {
+        "user_profile_integration": true,
+        "preference_learning": true,
+        "adaptive_retrieval": {
+          "user_feedback_weight": 0.3,
+          "interaction_history_weight": 0.2
+        }
+      }
+    },
+
+    "multi_modal_rag": {
+      "name": "Multi-Modal RAG",
+      "description": "RAG system supporting text, image, and audio inputs",
+      "mathematical_formulation": "C = A(instructions, ∪ᵢ retrieve_modal_i(query, KB_i), cross_modal_align(modalities))",
+      
+      "modality_processing": {
+        "text": {
+          "embedding_model": "text-embedding-ada-002",
+          "preprocessing": ["tokenization", "normalization"],
+          "chunking": {
+            "method": "semantic",
+            "chunk_size": 512,
+            "overlap": 50
+          }
+        },
+        "image": {
+          "embedding_model": "clip-vit-base-patch32",
+          "preprocessing": ["resize", "normalize"],
+          "captioning": {
+            "model": "blip2-opt-2.7b",
+            "max_length": 100
+          }
+        },
+        "audio": {
+          "transcription": {
+            "model": "whisper-large-v2",
+            "language": "auto-detect"
+          },
+          "embedding_model": "wav2vec2-base",
+          "preprocessing": ["resampling", "noise_reduction"]
+        }
+      },
+      
+      "cross_modal_fusion": {
+        "alignment_model": "clip-vit-large-patch14",
+        "fusion_strategy": "late_fusion",
+        "modal_weights": {
+          "text": 0.5,
+          "image": 0.3,
+          "audio": 0.2
+        },
+        "consistency_checking": true
+      },
+      
+      "unified_retrieval": {
+        "modal_specific_retrieval": {
+          "text_top_k": 5,
+          "image_top_k": 3,
+          "audio_top_k": 2
+        },
+        "cross_modal_ranking": {
+          "method": "learned_ranking",
+          "model": "cross_modal_transformer",
+          "features": ["intra_modal_score", "cross_modal_alignment", "query_relevance"]
+        }
+      }
+    },
+
+    "real_time_rag": {
+      "name": "Real-Time RAG",
+      "description": "Low-latency RAG for real-time applications",
+      "mathematical_formulation": "C = A(instructions, fast_retrieve(query, indexed_KB), query) with latency < threshold",
+      
+      "performance_optimizations": {
+        "embedding_cache": {
+          "provider": "redis",
+          "cache_size": "10GB",
+          "ttl_seconds": 3600,
+          "warm_up_strategy": "popular_queries"
+        },
+        "index_optimization": {
+          "vector_index": "faiss_ivf",
+          "quantization": "product_quantization",
+          "nprobe": 10,
+          "training_size": 100000
+        },
+        "parallel_processing": {
+          "retrieval_workers": 4,
+          "embedding_workers": 2,
+          "batch_processing": true,
+          "async_operations": true
+        }
+      },
+      
+      "latency_targets": {
+        "embedding_generation": "50ms",
+        "vector_search": "100ms",
+        "context_assembly": "50ms",
+        "total_retrieval": "200ms"
+      },
+      
+      "fallback_strategies": {
+        "cache_miss": "approximate_search",
+        "high_latency": "reduced_top_k",
+        "system_overload": "simplified_context"
+      }
+    }
+  },
+
+  "enterprise_configurations": {
+    "production_rag": {
+      "name": "Production-Ready RAG",
+      "description": "Enterprise-grade RAG with monitoring and governance",
+      
+      "infrastructure": {
+        "deployment": {
+          "platform": "kubernetes",
+          "replicas": 3,
+          "auto_scaling": {
+            "min_replicas": 2,
+            "max_replicas": 10,
+            "cpu_threshold": 70,
+            "memory_threshold": 80
+          },
+          "health_checks": {
+            "liveness_probe": "/health",
+            "readiness_probe": "/ready",
+            "startup_probe": "/startup"
+          }
+        },
+        
+        "monitoring": {
+          "metrics": {
+            "retrieval_latency": "histogram",
+            "retrieval_accuracy": "gauge",
+            "context_quality": "gauge",
+            "error_rate": "counter",
+            "throughput": "counter"
+          },
+          "alerting": {
+            "latency_threshold": "500ms",
+            "error_rate_threshold": "5%",
+            "accuracy_threshold": "0.8"
+          },
+          "dashboards": ["grafana", "datadog"]
+        },
+        
+        "logging": {
+          "structured_logging": true,
+          "log_level": "INFO",
+          "query_logging": {
+            "enabled": true,
+            "anonymization": true,
+            "retention_days": 30
+          },
+          "performance_logging": true
+        }
+      },
+      
+      "security": {
+        "authentication": {
+          "method": "oauth2",
+          "token_validation": true,
+          "role_based_access": true
+        },
+        "data_protection": {
+          "encryption_at_rest": true,
+          "encryption_in_transit": true,
+          "pii_detection": true,
+          "data_anonymization": true
+        },
+        "audit_logging": {
+          "user_actions": true,
+          "data_access": true,
+          "configuration_changes": true
+        }
+      },
+      
+      "governance": {
+        "data_lineage": {
+          "source_tracking": true,
+          "transformation_logging": true,
+          "version_control": true
+        },
+        "quality_control": {
+          "automated_testing": true,
+          "human_in_the_loop": true,
+          "bias_detection": true,
+          "fairness_metrics": true
+        },
+        "compliance": {
+          "gdpr_compliance": true,
+          "ccpa_compliance": true,
+          "right_to_be_forgotten": true
+        }
+      }
+    },
+
+    "federated_rag": {
+      "name": "Federated RAG",
+      "description": "RAG across multiple distributed knowledge bases",
+      "mathematical_formulation": "C = A(instructions, ∪ᵢ retrieve(query, KB_i), federation_strategy)",
+      
+      "federation_architecture": {
+        "knowledge_sources": [
+          {
+            "id": "kb_1",
+            "type": "internal_docs",
+            "access_method": "api",
+            "endpoint": "https://kb1.company.com/api",
+            "authentication": "api_key",
+            "priority": 1
+          },
+          {
+            "id": "kb_2",
+            "type": "external_sources",
+            "access_method": "web_scraping",
+            "rate_limiting": true,
+            "priority": 2
+          },
+          {
+            "id": "kb_3",
+            "type": "vector_database",
+            "access_method": "direct",
+            "provider": "pinecone",
+            "priority": 1
+          }
+        ],
+        
+        "query_routing": {
+          "strategy": "parallel",
+          "timeout_per_source": "2s",
+          "failure_handling": "continue_with_available",
+          "result_aggregation": "weighted_merge"
+        },
+        
+        "result_fusion": {
+          "deduplication": {
+            "method": "embedding_similarity",
+            "threshold": 0.95
+          },
+          "ranking": {
+            "method": "multi_criteria",
+            "criteria": ["relevance", "source_authority", "freshness"],
+            "weights": [0.5, 0.3, 0.2]
+          },
+          "conflict_resolution": {
+            "strategy": "source_priority",
+            "confidence_weighting": true
+          }
+        }
+      }
+    }
+  },
+
+  "evaluation_configurations": {
+    "rag_evaluation_suite": {
+      "name": "Comprehensive RAG Evaluation",
+      "description": "Multi-dimensional evaluation framework for RAG systems",
+      
+      "retrieval_evaluation": {
+        "metrics": {
+          "recall_at_k": [1, 3, 5, 10],
+          "precision_at_k": [1, 3, 5, 10],
+          "mean_reciprocal_rank": true,
+          "normalized_dcg": [3, 5, 10],
+          "hit_rate": true
+        },
+        "test_datasets": [
+          {
+            "name": "custom_qa_dataset",
+            "size": 1000,
+            "domain": "company_specific",
+            "annotation_quality": "expert_validated"
+          },
+          {
+            "name": "ms_marco",
+            "subset": "dev",
+            "size": 6980
+          }
+        ]
+      },
+      
+      "generation_evaluation": {
+        "automatic_metrics": {
+          "faithfulness": {
+            "method": "nli_based",
+            "model": "roberta-large-mnli"
+          },
+          "answer_relevancy": {
+            "method": "embedding_similarity",
+            "model": "sentence-transformers/all-mpnet-base-v2"
+          },
+          "context_precision": {
+            "method": "llm_based",
+            "evaluator_model": "gpt-4"
+          },
+          "context_recall": {
+            "method": "annotation_based",
+            "ground_truth_required": true
+          }
+        },
+        
+        "human_evaluation": {
+          "evaluation_criteria": [
+            "accuracy",
+            "completeness",
+            "clarity",
+            "helpfulness"
+          ],
+          "rating_scale": "1-5",
+          "annotator_agreement": "krippendorff_alpha",
+          "sample_size": 100
+        }
+      },
+      
+      "end_to_end_evaluation": {
+        "user_studies": {
+          "task_completion_rate": true,
+          "user_satisfaction": true,
+          "time_to_answer": true,
+          "trust_and_confidence": true
+        },
+        "ab_testing": {
+          "variants": ["baseline_rag", "enhanced_rag"],
+          "traffic_split": "50/50",
+          "statistical_significance": 0.05,
+          "minimum_effect_size": 0.02
+        }
+      }
+    }
+  },
+
+  "optimization_strategies": {
+    "performance_optimization": {
+      "embedding_optimization": {
+        "model_distillation": {
+          "teacher_model": "text-embedding-ada-002",
+          "student_model": "distilbert-base-uncased",
+          "distillation_loss": "cosine_similarity",
+          "temperature": 3.0
+        },
+        "quantization": {
+          "method": "int8",
+          "calibration_dataset_size": 1000,
+          "accuracy_threshold": 0.99
+        },
+        "model_pruning": {
+          "sparsity_level": 0.1,
+          "structured_pruning": false
+        }
+      },
+      
+      "retrieval_optimization": {
+        "index_optimization": {
+          "index_type": "approximate",
+          "algorithm": "hnsw",
+          "ef_construction": 200,
+          "m_connections": 16,
+          "quantization": "scalar_quantization"
+        },
+        "query_optimization": {
+          "query_expansion": true,
+          "query_reformulation": true,
+          "negative_filtering": true
+        },
+        "result_caching": {
+          "cache_strategy": "lru",
+          "cache_size": "1GB",
+          "cache_hit_target": 0.8
+        }
+      }
+    },
+
+    "quality_optimization": {
+      "context_quality": {
+        "relevance_filtering": {
+          "threshold": 0.7,
+          "dynamic_threshold": true,
+          "threshold_adaptation": "query_complexity_based"
+        },
+        "diversity_promotion": {
+          "method": "maximal_marginal_relevance",
+          "lambda_parameter": 0.5,
+          "diversity_weight": 0.3
+        },
+        "coherence_scoring": {
+          "method": "transformer_based",
+          "model": "bert-base-uncased",
+          "coherence_threshold": 0.6
+        }
+      },
+      
+      "response_quality": {
+        "factual_consistency": {
+          "method": "entailment_checking",
+          "model": "roberta-large-mnli",
+          "consistency_threshold": 0.8
+        },
+        "response_filtering": {
+          "toxicity_filter": true,
+          "bias_filter": true,
+          "hallucination_filter": true
+        },
+        "citation_insertion": {
+          "automatic_citation": true,
+          "citation_format": "[{source_id}]",
+          "citation_placement": "end_of_sentence"
+        }
+      }
+    }
+  },
+
+  "deployment_templates": {
+    "cloud_deployment": {
+      "aws": {
+        "services": {
+          "compute": "eks",
+          "vector_store": "opensearch",
+          "embedding_service": "sagemaker",
+          "caching": "elasticache_redis",
+          "monitoring": "cloudwatch"
+        },
+        "configuration": {
+          "instance_types": {
+            "api_server": "m5.xlarge",
+            "embedding_service": "ml.g4dn.xlarge",
+            "vector_search": "r5.2xlarge"
+          },
+          "auto_scaling": true,
+          "multi_az": true,
+          "backup_strategy": "cross_region"
+        }
+      },
+      
+      "gcp": {
+        "services": {
+          "compute": "gke",
+          "vector_store": "vertex_ai_matching_engine",
+          "embedding_service": "vertex_ai",
+          "caching": "memorystore_redis",
+          "monitoring": "cloud_monitoring"
+        }
+      },
+      
+      "azure": {
+        "services": {
+          "compute": "aks",
+          "vector_store": "cognitive_search",
+          "embedding_service": "openai_service",
+          "caching": "azure_cache_redis",
+          "monitoring": "azure_monitor"
+        }
+      }
+    },
+
+    "edge_deployment": {
+      "configuration": {
+        "model_optimization": {
+          "quantization": "int8",
+          "pruning": true,
+          "knowledge_distillation": true
+        },
+        "resource_constraints": {
+          "max_memory": "4GB",
+          "max_cpu_cores": 4,
+          "storage_limit": "16GB"
+        },
+        "offline_capability": true,
+        "sync_strategy": "periodic_update"
+      }
+    }
+  },
+
+  "integration_examples": {
+    "langchain_integration": {
+      "code_template": {
+        "python": """
+from langchain.vectorstores import FAISS
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.llms import OpenAI
+from langchain.chains import RetrievalQA
+
+# Load configuration
+config = {retrieval_config}
+
+# Initialize components
+embeddings = OpenAIEmbeddings(
+    model=config['components']['retriever']['embedding_model']['model_name']
+)
+vectorstore = FAISS.load_local(config['vector_store_path'], embeddings)
+llm = OpenAI(
+    model_name=config['components']['generator']['model'],
+    temperature=config['components']['generator']['temperature']
+)
+
+# Create RAG chain
+qa_chain = RetrievalQA.from_chain_type(
+    llm=llm,
+    chain_type="stuff",
+    retriever=vectorstore.as_retriever(
+        search_kwargs={"k": config['components']['retriever']['retrieval_params']['top_k']}
+    )
+)
+
+# Use the chain
+response = qa_chain.run(query="Your question here")
+"""
+      }
+    },
+
+    "llamaindex_integration": {
+      "code_template": {
+        "python": """
+from llama_index import VectorStoreIndex, SimpleDirectoryReader, ServiceContext
+from llama_index.embeddings import OpenAIEmbedding
+from llama_index.llms import OpenAI
+
+# Load configuration
+config = {retrieval_config}
+
+# Initialize service context
+embed_model = OpenAIEmbedding(
+    model=config['components']['retriever']['embedding_model']['model_name']
+)
+llm = OpenAI(
+    model=config['components']['generator']['model'],
+    temperature=config['components']['generator']['temperature']
+)
+service_context = ServiceContext.from_defaults(
+    embed_model=embed_model,
+    llm=llm
+)
+
+# Create index
+documents = SimpleDirectoryReader('data').load_data()
+index = VectorStoreIndex.from_documents(
+    documents,
+    service_context=service_context
+)
+
+# Query
+query_engine = index.as_query_engine(
+    similarity_top_k=config['components']['retriever']['retrieval_params']['top_k']
+)
+response = query_engine.query("Your question here")
+"""
+      }
+    }
+  },
+
+  "testing_configurations": {
+    "unit_tests": {
+      "embedding_tests": {
+        "dimension_consistency": true,
+        "normalization_check": true,
+        "batch_processing": true,
+        "performance_benchmarks": true
+      },
+      "retrieval_tests": {
+        "similarity_search": true,
+        "ranking_quality": true,
+        "edge_cases": ["empty_query", "very_long_query", "special_characters"],
+        "performance_tests": ["latency", "throughput", "memory_usage"]
+      },
+      "generation_tests": {
+        "output_format": true,
+        "token_limits": true,
+        "safety_filters": true,
+        "consistency_checks": true
+      }
+    },
+    
+    "integration_tests": {
+      "end_to_end_pipeline": true,
+      "error_handling": true,
+      "load_testing": {
+        "concurrent_users": [10, 50, 100, 500],
+        "request_rate": [1, 10, 50, 100],
+        "sustained_load": "1 hour"
+      },
+      "data_consistency": true
+    }
+  }
+}

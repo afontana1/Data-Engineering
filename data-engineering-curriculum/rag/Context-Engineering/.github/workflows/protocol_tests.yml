@@ -1,0 +1,556 @@
+name: Context Engineering Protocol Tests
+
+# Trigger workflow on protocol-related changes and scheduled validation
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - '60_protocols/**'
+      - '80_field_integration/**'
+      - '90_meta_recursive/**'
+      - 'tests/protocols/**'
+      - '.github/workflows/protocol_tests.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - '60_protocols/**'
+      - '80_field_integration/**'
+      - '90_meta_recursive/**'
+  schedule:
+    # Run daily at 02:00 UTC to catch temporal drift
+    - cron: '0 2 * * *'
+  # Allow manual triggering with protocol selection
+  workflow_dispatch:
+    inputs:
+      protocol_scope:
+        description: 'Protocol test scope'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - attractor
+          - resonance
+          - symbolic_residue
+          - memory_persistence
+          - field_dynamics
+          - meta_recursive
+          - quantum_semantic
+          - interpretability
+      trace_depth:
+        description: 'Symbolic trace depth (1-5)'
+        required: false
+        default: '3'
+        type: choice
+        options:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+      enable_perturbation:
+        description: 'Enable protocol perturbation tests'
+        required: false
+        default: false
+        type: boolean
+
+# Environment variables
+env:
+  PYTHON_VERSION: '3.10'
+  PROTOCOL_SCOPE: ${{ github.event.inputs.protocol_scope || 'all' }}
+  TRACE_DEPTH: ${{ github.event.inputs.trace_depth || '3' }}
+  ENABLE_PERTURBATION: ${{ github.event.inputs.enable_perturbation || 'false' }}
+  SYMBOLIC_RESIDUE_THRESHOLD: '0.12'
+  QK_OV_ALIGNMENT_THRESHOLD: '0.85'
+  ATTRACTOR_COHERENCE_THRESHOLD: '0.78'
+  BOUNDARY_STABILITY_THRESHOLD: '0.65'
+
+jobs:
+  # Protocol Shell Validation
+  shell-validation:
+    name: Protocol Shell Validation
+    runs-on: ubuntu-latest
+    outputs:
+      shell_validation_status: ${{ steps.validate-shells.outputs.validation_status }}
+      shell_list: ${{ steps.identify-shells.outputs.shell_list }}
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          
+      - name: Identify protocol shells to test
+        id: identify-shells
+        run: |
+          mkdir -p test_results/shell_validation
+          
+          if [[ "${{ env.PROTOCOL_SCOPE }}" == "all" ]]; then
+            SHELLS=$(ls 60_protocols/shells/*.shell | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          else
+            SHELLS=$(ls 60_protocols/shells/*${{ env.PROTOCOL_SCOPE }}*.shell | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          fi
+          
+          echo "shell_list=${SHELLS}" >> $GITHUB_OUTPUT
+          echo "Found shells: ${SHELLS}"
+          
+      - name: Validate protocol shell syntax
+        id: validate-shells
+        run: |
+          python tests/protocols/validate_shell_syntax.py \
+            --shells-file <(echo '${{ steps.identify-shells.outputs.shell_list }}' | jq -r '.[]') \
+            --output test_results/shell_validation/syntax_validation.json
+            
+          # Check if validation was successful
+          if [[ $(jq '.status' test_results/shell_validation/syntax_validation.json) == '"passed"' ]]; then
+            echo "validation_status=passed" >> $GITHUB_OUTPUT
+          else
+            echo "validation_status=failed" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Validate protocol shell semantics
+        run: |
+          python tests/protocols/validate_shell_semantics.py \
+            --shells-file <(echo '${{ steps.identify-shells.outputs.shell_list }}' | jq -r '.[]') \
+            --output test_results/shell_validation/semantic_validation.json
+            
+      - name: Generate shell validation report
+        run: |
+          python tests/protocols/generate_shell_report.py \
+            --syntax test_results/shell_validation/syntax_validation.json \
+            --semantics test_results/shell_validation/semantic_validation.json \
+            --output test_results/shell_validation/validation_report.md
+            
+      - name: Upload shell validation results
+        uses: actions/upload-artifact@v3
+        with:
+          name: shell-validation-results
+          path: test_results/shell_validation/
+
+  # Schema Compatibility Tests
+  schema-compatibility:
+    name: Protocol Schema Compatibility
+    needs: shell-validation
+    if: needs.shell-validation.outputs.shell_validation_status == 'passed'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          
+      - name: Validate schema compatibility
+        run: |
+          mkdir -p test_results/schema_compatibility
+          python tests/protocols/validate_schema_compatibility.py \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --schemas-dir 60_protocols/schemas \
+            --output test_results/schema_compatibility/compatibility_matrix.json
+            
+      - name: Test schema versioning
+        run: |
+          python tests/protocols/test_schema_versioning.py \
+            --schemas-dir 60_protocols/schemas \
+            --output test_results/schema_compatibility/versioning_report.json
+            
+      - name: Check for schema regression
+        run: |
+          python tests/protocols/check_schema_regression.py \
+            --current-schemas 60_protocols/schemas \
+            --compatibility test_results/schema_compatibility/compatibility_matrix.json \
+            --output test_results/schema_compatibility/regression_analysis.json
+            
+      - name: Generate schema compatibility report
+        run: |
+          python tests/protocols/generate_compatibility_report.py \
+            --compatibility test_results/schema_compatibility/compatibility_matrix.json \
+            --versioning test_results/schema_compatibility/versioning_report.json \
+            --regression test_results/schema_compatibility/regression_analysis.json \
+            --output test_results/schema_compatibility/compatibility_report.md
+            
+      - name: Upload schema compatibility results
+        uses: actions/upload-artifact@v3
+        with:
+          name: schema-compatibility-results
+          path: test_results/schema_compatibility/
+
+  # Static Protocol Analysis
+  static-analysis:
+    name: Static Protocol Analysis
+    needs: [shell-validation, schema-compatibility]
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          pip install networkx matplotlib pydot
+          
+      - name: Analyze protocol shell graphs
+        run: |
+          mkdir -p test_results/static_analysis
+          python tests/protocols/analyze_shell_graphs.py \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --output test_results/static_analysis/shell_graphs.json
+            
+      - name: Detect protocol cycles and deadlocks
+        run: |
+          python tests/protocols/detect_cycles_deadlocks.py \
+            --shell-graphs test_results/static_analysis/shell_graphs.json \
+            --output test_results/static_analysis/cycles_deadlocks.json
+            
+      - name: Analyze symbolic residue paths
+        run: |
+          python tests/protocols/analyze_symbolic_residue.py \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --output test_results/static_analysis/symbolic_residue_paths.json
+            
+      - name: Generate protocol dependency graphs
+        run: |
+          python tests/protocols/generate_dependency_graphs.py \
+            --shell-graphs test_results/static_analysis/shell_graphs.json \
+            --cycles-deadlocks test_results/static_analysis/cycles_deadlocks.json \
+            --output-dir test_results/static_analysis/graphs
+            
+      - name: Generate static analysis report
+        run: |
+          python tests/protocols/generate_static_analysis_report.py \
+            --shell-graphs test_results/static_analysis/shell_graphs.json \
+            --cycles-deadlocks test_results/static_analysis/cycles_deadlocks.json \
+            --symbolic-residue test_results/static_analysis/symbolic_residue_paths.json \
+            --output test_results/static_analysis/static_analysis_report.md
+            
+      - name: Upload static analysis results
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-analysis-results
+          path: test_results/static_analysis/
+
+  # Dynamic Protocol Testing
+  dynamic-testing:
+    name: Dynamic Protocol Testing
+    needs: [shell-validation, schema-compatibility, static-analysis]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test_type: [baseline, recursive, perturbation]
+      fail-fast: false
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          
+      - name: Skip perturbation tests if disabled
+        if: matrix.test_type == 'perturbation' && env.ENABLE_PERTURBATION != 'true'
+        run: |
+          echo "Skipping perturbation tests as they are disabled"
+          exit 0
+          
+      - name: Run dynamic protocol tests
+        run: |
+          mkdir -p test_results/dynamic_testing/${{ matrix.test_type }}
+          python tests/protocols/run_dynamic_tests.py \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --test-type ${{ matrix.test_type }} \
+            --trace-depth ${{ env.TRACE_DEPTH }} \
+            --output test_results/dynamic_testing/${{ matrix.test_type }}/test_results.json
+            
+      - name: Measure protocol performance metrics
+        run: |
+          python tests/protocols/measure_performance.py \
+            --test-results test_results/dynamic_testing/${{ matrix.test_type }}/test_results.json \
+            --output test_results/dynamic_testing/${{ matrix.test_type }}/performance_metrics.json
+            
+      - name: Analyze symbolic residue trace
+        run: |
+          python tests/protocols/analyze_residue_trace.py \
+            --test-results test_results/dynamic_testing/${{ matrix.test_type }}/test_results.json \
+            --threshold ${{ env.SYMBOLIC_RESIDUE_THRESHOLD }} \
+            --output test_results/dynamic_testing/${{ matrix.test_type }}/residue_analysis.json
+            
+      - name: Generate dynamic test visualizations
+        run: |
+          python tests/protocols/visualize_dynamic_tests.py \
+            --test-results test_results/dynamic_testing/${{ matrix.test_type }}/test_results.json \
+            --performance test_results/dynamic_testing/${{ matrix.test_type }}/performance_metrics.json \
+            --residue test_results/dynamic_testing/${{ matrix.test_type }}/residue_analysis.json \
+            --output-dir test_results/dynamic_testing/${{ matrix.test_type }}/visualizations
+            
+      - name: Generate dynamic test report
+        run: |
+          python tests/protocols/generate_dynamic_report.py \
+            --test-results test_results/dynamic_testing/${{ matrix.test_type }}/test_results.json \
+            --performance test_results/dynamic_testing/${{ matrix.test_type }}/performance_metrics.json \
+            --residue test_results/dynamic_testing/${{ matrix.test_type }}/residue_analysis.json \
+            --output test_results/dynamic_testing/${{ matrix.test_type }}/dynamic_report.md
+            
+      - name: Upload dynamic test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: dynamic-testing-${{ matrix.test_type }}
+          path: test_results/dynamic_testing/${{ matrix.test_type }}/
+
+  # Attractor and Field Dynamics Tests
+  field-dynamics:
+    name: Attractor and Field Dynamics
+    needs: [shell-validation, dynamic-testing]
+    if: ${{ env.PROTOCOL_SCOPE == 'all' || env.PROTOCOL_SCOPE == 'attractor' || env.PROTOCOL_SCOPE == 'field_dynamics' }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          pip install networkx matplotlib numpy scipy pandas seaborn
+          
+      - name: Test attractor formation
+        run: |
+          mkdir -p test_results/field_dynamics
+          python tests/protocols/test_attractor_formation.py \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --coherence-threshold ${{ env.ATTRACTOR_COHERENCE_THRESHOLD }} \
+            --output test_results/field_dynamics/attractor_formation.json
+            
+      - name: Test field boundary stability
+        run: |
+          python tests/protocols/test_boundary_stability.py \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --stability-threshold ${{ env.BOUNDARY_STABILITY_THRESHOLD }} \
+            --output test_results/field_dynamics/boundary_stability.json
+            
+      - name: Test QK/OV alignment
+        run: |
+          python tests/protocols/test_qk_ov_alignment.py \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --alignment-threshold ${{ env.QK_OV_ALIGNMENT_THRESHOLD }} \
+            --output test_results/field_dynamics/qk_ov_alignment.json
+            
+      - name: Generate field dynamics visualizations
+        run: |
+          python tests/protocols/visualize_field_dynamics.py \
+            --attractor test_results/field_dynamics/attractor_formation.json \
+            --boundary test_results/field_dynamics/boundary_stability.json \
+            --alignment test_results/field_dynamics/qk_ov_alignment.json \
+            --output-dir test_results/field_dynamics/visualizations
+            
+      - name: Generate field dynamics report
+        run: |
+          python tests/protocols/generate_field_report.py \
+            --attractor test_results/field_dynamics/attractor_formation.json \
+            --boundary test_results/field_dynamics/boundary_stability.json \
+            --alignment test_results/field_dynamics/qk_ov_alignment.json \
+            --output test_results/field_dynamics/field_dynamics_report.md
+            
+      - name: Upload field dynamics results
+        uses: actions/upload-artifact@v3
+        with:
+          name: field-dynamics-results
+          path: test_results/field_dynamics/
+
+  # Meta-Recursive Protocol Tests
+  meta-recursive:
+    name: Meta-Recursive Protocol Tests
+    needs: [shell-validation, dynamic-testing]
+    if: ${{ env.PROTOCOL_SCOPE == 'all' || env.PROTOCOL_SCOPE == 'meta_recursive' }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          
+      - name: Test meta-recursive protocol shells
+        run: |
+          mkdir -p test_results/meta_recursive
+          python tests/protocols/test_meta_recursive.py \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --depth ${{ env.TRACE_DEPTH }} \
+            --output test_results/meta_recursive/meta_test_results.json
+            
+      - name: Analyze recursive trace collapse
+        run: |
+          python tests/protocols/analyze_trace_collapse.py \
+            --meta-results test_results/meta_recursive/meta_test_results.json \
+            --output test_results/meta_recursive/trace_collapse_analysis.json
+            
+      - name: Test self-reflection consistency
+        run: |
+          python tests/protocols/test_reflection_consistency.py \
+            --meta-results test_results/meta_recursive/meta_test_results.json \
+            --output test_results/meta_recursive/reflection_consistency.json
+            
+      - name: Generate meta-recursive visualizations
+        run: |
+          python tests/protocols/visualize_meta_recursive.py \
+            --meta-results test_results/meta_recursive/meta_test_results.json \
+            --collapse test_results/meta_recursive/trace_collapse_analysis.json \
+            --consistency test_results/meta_recursive/reflection_consistency.json \
+            --output-dir test_results/meta_recursive/visualizations
+            
+      - name: Generate meta-recursive report
+        run: |
+          python tests/protocols/generate_meta_report.py \
+            --meta-results test_results/meta_recursive/meta_test_results.json \
+            --collapse test_results/meta_recursive/trace_collapse_analysis.json \
+            --consistency test_results/meta_recursive/reflection_consistency.json \
+            --output test_results/meta_recursive/meta_recursive_report.md
+            
+      - name: Upload meta-recursive results
+        uses: actions/upload-artifact@v3
+        with:
+          name: meta-recursive-results
+          path: test_results/meta_recursive/
+
+  # Comprehensive Protocol Report
+  comprehensive-report:
+    name: Comprehensive Protocol Report
+    needs: [shell-validation, schema-compatibility, static-analysis, dynamic-testing, field-dynamics, meta-recursive]
+    if: always()
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Download all test results
+        uses: actions/download-artifact@v3
+        with:
+          path: all_test_results
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          pip install pandas matplotlib seaborn jinja2
+          
+      - name: Compile comprehensive test metrics
+        run: |
+          mkdir -p comprehensive_report
+          python tests/protocols/compile_comprehensive_metrics.py \
+            --results-dir all_test_results \
+            --output comprehensive_report/comprehensive_metrics.json
+            
+      - name: Generate test coverage matrix
+        run: |
+          python tests/protocols/generate_coverage_matrix.py \
+            --metrics comprehensive_report/comprehensive_metrics.json \
+            --shells-file <(echo '${{ needs.shell-validation.outputs.shell_list }}' | jq -r '.[]') \
+            --output comprehensive_report/coverage_matrix.json
+            
+      - name: Generate protocol health indicators
+        run: |
+          python tests/protocols/generate_health_indicators.py \
+            --metrics comprehensive_report/comprehensive_metrics.json \
+            --coverage comprehensive_report/coverage_matrix.json \
+            --output comprehensive_report/health_indicators.json
+            
+      - name: Generate comprehensive protocol dashboard
+        run: |
+          python tests/protocols/generate_protocol_dashboard.py \
+            --metrics comprehensive_report/comprehensive_metrics.json \
+            --coverage comprehensive_report/coverage_matrix.json \
+            --health comprehensive_report/health_indicators.json \
+            --output comprehensive_report/protocol_dashboard.html
+            
+      - name: Generate comprehensive markdown report
+        run: |
+          python tests/protocols/generate_comprehensive_report.py \
+            --metrics comprehensive_report/comprehensive_metrics.json \
+            --coverage comprehensive_report/coverage_matrix.json \
+            --health comprehensive_report/health_indicators.json \
+            --output comprehensive_report/comprehensive_protocol_report.md
+            
+      - name: Upload comprehensive report
+        uses: actions/upload-artifact@v3
+        with:
+          name: comprehensive-protocol-report
+          path: comprehensive_report/
+          
+      - name: Generate PR comment summary
+        if: github.event_name == 'pull_request'
+        run: |
+          python tests/protocols/generate_pr_summary.py \
+            --metrics comprehensive_report/comprehensive_metrics.json \
+            --health comprehensive_report/health_indicators.json \
+            --output pr_protocol_summary.md
+            
+      - name: Comment on PR with protocol test summary
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const summary = fs.readFileSync('pr_protocol_summary.md', 'utf8');
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: summary
+            });

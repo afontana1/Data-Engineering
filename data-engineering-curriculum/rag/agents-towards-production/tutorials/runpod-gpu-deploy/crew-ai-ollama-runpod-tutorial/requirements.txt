@@ -1,0 +1,4 @@
+# Required Python packages get listed here, one per line.
+crewai>=0.12
+crewai-tools>=0.1
+runpod~=1.7.9

@@ -1,0 +1,20 @@
+node_modules
+.env
+package-lock.json
+.ipynb_checkpoints
+*tmp*
+**.DS_Store
+**.pkl
+pandas_docs
+**.lance
+.venv
+venv
+*__pycache__*
+*.DS_Store*
+
+# multi-modal search example
+examples/multimodal_video_search/videos
+
+# movie recommender example
+/examples/movie-recommender/ml-latest-small
+/examples/movie-recommender/trained_model*

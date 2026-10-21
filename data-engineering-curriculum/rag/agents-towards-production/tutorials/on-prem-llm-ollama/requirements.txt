@@ -1,0 +1,18 @@
+# Essential dependencies
+requests>=2.31.0
+langchain>=0.1.0
+langchain-community>=0.0.20
+
+# For agent examples
+langgraph>=0.0.40
+
+# Optional: For comparison with cloud APIs
+openai>=1.0.0
+
+# Development and testing
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Example specific dependencies
+fastapi>=0.104.0
+uvicorn>=0.24.0 

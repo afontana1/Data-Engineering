@@ -1,0 +1,264 @@
+name: Context Engineering CI Pipeline
+
+# Trigger the workflow on push or pull request events
+on:
+  push:
+    branches: [ main, develop ]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.github/*.md'
+  pull_request:
+    branches: [ main, develop ]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.github/*.md'
+  # Allow manual triggers
+  workflow_dispatch:
+
+# Define environment variables
+env:
+  PYTHON_VERSION: '3.10'
+  NODE_VERSION: '16'
+
+jobs:
+  # First job: Code quality checks
+  code-quality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+          
+      - name: Check code formatting with Black
+        run: black --check .
+        
+      - name: Lint with flake8
+        run: |
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 . --count --exit-zero --max-complexity=10 --statistics
+          
+      - name: Check imports with isort
+        run: isort --check --profile black .
+          
+      - name: Type checking with mypy
+        run: mypy --ignore-missing-imports .
+
+  # Second job: Run tests
+  test:
+    name: Test Suite
+    runs-on: ubuntu-latest
+    needs: code-quality
+    
+    strategy:
+      matrix:
+        test-group: [foundations, templates, examples, protocols, agents, fields, meta, cognitive-tools]
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          
+      - name: Run tests for ${{ matrix.test-group }}
+        run: pytest tests/${{ matrix.test-group }} --cov=./${{ matrix.test-group }} --cov-report=xml
+        
+      - name: Upload coverage report
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage.xml
+          flags: ${{ matrix.test-group }}
+          name: codecov-${{ matrix.test-group }}
+          fail_ci_if_error: false
+
+  # Third job: Protocol validation
+  protocol-validation:
+    name: Protocol Schema Validation
+    runs-on: ubuntu-latest
+    needs: code-quality
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema pyyaml
+          
+      - name: Validate Protocol Schema Files
+        run: |
+          python .github/scripts/validate_protocols.py
+          
+      - name: Check Protocol Shell Consistency
+        run: |
+          python .github/scripts/check_protocol_shells.py
+
+  # Fourth job: Field integration tests
+  field-integration:
+    name: Field Integration Tests
+    runs-on: ubuntu-latest
+    needs: [test, protocol-validation]
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          
+      - name: Run field integration tests
+        run: |
+          python -m pytest tests/integration/field_tests --cov=./80_field_integration --cov-report=xml
+          
+      - name: Upload integration coverage report
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage.xml
+          flags: integration
+          name: codecov-integration
+          fail_ci_if_error: false
+
+  # Fifth job: Documentation validation
+  docs-validation:
+    name: Documentation Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml linkchecker mermaid-cli
+          
+      - name: Validate internal documentation links
+        run: |
+          python .github/scripts/validate_doc_links.py
+          
+      - name: Check Markdown formatting
+        run: |
+          npm install -g markdownlint-cli
+          markdownlint "**/*.md" --ignore node_modules
+          
+      - name: Validate Mermaid diagrams
+        run: |
+          find . -name "*.md" -exec grep -l "```mermaid" {} \; | xargs -I {} python .github/scripts/validate_mermaid.py {}
+
+  # Sixth job: Build test artifacts
+  build-artifacts:
+    name: Build Test Artifacts
+    runs-on: ubuntu-latest
+    needs: [test, protocol-validation, field-integration]
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          
+      - name: Build examples
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python .github/scripts/build_examples.py
+          
+      - name: Build documentation
+        run: |
+          pip install mkdocs mkdocs-material
+          mkdocs build
+          
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: |
+            build/
+            site/
+            examples/
+
+  # Final job: Meta-recursion validation (reflective tests)
+  meta-recursion:
+    name: Meta-Recursion Validation
+    runs-on: ubuntu-latest
+    needs: [test, field-integration]
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          
+      - name: Run meta-recursive tests
+        run: |
+          python -m pytest tests/meta_recursive --cov=./90_meta_recursive --cov-report=xml
+          
+      - name: Check self-reflection consistency
+        run: |
+          python .github/scripts/verify_meta_consistency.py
+          
+      - name: Upload meta-recursion report
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage.xml
+          flags: meta
+          name: codecov-meta
+          fail_ci_if_error: false

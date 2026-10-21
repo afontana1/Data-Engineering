@@ -1,0 +1,20 @@
+{
+  "name": "lancedb-cloud-quickstart",
+  "version": "1.0.0",
+  "description": "LanceDB Cloud Quickstart in TypeScript",
+  "type": "module",
+  "main": "lancedb_cloud_quickstart.ts",
+  "scripts": {
+    "start": "node --no-warnings --loader ts-node/esm lancedb_cloud_quickstart.ts"
+  },
+  "dependencies": {
+    "@lancedb/lancedb": "^0.17.0",
+    "apache-arrow": "^17.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+} 

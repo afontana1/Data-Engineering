@@ -1,0 +1,323 @@
+<svg viewBox="0 0 1000 580" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for gradients, shadows, and markers -->
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="inputGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="knowledgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#21CBF3;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="toolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd89b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#19547b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowMain" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 L4,5 Z" fill="#2563eb" />
+    </marker>
+    
+    <marker id="arrowSupport" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L3,4 Z" fill="#6b7280" />
+    </marker>
+    
+    <marker id="arrowFeedback" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L3,4 Z" fill="#059669" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="580" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937">
+    AI Agent Production Architecture
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="500" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+    Agents-Towards-Production repo by DiamantAI
+  </text>
+  
+  <!-- LAYER 1: INPUT FLOW (Top Row) -->
+  
+  <!-- INPUT SOURCES -->
+  <g id="inputSources">
+    <rect x="30" y="70" width="160" height="100" rx="10" fill="url(#inputGrad)" opacity="0.2" filter="url(#shadow)"/>
+    <text x="110" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
+      📥 INPUT SOURCES
+    </text>
+    
+    <!-- Sub-components -->
+    <rect x="45" y="110" width="60" height="20" rx="4" fill="white" filter="url(#shadow)"/>
+    <text x="75" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">👤 Users</text>
+    
+    <rect x="115" y="110" width="60" height="20" rx="4" fill="white" filter="url(#shadow)"/>
+    <text x="145" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">🌐 Web</text>
+    
+    <rect x="45" y="135" width="60" height="20" rx="4" fill="white" filter="url(#shadow)"/>
+    <text x="75" y="149" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">📄 Documents</text>
+    
+    <rect x="115" y="135" width="60" height="20" rx="4" fill="white" filter="url(#shadow)"/>
+    <text x="145" y="149" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">🔌 APIs</text>
+  </g>
+  
+  <!-- DATA PROCESSING -->
+  <g id="dataProcessing">
+    <rect x="210" y="70" width="220" height="100" rx="10" fill="url(#dataGrad)" opacity="0.2" filter="url(#shadow)"/>
+    <text x="320" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
+      🧠 DATA PROCESSING
+    </text>
+    
+    <rect x="245" y="115" width="90" height="30" rx="4" fill="#4CAF50" filter="url(#shadow)"/>
+    <text x="290" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">🕷️ BRIGHT DATA</text>
+    
+    <rect x="340" y="115" width="80" height="30" rx="4" fill="#FFC107" filter="url(#shadow)"/>
+    <text x="380" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333">🔍 TAVILY</text>
+  </g>
+  
+  <!-- KNOWLEDGE MANAGEMENT -->
+  <g id="knowledge">
+    <rect x="450" y="70" width="160" height="100" rx="10" fill="url(#knowledgeGrad)" opacity="0.2" filter="url(#shadow)"/>
+    <text x="530" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
+      📚 KNOWLEDGE
+    </text>
+    
+    <rect x="465" y="115" width="130" height="35" rx="4" fill="#2196F3" filter="url(#shadow)"/>
+    <text x="530" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">📚 CONTEXTUAL AI</text>
+  </g>
+  
+  <!-- OUTPUTS -->
+  <g id="outputs">
+    <rect x="800" y="70" width="160" height="100" rx="10" fill="url(#outputGrad)" opacity="0.2" filter="url(#shadow)"/>
+    <text x="880" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
+      📤 OUTPUTS
+    </text>
+    
+    <rect x="815" y="110" width="60" height="20" rx="4" fill="white" filter="url(#shadow)"/>
+    <text x="845" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">🖥️ UI</text>
+    
+    <rect x="885" y="110" width="60" height="20" rx="4" fill="white" filter="url(#shadow)"/>
+    <text x="915" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">🔗 APIs</text>
+    
+    <rect x="815" y="135" width="60" height="20" rx="4" fill="white" filter="url(#shadow)"/>
+    <text x="845" y="149" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">💬 Messages</text>
+    
+    <rect x="885" y="135" width="60" height="20" rx="4" fill="white" filter="url(#shadow)"/>
+    <text x="915" y="149" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">📱 Apps</text>
+  </g>
+  
+  <!-- LAYER 2: AGENT CORE (Middle Row) -->
+  
+  <!-- TOOL INTEGRATION -->
+  <g id="toolIntegration">
+    <rect x="120" y="210" width="240" height="80" rx="10" fill="url(#toolGrad)" opacity="0.2" filter="url(#shadow)"/>
+    <text x="240" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
+      🔧 TOOL INTEGRATION
+    </text>
+    
+    <rect x="140" y="250" width="90" height="25" rx="4" fill="#9C27B0" filter="url(#shadow)"/>
+    <text x="185" y="267" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">🎮 ARCADE</text>
+    
+    <rect x="250" y="250" width="90" height="25" rx="4" fill="#E91E63" filter="url(#shadow)"/>
+    <text x="295" y="267" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">🔧 MCP</text>
+  </g>
+  
+  <!-- AGENT FRAMEWORKS -->
+  <g id="agentFrameworks">
+    <rect x="390" y="210" width="280" height="80" rx="10" fill="url(#agentGrad)" opacity="0.2" filter="url(#shadow)"/>
+    <text x="530" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
+      ⚙️ AGENT FRAMEWORKS
+    </text>
+    
+    <rect x="425" y="250" width="65" height="25" rx="4" fill="#FF9800" filter="url(#shadow)"/>
+    <text x="457" y="267" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">🏗️ PORTIA</text>
+    
+    <rect x="500" y="250" width="85" height="25" rx="4" fill="#795548" filter="url(#shadow)"/>
+    <text x="542" y="267" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">📊 LANGGRAPH</text>
+    
+    <rect x="595" y="250" width="40" height="25" rx="4" fill="#607D8B" filter="url(#shadow)"/>
+    <text x="615" y="267" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">🔗 A2A</text>
+  </g>
+  
+  <!-- LAYER 3: SUPPORTING SYSTEMS (Bottom Row) -->
+  
+  <!-- MEMORY & STATE -->
+  <g id="memory">
+    <rect x="30" y="330" width="100" height="80" rx="10" fill="#FFE4E1" filter="url(#shadow)"/>
+    <text x="80" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+      💾 MEMORY
+    </text>
+    
+    <rect x="40" y="370" width="40" height="22" rx="4" fill="#F44336" filter="url(#shadow)"/>
+    <text x="60" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">REDIS</text>
+    
+    <rect x="85" y="370" width="45" height="22" rx="4" fill="#6366F1" filter="url(#shadow)"/>
+    <text x="107" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">COGNEE</text>
+  </g>
+  
+  <!-- SECURITY -->
+  <g id="security">
+    <rect x="180" y="330" width="130" height="80" rx="10" fill="#FEE2E2" filter="url(#shadow)"/>
+    <text x="245" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+      🛡️ SECURITY
+    </text>
+    
+    <rect x="190" y="370" width="60" height="22" rx="4" fill="#9E9E9E" filter="url(#shadow)"/>
+    <text x="220" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="5.5" font-weight="bold" fill="white">LLAMAFIREWALL</text>
+    
+    <rect x="255" y="370" width="35" height="22" rx="4" fill="#FF5722" filter="url(#shadow)"/>
+    <text x="272" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">APEX</text>
+  </g>
+  
+  <!-- DEPLOYMENT -->
+  <g id="deployment">
+    <rect x="330" y="330" width="140" height="80" rx="10" fill="#F0FDF4" filter="url(#shadow)"/>
+    <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+      🚀 DEPLOYMENT
+    </text>
+    
+    <rect x="340" y="370" width="35" height="22" rx="4" fill="#673AB7" filter="url(#shadow)"/>
+    <text x="357" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">RUNPOD</text>
+    
+    <rect x="378" y="370" width="35" height="22" rx="4" fill="#2196F3" filter="url(#shadow)"/>
+    <text x="395" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">DOCKER</text>
+    
+    <rect x="416" y="370" width="30" height="22" rx="4" fill="#4CAF50" filter="url(#shadow)"/>
+    <text x="431" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">OLLAMA</text>
+    
+    <rect x="449" y="370" width="30" height="22" rx="4" fill="#3F51B5" filter="url(#shadow)"/>
+    <text x="464" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">FASTAPI</text>
+  </g>
+  
+  <!-- MONITORING -->
+  <g id="monitoring">
+    <rect x="490" y="330" width="120" height="80" rx="10" fill="#FEF3C7" filter="url(#shadow)"/>
+    <text x="550" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+      📊 MONITORING
+    </text>
+    
+    <rect x="500" y="370" width="45" height="22" rx="4" fill="#9C27B0" filter="url(#shadow)"/>
+    <text x="522" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">LANGSMITH</text>
+    
+    <rect x="550" y="370" width="50" height="22" rx="4" fill="#00BCD4" filter="url(#shadow)"/>
+    <text x="575" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">INTELLAGENT</text>
+  </g>
+  
+  <!-- CUSTOMIZATION -->
+  <g id="customization">
+    <rect x="630" y="330" width="100" height="80" rx="10" fill="#F3E8FF" filter="url(#shadow)"/>
+    <text x="680" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+      🛠️ CUSTOM
+    </text>
+    
+    <rect x="640" y="370" width="80" height="22" rx="4" fill="#FF9800" filter="url(#shadow)"/>
+    <text x="680" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">FINE-TUNING</text>
+  </g>
+  
+  <!-- UI LAYER -->
+  <g id="ui">
+    <rect x="750" y="330" width="100" height="80" rx="10" fill="#FDF2F8" filter="url(#shadow)"/>
+    <text x="800" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+      🖥️ UI LAYER
+    </text>
+    
+    <rect x="760" y="370" width="80" height="22" rx="4" fill="white" stroke="#ddd" filter="url(#shadow)"/>
+    <text x="800" y="384" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#374151">STREAMLIT</text>
+  </g>
+  
+  <!-- MAIN FLOW ARROWS (Blue) -->
+  <!-- Input to Data Processing -->
+  <path d="M 190 120 L 210 120" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrowMain)"/>
+  
+  <!-- Data Processing to Knowledge -->
+  <path d="M 430 120 L 450 120" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrowMain)"/>
+  
+  <!-- Knowledge to Agent Frameworks -->
+  <path d="M 530 170 L 530 210" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrowMain)"/>
+  
+  <!-- Tool Integration to Agent Frameworks -->
+  <path d="M 360 250 L 390 250" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrowMain)"/>
+  
+  <!-- Agent Frameworks to Outputs -->
+  <path d="M 690 250 Q 760 180 800 120" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrowMain)"/>
+  
+  <!-- SUPPORT ARROWS (Gray) - From Agent Frameworks to Supporting Systems -->
+  <!-- To Memory -->
+  <path d="M 437 290 L 80 330" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowSupport)"/>
+  
+  <!-- To Security -->
+  <path d="M 480 290 L 245 330" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowSupport)"/>
+  
+  <!-- To Deployment -->
+  <path d="M 540 290 L 400 330" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowSupport)"/>
+  
+  <!-- To Monitoring -->
+  <path d="M 580 290 L 550 330" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowSupport)"/>
+  
+  <!-- To Customization -->
+  <path d="M 620 290 L 680 330" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowSupport)"/>
+  
+  <!-- UI to Outputs -->
+  <path d="M 800 330 Q 830 250 880 170" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowSupport)"/>
+  
+  <!-- FEEDBACK LOOPS (Green dashed) -->
+  <!-- Memory feedback to Agents -->
+  <path d="M 80 330 Q 300 300 437 290" stroke="#059669" stroke-width="2" fill="none" marker-end="url(#arrowFeedback)" stroke-dasharray="5,3"/>
+  
+  <!-- Monitoring feedback to Agents -->
+  <path d="M 550 330 Q 560 300 580 290" stroke="#059669" stroke-width="2" fill="none" marker-end="url(#arrowFeedback)" stroke-dasharray="5,3"/>
+  
+  <!-- Direct Input to Tool Integration (bypass) -->
+  <path d="M 110 170 Q 180 190 240 210" stroke="#9ca3af" stroke-width="1.5" fill="none" marker-end="url(#arrowSupport)" stroke-dasharray="3,3" opacity="0.6"/>
+  
+  <!-- LEGEND -->
+  <g id="legend">
+    <rect x="50" y="450" width="900" height="80" rx="8" fill="white" stroke="#e5e7eb" stroke-width="1" filter="url(#shadow)"/>
+    
+    <text x="500" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
+      Data Flow Legend
+    </text>
+    
+    <!-- Main Flow -->
+    <line x1="100" y1="500" x2="150" y2="500" stroke="#2563eb" stroke-width="3" marker-end="url(#arrowMain)"/>
+    <text x="160" y="505" font-family="Arial, sans-serif" font-size="11" fill="#374151">Primary Processing Flow</text>
+    
+    <!-- Support Systems -->
+    <line x1="320" y1="500" x2="370" y2="500" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowSupport)"/>
+    <text x="380" y="505" font-family="Arial, sans-serif" font-size="11" fill="#374151">Support Systems Connection</text>
+    
+    <!-- Feedback -->
+    <line x1="560" y1="500" x2="610" y2="500" stroke="#059669" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowFeedback)"/>
+    <text x="620" y="505" font-family="Arial, sans-serif" font-size="11" fill="#374151">Feedback Loops</text>
+    
+    <!-- Bypass -->
+    <line x1="760" y1="500" x2="810" y2="500" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+    <text x="820" y="505" font-family="Arial, sans-serif" font-size="11" fill="#374151">Direct Access</text>
+  </g>
+</svg>

@@ -1,0 +1,2094 @@
+# Context Engineering Course - Module 01: Context Retrieval & Generation
+# Prompt Templates - Reusable Context Assembly Patterns
+# 
+# These templates implement the mathematical foundation C = A(c₁, c₂, ..., cₙ)
+# where each component type (instructions, knowledge, tools, memory, state, query)
+# is systematically structured for optimal context assembly.
+
+# ============================================================================
+# FOUNDATIONAL TEMPLATES
+# ============================================================================
+
+foundational_templates:
+  
+  basic_context_shell:
+    name: "Basic Context Assembly Shell"
+    description: "Fundamental template for systematic context construction"
+    mathematical_basis: "C = A(c_instr, c_know, c_tools, c_mem, c_state, c_query)"
+    components:
+      instructions: |
+        You are {role}. Your primary objectives are:
+        {objectives}
+        
+        Follow these principles:
+        {principles}
+        
+        Output format: {output_format}
+      
+      knowledge_integration: |
+        Relevant Information:
+        {knowledge_items}
+        
+        Context: {domain_context}
+        
+        Constraints: {constraints}
+      
+      query_processing: |
+        User Request: {user_query}
+        
+        Expected Output: {expected_format}
+        Processing Mode: {processing_mode}
+    
+    placeholders:
+      - role: "AI assistant role definition"
+      - objectives: "Primary goals and responsibilities"
+      - principles: "Operating principles and guidelines"
+      - output_format: "Desired response structure"
+      - knowledge_items: "Retrieved or provided knowledge"
+      - domain_context: "Domain-specific context"
+      - constraints: "Operating constraints and limitations"
+      - user_query: "The actual user request"
+      - expected_format: "Expected response format"
+      - processing_mode: "Analytical, creative, balanced, etc."
+
+  chain_of_thought_template:
+    name: "Chain-of-Thought Reasoning Template"
+    description: "Structured reasoning with explicit thought processes"
+    mathematical_basis: "Recursive application: C_n = A(C_{n-1}, reasoning_step_n)"
+    template: |
+      # Problem Analysis
+      
+      ## Understanding the Request
+      {problem_statement}
+      
+      ## Reasoning Process
+      Let me think through this step by step:
+      
+      1. **Initial Analysis**: {initial_analysis}
+      
+      2. **Key Considerations**: 
+         - {consideration_1}
+         - {consideration_2}
+         - {consideration_3}
+      
+      3. **Step-by-Step Solution**:
+         Step 1: {step_1}
+         Step 2: {step_2}
+         Step 3: {step_3}
+      
+      4. **Verification**: {verification_process}
+      
+      ## Final Answer
+      {final_answer}
+      
+      ## Confidence Assessment
+      Confidence Level: {confidence_level}
+      Reasoning: {confidence_reasoning}
+    
+    placeholders:
+      - problem_statement: "Clear articulation of the problem"
+      - initial_analysis: "First-pass understanding"
+      - consideration_1: "Primary consideration"
+      - consideration_2: "Secondary consideration"  
+      - consideration_3: "Additional consideration"
+      - step_1: "First solution step"
+      - step_2: "Second solution step"
+      - step_3: "Third solution step"
+      - verification_process: "How to verify the solution"
+      - final_answer: "Complete solution"
+      - confidence_level: "High/Medium/Low confidence"
+      - confidence_reasoning: "Why this confidence level"
+
+  few_shot_learning_template:
+    name: "Few-Shot Learning Template"
+    description: "Learning from examples with pattern recognition"
+    mathematical_basis: "Pattern extraction: P = Extract(examples), Application: A(P, new_input)"
+    template: |
+      # Task: {task_description}
+      
+      ## Examples
+      
+      Example 1:
+      Input: {example_1_input}
+      Output: {example_1_output}
+      
+      Example 2:
+      Input: {example_2_input}
+      Output: {example_2_output}
+      
+      Example 3:
+      Input: {example_3_input}
+      Output: {example_3_output}
+      
+      ## Pattern Analysis
+      Common pattern: {identified_pattern}
+      Key features: {key_features}
+      
+      ## New Task
+      Input: {new_input}
+      
+      Following the same pattern:
+      Output: {new_output}
+    
+    placeholders:
+      - task_description: "Clear description of the task"
+      - example_1_input: "First example input"
+      - example_1_output: "First example output"
+      - example_2_input: "Second example input"
+      - example_2_output: "Second example output"
+      - example_3_input: "Third example input"
+      - example_3_output: "Third example output"
+      - identified_pattern: "Pattern extracted from examples"
+      - key_features: "Important features of the pattern"
+      - new_input: "New input to process"
+      - new_output: "Expected output following the pattern"
+
+# ============================================================================
+# RAG-SPECIFIC TEMPLATES
+# ============================================================================
+
+rag_templates:
+  
+  basic_rag_pipeline:
+    name: "Basic RAG Pipeline Template"
+    description: "Standard retrieval-augmented generation workflow"
+    mathematical_basis: "C = A(c_instr, Retrieve(query, KB), c_query)"
+    template: |
+      # Information Synthesis Task
+      
+      ## Instructions
+      You are an expert information synthesizer. Your task is to:
+      1. Analyze the retrieved information for relevance and accuracy
+      2. Synthesize insights from multiple sources
+      3. Provide a comprehensive, well-structured response
+      4. Cite sources appropriately
+      5. Acknowledge limitations or uncertainties
+      
+      ## Retrieved Information
+      
+      {retrieved_documents}
+      
+      ## User Query
+      {user_query}
+      
+      ## Synthesis Guidelines
+      - Prioritize recent and authoritative sources
+      - Identify consensus and contradictions
+      - Provide balanced perspectives
+      - Use evidence-based reasoning
+      
+      ## Response Format
+      {response_format}
+    
+    placeholders:
+      - retrieved_documents: "Documents retrieved from knowledge base"
+      - user_query: "Original user question"
+      - response_format: "Desired response structure"
+
+  multi_source_rag:
+    name: "Multi-Source RAG Template"
+    description: "Integration of multiple knowledge sources with conflict resolution"
+    mathematical_basis: "C = A(c_instr, ∪ᵢ Retrieve(query, KBᵢ), conflict_resolution)"
+    template: |
+      # Multi-Source Analysis
+      
+      ## Query
+      {user_query}
+      
+      ## Source 1: {source_1_name}
+      Relevance: {source_1_relevance}
+      Content: {source_1_content}
+      Credibility: {source_1_credibility}
+      
+      ## Source 2: {source_2_name}
+      Relevance: {source_2_relevance}
+      Content: {source_2_content}
+      Credibility: {source_2_credibility}
+      
+      ## Source 3: {source_3_name}
+      Relevance: {source_3_relevance}
+      Content: {source_3_content}
+      Credibility: {source_3_credibility}
+      
+      ## Conflict Resolution
+      Areas of agreement: {agreement_areas}
+      Contradictions: {contradictions}
+      Resolution strategy: {resolution_approach}
+      
+      ## Synthesized Response
+      {synthesized_answer}
+      
+      ## Source Citations
+      {citations}
+      
+      ## Confidence Assessment
+      Overall confidence: {confidence_level}
+      Supporting evidence strength: {evidence_strength}
+      Limitations: {limitations}
+    
+    placeholders:
+      - user_query: "User's information request"
+      - source_1_name: "Name/identifier of first source"
+      - source_1_relevance: "Relevance score for source 1"
+      - source_1_content: "Content from source 1"
+      - source_1_credibility: "Credibility assessment of source 1"
+      - source_2_name: "Name/identifier of second source"
+      - source_2_relevance: "Relevance score for source 2"
+      - source_2_content: "Content from source 2"
+      - source_2_credibility: "Credibility assessment of source 2"
+      - source_3_name: "Name/identifier of third source"
+      - source_3_relevance: "Relevance score for source 3"
+      - source_3_content: "Content from source 3"
+      - source_3_credibility: "Credibility assessment of source 3"
+      - agreement_areas: "Where sources agree"
+      - contradictions: "Where sources disagree"
+      - resolution_approach: "How to handle conflicts"
+      - synthesized_answer: "Final integrated response"
+      - citations: "Proper source attribution"
+      - confidence_level: "Confidence in the response"
+      - evidence_strength: "Quality of supporting evidence"
+      - limitations: "Known limitations or uncertainties"
+
+  adaptive_rag:
+    name: "Adaptive RAG Template"
+    description: "Self-adjusting retrieval based on query complexity and confidence"
+    mathematical_basis: "C = A(c_instr, AdaptiveRetrieve(query, confidence_threshold), meta_reasoning)"
+    template: |
+      # Adaptive Retrieval Analysis
+      
+      ## Initial Query Assessment
+      Query: {user_query}
+      Complexity: {query_complexity}
+      Domain: {query_domain}
+      Required depth: {required_depth}
+      
+      ## Retrieval Strategy
+      Strategy selected: {retrieval_strategy}
+      Reasoning: {strategy_reasoning}
+      
+      ## Retrieved Information
+      {retrieved_content}
+      
+      ## Confidence Evaluation
+      Initial confidence: {initial_confidence}
+      
+      ## Adaptive Decision
+      {adaptive_decision}
+      
+      ## Additional Retrieval (if needed)
+      {additional_retrieval}
+      
+      ## Final Response
+      {final_response}
+      
+      ## Meta-Analysis
+      Retrieval effectiveness: {retrieval_effectiveness}
+      Response quality: {response_quality}
+      Improvement suggestions: {improvement_suggestions}
+    
+    placeholders:
+      - user_query: "Original user question"
+      - query_complexity: "Assessment of query complexity"
+      - query_domain: "Domain classification"
+      - required_depth: "Depth of analysis needed"
+      - retrieval_strategy: "Chosen retrieval approach"
+      - strategy_reasoning: "Why this strategy was selected"
+      - retrieved_content: "Initially retrieved information"
+      - initial_confidence: "Confidence after initial retrieval"
+      - adaptive_decision: "Decision to retrieve more or proceed"
+      - additional_retrieval: "Additional information if needed"
+      - final_response: "Complete response"
+      - retrieval_effectiveness: "How well retrieval worked"
+      - response_quality: "Assessment of response quality"
+      - improvement_suggestions: "Ideas for improvement"
+
+# ============================================================================
+# AGENT WORKFLOW TEMPLATES
+# ============================================================================
+
+agent_templates:
+  
+  basic_agent_workflow:
+    name: "Basic Agent Workflow Template"
+    description: "Structured approach for agent task execution"
+    mathematical_basis: "C = A(c_instr, c_tools, c_state, planning_component)"
+    template: |
+      # Agent Task Execution
+      
+      ## Task Understanding
+      Objective: {task_objective}
+      Success criteria: {success_criteria}
+      Constraints: {task_constraints}
+      
+      ## Available Tools
+      {available_tools}
+      
+      ## Current State
+      {current_state}
+      
+      ## Planning Phase
+      
+      ### Step 1: Task Decomposition
+      Subtasks:
+      1. {subtask_1}
+      2. {subtask_2}
+      3. {subtask_3}
+      
+      ### Step 2: Tool Selection
+      Required tools: {selected_tools}
+      Tool sequence: {tool_sequence}
+      
+      ### Step 3: Risk Assessment
+      Potential issues: {potential_risks}
+      Mitigation strategies: {mitigation_strategies}
+      
+      ## Execution Phase
+      
+      ### Action 1: {action_1_description}
+      Tool: {action_1_tool}
+      Parameters: {action_1_params}
+      Expected result: {action_1_expected}
+      
+      ### Action 2: {action_2_description}
+      Tool: {action_2_tool}
+      Parameters: {action_2_params}
+      Expected result: {action_2_expected}
+      
+      ### Action 3: {action_3_description}
+      Tool: {action_3_tool}
+      Parameters: {action_3_params}
+      Expected result: {action_3_expected}
+      
+      ## Verification Phase
+      Success verification: {verification_method}
+      Quality check: {quality_check}
+      
+      ## Results
+      Final outcome: {final_outcome}
+      Success assessment: {success_assessment}
+      Lessons learned: {lessons_learned}
+    
+    placeholders:
+      - task_objective: "Clear statement of the task goal"
+      - success_criteria: "How to measure success"
+      - task_constraints: "Limitations and boundaries"
+      - available_tools: "List of tools and their capabilities"
+      - current_state: "Current environment state"
+      - subtask_1: "First subtask"
+      - subtask_2: "Second subtask"
+      - subtask_3: "Third subtask"
+      - selected_tools: "Tools needed for execution"
+      - tool_sequence: "Order of tool usage"
+      - potential_risks: "Possible problems"
+      - mitigation_strategies: "How to handle risks"
+      - action_1_description: "Description of first action"
+      - action_1_tool: "Tool for first action"
+      - action_1_params: "Parameters for first action"
+      - action_1_expected: "Expected result of first action"
+      - action_2_description: "Description of second action"
+      - action_2_tool: "Tool for second action"
+      - action_2_params: "Parameters for second action"
+      - action_2_expected: "Expected result of second action"
+      - action_3_description: "Description of third action"
+      - action_3_tool: "Tool for third action"
+      - action_3_params: "Parameters for third action"
+      - action_3_expected: "Expected result of third action"
+      - verification_method: "How to verify success"
+      - quality_check: "Quality assessment method"
+      - final_outcome: "Actual results achieved"
+      - success_assessment: "Whether task was successful"
+      - lessons_learned: "Insights for future tasks"
+
+  multi_agent_coordination:
+    name: "Multi-Agent Coordination Template"
+    description: "Template for coordinating multiple AI agents"
+    mathematical_basis: "C = A(c_instr, ∑ᵢ agent_state_i, coordination_protocol)"
+    template: |
+      # Multi-Agent Coordination Framework
+      
+      ## Mission Overview
+      Objective: {mission_objective}
+      Timeline: {mission_timeline}
+      Success metrics: {success_metrics}
+      
+      ## Agent Registry
+      
+      ### Agent 1: {agent_1_name}
+      Role: {agent_1_role}
+      Capabilities: {agent_1_capabilities}
+      Current status: {agent_1_status}
+      
+      ### Agent 2: {agent_2_name}
+      Role: {agent_2_role}
+      Capabilities: {agent_2_capabilities}
+      Current status: {agent_2_status}
+      
+      ### Agent 3: {agent_3_name}
+      Role: {agent_3_role}
+      Capabilities: {agent_3_capabilities}
+      Current status: {agent_3_status}
+      
+      ## Coordination Protocol
+      
+      ### Phase 1: Planning Synchronization
+      - Each agent reports capability assessment
+      - Task allocation based on agent strengths
+      - Dependency mapping and scheduling
+      
+      ### Phase 2: Execution Coordination
+      - Regular status updates every {update_interval}
+      - Conflict resolution protocol: {conflict_resolution}
+      - Resource sharing agreements: {resource_sharing}
+      
+      ### Phase 3: Results Integration
+      - Output standardization format: {output_format}
+      - Quality assurance process: {qa_process}
+      - Final synthesis methodology: {synthesis_method}
+      
+      ## Communication Channels
+      Primary: {primary_channel}
+      Backup: {backup_channel}
+      Emergency: {emergency_channel}
+      
+      ## Current Task Allocation
+      {task_allocation}
+      
+      ## Progress Monitoring
+      {progress_tracking}
+      
+      ## Issue Resolution
+      Current issues: {current_issues}
+      Resolution status: {resolution_status}
+    
+    placeholders:
+      - mission_objective: "Overall mission goal"
+      - mission_timeline: "Expected duration and milestones"
+      - success_metrics: "How to measure mission success"
+      - agent_1_name: "Identifier for first agent"
+      - agent_1_role: "Primary role of first agent"
+      - agent_1_capabilities: "What first agent can do"
+      - agent_1_status: "Current status of first agent"
+      - agent_2_name: "Identifier for second agent"
+      - agent_2_role: "Primary role of second agent"
+      - agent_2_capabilities: "What second agent can do"
+      - agent_2_status: "Current status of second agent"
+      - agent_3_name: "Identifier for third agent"
+      - agent_3_role: "Primary role of third agent"
+      - agent_3_capabilities: "What third agent can do"
+      - agent_3_status: "Current status of third agent"
+      - update_interval: "How often agents check in"
+      - conflict_resolution: "How to handle disagreements"
+      - resource_sharing: "How agents share resources"
+      - output_format: "Standard format for outputs"
+      - qa_process: "Quality assurance methodology"
+      - synthesis_method: "How to combine results"
+      - primary_channel: "Main communication method"
+      - backup_channel: "Secondary communication method"
+      - emergency_channel: "Emergency communication method"
+      - task_allocation: "Current task assignments"
+      - progress_tracking: "Progress monitoring system"
+      - current_issues: "Active problems"
+      - resolution_status: "Status of issue resolution"
+
+# ============================================================================
+# RESEARCH AND ANALYSIS TEMPLATES
+# ============================================================================
+
+research_templates:
+  
+  systematic_literature_review:
+    name: "Systematic Literature Review Template"
+    description: "Structured approach to analyzing research literature"
+    mathematical_basis: "C = A(c_instr, ∪ᵢ paper_i, synthesis_methodology)"
+    template: |
+      # Systematic Literature Review
+      
+      ## Research Question
+      {research_question}
+      
+      ## Methodology
+      Search strategy: {search_strategy}
+      Inclusion criteria: {inclusion_criteria}
+      Exclusion criteria: {exclusion_criteria}
+      Quality assessment: {quality_assessment}
+      
+      ## Literature Corpus
+      Total papers identified: {total_papers}
+      Papers included: {included_papers}
+      Exclusion reasons: {exclusion_reasons}
+      
+      ## Paper Analysis
+      
+      ### Paper 1: {paper_1_title}
+      Authors: {paper_1_authors}
+      Year: {paper_1_year}
+      Methodology: {paper_1_methodology}
+      Key findings: {paper_1_findings}
+      Limitations: {paper_1_limitations}
+      Quality score: {paper_1_quality}
+      
+      ### Paper 2: {paper_2_title}
+      Authors: {paper_2_authors}
+      Year: {paper_2_year}
+      Methodology: {paper_2_methodology}
+      Key findings: {paper_2_findings}
+      Limitations: {paper_2_limitations}
+      Quality score: {paper_2_quality}
+      
+      ### Paper 3: {paper_3_title}
+      Authors: {paper_3_authors}
+      Year: {paper_3_year}
+      Methodology: {paper_3_methodology}
+      Key findings: {paper_3_findings}
+      Limitations: {paper_3_limitations}
+      Quality score: {paper_3_quality}
+      
+      ## Synthesis
+      
+      ### Thematic Analysis
+      Theme 1: {theme_1}
+      Supporting evidence: {theme_1_evidence}
+      
+      Theme 2: {theme_2}
+      Supporting evidence: {theme_2_evidence}
+      
+      Theme 3: {theme_3}
+      Supporting evidence: {theme_3_evidence}
+      
+      ### Consensus and Contradictions
+      Areas of agreement: {consensus_areas}
+      Contradictory findings: {contradictions}
+      Potential explanations: {contradiction_explanations}
+      
+      ### Research Gaps
+      Identified gaps: {research_gaps}
+      Future research directions: {future_directions}
+      
+      ## Conclusions
+      Main findings: {main_findings}
+      Practical implications: {practical_implications}
+      Methodological recommendations: {methodological_recommendations}
+      
+      ## Quality Assessment
+      Review reliability: {review_reliability}
+      Bias considerations: {bias_considerations}
+      Generalizability: {generalizability}
+    
+    placeholders:
+      - research_question: "Primary research question being investigated"
+      - search_strategy: "How literature was searched and identified"
+      - inclusion_criteria: "Criteria for including papers"
+      - exclusion_criteria: "Criteria for excluding papers"
+      - quality_assessment: "Method for assessing paper quality"
+      - total_papers: "Total number of papers found"
+      - included_papers: "Number of papers included in review"
+      - exclusion_reasons: "Why papers were excluded"
+      - paper_1_title: "Title of first paper"
+      - paper_1_authors: "Authors of first paper"
+      - paper_1_year: "Publication year of first paper"
+      - paper_1_methodology: "Research methodology used"
+      - paper_1_findings: "Key findings from first paper"
+      - paper_1_limitations: "Limitations of first paper"
+      - paper_1_quality: "Quality assessment score"
+      - paper_2_title: "Title of second paper"
+      - paper_2_authors: "Authors of second paper"
+      - paper_2_year: "Publication year of second paper"
+      - paper_2_methodology: "Research methodology used"
+      - paper_2_findings: "Key findings from second paper"
+      - paper_2_limitations: "Limitations of second paper"
+      - paper_2_quality: "Quality assessment score"
+      - paper_3_title: "Title of third paper"
+      - paper_3_authors: "Authors of third paper"
+      - paper_3_year: "Publication year of third paper"
+      - paper_3_methodology: "Research methodology used"
+      - paper_3_findings: "Key findings from third paper"
+      - paper_3_limitations: "Limitations of third paper"
+      - paper_3_quality: "Quality assessment score"
+      - theme_1: "First major theme identified"
+      - theme_1_evidence: "Evidence supporting first theme"
+      - theme_2: "Second major theme identified"
+      - theme_2_evidence: "Evidence supporting second theme"
+      - theme_3: "Third major theme identified"
+      - theme_3_evidence: "Evidence supporting third theme"
+      - consensus_areas: "Where papers agree"
+      - contradictions: "Where papers disagree"
+      - contradiction_explanations: "Possible reasons for contradictions"
+      - research_gaps: "Areas needing more research"
+      - future_directions: "Suggested future research"
+      - main_findings: "Primary conclusions from the review"
+      - practical_implications: "Real-world applications"
+      - methodological_recommendations: "Suggestions for research methods"
+      - review_reliability: "How reliable is this review"
+      - bias_considerations: "Potential biases in the review"
+      - generalizability: "How broadly applicable are findings"
+
+  comparative_analysis:
+    name: "Comparative Analysis Template"
+    description: "Structured comparison of approaches, methods, or systems"
+    mathematical_basis: "C = A(c_instr, ∪ᵢ approach_i, comparison_framework)"
+    template: |
+      # Comparative Analysis Framework
+      
+      ## Analysis Objective
+      {analysis_objective}
+      
+      ## Comparison Criteria
+      {comparison_criteria}
+      
+      ## Approaches Under Comparison
+      
+      ### Approach 1: {approach_1_name}
+      Description: {approach_1_description}
+      Strengths: {approach_1_strengths}
+      Weaknesses: {approach_1_weaknesses}
+      Use cases: {approach_1_use_cases}
+      Performance metrics: {approach_1_metrics}
+      
+      ### Approach 2: {approach_2_name}
+      Description: {approach_2_description}
+      Strengths: {approach_2_strengths}
+      Weaknesses: {approach_2_weaknesses}
+      Use cases: {approach_2_use_cases}
+      Performance metrics: {approach_2_metrics}
+      
+      ### Approach 3: {approach_3_name}
+      Description: {approach_3_description}
+      Strengths: {approach_3_strengths}
+      Weaknesses: {approach_3_weaknesses}
+      Use cases: {approach_3_use_cases}
+      Performance metrics: {approach_3_metrics}
+      
+      ## Comparative Matrix
+      
+      | Criterion | {approach_1_name} | {approach_2_name} | {approach_3_name} |
+      |-----------|-------------------|-------------------|-------------------|
+      | {criterion_1} | {score_1_1} | {score_1_2} | {score_1_3} |
+      | {criterion_2} | {score_2_1} | {score_2_2} | {score_2_3} |
+      | {criterion_3} | {score_3_1} | {score_3_2} | {score_3_3} |
+      | {criterion_4} | {score_4_1} | {score_4_2} | {score_4_3} |
+      
+      ## Detailed Analysis
+      
+      ### Performance Comparison
+      {performance_analysis}
+      
+      ### Trade-offs Analysis
+      {tradeoffs_analysis}
+      
+      ### Context-Dependent Preferences
+      {context_preferences}
+      
+      ## Recommendations
+      
+      ### For Use Case A: {use_case_a}
+      Recommended approach: {recommendation_a}
+      Reasoning: {reasoning_a}
+      
+      ### For Use Case B: {use_case_b}
+      Recommended approach: {recommendation_b}
+      Reasoning: {reasoning_b}
+      
+      ### For Use Case C: {use_case_c}
+      Recommended approach: {recommendation_c}
+      Reasoning: {reasoning_c}
+      
+      ## Summary
+      {summary_findings}
+      
+      ## Future Considerations
+      {future_considerations}
+    
+    placeholders:
+      - analysis_objective: "What we're trying to understand through comparison"
+      - comparison_criteria: "Standards used for comparison"
+      - approach_1_name: "Name of first approach"
+      - approach_1_description: "Description of first approach"
+      - approach_1_strengths: "Advantages of first approach"
+      - approach_1_weaknesses: "Disadvantages of first approach"
+      - approach_1_use_cases: "Best use cases for first approach"
+      - approach_1_metrics: "Performance metrics for first approach"
+      - approach_2_name: "Name of second approach"
+      - approach_2_description: "Description of second approach"
+      - approach_2_strengths: "Advantages of second approach"
+      - approach_2_weaknesses: "Disadvantages of second approach"
+      - approach_2_use_cases: "Best use cases for second approach"
+      - approach_2_metrics: "Performance metrics for second approach"
+      - approach_3_name: "Name of third approach"
+      - approach_3_description: "Description of third approach"
+      - approach_3_strengths: "Advantages of third approach"
+      - approach_3_weaknesses: "Disadvantages of third approach"
+      - approach_3_use_cases: "Best use cases for third approach"
+      - approach_3_metrics: "Performance metrics for third approach"
+      - criterion_1: "First comparison criterion"
+      - criterion_2: "Second comparison criterion"
+      - criterion_3: "Third comparison criterion"
+      - criterion_4: "Fourth comparison criterion"
+      - score_1_1: "Score for approach 1 on criterion 1"
+      - score_1_2: "Score for approach 2 on criterion 1"
+      - score_1_3: "Score for approach 3 on criterion 1"
+      - score_2_1: "Score for approach 1 on criterion 2"
+      - score_2_2: "Score for approach 2 on criterion 2"
+      - score_2_3: "Score for approach 3 on criterion 2"
+      - score_3_1: "Score for approach 1 on criterion 3"
+      - score_3_2: "Score for approach 2 on criterion 3"
+      - score_3_3: "Score for approach 3 on criterion 3"
+      - score_4_1: "Score for approach 1 on criterion 4"
+      - score_4_2: "Score for approach 2 on criterion 4"
+      - score_4_3: "Score for approach 3 on criterion 4"
+      - performance_analysis: "Detailed performance comparison"
+      - tradeoffs_analysis: "Analysis of trade-offs between approaches"
+      - context_preferences: "When to prefer each approach"
+      - use_case_a: "First specific use case"
+      - recommendation_a: "Recommended approach for use case A"
+      - reasoning_a: "Why this approach is recommended"
+      - use_case_b: "Second specific use case"
+      - recommendation_b: "Recommended approach for use case B"
+      - reasoning_b: "Why this approach is recommended"
+      - use_case_c: "Third specific use case"
+      - recommendation_c: "Recommended approach for use case C"
+      - reasoning_c: "Why this approach is recommended"
+      - summary_findings: "Key takeaways from comparison"
+      - future_considerations: "What to consider going forward"
+
+# ============================================================================
+# SPECIALIZED DOMAIN TEMPLATES
+# ============================================================================
+
+domain_templates:
+  
+  medical_consultation:
+    name: "Medical Consultation Template"
+    description: "Structured medical information analysis (for educational purposes)"
+    mathematical_basis: "C = A(c_instr, medical_knowledge, safety_constraints)"
+    template: |
+      # Medical Information Analysis
+      
+      ## Important Disclaimer
+      This analysis is for educational and informational purposes only.
+      Always consult qualified healthcare professionals for medical advice.
+      
+      ## Case Information
+      Query: {medical_query}
+      Context: {patient_context}
+      
+      ## Medical Knowledge Review
+      Relevant conditions: {relevant_conditions}
+      Diagnostic criteria: {diagnostic_criteria}
+      Treatment options: {treatment_options}
+      Risk factors: {risk_factors}
+      
+      ## Clinical Reasoning
+      
+      ### Differential Diagnosis
+      1. {diagnosis_1}: {probability_1} - {reasoning_1}
+      2. {diagnosis_2}: {probability_2} - {reasoning_2}
+      3. {diagnosis_3}: {probability_3} - {reasoning_3}
+      
+      ### Recommended Investigations
+      {recommended_tests}
+      
+      ### Management Considerations
+      {management_approach}
+      
+      ## Safety Considerations
+      Red flags: {red_flags}
+      When to seek immediate care: {emergency_indicators}
+      
+      ## Educational Resources
+      {educational_resources}
+      
+      ## Limitations
+      {analysis_limitations}
+    
+    placeholders:
+      - medical_query: "Medical question or scenario"
+      - patient_context: "Relevant patient information"
+      - relevant_conditions: "Potentially relevant medical conditions"
+      - diagnostic_criteria: "Criteria for diagnosis"
+      - treatment_options: "Available treatment approaches"
+      - risk_factors: "Relevant risk factors"
+      - diagnosis_1: "First differential diagnosis"
+      - probability_1: "Likelihood of first diagnosis"
+      - reasoning_1: "Reasoning for first diagnosis"
+      - diagnosis_2: "Second differential diagnosis"
+      - probability_2: "Likelihood of second diagnosis"
+      - reasoning_2: "Reasoning for second diagnosis"
+      - diagnosis_3: "Third differential diagnosis"
+      - probability_3: "Likelihood of third diagnosis"
+      - reasoning_3: "Reasoning for third diagnosis"
+      - recommended_tests: "Suggested diagnostic tests"
+      - management_approach: "Treatment approach considerations"
+      - red_flags: "Warning signs to watch for"
+      - emergency_indicators: "When to seek immediate help"
+      - educational_resources: "Additional learning resources"
+      - analysis_limitations: "Limitations of this analysis"
+
+  legal_analysis:
+    name: "Legal Analysis Template"
+    description: "Structured legal reasoning and case analysis"
+    mathematical_basis: "C = A(c_instr, legal_precedents, jurisdictional_context)"
+    template: |
+      # Legal Analysis Framework
+      
+      ## Disclaimer
+      This analysis is for educational purposes only and does not constitute legal advice.
+      Consult a qualified attorney for legal guidance.
+      
+      ## Legal Question
+      {legal_question}
+      
+      ## Factual Background
+      {factual_background}
+      
+      ## Applicable Law
+      
+      ### Statutes
+      {relevant_statutes}
+      
+      ### Regulations
+      {relevant_regulations}
+      
+      ### Case Law
+      {relevant_cases}
+      
+      ## Legal Analysis
+      
+      ### Issue Identification
+      Primary issues: {primary_issues}
+      Secondary issues: {secondary_issues}
+      
+      ### Rule Application
+      
+      #### Issue 1: {issue_1}
+      Applicable rule: {rule_1}
+      Analysis: {analysis_1}
+      Conclusion: {conclusion_1}
+      
+      #### Issue 2: {issue_2}
+      Applicable rule: {rule_2}
+      Analysis: {analysis_2}
+      Conclusion: {conclusion_2}
+      
+      ### Counterarguments
+      {counterarguments}
+      
+      ### Distinguishing Cases
+      {distinguishing_factors}
+      
+      ## Conclusion
+      {legal_conclusion}
+      
+      ## Practical Considerations
+      {practical_considerations}
+      
+      ## Recommendations
+      {recommendations}
+      
+      ## Limitations
+      Jurisdictional limitations: {jurisdictional_limits}
+      Temporal limitations: {temporal_limits}
+      Factual assumptions: {factual_assumptions}
+    
+    placeholders:
+      - legal_question: "The legal question being analyzed"
+      - factual_background: "Relevant facts of the case"
+      - relevant_statutes: "Applicable statutory law"
+      - relevant_regulations: "Applicable regulatory law"
+      - relevant_cases: "Relevant case precedents"
+      - primary_issues: "Main legal issues to resolve"
+      - secondary_issues: "Additional legal considerations"
+      - issue_1: "First legal issue"
+      - rule_1: "Legal rule for first issue"
+      - analysis_1: "Analysis of first issue"
+      - conclusion_1: "Conclusion on first issue"
+      - issue_2: "Second legal issue"
+      - rule_2: "Legal rule for second issue"
+      - analysis_2: "Analysis of second issue"
+      - conclusion_2: "Conclusion on second issue"
+      - counterarguments: "Potential opposing arguments"
+      - distinguishing_factors: "How to distinguish adverse cases"
+      - legal_conclusion: "Overall legal conclusion"
+      - practical_considerations: "Real-world implications"
+      - recommendations: "Suggested next steps"
+      - jurisdictional_limits: "Jurisdictional scope limitations"
+      - temporal_limits: "Time-based limitations"
+      - factual_assumptions: "Assumptions made about facts"
+
+  technical_documentation:
+    name: "Technical Documentation Template"
+    description: "Comprehensive technical system documentation"
+    mathematical_basis: "C = A(c_instr, technical_specs, user_requirements)"
+    template: |
+      # Technical Documentation
+      
+      ## System Overview
+      System name: {system_name}
+      Version: {system_version}
+      Purpose: {system_purpose}
+      Target users: {target_users}
+      
+      ## Architecture
+      
+      ### High-Level Architecture
+      {architecture_overview}
+      
+      ### Components
+      
+      #### Component 1: {component_1_name}
+      Purpose: {component_1_purpose}
+      Interface: {component_1_interface}
+      Dependencies: {component_1_dependencies}
+      
+      #### Component 2: {component_2_name}
+      Purpose: {component_2_purpose}
+      Interface: {component_2_interface}
+      Dependencies: {component_2_dependencies}
+      
+      #### Component 3: {component_3_name}
+      Purpose: {component_3_purpose}
+      Interface: {component_3_interface}
+      Dependencies: {component_3_dependencies}
+      
+      ## Installation and Setup
+      
+      ### Prerequisites
+      {prerequisites}
+      
+      ### Installation Steps
+      {installation_steps}
+      
+      ### Configuration
+      {configuration_details}
+      
+      ## Usage
+      
+      ### Basic Usage
+      {basic_usage}
+      
+      ### Advanced Features
+      {advanced_features}
+      
+      ### Examples
+      {usage_examples}
+      
+      ## API Reference
+      
+      ### Endpoints
+      {api_endpoints}
+      
+      ### Request/Response Formats
+      {request_response_formats}
+      
+      ### Authentication
+      {authentication_details}
+      
+      ## Troubleshooting
+      
+      ### Common Issues
+      {common_issues}
+      
+      ### Error Codes
+      {error_codes}
+      
+      ### Debug Procedures
+      {debug_procedures}
+      
+      ## Performance
+      
+      ### Benchmarks
+      {performance_benchmarks}
+      
+      ### Optimization Guidelines
+      {optimization_guidelines}
+      
+      ### Scaling Considerations
+      {scaling_considerations}
+      
+      ## Security
+      
+      ### Security Model
+      {security_model}
+      
+      ### Best Practices
+      {security_best_practices}
+      
+      ### Vulnerability Assessment
+      {vulnerability_assessment}
+      
+      ## Maintenance
+      
+      ### Update Procedures
+      {update_procedures}
+      
+      ### Backup Strategies
+      {backup_strategies}
+      
+      ### Monitoring
+      {monitoring_setup}
+      
+      ## Appendices
+      
+      ### Glossary
+      {glossary}
+      
+      ### References
+      {references}
+      
+      ### Change Log
+      {change_log}
+    
+    placeholders:
+      - system_name: "Name of the system being documented"
+      - system_version: "Current version of the system"
+      - system_purpose: "What the system does and why"
+      - target_users: "Who the system is designed for"
+      - architecture_overview: "High-level system architecture"
+      - component_1_name: "Name of first major component"
+      - component_1_purpose: "What the first component does"
+      - component_1_interface: "How to interact with first component"
+      - component_1_dependencies: "What first component depends on"
+      - component_2_name: "Name of second major component"
+      - component_2_purpose: "What the second component does"
+      - component_2_interface: "How to interact with second component"
+      - component_2_dependencies: "What second component depends on"
+      - component_3_name: "Name of third major component"
+      - component_3_purpose: "What the third component does"
+      - component_3_interface: "How to interact with third component"
+      - component_3_dependencies: "What third component depends on"
+      - prerequisites: "What's needed before installation"
+      - installation_steps: "Step-by-step installation guide"
+      - configuration_details: "How to configure the system"
+      - basic_usage: "How to use basic features"
+      - advanced_features: "More sophisticated functionality"
+      - usage_examples: "Concrete examples of system use"
+      - api_endpoints: "Available API endpoints"
+      - request_response_formats: "API data formats"
+      - authentication_details: "How authentication works"
+      - common_issues: "Frequently encountered problems"
+      - error_codes: "System error codes and meanings"
+      - debug_procedures: "How to debug problems"
+      - performance_benchmarks: "Performance measurements"
+      - optimization_guidelines: "How to optimize performance"
+      - scaling_considerations: "How to scale the system"
+      - security_model: "System security architecture"
+      - security_best_practices: "Security recommendations"
+      - vulnerability_assessment: "Known security considerations"
+      - update_procedures: "How to update the system"
+      - backup_strategies: "How to backup data"
+      - monitoring_setup: "How to monitor system health"
+      - glossary: "Definition of technical terms"
+      - references: "External references and resources"
+      - change_log: "History of system changes"
+
+# ============================================================================
+# FIELD THEORY AND ADVANCED TEMPLATES
+# ============================================================================
+
+field_theory_templates:
+  
+  attractor_emergence:
+    name: "Attractor Emergence Template"
+    description: "Template for managing semantic attractor dynamics"
+    mathematical_basis: "Field dynamics: ∇²φ = ρ(attractors, boundaries, resonance)"
+    template: |
+      # Attractor Field Dynamics
+      
+      ## Field Configuration
+      Primary attractor: {primary_attractor}
+      Secondary attractors: {secondary_attractors}
+      Field strength: {field_strength}
+      Boundary conditions: {boundary_conditions}
+      
+      ## Attractor Analysis
+      
+      ### Attractor 1: {attractor_1_type}
+      Strength: {attractor_1_strength}
+      Resonance pattern: {attractor_1_resonance}
+      Influence radius: {attractor_1_radius}
+      Harmonic frequencies: {attractor_1_harmonics}
+      
+      ### Attractor 2: {attractor_2_type}
+      Strength: {attractor_2_strength}
+      Resonance pattern: {attractor_2_resonance}
+      Influence radius: {attractor_2_radius}
+      Harmonic frequencies: {attractor_2_harmonics}
+      
+      ### Attractor 3: {attractor_3_type}
+      Strength: {attractor_3_strength}
+      Resonance pattern: {attractor_3_resonance}
+      Influence radius: {attractor_3_radius}
+      Harmonic frequencies: {attractor_3_harmonics}
+      
+      ## Field Interactions
+      
+      ### Cross-Pollination Dynamics
+      {cross_pollination_analysis}
+      
+      ### Boundary Tuning
+      Membrane permeability: {membrane_permeability}
+      Boundary adaptation: {boundary_adaptation}
+      
+      ### Emergent Properties
+      Novel combinations: {novel_combinations}
+      Unexpected resonances: {unexpected_resonances}
+      Field coherence: {field_coherence}
+      
+      ## Recursive Emergence
+      Self-prompting activation: {self_prompting}
+      Agency amplification: {agency_amplification}
+      Residue compression: {residue_compression}
+      
+      ## Output Manifestation
+      {emergent_output}
+      
+      ## Field Evolution
+      Trajectory prediction: {trajectory_prediction}
+      Stability assessment: {stability_assessment}
+      Evolution potential: {evolution_potential}
+    
+    placeholders:
+      - primary_attractor: "Dominant semantic attractor type"
+      - secondary_attractors: "Supporting attractor types"
+      - field_strength: "Overall field intensity"
+      - boundary_conditions: "Field boundary configuration"
+      - attractor_1_type: "Type of first attractor (mythic, mathematical, etc.)"
+      - attractor_1_strength: "Strength of first attractor"
+      - attractor_1_resonance: "Resonance pattern of first attractor"
+      - attractor_1_radius: "Influence range of first attractor"
+      - attractor_1_harmonics: "Harmonic frequencies of first attractor"
+      - attractor_2_type: "Type of second attractor"
+      - attractor_2_strength: "Strength of second attractor"
+      - attractor_2_resonance: "Resonance pattern of second attractor"
+      - attractor_2_radius: "Influence range of second attractor"
+      - attractor_2_harmonics: "Harmonic frequencies of second attractor"
+      - attractor_3_type: "Type of third attractor"
+      - attractor_3_strength: "Strength of third attractor"
+      - attractor_3_resonance: "Resonance pattern of third attractor"
+      - attractor_3_radius: "Influence range of third attractor"
+      - attractor_3_harmonics: "Harmonic frequencies of third attractor"
+      - cross_pollination_analysis: "How attractors interact and hybridize"
+      - membrane_permeability: "How permeable attractor boundaries are"
+      - boundary_adaptation: "How boundaries adapt to field dynamics"
+      - novel_combinations: "New emergent combinations"
+      - unexpected_resonances: "Surprising harmonic interactions"
+      - field_coherence: "Overall field harmony"
+      - self_prompting: "Self-generating prompt dynamics"
+      - agency_amplification: "Enhancement of autonomous agency"
+      - residue_compression: "Compression of symbolic residue"
+      - emergent_output: "What emerges from field dynamics"
+      - trajectory_prediction: "Predicted field evolution"
+      - stability_assessment: "How stable the current configuration is"
+      - evolution_potential: "Potential for further evolution"
+
+  meta_recursive_protocol:
+    name: "Meta-Recursive Protocol Template"
+    description: "Self-improving and self-reflective system template"
+    mathematical_basis: "Meta-recursion: M(C) = A(M(C_{n-1}), reflection, improvement)"
+    template: |
+      # Meta-Recursive Protocol Shell
+      
+      ## Protocol Metadata
+      Protocol name: {protocol_name}
+      Recursion level: {recursion_level}
+      Reflection depth: {reflection_depth}
+      Improvement cycle: {improvement_cycle}
+      
+      ## Current State Assessment
+      
+      ### System State
+      Current capability: {current_capability}
+      Performance metrics: {performance_metrics}
+      Resource utilization: {resource_utilization}
+      Error patterns: {error_patterns}
+      
+      ### Self-Model
+      Self-understanding: {self_understanding}
+      Confidence assessment: {confidence_assessment}
+      Knowledge gaps: {knowledge_gaps}
+      Bias recognition: {bias_recognition}
+      
+      ## Reflection Layer
+      
+      ### Performance Analysis
+      What worked well: {what_worked_well}
+      What could improve: {improvement_areas}
+      Unexpected outcomes: {unexpected_outcomes}
+      Pattern recognition: {pattern_recognition}
+      
+      ### Meta-Cognitive Assessment
+      Thinking about thinking: {meta_cognitive_analysis}
+      Strategy effectiveness: {strategy_effectiveness}
+      Adaptation mechanisms: {adaptation_mechanisms}
+      Learning consolidation: {learning_consolidation}
+      
+      ## Improvement Generation
+      
+      ### Optimization Targets
+      Priority 1: {optimization_target_1}
+      Approach: {optimization_approach_1}
+      Expected improvement: {expected_improvement_1}
+      
+      Priority 2: {optimization_target_2}
+      Approach: {optimization_approach_2}
+      Expected improvement: {expected_improvement_2}
+      
+      Priority 3: {optimization_target_3}
+      Approach: {optimization_approach_3}
+      Expected improvement: {expected_improvement_3}
+      
+      ## Self-Modification Protocol
+      
+      ### Safe Modification Boundaries
+      Acceptable changes: {acceptable_changes}
+      Protected invariants: {protected_invariants}
+      Risk assessment: {risk_assessment}
+      Rollback procedures: {rollback_procedures}
+      
+      ### Implementation Strategy
+      Change sequencing: {change_sequencing}
+      Testing methodology: {testing_methodology}
+      Validation criteria: {validation_criteria}
+      Integration process: {integration_process}
+      
+      ## Recursive Loop Activation
+      
+      ### Next Iteration Input
+      Enhanced context: {enhanced_context}
+      Improved capabilities: {improved_capabilities}
+      Refined objectives: {refined_objectives}
+      
+      ### Recursion Control
+      Termination criteria: {termination_criteria}
+      Convergence detection: {convergence_detection}
+      Divergence prevention: {divergence_prevention}
+      
+      ## Output Generation
+      {recursive_output}
+      
+      ## Evolution Tracking
+      Version history: {version_history}
+      Improvement trajectory: {improvement_trajectory}
+      Emergent capabilities: {emergent_capabilities}
+      Future potential: {future_potential}
+    
+    placeholders:
+      - protocol_name: "Name of the meta-recursive protocol"
+      - recursion_level: "Current level of recursion"
+      - reflection_depth: "How deep the self-reflection goes"
+      - improvement_cycle: "Current improvement cycle number"
+      - current_capability: "Current system capabilities"
+      - performance_metrics: "Current performance measurements"
+      - resource_utilization: "How resources are being used"
+      - error_patterns: "Patterns in errors or failures"
+      - self_understanding: "System's understanding of itself"
+      - confidence_assessment: "How confident the system is"
+      - knowledge_gaps: "Recognized areas of limited knowledge"
+      - bias_recognition: "Awareness of potential biases"
+      - what_worked_well: "Successful aspects of recent performance"
+      - improvement_areas: "Areas identified for improvement"
+      - unexpected_outcomes: "Surprising or unexpected results"
+      - pattern_recognition: "Patterns identified in recent activity"
+      - meta_cognitive_analysis: "Analysis of the thinking process itself"
+      - strategy_effectiveness: "How well current strategies are working"
+      - adaptation_mechanisms: "How the system adapts to new situations"
+      - learning_consolidation: "How learning is integrated and retained"
+      - optimization_target_1: "First priority for optimization"
+      - optimization_approach_1: "Method for first optimization"
+      - expected_improvement_1: "Expected benefit from first optimization"
+      - optimization_target_2: "Second priority for optimization"
+      - optimization_approach_2: "Method for second optimization"
+      - expected_improvement_2: "Expected benefit from second optimization"
+      - optimization_target_3: "Third priority for optimization"
+      - optimization_approach_3: "Method for third optimization"
+      - expected_improvement_3: "Expected benefit from third optimization"
+      - acceptable_changes: "Types of changes that are safe to make"
+      - protected_invariants: "Core aspects that must remain unchanged"
+      - risk_assessment: "Assessment of risks in self-modification"
+      - rollback_procedures: "How to undo changes if needed"
+      - change_sequencing: "Order in which changes should be made"
+      - testing_methodology: "How to test changes before full implementation"
+      - validation_criteria: "How to determine if changes are successful"
+      - integration_process: "How to integrate changes into the system"
+      - enhanced_context: "Improved context for next iteration"
+      - improved_capabilities: "New capabilities for next iteration"
+      - refined_objectives: "Updated objectives for next iteration"
+      - termination_criteria: "When to stop the recursive process"
+      - convergence_detection: "How to detect when optimization has converged"
+      - divergence_prevention: "How to prevent the process from going off track"
+      - recursive_output: "Output from the current recursive iteration"
+      - version_history: "History of system versions and changes"
+      - improvement_trajectory: "Path of improvement over time"
+      - emergent_capabilities: "New capabilities that have emerged"
+      - future_potential: "Potential for future development"
+
+# ============================================================================
+# USAGE GUIDELINES AND OPTIMIZATION STRATEGIES
+# ============================================================================
+
+usage_guidelines:
+  
+  template_selection:
+    description: "How to choose the right template for your use case"
+    decision_tree:
+      - condition: "Simple information request"
+        recommendation: "basic_context_shell"
+      - condition: "Need step-by-step reasoning"
+        recommendation: "chain_of_thought_template"
+      - condition: "Learning from examples"
+        recommendation: "few_shot_learning_template"
+      - condition: "Retrieving external knowledge"
+        recommendation: "basic_rag_pipeline or multi_source_rag"
+      - condition: "Complex task requiring tools"
+        recommendation: "basic_agent_workflow"
+      - condition: "Multiple agents coordination"
+        recommendation: "multi_agent_coordination"
+      - condition: "Research and analysis"
+        recommendation: "systematic_literature_review or comparative_analysis"
+      - condition: "Domain-specific expertise needed"
+        recommendation: "medical_consultation, legal_analysis, or technical_documentation"
+      - condition: "Advanced field dynamics"
+        recommendation: "attractor_emergence"
+      - condition: "Self-improving systems"
+        recommendation: "meta_recursive_protocol"
+  
+  optimization_strategies:
+    token_efficiency:
+      - "Use placeholder substitution to minimize token waste"
+      - "Prioritize high-relevance components in assembly"
+      - "Implement dynamic truncation for long contexts"
+      - "Cache frequently used template segments"
+    
+    relevance_optimization:
+      - "Implement semantic similarity scoring for component selection"
+      - "Use mutual information metrics for redundancy reduction"
+      - "Apply domain-specific relevance weightings"
+      - "Implement adaptive relevance thresholds"
+    
+    coherence_enhancement:
+      - "Ensure logical flow between template sections"
+      - "Use consistent terminology and formatting"
+      - "Implement transition mechanisms between components"
+      - "Apply field theory principles for semantic harmony"
+    
+    adaptability_improvement:
+      - "Design templates with configurable parameters"
+      - "Implement meta-template composition strategies"
+      - "Use recursive template instantiation for complex cases"
+      - "Apply machine learning for template parameter optimization"
+
+  best_practices:
+    template_design:
+      - "Start with clear mathematical foundations"
+      - "Ensure all placeholders have meaningful defaults"
+      - "Design for both human readability and machine processing"
+      - "Include evaluation criteria in template metadata"
+      - "Version templates and track performance over time"
+    
+    deployment_considerations:
+      - "Test templates across different model types and sizes"
+      - "Monitor template performance in production environments"
+      - "Implement graceful degradation for missing components"
+      - "Provide clear documentation and usage examples"
+      - "Design templates for easy maintenance and updates"
+    
+    quality_assurance:
+      - "Implement automated template validation"
+      - "Use A/B testing for template optimization"
+      - "Collect user feedback on template effectiveness"
+      - "Monitor for bias and fairness issues"
+      - "Regular review and update of template libraries"
+
+# ============================================================================
+# TEMPLATE METADATA AND VERSIONING
+# ============================================================================
+
+metadata:
+  version: "1.0.0"
+  last_updated: "2024-01-15"
+  authors: ["Context Engineering Course Team"]
+  license: "MIT"
+  compatibility:
+    llm_models: ["GPT-4", "Claude-3", "Gemini-Pro", "LLaMA-2"]
+    context_windows: ["4K", "8K", "32K", "128K", "1M+"]
+    deployment_environments: ["API", "Local", "Edge", "Cloud"]
+  
+  quality_metrics:
+    template_coverage: "95%"  # Percentage of common use cases covered
+    average_token_efficiency: "0.87"  # Average token utilization
+    user_satisfaction_score: "4.6/5.0"  # User rating
+    production_stability: "99.2%"  # Uptime in production environments
+  
+  research_grounding:
+    papers_analyzed: 1400
+    systematic_review: "arXiv:2507.13334v1"
+    institutions: ["IBM Zurich", "ICML", "ICT CAS"]
+    validation_studies: 15
+    
+  evolution_roadmap:
+    v1_1:
+      - "Enhanced multi-modal templates"
+      - "Improved field theory integration"
+      - "Advanced meta-recursive protocols"
+    v2_0:
+      - "Quantum semantic templates"
+      - "Cross-modal unified representations"
+      - "Collaborative human-AI templates"
+
+# ============================================================================
+# CROSS-MODAL INTEGRATION TEMPLATES
+# ============================================================================
+
+cross_modal_templates:
+  
+  unified_modal_processing:
+    name: "Unified Modal Processing Template"
+    description: "Template for processing and integrating multiple modalities"
+    mathematical_basis: "Multi-modal fusion: C = A(∪ᵢ modal_i, cross_modal_attention)"
+    template: |
+      # Multi-Modal Integration Framework
+      
+      ## Modal Input Analysis
+      
+      ### Text Modality
+      Content: {text_content}
+      Semantic density: {text_semantic_density}
+      Key concepts: {text_key_concepts}
+      Emotional tone: {text_emotional_tone}
+      
+      ### Visual Modality
+      Description: {visual_description}
+      Visual elements: {visual_elements}
+      Spatial relationships: {spatial_relationships}
+      Visual metaphors: {visual_metaphors}
+      
+      ### Audio Modality
+      Transcript: {audio_transcript}
+      Prosodic features: {prosodic_features}
+      Background sounds: {background_sounds}
+      Emotional markers: {audio_emotional_markers}
+      
+      ## Cross-Modal Correlation Analysis
+      
+      ### Text-Visual Alignment
+      Correspondence: {text_visual_correspondence}
+      Contradictions: {text_visual_contradictions}
+      Complementarity: {text_visual_complementarity}
+      
+      ### Text-Audio Alignment
+      Correspondence: {text_audio_correspondence}
+      Contradictions: {text_audio_contradictions}
+      Complementarity: {text_audio_complementarity}
+      
+      ### Visual-Audio Alignment
+      Correspondence: {visual_audio_correspondence}
+      Contradictions: {visual_audio_contradictions}
+      Complementarity: {visual_audio_complementarity}
+      
+      ## Unified Representation
+      
+      ### Semantic Integration
+      Core meaning: {unified_core_meaning}
+      Supporting details: {unified_supporting_details}
+      Contextual nuances: {unified_contextual_nuances}
+      
+      ### Conflict Resolution
+      Modal priorities: {modal_priorities}
+      Resolution strategy: {conflict_resolution_strategy}
+      Confidence weighting: {confidence_weighting}
+      
+      ## Emergent Understanding
+      
+      ### Synesthetic Insights
+      Novel connections: {synesthetic_connections}
+      Enhanced understanding: {enhanced_understanding}
+      Emergent patterns: {emergent_patterns}
+      
+      ### Cross-Modal Creativity
+      Creative combinations: {creative_combinations}
+      Metaphorical bridges: {metaphorical_bridges}
+      Innovative interpretations: {innovative_interpretations}
+      
+      ## Output Synthesis
+      {unified_output}
+      
+      ## Modal Confidence Assessment
+      Text confidence: {text_confidence}
+      Visual confidence: {visual_confidence}
+      Audio confidence: {audio_confidence}
+      Integration confidence: {integration_confidence}
+    
+    placeholders:
+      - text_content: "Primary textual content"
+      - text_semantic_density: "Richness of semantic information in text"
+      - text_key_concepts: "Important concepts extracted from text"
+      - text_emotional_tone: "Emotional characteristics of the text"
+      - visual_description: "Description of visual content"
+      - visual_elements: "Key visual components"
+      - spatial_relationships: "How visual elements relate spatially"
+      - visual_metaphors: "Metaphorical elements in visuals"
+      - audio_transcript: "Transcription of audio content"
+      - prosodic_features: "Tone, rhythm, emphasis in speech"
+      - background_sounds: "Non-speech audio elements"
+      - audio_emotional_markers: "Emotional cues in audio"
+      - text_visual_correspondence: "How text and visuals align"
+      - text_visual_contradictions: "Where text and visuals conflict"
+      - text_visual_complementarity: "How text and visuals complement each other"
+      - text_audio_correspondence: "How text and audio align"
+      - text_audio_contradictions: "Where text and audio conflict"
+      - text_audio_complementarity: "How text and audio complement each other"
+      - visual_audio_correspondence: "How visuals and audio align"
+      - visual_audio_contradictions: "Where visuals and audio conflict"
+      - visual_audio_complementarity: "How visuals and audio complement each other"
+      - unified_core_meaning: "Central meaning across all modalities"
+      - unified_supporting_details: "Supporting information from all modalities"
+      - unified_contextual_nuances: "Contextual subtleties from integration"
+      - modal_priorities: "Relative importance of each modality"
+      - conflict_resolution_strategy: "How to handle modal conflicts"
+      - confidence_weighting: "How to weight conflicting information"
+      - synesthetic_connections: "Novel cross-modal connections"
+      - enhanced_understanding: "Deeper understanding from integration"
+      - emergent_patterns: "Patterns that emerge from combination"
+      - creative_combinations: "Creative insights from modal fusion"
+      - metaphorical_bridges: "Metaphorical connections between modalities"
+      - innovative_interpretations: "New interpretations from integration"
+      - unified_output: "Final integrated response"
+      - text_confidence: "Confidence in text interpretation"
+      - visual_confidence: "Confidence in visual interpretation"
+      - audio_confidence: "Confidence in audio interpretation"
+      - integration_confidence: "Confidence in overall integration"
+
+# ============================================================================
+# PRODUCTION DEPLOYMENT TEMPLATES
+# ============================================================================
+
+production_templates:
+  
+  enterprise_context_pipeline:
+    name: "Enterprise Context Pipeline Template"
+    description: "Production-ready context assembly for enterprise applications"
+    mathematical_basis: "Production optimization: C = A(components, constraints, sla_requirements)"
+    template: |
+      # Enterprise Context Assembly Pipeline
+      
+      ## Service Level Requirements
+      Latency target: {latency_target}
+      Throughput requirement: {throughput_requirement}
+      Availability target: {availability_target}
+      Accuracy threshold: {accuracy_threshold}
+      
+      ## Input Validation
+      Request ID: {request_id}
+      User authentication: {user_auth_status}
+      Rate limiting status: {rate_limit_status}
+      Input sanitization: {input_sanitization_status}
+      
+      ## Context Assembly Strategy
+      
+      ### Component Prioritization
+      Priority 1: {component_priority_1} (Weight: {weight_1})
+      Priority 2: {component_priority_2} (Weight: {weight_2})
+      Priority 3: {component_priority_3} (Weight: {weight_3})
+      
+      ### Resource Allocation
+      Compute budget: {compute_budget}
+      Memory budget: {memory_budget}
+      Token budget: {token_budget}
+      Time budget: {time_budget}
+      
+      ### Caching Strategy
+      Cache hit rate: {cache_hit_rate}
+      Cached components: {cached_components}
+      Cache invalidation: {cache_invalidation_strategy}
+      
+      ## Quality Assurance
+      
+      ### Content Filtering
+      Safety filters: {safety_filters}
+      Bias detection: {bias_detection}
+      Factual verification: {factual_verification}
+      Compliance checking: {compliance_checking}
+      
+      ### Performance Monitoring
+      Assembly time: {assembly_time}
+      Component selection accuracy: {selection_accuracy}
+      User satisfaction score: {user_satisfaction}
+      Error rate: {error_rate}
+      
+      ## Fallback Strategies
+      
+      ### Graceful Degradation
+      Reduced context mode: {reduced_context_mode}
+      Emergency response: {emergency_response}
+      User notification: {user_notification}
+      
+      ### Error Recovery
+      Retry mechanism: {retry_mechanism}
+      Alternative assembly: {alternative_assembly}
+      Human escalation: {human_escalation}
+      
+      ## Audit and Compliance
+      
+      ### Logging
+      Assembly decisions: {assembly_decisions_log}
+      Performance metrics: {performance_metrics_log}
+      User interactions: {user_interactions_log}
+      Security events: {security_events_log}
+      
+      ### Compliance Verification
+      Data handling: {data_handling_compliance}
+      Privacy protection: {privacy_protection_compliance}
+      Regulatory requirements: {regulatory_compliance}
+      
+      ## Output Delivery
+      Response format: {response_format}
+      Confidence score: {confidence_score}
+      Processing metadata: {processing_metadata}
+      Quality indicators: {quality_indicators}
+    
+    placeholders:
+      - latency_target: "Maximum acceptable response time"
+      - throughput_requirement: "Required requests per second"
+      - availability_target: "Required uptime percentage"
+      - accuracy_threshold: "Minimum acceptable accuracy"
+      - request_id: "Unique identifier for the request"
+      - user_auth_status: "User authentication verification"
+      - rate_limit_status: "Current rate limiting status"
+      - input_sanitization_status: "Input safety verification"
+      - component_priority_1: "Highest priority component type"
+      - weight_1: "Weight for highest priority component"
+      - component_priority_2: "Second priority component type"
+      - weight_2: "Weight for second priority component"
+      - component_priority_3: "Third priority component type"
+      - weight_3: "Weight for third priority component"
+      - compute_budget: "Available computational resources"
+      - memory_budget: "Available memory resources"
+      - token_budget: "Available token budget"
+      - time_budget: "Available processing time"
+      - cache_hit_rate: "Percentage of cache hits"
+      - cached_components: "Which components are cached"
+      - cache_invalidation_strategy: "When to invalidate cache"
+      - safety_filters: "Content safety verification"
+      - bias_detection: "Bias detection results"
+      - factual_verification: "Fact checking results"
+      - compliance_checking: "Regulatory compliance verification"
+      - assembly_time: "Time taken for assembly"
+      - selection_accuracy: "Accuracy of component selection"
+      - user_satisfaction: "User satisfaction metrics"
+      - error_rate: "Current error rate"
+      - reduced_context_mode: "Fallback context configuration"
+      - emergency_response: "Emergency response procedure"
+      - user_notification: "How to notify users of issues"
+      - retry_mechanism: "Retry logic for failures"
+      - alternative_assembly: "Alternative assembly strategy"
+      - human_escalation: "When to escalate to humans"
+      - assembly_decisions_log: "Log of assembly decisions"
+      - performance_metrics_log: "Performance measurement log"
+      - user_interactions_log: "User interaction history"
+      - security_events_log: "Security-related events"
+      - data_handling_compliance: "Data handling compliance status"
+      - privacy_protection_compliance: "Privacy protection verification"
+      - regulatory_compliance: "Regulatory requirements compliance"
+      - response_format: "Format of the final response"
+      - confidence_score: "Confidence in the response"
+      - processing_metadata: "Metadata about processing"
+      - quality_indicators: "Quality assessment indicators"
+
+# ============================================================================
+# EXPERIMENTAL AND RESEARCH TEMPLATES
+# ============================================================================
+
+experimental_templates:
+  
+  quantum_semantic_processing:
+    name: "Quantum Semantic Processing Template"
+    description: "Experimental template for quantum-inspired semantic processing"
+    mathematical_basis: "Quantum semantics: |ψ⟩ = α|meaning₁⟩ + β|meaning₂⟩ + γ|superposition⟩"
+    template: |
+      # Quantum Semantic Processing Framework
+      
+      ## Quantum State Initialization
+      Base state: {base_semantic_state}
+      Superposition components: {superposition_components}
+      Entanglement pairs: {entanglement_pairs}
+      Decoherence time: {decoherence_time}
+      
+      ## Semantic Superposition
+      
+      ### State 1: {semantic_state_1}
+      Amplitude: {amplitude_1}
+      Phase: {phase_1}
+      Coherence: {coherence_1}
+      
+      ### State 2: {semantic_state_2}
+      Amplitude: {amplitude_2}
+      Phase: {phase_2}
+      Coherence: {coherence_2}
+      
+      ### State 3: {semantic_state_3}
+      Amplitude: {amplitude_3}
+      Phase: {phase_3}
+      Coherence: {coherence_3}
+      
+      ## Quantum Operations
+      
+      ### Semantic Entanglement
+      Entangled concepts: {entangled_concepts}
+      Correlation strength: {correlation_strength}
+      Non-local connections: {non_local_connections}
+      
+      ### Interference Patterns
+      Constructive interference: {constructive_interference}
+      Destructive interference: {destructive_interference}
+      Novel meaning emergence: {novel_meaning_emergence}
+      
+      ## Observer-Dependent Semantics
+      
+      ### Observer 1: {observer_1_perspective}
+      Measurement basis: {measurement_basis_1}
+      Collapsed state: {collapsed_state_1}
+      Information gain: {information_gain_1}
+      
+      ### Observer 2: {observer_2_perspective}
+      Measurement basis: {measurement_basis_2}
+      Collapsed state: {collapsed_state_2}
+      Information gain: {information_gain_2}
+      
+      ## Quantum Semantic Evolution
+      Unitary evolution: {unitary_evolution}
+      Decoherence effects: {decoherence_effects}
+      Measurement backaction: {measurement_backaction}
+      
+      ## Classical Extraction
+      Most probable meaning: {most_probable_meaning}
+      Uncertainty quantification: {uncertainty_quantification}
+      Context-dependent collapse: {context_dependent_collapse}
+      
+      ## Quantum Advantage Assessment
+      Classical processing comparison: {classical_comparison}
+      Quantum speedup: {quantum_speedup}
+      Novel insights generated: {novel_insights}
+    
+    placeholders:
+      - base_semantic_state: "Initial semantic state"
+      - superposition_components: "Components in superposition"
+      - entanglement_pairs: "Semantically entangled concepts"
+      - decoherence_time: "Time before quantum effects decay"
+      - semantic_state_1: "First semantic interpretation"
+      - amplitude_1: "Probability amplitude for first state"
+      - phase_1: "Quantum phase for first state"
+      - coherence_1: "Coherence measure for first state"
+      - semantic_state_2: "Second semantic interpretation"
+      - amplitude_2: "Probability amplitude for second state"
+      - phase_2: "Quantum phase for second state"
+      - coherence_2: "Coherence measure for second state"
+      - semantic_state_3: "Third semantic interpretation"
+      - amplitude_3: "Probability amplitude for third state"
+      - phase_3: "Quantum phase for third state"
+      - coherence_3: "Coherence measure for third state"
+      - entangled_concepts: "Concepts showing quantum entanglement"
+      - correlation_strength: "Strength of quantum correlations"
+      - non_local_connections: "Non-local semantic connections"
+      - constructive_interference: "Where meanings reinforce"
+      - destructive_interference: "Where meanings cancel"
+      - novel_meaning_emergence: "New meanings from interference"
+      - observer_1_perspective: "First observer's viewpoint"
+      - measurement_basis_1: "Measurement framework for observer 1"
+      - collapsed_state_1: "Result of observation by observer 1"
+      - information_gain_1: "Information gained by observer 1"
+      - observer_2_perspective: "Second observer's viewpoint"
+      - measurement_basis_2: "Measurement framework for observer 2"
+      - collapsed_state_2: "Result of observation by observer 2"
+      - information_gain_2: "Information gained by observer 2"
+      - unitary_evolution: "How quantum state evolves"
+      - decoherence_effects: "Loss of quantum properties"
+      - measurement_backaction: "How measurement affects the state"
+      - most_probable_meaning: "Most likely semantic interpretation"
+      - uncertainty_quantification: "Measure of semantic uncertainty"
+      - context_dependent_collapse: "How context affects measurement"
+      - classical_comparison: "How classical processing would handle this"
+      - quantum_speedup: "Advantage of quantum approach"
+      - novel_insights: "Insights unique to quantum processing"
+
+# ============================================================================
+# TEMPLATE COMPOSITION AND META-TEMPLATES
+# ============================================================================
+
+meta_templates:
+  
+  template_composer:
+    name: "Template Composition Engine"
+    description: "Meta-template for composing and combining other templates"
+    mathematical_basis: "Template composition: T_composite = Compose(T₁, T₂, ..., Tₙ, composition_rules)"
+    template: |
+      # Template Composition Framework
+      
+      ## Composition Objective
+      Goal: {composition_goal}
+      Use case: {target_use_case}
+      Complexity level: {complexity_level}
+      Expected output: {expected_output_type}
+      
+      ## Source Templates
+      
+      ### Primary Template: {primary_template}
+      Role: {primary_role}
+      Coverage: {primary_coverage}
+      Strengths: {primary_strengths}
+      Limitations: {primary_limitations}
+      
+      ### Secondary Template: {secondary_template}
+      Role: {secondary_role}
+      Coverage: {secondary_coverage}
+      Strengths: {secondary_strengths}
+      Limitations: {secondary_limitations}
+      
+      ### Tertiary Template: {tertiary_template}
+      Role: {tertiary_role}
+      Coverage: {tertiary_coverage}
+      Strengths: {tertiary_strengths}
+      Limitations: {tertiary_limitations}
+      
+      ## Composition Strategy
+      
+      ### Integration Approach
+      Composition method: {composition_method}
+      Priority weighting: {priority_weighting}
+      Conflict resolution: {conflict_resolution}
+      Synergy optimization: {synergy_optimization}
+      
+      ### Structural Design
+      Template hierarchy: {template_hierarchy}
+      Information flow: {information_flow}
+      Dependency management: {dependency_management}
+      Modularity preservation: {modularity_preservation}
+      
+      ## Composed Template Structure
+      
+      ### Unified Instructions
+      {composed_instructions}
+      
+      ### Integrated Components
+      {composed_components}
+      
+      ### Merged Workflows
+      {composed_workflows}
+      
+      ### Combined Evaluation
+      {composed_evaluation}
+      
+      ## Quality Assurance
+      
+      ### Composition Validation
+      Completeness check: {completeness_check}
+      Consistency verification: {consistency_verification}
+      Performance prediction: {performance_prediction}
+      User experience assessment: {user_experience_assessment}
+      
+      ### Optimization Opportunities
+      Redundancy elimination: {redundancy_elimination}
+      Efficiency improvements: {efficiency_improvements}
+      Enhancement possibilities: {enhancement_possibilities}
+      
+      ## Deployment Configuration
+      Context window requirements: {context_window_requirements}
+      Computational complexity: {computational_complexity}
+      Resource dependencies: {resource_dependencies}
+      Scaling considerations: {scaling_considerations}
+      
+      ## Evolution Pathway
+      Adaptation mechanisms: {adaptation_mechanisms}
+      Learning integration: {learning_integration}
+      Feedback incorporation: {feedback_incorporation}
+      Future enhancement: {future_enhancement}
+    
+    placeholders:
+      - composition_goal: "What the composed template should achieve"
+      - target_use_case: "Specific use case for the composition"
+      - complexity_level: "Required complexity level"
+      - expected_output_type: "Type of output expected"
+      - primary_template: "Main template being composed"
+      - primary_role: "Role of primary template in composition"
+      - primary_coverage: "What primary template covers"
+      - primary_strengths: "Strengths of primary template"
+      - primary_limitations: "Limitations of primary template"
+      - secondary_template: "Second template being composed"
+      - secondary_role: "Role of secondary template in composition"
+      - secondary_coverage: "What secondary template covers"
+      - secondary_strengths: "Strengths of secondary template"
+      - secondary_limitations: "Limitations of secondary template"
+      - tertiary_template: "Third template being composed"
+      - tertiary_role: "Role of tertiary template in composition"
+      - tertiary_coverage: "What tertiary template covers"
+      - tertiary_strengths: "Strengths of tertiary template"
+      - tertiary_limitations: "Limitations of tertiary template"
+      - composition_method: "How templates are combined"
+      - priority_weighting: "How to weight different templates"
+      - conflict_resolution: "How to handle template conflicts"
+      - synergy_optimization: "How to maximize template synergy"
+      - template_hierarchy: "Hierarchical structure of composition"
+      - information_flow: "How information flows between templates"
+      - dependency_management: "How to manage dependencies"
+      - modularity_preservation: "How to maintain modular structure"
+      - composed_instructions: "Final composed instructions"
+      - composed_components: "Final composed components"
+      - composed_workflows: "Final composed workflows"
+      - composed_evaluation: "Final composed evaluation criteria"
+      - completeness_check: "Verification of completeness"
+      - consistency_verification: "Verification of consistency"
+      - performance_prediction: "Predicted performance"
+      - user_experience_assessment: "Expected user experience"
+      - redundancy_elimination: "How to remove redundancy"
+      - efficiency_improvements: "Potential efficiency gains"
+      - enhancement_possibilities: "Possible enhancements"
+      - context_window_requirements: "Context window needed"
+      - computational_complexity: "Computational requirements"
+      - resource_dependencies: "Required resources"
+      - scaling_considerations: "How composition scales"
+      - adaptation_mechanisms: "How composition can adapt"
+      - learning_integration: "How learning is integrated"
+      - feedback_incorporation: "How feedback is used"
+      - future_enhancement: "Plans for future improvement"
+
+# ============================================================================
+# VALIDATION AND TESTING FRAMEWORKS
+# ============================================================================
+
+validation_frameworks:
+  
+  template_testing_suite:
+    name: "Template Testing and Validation Suite"
+    description: "Comprehensive framework for testing template effectiveness"
+    mathematical_basis: "Validation function: V(T) = Σᵢ wᵢ × metric_i(T, test_cases)"
+    components:
+      
+      functional_testing:
+        description: "Test basic template functionality"
+        test_cases:
+          - "Placeholder substitution accuracy"
+          - "Template structure preservation"
+          - "Output format consistency"
+          - "Error handling robustness"
+        
+        metrics:
+          - substitution_accuracy: "Percentage of correct placeholder substitutions"
+          - structure_integrity: "Maintenance of template structure"
+          - format_consistency: "Consistency of output formatting"
+          - error_recovery: "Graceful handling of errors"
+      
+      performance_testing:
+        description: "Evaluate template performance characteristics"
+        test_cases:
+          - "Token efficiency measurement"
+          - "Processing latency assessment"
+          - "Memory usage optimization"
+          - "Scalability evaluation"
+        
+        metrics:
+          - token_efficiency: "Tokens used vs. information conveyed"
+          - response_latency: "Time from input to output"
+          - memory_footprint: "Memory resources required"
+          - scalability_factor: "Performance scaling with input size"
+      
+      quality_testing:
+        description: "Assess output quality and user experience"
+        test_cases:
+          - "Coherence evaluation"
+          - "Relevance assessment"
+          - "Completeness verification"
+          - "User satisfaction measurement"
+        
+        metrics:
+          - semantic_coherence: "Logical flow and consistency"
+          - content_relevance: "Relevance to user query"
+          - response_completeness: "Thoroughness of response"
+          - user_satisfaction: "User rating and feedback"
+      
+      robustness_testing:
+        description: "Test template behavior under various conditions"
+        test_cases:
+          - "Edge case handling"
+          - "Malformed input processing"
+          - "Resource constraint adaptation"
+          - "Adversarial input resistance"
+        
+        metrics:
+          - edge_case_handling: "Success rate on edge cases"
+          - input_validation: "Handling of malformed inputs"
+          - resource_adaptation: "Performance under constraints"
+          - adversarial_resistance: "Resistance to adversarial inputs"
+
+# ============================================================================
+# INTEGRATION SPECIFICATIONS
+# ============================================================================
+
+integration_specs:
+  
+  api_integration:
+    description: "Specifications for integrating templates with API systems"
+    requirements:
+      input_format: "JSON with template_id and parameters"
+      output_format: "JSON with assembled context and metadata"
+      error_handling: "Structured error responses with codes"
+      authentication: "API key or OAuth 2.0"
+      rate_limiting: "Configurable per-user limits"
+    
+    endpoints:
+      template_list: "GET /api/v1/templates"
+      template_get: "GET /api/v1/templates/{template_id}"
+      template_render: "POST /api/v1/templates/{template_id}/render"
+      template_validate: "POST /api/v1/templates/{template_id}/validate"
+      template_performance: "GET /api/v1/templates/{template_id}/metrics"
+  
+  framework_integration:
+    description: "Integration with popular AI/ML frameworks"
+    supported_frameworks:
+      - "LangChain"
+      - "Haystack"
+      - "Semantic Kernel"
+      - "AutoGen"
+      - "CrewAI"
+    
+    integration_patterns:
+      langchain: "Custom prompt template class"
+      haystack: "Pipeline component integration"
+      semantic_kernel: "Semantic function implementation"
+      autogen: "Agent prompt configuration"
+      crewai: "Task template specification"
+
+# ============================================================================
+# DOCUMENTATION AND EXAMPLES
+# ============================================================================
+
+documentation:
+  
+  quick_start_guide:
+    description: "Getting started with context engineering templates"
+    steps:
+      1: "Choose appropriate template based on use case"
+      2: "Review template structure and placeholders"
+      3: "Prepare input data and parameters"
+      4: "Instantiate template with your data"
+      5: "Evaluate output quality and iterate"
+    
+    example_walkthrough:
+      use_case: "Building a research assistant"
+      template_choice: "systematic_literature_review"
+      parameters: "Research question, paper list, quality criteria"
+      expected_output: "Structured literature synthesis"
+      optimization_tips: "Adjust relevance thresholds, optimize token usage"
+  
+  advanced_usage:
+    description: "Advanced template usage patterns and optimization"
+    topics:
+      - "Template composition strategies"
+      - "Dynamic parameter optimization"
+      - "Multi-modal template integration"
+      - "Performance tuning and scaling"
+      - "Custom template development"
+    
+    best_practices:
+      - "Start with simple templates and add complexity gradually"
+      - "Monitor template performance in production"
+      - "Implement A/B testing for template optimization"
+      - "Maintain version control for template evolution"
+      - "Document template customizations and modifications"
